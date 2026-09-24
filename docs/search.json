@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "folien/Sitzung_1.html#übersicht",
+    "href": "folien/Sitzung_1.html#übersicht",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Übersicht",
+    "text": "Übersicht\n\nVorstellungsrunde\nInformationen zum Kurs\nÜbersicht und Leistungsnachweise\nEinführung ins Thema"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#vorstellungsrunde",
+    "href": "folien/Sitzung_1.html#vorstellungsrunde",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Vorstellungsrunde",
+    "text": "Vorstellungsrunde\n\nName (bzw. wie Du angesprochen werden willst)\nStudiengang\nGrund für die Wahl des Kurses"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#allgemeine-informationen",
+    "href": "folien/Sitzung_1.html#allgemeine-informationen",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Allgemeine Informationen",
+    "text": "Allgemeine Informationen\n\nMittwoch, 14:00-15:30, Seminarraum links\nKeine Sprechstunde, kontaktieren Sie mich per Email\nFolien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch\nSeminar im AM1:\n\nKontaktzeit: 30h\nSelbststudium: 60h"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "href": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nallgemein\n\n\nrespektvollen Umgang, es ist mir wichtig, dass alle sich wohl fühlen\nUnterschiede und Diversität werden als Gewinn und nicht als Nachteil betrachtet\nFragen sind wertvoll (d.h. es gibt keine dummen Fragen)\nRückmeldungen, Ideen und Anregungen eurerseits sind erwünscht"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "href": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\n\\[\nf(t) = \\frac{\\Gamma (\\frac{\\nu + 1}{2})}{\\sqrt{\\nu}\\Gamma(\\frac{\\nu}{2})}(1+\\frac{t^2}{\\nu})^{-(\\nu + 1 )/2}\n\\]"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#was-erwartet-ihr",
+    "href": "folien/Sitzung_1.html#was-erwartet-ihr",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was erwartet ihr?",
+    "text": "Was erwartet ihr?\nNoch weitere Punkte eurerseits?"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#wie-lernen-wir",
+    "href": "folien/Sitzung_1.html#wie-lernen-wir",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Wie lernen wir?",
+    "text": "Wie lernen wir?"
+  },
+  {
+    "objectID": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "href": "folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nStatistik und R fallen nicht allen gleich leicht und das ist in Ordnung\n→ Wir lernen auch was wichtig ist zu verstehen und was weniger wichtig ist.\nwichtig\n\n\nnicht entmutigen lassen und fragen, üben, fragen, üben!\n\n→ Hausaufgaben machen\n\nDie einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig.\nEbenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "",
+    "text": "Kursbeschreibung\nKursleiterin: Eva Scheel(-Huber)\nEmail-Adresse: eva.scheel-huber(at)uni-koeln(dot)de\nDie Quantitative Linguistik beschäftigt sich mit einer Vielzahl von Fragen, die für die Entwicklung und das Testen von linguistischen Theorien notwendig sind. Anhand quantitativer Methoden können wir zum Beispiel untersuchen, welche sprachlichen Eigenschaften unter der Berücksichtigung von phylogenetischen und arealen Faktoren global bevorzugt sind. Ebenso geben uns empirische Methoden einen Einblick in den Sprachgebrauch und erlauben uns zu erforschen, wann und wie gewisse Sprachstrukturen verwendet werden.\nDer Schwerpunkt dieses Seminars liegt auf statistischen Methoden, die wesentlich für das Testen von Hypothesen und die Beschreibung und Analyse von Daten sind. Wir benutzen R und behandeln die Aufbereitung und Management von Daten, deskriptive Statistik, inferentielle Statistik sowie unterschiedliche Lineare Modelle.\nDas Seminar dient als Einführung und somit sind keine Vorkenntnisse erforderlich. Auch Studierende, die einen gewissen Respekt vor Mathematik und Programmieren haben, werden ermutigt teilzunehmen. Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertraut zu machen, mitbringen. Da jede Woche auf der vorherigen aufbaut, ist die wöchentliche Teilnahme und die Bearbeitung der Hausaufgaben entscheidend. Ebenso brauchen Studierende einen Laptop (ein Tablet ist nicht geeignet).\n\n\nSemesterplan\n\n\n\n\n\n\n\n\n\n\nSitzung\nDatum\nThema\nLektüre\nAufgaben\n\n\n\n\n1\n14.10.2026\nEinführung\n\n-\n\n\n2\n21.10.2026\nÜbersicht zu R\n\ninstalliere R und RStudio, Arbeitsblatt 1\n\n\n3\n28.10.2026\nDeskriptive Statistik I\n\n\n\n\n4\n04.11.2026\nDeskriptive Statistik II: Visualisierung\n\n\n\n\n5\n11.11.2026\nLineare Regression\n\n\n\n\n6\n18.11.2026\nMultiple Lineare Regression\n\n\n\n\n7\n25.11.2026\nLogistische Regression\n\n\n\n\n8\n02.12.2026\nLogistische Regression\n\n\n\n\n9\n09.12.2026\nGemischtes Modell\n\n\n\n\n10\n16.12.2026\nGemischtes Modell\n\n\n\n\n11\n13.01.2027\nInferentielle Statistik\n\n\n\n\n12\n20.01.2027\nInferentielle Statistik\n\n\n\n\n13\n27.01.2027\nInferentielle Statistik\n\n\n\n\n14\n03.02.2027\nOutlook\n\n\n\n\n\n\n\nLektüre\n\n\nReferenzen"
+  },
+  {
+    "objectID": "vasishth.html",
+    "href": "vasishth.html",
+    "title": "Vasishth Intro to Frequentist Statistics",
+    "section": "",
+    "text": "Foundations\n\nWhat is a Random Variable?\n\nsample space: different possible outcomes associated with a probability\na random variable X, a function that associates to each outcome \\(\\omega \\in S\\) exactly one number X(\\(\\omega\\)) = \\(x\\) (for example, number of tosses until one gets a head (H))\n\\(S_{x}\\) is all the \\(x\\)’s (all the possible values of X, the support of X)\n\nExample: coin tosses till H\n\n\\(X: \\omega -&gt; x\\)\n\\(\\omega :\\) H, TH, TTH,… (infinite)\n\\(x = 0,1,2,...; x \\in S_{x}\\)\n\nAnd \\(X(\\omega)=x\\): \\(H -&gt; 1\\), \\(TH -&gt;2\\),…\n\n\nProbability Distribution Functions\n\nevery discrete random variable X has associated with it a probability mass function (PMF)\ncontinuous RVs: probability density functions (PDFs)\n\\(px\\) : \\(S_{x}\\) , $x \\(S_{x}\\)\n\nCumulative distribution function: cumulative probability of getting a heads in 1 or less, 2 or less tosses,…\n\n\nBinomial random variable\n\ntoss coin 10 times, two possible outcomes, number of successes\nFORMULA\n\nCalculate the probability of P(X &lt;= x), seeing n heads, using cumulative distribution function\n\nn &lt;- 10 # sample size\np &lt;- 0.5 # probability of success\n\nprobs &lt;- rep(NA, 11)\nfor (x in 0:10){\n    probs[x+1] &lt;- round(pbinom(x, size=n, prob=p), digits=2) \n}\n\ndata.frame(p = seq(0,10), p = probs)\n\n    p  p.1\n1   0 0.00\n2   1 0.01\n3   2 0.05\n4   3 0.17\n5   4 0.38\n6   5 0.62\n7   6 0.83\n8   7 0.95\n9   8 0.99\n10  9 1.00\n11 10 1.00\n\n\n10 has to be one because it encompasses all possible outcomes (n=10). the distribution is cumulative: if 2 heads, you can add probability of getting 0,1 and 2 heads,…\ndiscrete data!\nProbability of getting exactly 1 head:\n\nchoose(10,1) * 0.5 * (1-0.5)^9\n\n[1] 0.009765625\n\ndbinom(1, size=10, prob=0.5)\n\n[1] 0.009765625\n\n\nGenerate random binomial data\n\nrbinom(1, n=10, prob=0.5)\n\n [1] 1 1 0 1 0 1 0 1 0 0\n\n\n\n\nContinuous data\n\nwe cannot talk about the probability of each outcome\n\nprobability density function does not give you the probability of seeing an exact number, i.e. a point value (this is only possible in the discrete case)\nin the continuous case: we talk about an area under the curve, there’s an infinity of possible values between two values (which is different in the discrete case)\nfor example, P(x&lt;1.69)\n\nthe pdf of the normal distribution: \\(X ~ norm(mean=\\mu, sd = \\sigma)\\)\n\n\nplot(function(x) dnorm(x, 0, 1), -3,3,\nmain = 'Normal density', ylim=c(0,.4),\nylab = 'density', xlab='X')\n\n\n\n\n\n\n\n\nProbability of seeing possible range of values\n\npnorm(Inf) - pnorm(-Inf)\n\n[1] 1\n\npnorm(2) - pnorm(-2)\n\n[1] 0.9544997\n\npnorm(3) - pnorm(-3)\n\n[1] 0.9973002\n\npnorm(0.5) - pnorm(-0.5)\n\n[1] 0.3829249\n\n\nQuantiles: what is the value (quantile \\(x\\)) of a \\(Normal(\\mu, \\sigma)\\) such that \\(P(X&lt;x)=0.975\\).\n\nqnorm(0.975, mean=500, sd=100)\n\n[1] 695.9964\n\n\nIt is also possible to compute upper tail:\n\npnorm(2, lower.tail=T)\n\n[1] 0.9772499\n\npnorm(2, lower.tail=F)\n\n[1] 0.02275013\n\n1- pnorm(2, lower.tail=T)\n\n[1] 0.02275013\n\n\nOverview of functions:\n\ndnorm: the pdf\npnorm: the cdf\nqnorm: the inverse of cdf\nfor binomial: dbinom, pbinom, qbinom\nfor t-distribution: dt, pt, qt\n\n\n\nMaximum Likelihood Estimation\n\nsample mean (xbar), standard deviation (sd)\n\nMLE of the true underlying distribution that we don’t know\n\njoint probability of getting all these values\n\nbecause they are independent: we can multiply all of the probabilities\nthe probability is a function of \\(\\theta\\), this is the likelihood function\n\\(\\theta\\) is the only variable that stays the same\n\n\n\nDiscrete case\n\nx &lt;- c(5,4,3,5,2)\ntheta &lt;- seq(0,1,by=0.01)\nstore &lt;- rep(NA, length(theta))\nfor(i in 1:length(theta)){\n    store[i] &lt;- prod(dbinom(x, size=10, prob=theta[i]))\n}\n\nplot(density(store))\n\n\n\n\n\n\n\n\n\nmaximum value on curve = MLE\nin the case of the binomial: \\(\\theta = x\\) divided by \\(n\\)\nin the Continuous case: sample mean and variance will give you MLE\n\nSignificance of the MLE\n\nhaving assumed a particular pdf, we can estimate the (unknown) parameters (mean and variance) of the distribution that generated our particular data -&gt; distributional properties of the mean under repeated sampling\n\n\nabs(qt(0.025, df=15))\n\n[1] 2.13145\n\n\n\n\n\n\nSampling distribution of the mean"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html",
+    "href": "Folien/Sitzung_1.html",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "",
+    "text": "Vorstellungsrunde\nInformationen zum Kurs\nÜbersicht und Leistungsnachweise\nEinführung ins Thema"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#übersicht",
+    "href": "Folien/Sitzung_1.html#übersicht",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "",
+    "text": "Vorstellungsrunde\nInformationen zum Kurs\nÜbersicht und Leistungsnachweise\nEinführung ins Thema"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#vorstellungsrunde",
+    "href": "Folien/Sitzung_1.html#vorstellungsrunde",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Vorstellungsrunde",
+    "text": "Vorstellungsrunde\n\nName (bzw. wie Du angesprochen werden willst)\nStudiengang\nGrund für die Wahl des Kurses"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#allgemeine-informationen",
+    "href": "Folien/Sitzung_1.html#allgemeine-informationen",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Allgemeine Informationen",
+    "text": "Allgemeine Informationen\n\nMittwoch, 14:00-15:30, Seminarraum links\nKeine Sprechstunde, kontaktieren Sie mich per Email\nFolien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch\nSeminar im AM1:\n\nKontaktzeit: 30h\nSelbststudium: 60h"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "href": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nallgemein\n\n\n\nrespektvollen Umgang, es ist mir wichtig, dass alle sich wohl fühlen\nUnterschiede und Diversität werden als Gewinn und nicht als Nachteil betrachtet\nFragen sind wertvoll (d.h. es gibt keine dummen Fragen)\nRückmeldungen, Ideen und Anregungen eurerseits sind erwünscht"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "href": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\n\\[\nf(t) = \\frac{\\Gamma (\\frac{\\nu + 1}{2})}{\\sqrt{\\nu}\\Gamma(\\frac{\\nu}{2})}(1+\\frac{t^2}{\\nu})^{-(\\nu + 1 )/2}\n\\]"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "href": "Folien/Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nStatistik und R fallen nicht allen gleich leicht und das ist in Ordnung\n→ Wir lernen auch was wichtig ist zu verstehen und was weniger wichtig ist.\nwichtig\n\n\n\nnicht entmutigen lassen und fragen, üben, fragen, üben!\n\n→ Hausaufgaben machen\n\nDie einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig.\nEbenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#was-erwartet-ihr",
+    "href": "Folien/Sitzung_1.html#was-erwartet-ihr",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was erwartet ihr?",
+    "text": "Was erwartet ihr?\nNoch weitere Punkte eurerseits?"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#wie-lernen-wir",
+    "href": "Folien/Sitzung_1.html#wie-lernen-wir",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Wie lernen wir?",
+    "text": "Wie lernen wir?"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#quantitative-linguistik-wieso",
+    "href": "Folien/Sitzung_1.html#quantitative-linguistik-wieso",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Quantitative Linguistik: Wieso?",
+    "text": "Quantitative Linguistik: Wieso?\n\nnicht Bauchgefühl, aber quantifizieren von Ereignissen\nMöglichkeit Phänomene zu untersuchen die wir nicht (qualitativ) ergreifen können aufgrund der Datenmenge\n\n\nin class: Was für unterschiedliche quantitative Daten gibt es in der Linguistik?"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#quantitative-linguistik",
+    "href": "Folien/Sitzung_1.html#quantitative-linguistik",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Quantitative Linguistik",
+    "text": "Quantitative Linguistik\nWas für unterschiedliche quantitative Daten gibt es in der Linguistik?\n\nnominal\nordinal\nintervall\nVerhältnis"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#statistik-wieso",
+    "href": "Folien/Sitzung_1.html#statistik-wieso",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Statistik: Wieso?",
+    "text": "Statistik: Wieso?\n\nnumerisches Erfassen von Phänonem -&gt; Modell\nVorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben\nHypothesen testen"
+  },
+  {
+    "objectID": "Folien/Sitzung_1.html#statistik",
+    "href": "Folien/Sitzung_1.html#statistik",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Statistik",
+    "text": "Statistik\nDeskriptive Statistik:\n\nBeschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken\nBeispiel:\n\nInferenzstatistik:\n\nauf Basis einer Stichprobe Aussagen über eine Population treffen\n\nBeispiel:"
+  },
+  {
+    "objectID": "Notizen.html",
+    "href": "Notizen.html",
+    "title": "Notizen",
+    "section": "",
+    "text": "R: learning by doing"
+  },
+  {
+    "objectID": "Notizen.html#einführung",
+    "href": "Notizen.html#einführung",
+    "title": "Notizen",
+    "section": "Einführung:",
+    "text": "Einführung:\n\nBenutzung von KI\nWieso Quantitative Linguistik?\nWieso Statistik?\nErwartungen\nKursübersicht: Seminarplan und Leistungsnachweise\nAM1: Hausarbeit = Pflicht"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 2: Übersicht zu R",
+    "text": "Sitzung 2: Übersicht zu R\n\nProjektmanagement\nbase R\ntidyverse"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 3: Übersicht zu R",
+    "text": "Sitzung 3: Übersicht zu R"
+  }
+]

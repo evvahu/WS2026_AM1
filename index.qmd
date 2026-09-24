@@ -1,0 +1,46 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+format: html
+editor: source
+bibliography: references.bib
+---
+
+# Kursbeschreibung
+
+**Kursleiterin**: Eva Scheel(-Huber)
+
+**Email-Adresse**: eva.scheel-huber(at)uni-koeln(dot)de
+
+Die Quantitative Linguistik beschäftigt sich mit einer Vielzahl von Fragen, die für die Entwicklung und das Testen von linguistischen Theorien notwendig sind. Anhand quantitativer Methoden können wir zum Beispiel untersuchen, welche sprachlichen Eigenschaften unter der Berücksichtigung von phylogenetischen und arealen Faktoren global bevorzugt sind. Ebenso geben uns empirische Methoden einen Einblick in den Sprachgebrauch und erlauben uns zu erforschen, wann und wie gewisse Sprachstrukturen verwendet werden.
+
+Der Schwerpunkt dieses Seminars liegt auf statistischen Methoden, die wesentlich für das Testen von Hypothesen und die Beschreibung und Analyse von Daten sind. 
+Wir benutzen R und behandeln die Aufbereitung und Management von Daten, deskriptive Statistik, inferentielle Statistik sowie unterschiedliche Lineare Modelle.
+
+Das Seminar dient als Einführung und somit sind keine Vorkenntnisse erforderlich. Auch Studierende, die einen gewissen Respekt vor Mathematik und Programmieren haben, werden ermutigt teilzunehmen. 
+Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertraut zu machen, mitbringen. Da jede Woche auf der vorherigen aufbaut, ist die wöchentliche Teilnahme und die Bearbeitung der Hausaufgaben entscheidend. Ebenso brauchen Studierende einen Laptop (ein Tablet ist nicht geeignet).
+
+
+# Semesterplan
+
+| Sitzung | Datum | Thema | Lektüre | Aufgaben |
+|---------------|---------------|---------------|---------------|---------------|
+| 1 | 14.10.2026 | Einführung | | - |
+| 2 | 21.10.2026 | Übersicht zu R |  | installiere R und RStudio, Arbeitsblatt 1 |
+| 3 | 28.10.2026 | Deskriptive Statistik I | | |
+| 4 | 04.11.2026 | Deskriptive Statistik II: Visualisierung | | |
+| 5 | 11.11.2026 | Lineare Regression | | |
+| 6 | 18.11.2026 | Multiple Lineare Regression | | |
+| 7 | 25.11.2026 | Logistische Regression | | |
+| 8 | 02.12.2026 | Logistische Regression | | |
+| 9 | 09.12.2026 | Gemischtes Modell | | |
+| 10 | 16.12.2026 | Gemischtes Modell  | | |
+| 11 | 13.01.2027 | Inferentielle Statistik | | |
+| 12 | 20.01.2027 | Inferentielle Statistik | | |
+| 13 | 27.01.2027 | Inferentielle Statistik | | |
+| 14 | 03.02.2027 | Outlook | | |
+
+# Lektüre
+
+
+
+# Referenzen

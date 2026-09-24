@@ -1,0 +1,69 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Arbeitsblatt 1"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+# Ziel
+
+Dieses Arbeitsblatt leitet euch durch die Installation von *R*, *RStudio* und diversen *Packages* durch und bereitet euch auf die zweite Woche vor, in der wir R besser kennenlernen werden.
+
+# R und RStudio 
+
+Was ist [R](https://www.r-project.org/)?
+
+- R ist eine Programmiersprache deren Fokus auf der quantitativen Datenberechnungen, Statistik und Datenvisualisierung liegt.
+    - Programmiersprache: "Eine Programmiersprache ist eine formale Sprache zur Formulierung von Datenstrukturen und Algorithmen, d. h. von Rechenvorschriften, die von einem Computer ausgeführt werden können." (Definition von Wikipedia, Stichwort "Programmiersprache", Abruf: 24.09.2026)
+    - andere Programmiersprachen sind z.B. Python, C und C++, Java oder Julia
+    - jede Programmiersprache hat eine eigene Syntax, d.h. Regeln wie Texte und Symbole zusammengesetzt werden werden, die dann wiederum von einem "Compiler" oder "Intepreter" in eine Form umgesetzt wird, die von einem Computer gelesen werden kann.
+- Wie die andere aktuelle Programmiersprachen und Programme wird R aktiv weiterentwickelt. Deshalb lohnt es sich ab und zu die Version zu aktualisieren.
+
+Was ist [RStudio](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads)?
+
+- eine sogenannte "IDE" (integrierte Entwicklungsumgebung), eine Benutzeroberfläche um *R*-code zu schreiben und auszuführen
+- Ist gratis und benutzerfreundlich
+- Die Installation von RStudio sollte ebenfalls regelmäßig aktualisiert werden.
+
+Achtung: R und RStudio können nur auf Computer installiert werden. Eine Installation auf Tablets oder Handys ist nicht möglich. 
+
+# Installation
+
+## Schritt 1: R installieren
+
+1. Gehe auf die [offizielle R-Webseite](https://cran.r-project.org/)
+2. Wähle dein Betriebssystem (OS) aus:
+    * Windows: Klicke auf "Download R for Windows" -> "base" -> "Download R x.x.x for Windows"
+    * macOS: Klicke auf "Download R for macOS" -> wähle die aktuelleste .pkg-Datei
+    * Linux: Befolge die Anleitungen deiner Linux-Distribution
+3. Lade R runter und führe die Installation aus
+4. Normalerweise kannst du einfach die *Default-Settings* während der Installation auswählen
+
+## Schritt 2: RStudio installieren
+
+1. Gehe auf die [RStudio-Seite](https://posit.co/download/rstudio-desktop/)
+2. Gehe zu "RStudio Desktop (Open Source License)"
+3. Wähle dein Betriebssystem (OS) aus und lade das Installationsprogramm runter
+4. Führe die Installation aus
+
+## Schritt 3: Starte RStudio
+
+- Öffne RStudio in deinen Programmen oder deinem Start-Menü
+- Es sollte nun automatisch die R-Installation erkennen. Falls du wissen willst, welche Version du runtergeladen hast oder momentan benutzst, kannst du dies *version* in die Konsole in RStudio eingeben und dann *Enter* drücken
+- Du bist nun bereit loszulegen!
+
+Randnotiz: Wir verwenden nur *RStudio*, R müssen wir nie öffnen. 
+
+## Schritt 4: Pakete
+
+Nun installieren wir das Paket (*Libraries*, *Packages*), welches wir zu Beginn dieses Kurses verwenden werden. 
+
+- Um Pakete zu installieren, verwenden wir den Befehl "install.packages('PAKET_NAME')"
+- Führe den Befehl install.packages('tidyverse') in der Konsole in RStudio aus. Das Runterladen und die Installation wird nun einige Sekunden oder Minuten dauern.
+- Sobald kein neuer Text in der Konsole auftaucht, sollte die Installation beendet sein. Um zu schauen, ob die Installation erfolgreich war, tippe *library(tidyverse)*, um das Paket zu laden. "Package not found" als Reaktion darauf bedeutet das die Installation nicht erfolgreich war. In diesem Falle, probiere es erneut und stelle sicher, dass du mit dem Internet verbunden bist. 
+
+

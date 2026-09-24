@@ -1,0 +1,174 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Sitzung 1: Einführung"
+date: "14. Oktober 2026"
+author: "Eva Scheel"
+institute: eva.scheel-huber@uni-koeln.de
+date-format: "DD. MM. YYYY"
+format:
+  revealjs: 
+    slide-number: true
+    theme: slides_theme.scss
+editor: source
+# bibliography: references.bib
+---
+
+## Übersicht
+
+-   Vorstellungsrunde
+-   Informationen zum Kurs
+-   Übersicht und Leistungsnachweise
+-   Einführung ins Thema
+
+## Vorstellungsrunde
+
+-   Name (bzw. wie Du angesprochen werden willst)
+-   Studiengang
+-   Grund für die Wahl des Kurses
+
+## Allgemeine Informationen
+
+-   Mittwoch, 14:00-15:30, Seminarraum links
+-   Keine Sprechstunde, kontaktieren Sie mich per Email
+-   Folien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch
+-   Seminar im AM1:
+    -   Kontaktzeit: 30h
+    -   Selbststudium: 60h
+- nimmt euren Laptop zu jeder Sitzung mit
+
+## Semesterplan (vorläufig)
+
+:::: r-fit-text
+
+| Sitzung | Datum | Thema |
+|---------------|---------------|---------------|
+| 1 | 14.10.2026 | Einführung |
+| 2 | 21.10.2026 | Übersicht zu R |
+| 3 | 28.10.2026 | Deskriptive Statistik I |
+| 4 | 04.11.2026 | Deskriptive Statistik II: Visualisierung |
+| 5 | 11.11.2026 | Lineare Regression |
+| 6 | 18.11.2026 | Multiple Lineare Regression |
+| 7 | 25.11.2026 | Logistische Regression |
+| 8 | 02.12.2026 | Logistische Regression |
+| 9 | 09.12.2026 | Gemischtes Modell | 
+| 10 | 16.12.2026 | Gemischtes Modell  |
+| 11 | 13.01.2027 | Inferenzstatistik | 
+| 12 | 20.01.2027 | Inferenzstatistik |
+| 13 | 27.01.2027 | Inferenzstatistik |
+| 14 | 03.02.2027 | Outlook |
+
+::::
+
+
+## Leistungsnachweise
+
+- wöchentliche Hausaufgaben (8/11 sind für die *aktive Teilnahme* obligatorisch)
+  - alleine oder zu zweit
+  - Abgabe: Dienstag vor der jeweiligen Sitzung um 24:00  
+- kleine Projektarbeit 
+  - alleine oder zu zweit
+  - Besprechung in Sitzung 6 oder 7 
+  - Abgabe vor Sitzung 12 (19.01.2027 um Mitternacht)
+  - gegenseitiges Vorstellen der Arbeiten: in den letzten drei Sitzungen 
+
+## Was ich von Ihnen erwarte
+
+**allgemein**
+
+
+::: incremental
+-   respektvollen Umgang, es ist mir wichtig, dass sich alle wohl fühlen
+-   Unterschiede und Diversität werden als Gewinn und nicht als Nachteil betrachtet
+-   Fragen sind wertvoll (d.h. es gibt keine dummen Fragen)
+-   Rückmeldungen, Ideen und Anregungen eurerseits sind erwünscht
+:::
+
+
+## Was ich von Ihnen erwarte
+
+Formeln zu lernen?
+
+$$
+f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\frac{t^2}{\nu})^{-(\nu + 1 )/2}
+$$
+
+
+## Was ich von Ihnen erwarte
+
+Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung
+
+&rarr; Wir lernen auch was wichtig ist zu verstehen und was weniger wichtig ist. 
+
+**wichtig**
+
+:::: r-fit-text
+::: incremental
+- nicht entmutigen lassen und fragen, üben, fragen, üben!
+  - &rarr; Hausaufgaben machen
+- Die einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig. 
+- Ebenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden
+:::
+::::
+
+## Was erwartet ihr?
+
+Noch weitere Punkte eurerseits? 
+
+## Wie lernen wir?
+
+
+Alternativen zu ChatGPT etc.
+
+- StackOverflow
+- Dokumentationen
+- Online-Tutorials
+- Lektüren
+- Suchmachschine (und nicht deren KI-Gedöns)
+
+- Eure Kommilitoninnen
+- oder mich!
+
+## Quantitative Linguistik: Wieso?
+
+- nicht Bauchgefühl, aber quantifizieren von Ereignissen
+- Möglichkeit Phänomene zu untersuchen die wir nicht (qualitativ) ergreifen können aufgrund der Datenmenge
+
+
+::: {.notes}
+
+**in class**: Was für unterschiedliche quantitative Daten gibt es in der Linguistik?
+:::
+
+
+## Quantitative Linguistik
+
+Was für unterschiedliche quantitative Daten gibt es in der Linguistik?
+
+- nominal
+- ordinal
+- intervall
+- Verhältnis
+
+
+
+
+## Statistik: Wieso?
+
+- numerisches Erfassen von Phänonem -> Modell
+- Vorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben
+- Hypothesen testen
+
+
+
+## Statistik
+
+*Deskriptive Statistik*:
+
+- Beschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken
+- Beispiel: 
+
+*Inferenzstatistik*:
+
+- auf Basis einer Stichprobe Aussagen über eine Population treffen
+-  
+- Beispiel:

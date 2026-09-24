@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+  navbar:
+    right: 
+      - index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: false
