@@ -122,7 +122,7 @@ Um ein Objekt einer *Variablen* zuzuweisen, benutzen wir `<-`:
 koelsches_grundgesetz_2 <- "Et kütt wie et kütt"
 ```
 
-Was für ein Typ hat die Variable `koelsches_grundgesetz_2`?
+Was für ein Typ ist die Variable `koelsches_grundgesetz_2`?
 
 ---------
 
@@ -201,6 +201,15 @@ Mit **#** bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklär
 
 ### Rprojects
 
+- Alle Dateien (Skripte, Datensätze, gespeicherte Graphiken, etc.), die mit einem Projekt verbunden sind, werden normalerweise im gleichen Ordner gespeichert
+- RStudio Projekte sind eine integrierte Hilfe, um Projekte zu verwalten
+  - ein Ordner mit einer assozierten *.Rproj*-Datei
+- Wieso verwenden wir RStudio Projekte?
+  - der Projektordner ist als *working directory* eingestellt -> wir können lokale Pfade benutzen (Unterschied zwischen *absoluten* und *relativen* Pfaden)
+    - benutze `getwd()` um den aktuellen *working directory* zu sehen
+  - alle Dateien bleiben zusammen
+
+[Wie man ein neues Projekt erstellt](https://docs.posit.co/ide/user/ide/guide/code/projects.html)
 
 
 ------------
@@ -211,3 +220,22 @@ Mit **#** bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklär
 1. Datensatz und Skript runterladen (!TODO! ADD QR CODE)
 2. Projekt erstellen
 3. Skript öffnen
+
+-----------------
+
+### Rbase 
+
+```{r}
+#| echo: true 
+
+nettle_data <- read.csv(file = "nettle_1999_climate.csv", sep=",")
+
+```
+
+-----------------
+
+## Letzte Bemerkungen
+
+- in R gibt es unzählige Wege, um ans Ziel zu kommen 
+- 
+- use what you know, if you don't know something, learn
