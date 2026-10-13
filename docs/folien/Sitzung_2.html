@@ -321,7 +321,7 @@ Eva Scheel
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>koelsches_grundgesetz_2 <span class="ot">&lt;-</span> <span class="st">"Et kütt wie et kütt"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Was für ein Typ hat die Variable <code>koelsches_grundgesetz_2</code>?</p>
+<p>Was für ein Typ ist die Variable <code>koelsches_grundgesetz_2</code>?</p>
 </section>
 <section class="slide level2">
 
@@ -334,10 +334,9 @@ Eva Scheel
 </div>
 <p>Aber das folgende Kommando spuckt einen Fehler aus, da Variabelnamen Groß-/Kleinschreibung-unterscheidend (“case-sensitive”) sind.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>Koelsches_Grundgesetz_2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'Koelsches_Grundgesetz_2' not found</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>koelsches_grundgesetz_2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Et kütt wie et kütt"</code></pre>
 </div>
 </div>
 <p>Siehe <a href="https://www.geeksforgeeks.org/r-language/r-variables/">hier</a> für mehr Regeln über die Benennung von Variablen.</p>
@@ -403,6 +402,22 @@ Using the first match ...</code></pre>
 <section class="slide level2">
 
 <h3 id="rprojects">Rprojects</h3>
+<ul>
+<li>Alle Dateien (Skripte, Datensätze, gespeicherte Graphiken, etc.), die mit einem Projekt verbunden sind, werden normalerweise im gleichen Ordner gespeichert</li>
+<li>RStudio Projekte sind eine integrierte Hilfe, um Projekte zu verwalten
+<ul>
+<li>ein Ordner mit einer assozierten <em>.Rproj</em>-Datei</li>
+</ul></li>
+<li>Wieso verwenden wir RStudio Projekte?
+<ul>
+<li>der Projektordner ist als <em>working directory</em> eingestellt -&gt; wir können lokale Pfade benutzen (Unterschied zwischen <em>absoluten</em> und <em>relativen</em> Pfaden)
+<ul>
+<li>benutze <code>getwd()</code> um den aktuellen <em>working directory</em> zu sehen</li>
+</ul></li>
+<li>alle Dateien bleiben zusammen</li>
+</ul></li>
+</ul>
+<p><a href="https://docs.posit.co/ide/user/ide/guide/code/projects.html">Wie man ein neues Projekt erstellt</a></p>
 </section>
 <section id="daten-und-datenmanipulation" class="slide level2">
 <h2>Daten und Datenmanipulation</h2>
@@ -411,6 +426,21 @@ Using the first match ...</code></pre>
 <li>Projekt erstellen</li>
 <li>Skript öffnen</li>
 </ol>
+</section>
+<section class="slide level2">
+
+<h3 id="rbase">Rbase</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>nettle_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../nettle_1999_climate.csv"</span>, <span class="at">sep=</span><span class="st">","</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="letzte-bemerkungen" class="slide level2">
+<h2>Letzte Bemerkungen</h2>
+<ul>
+<li>in R gibt es unzählige Wege, um ans Ziel zu kommen</li>
+<li></li>
+<li>use what you know, if you don’t know something, learn</li>
+</ul>
 
 
 </section>

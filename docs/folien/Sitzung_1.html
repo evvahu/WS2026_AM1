@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Eva Scheel">
-  <title>WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik</title>
+  <title>WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik – WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,7 +31,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-45f8492ef4b32657b8b10642d1793f44.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -130,7 +149,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik</h1>
+  <h1 class="title">WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik</h1>
   <p class="subtitle">Sitzung 1: Einführung</p>
 
 <div class="quarto-title-authors">
@@ -144,7 +163,7 @@ Eva Scheel
     </div>
 </div>
 
-  <p class="date">Invalid Date</p>
+  <p class="date">14. 10. 2026</p>
 </section>
 <section id="übersicht" class="slide level2">
 <h2>Übersicht</h2>
@@ -152,15 +171,16 @@ Eva Scheel
 <li>Vorstellungsrunde</li>
 <li>Informationen zum Kurs</li>
 <li>Übersicht und Leistungsnachweise</li>
-<li>Einführung ins Thema</li>
+<li>Erwartungen</li>
+<li>kurze Einführung ins Thema</li>
 </ul>
 </section>
 <section id="vorstellungsrunde" class="slide level2">
 <h2>Vorstellungsrunde</h2>
 <ul>
 <li>Name (bzw. wie Du angesprochen werden willst)</li>
-<li>Studiengang</li>
-<li>Grund für die Wahl des Kurses</li>
+<li>Erfahrung mit Progammieren und Quantitativer Linguistik</li>
+<li>Was ihr euch vom Kurs erhofft</li>
 </ul>
 </section>
 <section id="allgemeine-informationen" class="slide level2">
@@ -169,116 +189,58 @@ Eva Scheel
 <li>Mittwoch, 14:00-15:30, Seminarraum links</li>
 <li>Keine Sprechstunde, kontaktieren Sie mich per Email</li>
 <li>Folien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch</li>
-<li>Seminar im AM1:
+<li>Seminar im AM1/SM1:
 <ul>
-<li>Kontaktzeit: 30h</li>
-<li>Selbststudium: 60h</li>
+<li>Kontaktzeit: 30/30h</li>
+<li>Selbststudium: 90/60h</li>
 </ul></li>
 <li>nimmt euren Laptop zu jeder Sitzung mit</li>
 </ul>
 </section>
-<section id="semesterplan-vorläufig" class="slide level2">
-<h2>Semesterplan (vorläufig)</h2>
+<section id="organisatorisches" class="slide level2">
+<h2>Organisatorisches</h2>
 <div class="r-fit-text">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Sitzung</th>
-<th>Datum</th>
-<th>Thema</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>14.10.2026</td>
-<td>Einführung</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>21.10.2026</td>
-<td>Übersicht zu R</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>28.10.2026</td>
-<td>Deskriptive Statistik I</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>04.11.2026</td>
-<td>Deskriptive Statistik II: Visualisierung</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>11.11.2026</td>
-<td>Lineare Regression</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>18.11.2026</td>
-<td>Multiple Lineare Regression</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>25.11.2026</td>
-<td>Logistische Regression</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>02.12.2026</td>
-<td>Logistische Regression</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>09.12.2026</td>
-<td>Gemischtes Modell</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>16.12.2026</td>
-<td>Gemischtes Modell</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>13.01.2027</td>
-<td>Inferenzstatistik</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>20.01.2027</td>
-<td>Inferenzstatistik</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td>27.01.2027</td>
-<td>Inferenzstatistik</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>03.02.2027</td>
-<td>Outlook</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Wir verwenden in diesem Kurs <span style="color: #8b093bf6;"><strong>kein Illias</strong></span></li>
+<li>E-Mail-Liste</li>
+<li>Semesterplan, Folien und Arbeitsblätter auf einer öffentlichen Webseite:
+<ul>
+<li>Ihre Namen &amp; Daten werden auf der Seite nie erwähnt</li>
+</ul></li>
+</ul>
 </div>
+</section>
+<section id="lektüre" class="slide level2">
+<h2>Lektüre</h2>
+<ul>
+<li>How to do Linguistics with R <span class="citation" data-cites="levshinaintro">(<a href="#/referenzen" role="doc-biblioref" onclick="">Levshina 2015</a>)</span></li>
+<li>Statistics for Linguists: An Introduction Using R <span class="citation" data-cites="winterbodo">(<a href="#/referenzen" role="doc-biblioref" onclick="">Winter 2020</a>)</span></li>
+</ul>
+<p>beide Bücher sind als Ebook über die Uni-Bib abrufbar</p>
 </section>
 <section id="leistungsnachweise" class="slide level2">
 <h2>Leistungsnachweise</h2>
-<ul>
-<li>wöchentliche Hausaufgaben (8/11 sind für die <em>aktive Teilnahme</em> obligatorisch)
+<ol type="1">
+<li><strong><span style="color: #620d3e;">wöchentliche Hausaufgaben</span></strong></li>
+</ol>
 <ul>
 <li>alleine oder zu zweit</li>
-<li>Abgabe: Dienstag vor der jeweiligen Sitzung um 24:00<br>
-</li>
-</ul></li>
-<li>kleine Projektarbeit
+<li>Abgabe: Dienstag vor der jeweiligen Sitzung bis 24:00</li>
+<li>8/10 sind für die <em>aktive Teilnahme</em> obligatorisch</li>
+<li>Vorstellen/Besprechen der eigenen Lösung: zweimal während dem Semester (zufällig)</li>
+<li>individuelles Feedback auf Anfrage</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ol start="2" type="1">
+<li><strong><span style="color: #620d3e;">kleine Projektarbeit</span></strong></li>
+</ol>
 <ul>
 <li>alleine oder zu zweit</li>
 <li>Besprechung in Sitzung 6 oder 7</li>
 <li>Abgabe vor Sitzung 12 (19.01.2027 um Mitternacht)</li>
 <li>gegenseitiges Vorstellen der Arbeiten: in den letzten drei Sitzungen</li>
-</ul></li>
 </ul>
 </section>
 <section id="was-ich-von-ihnen-erwarte" class="slide level2">
@@ -300,9 +262,7 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 </section>
 <section id="was-ich-von-ihnen-erwarte-2" class="slide level2">
 <h2>Was ich von Ihnen erwarte</h2>
-<p>Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung</p>
-<p>→ Wir lernen auch was wichtig ist zu verstehen und was weniger wichtig ist.</p>
-<p><strong>wichtig</strong></p>
+<p>Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung!</p>
 <div class="r-fit-text">
 <ul>
 <li class="fragment">nicht entmutigen lassen und fragen, üben, fragen, üben!
@@ -314,76 +274,243 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 </ul>
 </div>
 </section>
+<section id="was-ich-von-ihnen-erwarte-3" class="slide level2">
+<h2>Was ich von Ihnen erwarte</h2>
+<p>Lust und Motivation zu Lernen (und möglicherweise Frustrationstoleranz)</p>
+</section>
+<section id="was-ich-von-ihnen-erwarte-4" class="slide level2">
+<h2>Was ich von Ihnen erwarte</h2>
+<p>Lust und Motivation zu Lernen (und möglicherweise Frustrationstoleranz)</p>
+<p>→ <span style="color: #a0025eea;">keine Verwendung</span> von Generativen KI Chatbots (e.g.&nbsp;ChatGPT)</p>
+</section>
+<section id="generative-ki-chatbots" class="slide level2">
+<h2>Generative KI Chatbots</h2>
+<h3 id="lernen">Lernen</h3>
+
+<img data-src="images/taschenrechner.png" class="r-stretch"><ul>
+<li class="fragment">Grundschulkinder lernen zuerst ohne Rechner, um später nachvollziehen zu können, was ein Rechner macht</li>
+<li class="fragment">wichtiger Unterschied zum Rechner: GenKI chatbots sind <em>probabilistisch</em> und nicht <em>deterministisch</em></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>GenKI Chatbots beruhen auf Sprachmodellen (<em>Large Language Models</em>)</li>
+<li>Sprachmodelle: probabilistische Modellierung von Wortsequenzen
+<ul>
+<li>Es war … ?</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>GenKI Chatbots beruhen auf Sprachmodellen (<em>Large Language Models</em>)</li>
+<li>Sprachmodelle: probabilistische Modellierung von Wortsequenzen
+<ul>
+<li><span style="color: #380322ea;">Es war einmal</span></li>
+<li><span style="color: #2302156d;">Es war ein schöner Tag</span></li>
+<li><span style="color: #38042227;">Es war eine Frau</span></li>
+<li>…</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>GenKI Chatbots beruhen auf Sprachmodellen (<em>Large Language Models</em>)</li>
+<li>Sprachmodelle: probabilistische Modellierung von Wortsequenzen <strong>in den Trainingsdaten</strong></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>GenKI Chatbots beruhen auf Sprachmodellen (<em>Large Language Models</em>)</li>
+<li>Sprachmodelle: probabilistische Modellierung von Wortsequenzen <strong>in den Trainingsdaten</strong></li>
+<li>Output von GenKI Chatbots:
+<ul>
+<li>unreproduzierbar</li>
+<li>unzuverlässig (LLMs haben kein Konzept von <em>Wahrheit</em>)</li>
+<li>unzitierbar (Plagiat <span class="citation" data-cites="rooij2022">(<a href="#/referenzen" role="doc-biblioref" onclick="">Rooij 2022</a>)</span>)</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>GenKI Chatbots beruhen auf Sprachmodellen (<em>Large Language Models</em>)</li>
+<li>Sprachmodelle: probabilistische Modellierung von Wortsequenzen <strong>in den Trainingsdaten</strong></li>
+<li>Output von GenKI Chatbots:
+<ul>
+<li>unreproduzierbar</li>
+<li>unzuverlässig (LLMs haben kein Konzept von <em>Wahrheit</em>)</li>
+<li>unzitierbar (Plagiat <span class="citation" data-cites="rooij2022">(<a href="#/referenzen" role="doc-biblioref" onclick="">Rooij 2022</a>)</span>)</li>
+</ul></li>
+<li>(kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch <span class="citation" data-cites="guest2025against">Bender and Hanna (<a href="#/referenzen" role="doc-biblioref" onclick="">2025</a>)</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p>Zurück zum Taschenrechner und dem Lernen:</p>
+<div style="font-size: 80%;color: #740d49cb; ">
+<p>“Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before.” <span class="citation" data-cites="heissrecipe">(<a href="#/referenzen" role="doc-biblioref" onclick="">Heiss, n.d.</a>)</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Zurück zum Taschenrechner und dem Lernen:</p>
+<div style="font-size: 80%;color: #740d49cb; ">
+<p>“Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before.” <span class="citation" data-cites="heissrecipe">(<a href="#/referenzen" role="doc-biblioref" onclick="">Heiss, n.d.</a>)</span></p>
+</div>
+<p>+ beim Lernen ist <strong>der Prozess</strong> relevant und nicht das Produkt!</p>
+</section>
+<section class="slide level2">
+
+<p>Alternativen zu GenKI Chatbots</p>
+<ul>
+<li>Code-Dokumentationen und <a href="https://r-pkgs.org/vignettes.html"><em>Vignettes</em></a></li>
+<li>Online-Tutorials und Blog Posts von anderen Wissenschaftler*innen</li>
+<li>Lehrbücher</li>
+<li>Foren wie <em>Stack Overflow</em></li>
+<li>Menschen (!)
+<ul>
+<li>eure Kommiliton*innen</li>
+<li>oder ich</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p>Weiterführende Lektüre zu GenKI Chatbots:</p>
+<ul>
+<li><a href="https://elenlefoll.github.io/RstatsTextbook/15_AI.html">Chapter 15</a> in <span class="citation" data-cites="lefoll">Le Foll (<a href="#/referenzen" role="doc-biblioref" onclick="">2026</a>)</span></li>
+<li>Themen in <a href="https://evvahu.github.io/CAIL/">Critical AI Literacies</a></li>
+<li><a href="https://thebullshitmachines.com/">The Bullshit Machines</a></li>
+<li><span class="citation" data-cites="dingemanse2024">Dingemanse (<a href="#/referenzen" role="doc-biblioref" onclick="">2024</a>)</span></li>
+</ul>
+</section>
 <section id="was-erwartet-ihr" class="slide level2">
 <h2>Was erwartet ihr?</h2>
-<p>Noch weitere Punkte eurerseits?</p>
-</section>
-<section id="wie-lernen-wir" class="slide level2">
-<h2>Wie lernen wir?</h2>
-<p>Alternativen zu ChatGPT etc.</p>
-<ul>
-<li><p>StackOverflow</p></li>
-<li><p>Dokumentationen</p></li>
-<li><p>Online-Tutorials</p></li>
-<li><p>Lektüren</p></li>
-<li><p>Suchmachschine (und nicht deren KI-Gedöns)</p></li>
-<li><p>Eure Kommilitoninnen</p></li>
-<li><p>oder mich!</p></li>
-</ul>
-</section>
-<section id="quantitative-linguistik-wieso" class="slide level2">
-<h2>Quantitative Linguistik: Wieso?</h2>
-<ul>
-<li>nicht Bauchgefühl, aber quantifizieren von Ereignissen</li>
-<li>Möglichkeit Phänomene zu untersuchen die wir nicht (qualitativ) ergreifen können aufgrund der Datenmenge</li>
-</ul>
-<aside class="notes">
-<p><strong>in class</strong>: Was für unterschiedliche quantitative Daten gibt es in der Linguistik?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<p>Gibt es weitere Punkte eurerseits?</p>
 </section>
 <section id="quantitative-linguistik" class="slide level2">
 <h2>Quantitative Linguistik</h2>
-<p>Was für unterschiedliche quantitative Daten gibt es in der Linguistik?</p>
-<ul>
-<li>nominal</li>
-<li>ordinal</li>
-<li>intervall</li>
-<li>Verhältnis</li>
-</ul>
+<ol type="1">
+<li>Wieso untersuchen wir linguistische Phänomene quantitativ?</li>
+<li>Was ist der Unterschied zwischen Theorie und Empirie?</li>
+<li>Was für unterschiedliche quantiative Daten gibt es?</li>
+</ol>
 </section>
-<section id="statistik-wieso" class="slide level2">
-<h2>Statistik: Wieso?</h2>
+<section class="slide level2">
+
+<h3 id="beispiel-sprachuniversalien">Beispiel: Sprachuniversalien</h3>
+<p>Hypothese: Der Aufbau von Sprachen folgt bestimmten Universalien.</p>
+<p>z.B. Universalie 20 <span class="citation" data-cites="greenberg1963some">(<a href="#/referenzen" role="doc-biblioref" onclick=""><span class="nocase">Greenberg et al.</span> 1963</a>)</span>:</p>
+<p>“When any or all of the items (demonstrative, numeral, and descriptive adjective) precede the noun, they are always found in that order. If they follow, the order is either the same or its exact opposite.”</p>
+</section>
+<section class="slide level2">
+
+<h3 id="beispiel-sprachuniversalien-1">Beispiel: Sprachuniversalien</h3>
+<div style="font-size: 80%; ">
+<p>Universalie 20 <span class="citation" data-cites="greenberg1963some">(<a href="#/referenzen" role="doc-biblioref" onclick=""><span class="nocase">Greenberg et al.</span> 1963</a>)</span> quantitativ untersucht:</p>
+</div>
+
+<img data-src="images/greenberg_u20_cysouw.png" class="quarto-figure quarto-figure-left r-stretch" id="fig-order"><p class="caption">
+Figure&nbsp;1: <span class="citation" data-cites="dryer2006">Dryer (<a href="#/referenzen" role="doc-biblioref" onclick="">2006</a>)</span> in <span class="citation" data-cites="Cysouw2010">Cysouw (<a href="#/referenzen" role="doc-biblioref" onclick="">2010</a>)</span>
+</p><div style="font-size: 80%; ">
+<p>→ die zwei häufigsten Worstellungen sind: <strong>N-A-Num-Dem</strong> und <strong>Dem-Num-A-N</strong></p>
+</div>
+</section>
+<section id="statistik" class="slide level2">
+<h2>Statistik</h2>
 <ul>
-<li>numerisches Erfassen von Phänonem -&gt; Modell</li>
+<li>numerisches Erfassen von einem (linguistischen) Phänonem -&gt; Modell</li>
 <li>Vorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben</li>
 <li>Hypothesen testen</li>
 </ul>
 </section>
-<section id="statistik" class="slide level2">
-<h2>Statistik</h2>
+<section class="slide level2">
+
+<h3 id="beispiel-sprachuniversalien-2">Beispiel: Sprachuniversalien</h3>
+<p>hinsichtlich der Universalie 20 <span class="citation" data-cites="greenberg1963some">(<a href="#/referenzen" role="doc-biblioref" onclick=""><span class="nocase">Greenberg et al.</span> 1963</a>)</span> erlaubt uns die Statistik u.a.:</p>
+<ul>
+<li>das Modellieren der Wahrscheinlichkeit einer bestimmten Wortreihenfolge über alle möglichen Sprachen hinweg (ohne dass Daten von allen Sprachen vorhanden ist)</li>
+<li>das Modellieren von Faktoren, die eine bestimmte Wortreihenfolge voraussagen lassen</li>
+<li>das Auschließen von anderen Faktoren (z.B. areale Phänomene)</li>
+</ul>
+</section>
+<section class="slide level2">
+
 <p><em>Deskriptive Statistik</em>:</p>
 <ul>
 <li>Beschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken</li>
-<li>Beispiel:</li>
+<li>Beispiel: Häufigkeit von unterschiedlichen Worstellungen in der Nominalphrase (siehe <a href="#/fig-order" class="quarto-xref">Figure&nbsp;1</a>)</li>
 </ul>
 <p><em>Inferenzstatistik</em>:</p>
 <ul>
-<li>auf Basis einer Stichprobe Aussagen über eine Population treffen</li>
-<li></li>
-<li>Beispiel:</li>
+<li>auf Basis einer <em>Stichprobe</em> Aussagen über eine <em>Population</em> treffen</li>
+<li>Beispiel: Wahrscheinlichkeit von unterschiedlichen Worstellungen in der Nominalphrase
+<ul>
+<li>Stichprobe: 276 Sprachen in <span class="citation" data-cites="dryer2006">Dryer (<a href="#/referenzen" role="doc-biblioref" onclick="">2006</a>)</span></li>
+<li>Population: “Sprache”, oder alle Sprachen der Welt</li>
+</ul></li>
 </ul>
+</section>
+<section id="nächstes-mal" class="title-slide slide level1 center">
+<h1>Nächstes Mal</h1>
+<ul>
+<li>Hausaufgaben: Arbeitsblatt 0 (R und RStudio installieren)</li>
+<li>Vorbereitung:
+<ul>
+<li>Kapitel 1 in <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span></li>
+<li><a href="https://rladiessydney.org/courses/02-cleanitup-0">“CleanItUp” by RLadies Sydney</a></li>
+<li><a href="https://intro2r.com/">Abschnitte 1-3 in <span class="citation" data-cites="douglasr">Douglas et al. (<span>2026</span>)</span></a></li>
+</ul></li>
+</ul>
+</section>
+
+<section id="referenzen" class="title-slide slide level1 smaller scrollable">
+<h1>Referenzen</h1>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bender2025ai" class="csl-entry" role="listitem">
+Bender, Emily M, and Alex Hanna. 2025. <em>The AI Con: How to Fight Big Tech’s Hype and Create the Future We Want</em>. Random House.
+</div>
+<div id="ref-Cysouw2010" class="csl-entry" role="listitem">
+Cysouw, Michael. 2010. <span>“Dealing with Diversity: Towards an Explanation of NP-Internal Word Order Frequencies.”</span> <em>Linguistic Typology</em> 14 (2-3): 253–86. <a href="https://doi.org/doi:10.1515/lity.2010.010">https://doi.org/doi:10.1515/lity.2010.010</a>.
+</div>
+<div id="ref-dingemanse2024" class="csl-entry" role="listitem">
+Dingemanse, Mark. 2024. <em>Generative AI and Research Integrity</em>. https://doi.org/<a href="https://doi.org/10.31219/osf.io/2c48n">https://doi.org/10.31219/osf.io/2c48n</a>.
+</div>
+<div id="ref-douglasr" class="csl-entry" role="listitem">
+Douglas, Alex, Deon Roos, Francesca Mancini, Ana Couto, and David Lusseau. 2026. <em>An Introduction to r</em>. Unpublished online resources. <a href="https://intro2r.com/">https://intro2r.com/</a>.
+</div>
+<div id="ref-dryer2006" class="csl-entry" role="listitem">
+Dryer, Matthew S. 2006. <em>On Cinque on Greenberg’s Universal 20</em>.
+</div>
+<div id="ref-greenberg1963some" class="csl-entry" role="listitem">
+<span class="nocase">Greenberg, Joseph H et al.</span> 1963. <span>“Some Universals of Grammar with Particular Reference to the Order of Meaningful Elements.”</span> <em>Universals of Language</em> 2 (1): 73–113.
+</div>
+<div id="ref-guest2025against" class="csl-entry" role="listitem">
+<span class="nocase">Guest, Olivia, Marcela Suarez, Barbara Müller, et al.</span> 2025. <em>Against the Uncritical Adoption of’AI’technologies in Academia</em>.
+</div>
+<div id="ref-heissrecipe" class="csl-entry" role="listitem">
+Heiss, Andrew. n.d. <span>“Session 1 Tips and FAQs.”</span> <a href="https://datavizs24.classes.andrewheiss.com/news/2024-06-11_faqs_session-01.html#can-we-use-chatgpt-can-you-even-tell-if-we-do">https://datavizs24.classes.andrewheiss.com/news/2024-06-11_faqs_session-01.html#can-we-use-chatgpt-can-you-even-tell-if-we-do</a>.
+</div>
+<div id="ref-lefoll" class="csl-entry" role="listitem">
+Le Foll, Elen. 2026. <em>Data Analysis for the Language Sciences: A Very Gentle Introduction to Statistics and Data Visualisation in <span>R</span></em>. Open Educational Resource. <a href="https://elenlefoll.github.io/RstatsTextbook/">https://elenlefoll.github.io/RstatsTextbook/</a>.
+</div>
+<div id="ref-levshinaintro" class="csl-entry" role="listitem">
+Levshina, Natalia. 2015. <em>How to Do Linguistics with r</em>. John Benjamins Publishing Company.
+</div>
+<div id="ref-rooij2022" class="csl-entry" role="listitem">
+Rooij, Iris van. 2022. <em>Against Automated Plagiarism.</em> https://doi.org/<a href="https://doi.org/10.5281/zenodo.15866638">https://doi.org/10.5281/zenodo.15866638</a>.
+</div>
+<div id="ref-winterbodo" class="csl-entry" role="listitem">
+Winter, Bodo. 2020. <em>Statistics for Linguists: An Introduction Using r</em>. New York; London: Routledge.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

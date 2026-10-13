@@ -1,7 +1,7 @@
 ---
-title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+title: "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik"
 subtitle: "Sitzung 1: Einführung"
-date: "14. Oktober 2026"
+date: "14. October 2026"
 author: "Eva Scheel"
 institute: eva.scheel-huber@uni-koeln.de
 date-format: "DD. MM. YYYY"
@@ -10,7 +10,7 @@ format:
     slide-number: true
     theme: slides_theme.scss
 editor: source
-# bibliography: references.bib
+bibliography: ../references.bib
 ---
 
 ## Übersicht
@@ -18,58 +18,61 @@ editor: source
 -   Vorstellungsrunde
 -   Informationen zum Kurs
 -   Übersicht und Leistungsnachweise
--   Einführung ins Thema
+-   Erwartungen
+-   kurze Einführung ins Thema
 
 ## Vorstellungsrunde
 
 -   Name (bzw. wie Du angesprochen werden willst)
--   Studiengang
--   Grund für die Wahl des Kurses
+-   Erfahrung mit Progammieren und Quantitativer Linguistik
+-   Was ihr euch vom Kurs erhofft
 
 ## Allgemeine Informationen
 
 -   Mittwoch, 14:00-15:30, Seminarraum links
 -   Keine Sprechstunde, kontaktieren Sie mich per Email
 -   Folien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch
--   Seminar im AM1:
-    -   Kontaktzeit: 30h
-    -   Selbststudium: 60h
+-   Seminar im AM1/SM1:
+    -   Kontaktzeit: 30/30h
+    -   Selbststudium: 90/60h
 - nimmt euren Laptop zu jeder Sitzung mit
 
-## Semesterplan (vorläufig)
+## Organisatorisches
 
-:::: r-fit-text
+:::{.r-fit-text}
 
-| Sitzung | Datum | Thema |
-|---------------|---------------|---------------|
-| 1 | 14.10.2026 | Einführung |
-| 2 | 21.10.2026 | Übersicht zu R |
-| 3 | 28.10.2026 | Deskriptive Statistik I |
-| 4 | 04.11.2026 | Deskriptive Statistik II: Visualisierung |
-| 5 | 11.11.2026 | Lineare Regression |
-| 6 | 18.11.2026 | Multiple Lineare Regression |
-| 7 | 25.11.2026 | Logistische Regression |
-| 8 | 02.12.2026 | Logistische Regression |
-| 9 | 09.12.2026 | Gemischtes Modell | 
-| 10 | 16.12.2026 | Gemischtes Modell  |
-| 11 | 13.01.2027 | Inferenzstatistik | 
-| 12 | 20.01.2027 | Inferenzstatistik |
-| 13 | 27.01.2027 | Inferenzstatistik |
-| 14 | 03.02.2027 | Outlook |
+- Wir verwenden in diesem Kurs [**kein Illias**]{style="color: #8b093bf6;"}
+- E-Mail-Liste
+- Semesterplan, Folien und Arbeitsblätter auf einer öffentlichen Webseite: 
+    - Ihre Namen & Daten werden auf der Seite nie erwähnt
 
-::::
+:::
 
+## Lektüre
+
+- How to do Linguistics with R [@levshinaintro]
+- Statistics for Linguists: An Introduction Using R [@winterbodo]
+
+beide Bücher sind als Ebook über die Uni-Bib abrufbar
 
 ## Leistungsnachweise
 
-- wöchentliche Hausaufgaben (8/11 sind für die *aktive Teilnahme* obligatorisch)
-  - alleine oder zu zweit
-  - Abgabe: Dienstag vor der jeweiligen Sitzung um 24:00  
-- kleine Projektarbeit 
-  - alleine oder zu zweit
-  - Besprechung in Sitzung 6 oder 7 
-  - Abgabe vor Sitzung 12 (19.01.2027 um Mitternacht)
-  - gegenseitiges Vorstellen der Arbeiten: in den letzten drei Sitzungen 
+1. **[wöchentliche Hausaufgaben]{style="color: #620d3e;"}**
+
+- alleine oder zu zweit
+- Abgabe: Dienstag vor der jeweiligen Sitzung bis 24:00
+- 8/10 sind für die *aktive Teilnahme* obligatorisch
+- Vorstellen/Besprechen der eigenen Lösung: zweimal während dem Semester (zufällig)
+- individuelles Feedback auf Anfrage
+
+--------------------
+
+2. **[kleine Projektarbeit]{style="color: #620d3e;"}**
+
+- alleine oder zu zweit
+- Besprechung in Sitzung 6 oder 7 
+- Abgabe vor Sitzung 12 (19.01.2027 um Mitternacht)
+- gegenseitiges Vorstellen der Arbeiten: in den letzten drei Sitzungen 
 
 ## Was ich von Ihnen erwarte
 
@@ -95,11 +98,8 @@ $$
 
 ## Was ich von Ihnen erwarte
 
-Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung
+Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung!
 
-&rarr; Wir lernen auch was wichtig ist zu verstehen und was weniger wichtig ist. 
-
-**wichtig**
 
 :::: r-fit-text
 ::: incremental
@@ -110,65 +110,201 @@ Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung
 :::
 ::::
 
+
+## Was ich von Ihnen erwarte
+
+Lust und Motivation zu Lernen
+(und möglicherweise Frustrationstoleranz)
+
+
+## Was ich von Ihnen erwarte
+
+Lust und Motivation zu Lernen
+(und möglicherweise Frustrationstoleranz)
+
+&rarr; [keine Verwendung]{style="color: #a0025eea;"} von Generativen KI Chatbots (e.g. ChatGPT)
+
+
+
+## Generative KI Chatbots
+
+### Lernen
+
+![](images/taschenrechner.png)
+
+
+::: incremental
+- Grundschulkinder lernen zuerst ohne Rechner, um später nachvollziehen zu können, was ein Rechner macht
+- wichtiger Unterschied zum Rechner: GenKI chatbots sind *probabilistisch* und nicht *deterministisch*
+:::
+
+---------------------------
+
+- GenKI Chatbots beruhen auf Sprachmodellen (*Large Language Models*)
+- Sprachmodelle: probabilistische Modellierung von Wortsequenzen
+  - Es war ... ?
+
+
+---------------------------
+
+
+- GenKI Chatbots beruhen auf Sprachmodellen (*Large Language Models*)
+- Sprachmodelle: probabilistische Modellierung von Wortsequenzen
+  - [Es war einmal]{style="color: #380322ea;"}
+  - [Es war ein schöner Tag]{style="color: #2302156d;"}
+  - [Es war eine Frau]{style="color: #38042227;"}
+  - ...
+
+---------------------------
+
+- GenKI Chatbots beruhen auf Sprachmodellen (*Large Language Models*)
+- Sprachmodelle: probabilistische Modellierung von Wortsequenzen **in den Trainingsdaten**
+
+----------
+
+- GenKI Chatbots beruhen auf Sprachmodellen (*Large Language Models*)
+- Sprachmodelle: probabilistische Modellierung von Wortsequenzen **in den Trainingsdaten**
+- Output von GenKI Chatbots:
+  - unreproduzierbar
+  - unzuverlässig (LLMs haben kein Konzept von *Wahrheit*)
+  - unzitierbar (Plagiat [@rooij2022])
+
+---------------------------
+
+- GenKI Chatbots beruhen auf Sprachmodellen (*Large Language Models*)
+- Sprachmodelle: probabilistische Modellierung von Wortsequenzen **in den Trainingsdaten**
+- Output von GenKI Chatbots:
+  - unreproduzierbar
+  - unzuverlässig (LLMs haben kein Konzept von *Wahrheit*)
+  - unzitierbar (Plagiat [@rooij2022])
+- (kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch [@guest2025against, @bender2025ai]
+
+---------------------------
+
+Zurück zum Taschenrechner und dem Lernen:
+
+
+::: {style="font-size: 80%;color: #740d49cb; "}
+"Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before." [@heissrecipe]
+::: 
+
+---------------------------
+
+Zurück zum Taschenrechner und dem Lernen:
+
+
+::: {style="font-size: 80%;color: #740d49cb; "}
+"Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before." [@heissrecipe]
+::: 
+
+
+\+ beim Lernen ist **der Prozess** relevant und nicht das Produkt!
+
+
+---------------------------
+
+
+Alternativen zu GenKI Chatbots
+
+- Code-Dokumentationen und [*Vignettes*](https://r-pkgs.org/vignettes.html)
+- Online-Tutorials und Blog Posts von anderen Wissenschaftler\*innen
+- Lehrbücher
+- Foren wie *Stack Overflow*
+- Menschen (!)
+  - eure Kommiliton\*innen
+  - oder ich
+
+---------------------------
+
+Weiterführende Lektüre zu GenKI Chatbots:
+
+- [Chapter 15](https://elenlefoll.github.io/RstatsTextbook/15_AI.html) in @lefoll
+- Themen in [Critical AI Literacies](https://evvahu.github.io/CAIL/)
+- [The Bullshit Machines](https://thebullshitmachines.com/)
+- @dingemanse2024
+
 ## Was erwartet ihr?
 
-Noch weitere Punkte eurerseits? 
+Gibt es weitere Punkte eurerseits? 
 
-## Wie lernen wir?
-
-
-Alternativen zu ChatGPT etc.
-
-- StackOverflow
-- Dokumentationen
-- Online-Tutorials
-- Lektüren
-- Suchmachschine (und nicht deren KI-Gedöns)
-
-- Eure Kommilitoninnen
-- oder mich!
-
-## Quantitative Linguistik: Wieso?
-
-- nicht Bauchgefühl, aber quantifizieren von Ereignissen
-- Möglichkeit Phänomene zu untersuchen die wir nicht (qualitativ) ergreifen können aufgrund der Datenmenge
-
-
-::: {.notes}
-
-**in class**: Was für unterschiedliche quantitative Daten gibt es in der Linguistik?
-:::
 
 
 ## Quantitative Linguistik
 
-Was für unterschiedliche quantitative Daten gibt es in der Linguistik?
+1. Wieso untersuchen wir linguistische Phänomene quantitativ? 
+2. Was ist der Unterschied zwischen Theorie und Empirie?
+3. Was für unterschiedliche quantiative Daten gibt es?
 
-- nominal
-- ordinal
-- intervall
-- Verhältnis
+---------
 
+### Beispiel: Sprachuniversalien 
 
+Hypothese: Der Aufbau von Sprachen folgt bestimmten Universalien. 
 
+z.B. Universalie 20 [@greenberg1963some]: 
 
-## Statistik: Wieso?
+"When any or all of the items (demonstrative, numeral, and descriptive adjective) precede the noun, they are always found in that order. If they follow, the order is either the same or its exact opposite."
 
-- numerisches Erfassen von Phänonem -> Modell
+---------
+
+### Beispiel: Sprachuniversalien 
+
+::: {style="font-size: 80%; "}
+
+Universalie 20 [@greenberg1963some] quantitativ untersucht:
+
+:::
+
+![@dryer2006 in @Cysouw2010](images/greenberg_u20_cysouw.png){#fig-order fig-align="left"}
+
+::: {style="font-size: 80%; "}
+
+&rarr; die zwei häufigsten Worstellungen sind: **N-A-Num-Dem** und **Dem-Num-A-N**
+
+:::
+## Statistik
+
+- numerisches Erfassen von einem (linguistischen) Phänonem -> Modell
 - Vorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben
 - Hypothesen testen
 
 
+-----------------------
 
-## Statistik
+### Beispiel: Sprachuniversalien 
+
+
+
+hinsichtlich der Universalie 20 [@greenberg1963some] erlaubt uns die Statistik u.a.:
+
+- das Modellieren der Wahrscheinlichkeit einer bestimmten Wortreihenfolge über alle möglichen Sprachen hinweg (ohne dass Daten von allen Sprachen vorhanden ist)
+- das Modellieren von Faktoren, die eine bestimmte Wortreihenfolge voraussagen lassen
+- das Auschließen von anderen Faktoren (z.B. areale Phänomene)
+
+
+
+-----------------------
+
 
 *Deskriptive Statistik*:
 
 - Beschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken
-- Beispiel: 
+- Beispiel: Häufigkeit von unterschiedlichen Worstellungen in der Nominalphrase (siehe @fig-order)
 
 *Inferenzstatistik*:
 
-- auf Basis einer Stichprobe Aussagen über eine Population treffen
--  
-- Beispiel:
+- auf Basis einer *Stichprobe* Aussagen über eine *Population* treffen
+- Beispiel: Wahrscheinlichkeit von unterschiedlichen Worstellungen in der Nominalphrase
+  - Stichprobe: 276 Sprachen in @dryer2006
+  - Population: "Sprache", oder alle Sprachen der Welt
+
+# Nächstes Mal
+
+- Hausaufgaben: Arbeitsblatt 0 (R und RStudio installieren)
+- Vorbereitung:
+  - Kapitel 1 in @winterbodo
+  - ["CleanItUp" by RLadies Sydney](https://rladiessydney.org/courses/02-cleanitup-0)
+  - [Abschnitte 1-3 in @douglasr](https://intro2r.com/)
+
+
+# Referenzen

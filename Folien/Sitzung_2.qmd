@@ -138,7 +138,7 @@ Aber das folgende Kommando spuckt einen Fehler aus, da Variabelnamen Groß-/Klei
 ```{r}
 #| echo: true 
 
-Koelsches_Grundgesetz_2
+koelsches_grundgesetz_2
 ```
 
 Siehe [hier](https://www.geeksforgeeks.org/r-language/r-variables/) für mehr Regeln über die Benennung von Variablen. 
@@ -228,7 +228,7 @@ Mit **#** bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklär
 ```{r}
 #| echo: true 
 
-nettle_data <- read.csv(file = "nettle_1999_climate.csv", sep=",")
+nettle_data <- read.csv(file = "../nettle_1999_climate.csv", sep=",")
 
 ```
 
