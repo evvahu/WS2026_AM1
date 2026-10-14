@@ -1,0 +1,81 @@
+/*-- scss:defaults --*/
+
+
+
+$presentation-font-size-root: 30px;
+// fonts
+$font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+
+// colors
+$body-bg: #f0f1eb !default;
+$body-color: #000 !default;
+$link-color: #0a7961 !default;
+$selection-bg: #26351c !default;
+
+// headings
+$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-heading-color: #44041dda !default;
+
+
+#title-slide> .title {
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif;
+    color:  #44041dda;
+    font-size: xxx-large;
+}
+
+#title-slide> .subtitle {
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif;
+    color:  #810a38da;
+    font-size: xx-large;
+}
+
+#title-slide> .quarto-title-authors {
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif;
+    color:  #9e0841c9;
+    font-size: large;
+}
+
+#title-slide> .date {
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif;
+    color:  #1e0e14a3;
+    font-size: large;
+}
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+.highlight {
+   color:  #de095a;
+   font-weight: bolder;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size:x-large;
+  color: #810a38da
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size:larger;
+  color: #9e0841c9;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size:large;
+  color: #9e0841c9
+}
