@@ -26,7 +26,7 @@ Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertr
 
 | Sitzung | Datum | Thema | Lektüre | Aufgaben |
 |---------------|---------------|---------------|---------------|---------------|
-| 1 | 14.10.2026 | [Einführung](Folien/Sitzung_1.html) | | - |
+| 1 | 14.10.2026 | [Einführung](docs/Folien/Sitzung_1.html) | | - |
 | 2 | 21.10.2026 | Übersicht zu R | Kapitel 1 in @winterbodo;  ["CleanItUp" by RLadies Sydney](https://rladiessydney.org/courses/02-cleanitup-0); [Abschnitte 1-3 in @douglasr](https://intro2r.com/)| AB 0 |
 | 3 | 28.10.2026 | KEINE SITZUNG | | |
 | 4 | 04.11.2026 | Deskriptive Statistik I   | | AB 1|
