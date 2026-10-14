@@ -51,7 +51,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-45f8492ef4b32657b8b10642d1793f44.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-057af68d7462996f8e30214f627e03a1.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -148,7 +148,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik</h1>
   <p class="subtitle">Sitzung 1: Einführung</p>
 
@@ -220,11 +220,10 @@ Eva Scheel
 </section>
 <section id="leistungsnachweise" class="slide level2">
 <h2>Leistungsnachweise</h2>
-<ol type="1">
-<li><strong><span style="color: #620d3e;">wöchentliche Hausaufgaben</span></strong></li>
-</ol>
+<h3 id="wöchentliche-hausaufgaben">1) <strong><span style="color: #620d3e;">wöchentliche Hausaufgaben</span></strong></h3>
 <ul>
 <li>alleine oder zu zweit</li>
+<li>spätestens bis 24:00 nach der Sitzung verfügbar</li>
 <li>Abgabe: Dienstag vor der jeweiligen Sitzung bis 24:00</li>
 <li>8/10 sind für die <em>aktive Teilnahme</em> obligatorisch</li>
 <li>Vorstellen/Besprechen der eigenen Lösung: zweimal während dem Semester (zufällig)</li>
@@ -233,9 +232,7 @@ Eva Scheel
 </section>
 <section class="slide level2">
 
-<ol start="2" type="1">
-<li><strong><span style="color: #620d3e;">kleine Projektarbeit</span></strong></li>
-</ol>
+<h3 id="kleine-projektarbeit">2) <strong><span style="color: #620d3e;">kleine Projektarbeit</span></strong></h3>
 <ul>
 <li>alleine oder zu zweit</li>
 <li>Besprechung in Sitzung 6 oder 7</li>
@@ -245,7 +242,7 @@ Eva Scheel
 </section>
 <section id="was-ich-von-ihnen-erwarte" class="slide level2">
 <h2>Was ich von Ihnen erwarte</h2>
-<p><strong>allgemein</strong></p>
+<h3 id="allgemein">Allgemein</h3>
 <ul>
 <li class="fragment">respektvollen Umgang, es ist mir wichtig, dass sich alle wohl fühlen</li>
 <li class="fragment">Unterschiede und Diversität werden als Gewinn und nicht als Nachteil betrachtet</li>
@@ -262,8 +259,7 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 </section>
 <section id="was-ich-von-ihnen-erwarte-2" class="slide level2">
 <h2>Was ich von Ihnen erwarte</h2>
-<p>Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung!</p>
-<div class="r-fit-text">
+<p>Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung <span class="highlight">!!!</span></p>
 <ul>
 <li class="fragment">nicht entmutigen lassen und fragen, üben, fragen, üben!
 <ul>
@@ -272,16 +268,15 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 <li class="fragment">Die einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig.</li>
 <li class="fragment">Ebenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden</li>
 </ul>
-</div>
 </section>
 <section id="was-ich-von-ihnen-erwarte-3" class="slide level2">
 <h2>Was ich von Ihnen erwarte</h2>
-<p>Lust und Motivation zu Lernen (und möglicherweise Frustrationstoleranz)</p>
+<p>Lust und Motivation zum Lernen (und möglicherweise Frustrationstoleranz)</p>
 </section>
 <section id="was-ich-von-ihnen-erwarte-4" class="slide level2">
 <h2>Was ich von Ihnen erwarte</h2>
-<p>Lust und Motivation zu Lernen (und möglicherweise Frustrationstoleranz)</p>
-<p>→ <span style="color: #a0025eea;">keine Verwendung</span> von Generativen KI Chatbots (e.g.&nbsp;ChatGPT)</p>
+<p>Lust und Motivation zum Lernen (und möglicherweise Frustrationstoleranz)</p>
+<p>→ <span class="highlight">keine Verwendung</span> von Generativen KI Chatbots (e.g.&nbsp;ChatGPT)</p>
 </section>
 <section id="generative-ki-chatbots" class="slide level2">
 <h2>Generative KI Chatbots</h2>
@@ -346,27 +341,27 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 <li>unzuverlässig (LLMs haben kein Konzept von <em>Wahrheit</em>)</li>
 <li>unzitierbar (Plagiat <span class="citation" data-cites="rooij2022">(<a href="#/referenzen" role="doc-biblioref" onclick="">Rooij 2022</a>)</span>)</li>
 </ul></li>
-<li>(kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch <span class="citation" data-cites="guest2025against">Bender and Hanna (<a href="#/referenzen" role="doc-biblioref" onclick="">2025</a>)</span></li>
+<li>(kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch <span class="citation" data-cites="guest2025against bender2025ai">(<a href="#/referenzen" role="doc-biblioref" onclick=""><span class="nocase">Guest et al.</span> 2025</a>; <a href="#/referenzen" role="doc-biblioref" onclick="">Bender and Hanna 2025</a>)</span></li>
 </ul>
 </section>
 <section class="slide level2">
 
 <p>Zurück zum Taschenrechner und dem Lernen:</p>
-<div style="font-size: 80%;color: #740d49cb; ">
+<div style="font-size: 80%;color: #810a38da; ">
 <p>“Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before.” <span class="citation" data-cites="heissrecipe">(<a href="#/referenzen" role="doc-biblioref" onclick="">Heiss, n.d.</a>)</span></p>
 </div>
 </section>
 <section class="slide level2">
 
 <p>Zurück zum Taschenrechner und dem Lernen:</p>
-<div style="font-size: 80%;color: #740d49cb; ">
+<div style="font-size: 80%;color: #810a38da; ">
 <p>“Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before.” <span class="citation" data-cites="heissrecipe">(<a href="#/referenzen" role="doc-biblioref" onclick="">Heiss, n.d.</a>)</span></p>
 </div>
 <p>+ beim Lernen ist <strong>der Prozess</strong> relevant und nicht das Produkt!</p>
 </section>
 <section class="slide level2">
 
-<p>Alternativen zu GenKI Chatbots</p>
+<h3 id="alternativen-zu-genki-chatbots">Alternativen zu GenKI Chatbots</h3>
 <ul>
 <li>Code-Dokumentationen und <a href="https://r-pkgs.org/vignettes.html"><em>Vignettes</em></a></li>
 <li>Online-Tutorials und Blog Posts von anderen Wissenschaftler*innen</li>
@@ -375,13 +370,13 @@ f(t) = \frac{\Gamma (\frac{\nu + 1}{2})}{\sqrt{\nu}\Gamma(\frac{\nu}{2})}(1+\fra
 <li>Menschen (!)
 <ul>
 <li>eure Kommiliton*innen</li>
-<li>oder ich</li>
+<li>und ich als Dozentin</li>
 </ul></li>
 </ul>
 </section>
 <section class="slide level2">
 
-<p>Weiterführende Lektüre zu GenKI Chatbots:</p>
+<h3 id="weiterführende-lektüre-zu-genki-chatbots">Weiterführende Lektüre zu GenKI Chatbots:</h3>
 <ul>
 <li><a href="https://elenlefoll.github.io/RstatsTextbook/15_AI.html">Chapter 15</a> in <span class="citation" data-cites="lefoll">Le Foll (<a href="#/referenzen" role="doc-biblioref" onclick="">2026</a>)</span></li>
 <li>Themen in <a href="https://evvahu.github.io/CAIL/">Critical AI Literacies</a></li>
@@ -441,12 +436,12 @@ Figure&nbsp;1: <span class="citation" data-cites="dryer2006">Dryer (<a href="#/r
 </section>
 <section class="slide level2">
 
-<p><em>Deskriptive Statistik</em>:</p>
+<h3 id="deskriptive-statistik">Deskriptive Statistik</h3>
 <ul>
 <li>Beschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken</li>
 <li>Beispiel: Häufigkeit von unterschiedlichen Worstellungen in der Nominalphrase (siehe <a href="#/fig-order" class="quarto-xref">Figure&nbsp;1</a>)</li>
 </ul>
-<p><em>Inferenzstatistik</em>:</p>
+<h3 id="inferenzstatistik">Inferenzstatistik:</h3>
 <ul>
 <li>auf Basis einer <em>Stichprobe</em> Aussagen über eine <em>Population</em> treffen</li>
 <li>Beispiel: Wahrscheinlichkeit von unterschiedlichen Worstellungen in der Nominalphrase

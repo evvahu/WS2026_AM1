@@ -1,5 +1,8 @@
 ---
 title: "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+title-slide-attributes:
+  data-background-size: contain
+  data-background-opacity: "0.5"
 subtitle: "Sitzung 1: Einführung"
 date: "14. October 2026"
 author: "Eva Scheel"
@@ -57,9 +60,10 @@ beide Bücher sind als Ebook über die Uni-Bib abrufbar
 
 ## Leistungsnachweise
 
-1. **[wöchentliche Hausaufgaben]{style="color: #620d3e;"}**
+### 1) **[wöchentliche Hausaufgaben]{style="color: #620d3e;"}**
 
 - alleine oder zu zweit
+- spätestens bis 24:00 nach der Sitzung verfügbar
 - Abgabe: Dienstag vor der jeweiligen Sitzung bis 24:00
 - 8/10 sind für die *aktive Teilnahme* obligatorisch
 - Vorstellen/Besprechen der eigenen Lösung: zweimal während dem Semester (zufällig)
@@ -67,7 +71,7 @@ beide Bücher sind als Ebook über die Uni-Bib abrufbar
 
 --------------------
 
-2. **[kleine Projektarbeit]{style="color: #620d3e;"}**
+### 2) **[kleine Projektarbeit]{style="color: #620d3e;"}**
 
 - alleine oder zu zweit
 - Besprechung in Sitzung 6 oder 7 
@@ -76,7 +80,7 @@ beide Bücher sind als Ebook über die Uni-Bib abrufbar
 
 ## Was ich von Ihnen erwarte
 
-**allgemein**
+### Allgemein
 
 
 ::: incremental
@@ -98,31 +102,31 @@ $$
 
 ## Was ich von Ihnen erwarte
 
-Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung!
+Statistik und R fallen nicht allen gleich leicht und das ist in Ordnung <span class="highlight">!!!</span>
 
 
-:::: r-fit-text
+
 ::: incremental
 - nicht entmutigen lassen und fragen, üben, fragen, üben!
   - &rarr; Hausaufgaben machen
 - Die einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig. 
 - Ebenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden
 :::
-::::
+
 
 
 ## Was ich von Ihnen erwarte
 
-Lust und Motivation zu Lernen
+Lust und Motivation zum Lernen
 (und möglicherweise Frustrationstoleranz)
 
 
 ## Was ich von Ihnen erwarte
 
-Lust und Motivation zu Lernen
+Lust und Motivation zum Lernen
 (und möglicherweise Frustrationstoleranz)
 
-&rarr; [keine Verwendung]{style="color: #a0025eea;"} von Generativen KI Chatbots (e.g. ChatGPT)
+&rarr; <span class="highlight">keine Verwendung</span> von Generativen KI Chatbots (e.g. ChatGPT)
 
 
 
@@ -177,14 +181,14 @@ Lust und Motivation zu Lernen
   - unreproduzierbar
   - unzuverlässig (LLMs haben kein Konzept von *Wahrheit*)
   - unzitierbar (Plagiat [@rooij2022])
-- (kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch [@guest2025against, @bender2025ai]
+- (kommerzielle) GenKI Chatbots sind aus ethischer und ökologischer Sicht problematisch [@guest2025against; @bender2025ai]
 
 ---------------------------
 
 Zurück zum Taschenrechner und dem Lernen:
 
 
-::: {style="font-size: 80%;color: #740d49cb; "}
+::: {style="font-size: 80%;color: #810a38da; "}
 "Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before." [@heissrecipe]
 ::: 
 
@@ -193,7 +197,7 @@ Zurück zum Taschenrechner und dem Lernen:
 Zurück zum Taschenrechner und dem Lernen:
 
 
-::: {style="font-size: 80%;color: #740d49cb; "}
+::: {style="font-size: 80%;color: #810a38da; "}
 "Using ChatGPT with R requires a good baseline knowledge of R to actually be useful. A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before." [@heissrecipe]
 ::: 
 
@@ -204,7 +208,7 @@ Zurück zum Taschenrechner und dem Lernen:
 ---------------------------
 
 
-Alternativen zu GenKI Chatbots
+### Alternativen zu GenKI Chatbots
 
 - Code-Dokumentationen und [*Vignettes*](https://r-pkgs.org/vignettes.html)
 - Online-Tutorials und Blog Posts von anderen Wissenschaftler\*innen
@@ -212,11 +216,11 @@ Alternativen zu GenKI Chatbots
 - Foren wie *Stack Overflow*
 - Menschen (!)
   - eure Kommiliton\*innen
-  - oder ich
+  - und ich als Dozentin
 
 ---------------------------
 
-Weiterführende Lektüre zu GenKI Chatbots:
+### Weiterführende Lektüre zu GenKI Chatbots:
 
 - [Chapter 15](https://elenlefoll.github.io/RstatsTextbook/15_AI.html) in @lefoll
 - Themen in [Critical AI Literacies](https://evvahu.github.io/CAIL/)
@@ -286,12 +290,12 @@ hinsichtlich der Universalie 20 [@greenberg1963some] erlaubt uns die Statistik u
 -----------------------
 
 
-*Deskriptive Statistik*:
+### Deskriptive Statistik 
 
 - Beschreiben einer Stichprobe und übersichtliche Darstellung deren Charakteristiken
 - Beispiel: Häufigkeit von unterschiedlichen Worstellungen in der Nominalphrase (siehe @fig-order)
 
-*Inferenzstatistik*:
+### Inferenzstatistik:
 
 - auf Basis einer *Stichprobe* Aussagen über eine *Population* treffen
 - Beispiel: Wahrscheinlichkeit von unterschiedlichen Worstellungen in der Nominalphrase
