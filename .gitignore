@@ -1,3 +1,8 @@
 /.quarto/
 **/*.quarto_ipynb
 .Rproj.user
+playground.R
+Leistungsnachweise.txt
+Sitzung_1.R
+vashishth.qmd
+Notizen.md
