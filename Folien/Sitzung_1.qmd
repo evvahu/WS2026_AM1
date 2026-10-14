@@ -20,8 +20,6 @@ bibliography: ../references.bib
 
 -   Vorstellungsrunde
 -   Informationen zum Kurs
--   Übersicht und Leistungsnachweise
--   Erwartungen
 -   kurze Einführung ins Thema
 
 ## Vorstellungsrunde
