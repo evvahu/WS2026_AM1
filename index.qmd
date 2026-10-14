@@ -39,7 +39,7 @@ Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertr
 | 11 | 13.01.2027 | Gemischtes Modell | | AB 8 |
 | 12 | 20.01.2027 | Inferentielle Statistik | | AB 9 |
 | 13 | 27.01.2027 | Inferentielle Statistik | | AB 10 |
-| 14 | 03.02.2027 | Outlook | | |
+| 14 | 03.02.2027 | Ausblick | | |
 
 Im Verlauf des Semesters werden sich die Inhalte der einzelnen Sitzungen möglicherweise noch ändern.
 
