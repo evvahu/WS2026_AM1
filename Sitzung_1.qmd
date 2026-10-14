@@ -13,7 +13,7 @@ format:
     slide-number: true
     theme: slides_theme.scss
 editor: source
-bibliography: ../references.bib
+bibliography: references.bib
 ---
 
 ## Übersicht

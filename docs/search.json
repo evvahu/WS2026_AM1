@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "Sitzung_2.html#übersicht",
+    "href": "Sitzung_2.html#übersicht",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Übersicht",
+    "text": "Übersicht\nHeute: einzige Sitzung in der wir uns ausschließlich mit R befassen. Danach learning-by-doing :-)!"
+  },
+  {
+    "objectID": "Sitzung_2.html#einleitung",
+    "href": "Sitzung_2.html#einleitung",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Einleitung",
+    "text": "Einleitung\nKonnten alle R, RStudio und Tidyverse runterladen?"
+  },
+  {
+    "objectID": "Sitzung_2.html#grundlagen",
+    "href": "Sitzung_2.html#grundlagen",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nR als Taschenrechner\n\n2 + 8\n\n[1] 10\n\n2 - 8\n\n[1] -6\n\n\n\n2 * 8\n\n[1] 16\n\n2 / 8\n\n[1] 0.25"
+  },
+  {
+    "objectID": "Sitzung_2.html#reproduzierbares-arbeiten",
+    "href": "Sitzung_2.html#reproduzierbares-arbeiten",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Reproduzierbares Arbeiten",
+    "text": "Reproduzierbares Arbeiten\nSkripte\nWir benutzen Skripte um das, was wir programmieren, zu speichern, weiter zu verwenden und zu entwickeln und um unseren Code reproduzierbar zu machen.\nSkripte können wir ganz einfach in RStudio erstellen:\n\nMit # bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklären (nicht nur für andere sondern auch für unser zukünftiges Selbst)"
+  },
+  {
+    "objectID": "Sitzung_2.html#daten-und-datenmanipulation",
+    "href": "Sitzung_2.html#daten-und-datenmanipulation",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Daten und Datenmanipulation",
+    "text": "Daten und Datenmanipulation\n\nDatensatz und Skript runterladen (!TODO! ADD QR CODE)\nProjekt erstellen\nSkript öffnen"
+  },
+  {
+    "objectID": "Sitzung_2.html#letzte-bemerkungen",
+    "href": "Sitzung_2.html#letzte-bemerkungen",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Letzte Bemerkungen",
+    "text": "Letzte Bemerkungen\n\nin R gibt es unzählige Wege, um ans Ziel zu kommen\n\nuse what you know, if you don’t know something, learn"
+  },
+  {
+    "objectID": "Sitzung_1.html#übersicht",
+    "href": "Sitzung_1.html#übersicht",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Übersicht",
+    "text": "Übersicht\n\nVorstellungsrunde\nInformationen zum Kurs\nkurze Einführung ins Thema"
+  },
+  {
+    "objectID": "Sitzung_1.html#vorstellungsrunde",
+    "href": "Sitzung_1.html#vorstellungsrunde",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Vorstellungsrunde",
+    "text": "Vorstellungsrunde\n\nName (bzw. wie Du angesprochen werden willst)\nErfahrung mit Progammieren und Quantitativer Linguistik\nWas ihr euch vom Kurs erhofft"
+  },
+  {
+    "objectID": "Sitzung_1.html#allgemeine-informationen",
+    "href": "Sitzung_1.html#allgemeine-informationen",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Allgemeine Informationen",
+    "text": "Allgemeine Informationen\n\nMittwoch, 14:00-15:30, Seminarraum links\nKeine Sprechstunde, kontaktieren Sie mich per Email\nFolien und Seminar auf Deutsch, Lektüre vorwiegend auf Englisch\nSeminar im AM1/SM1:\n\nKontaktzeit: 30/30h\nSelbststudium: 90/60h\n\nnimmt euren Laptop zu jeder Sitzung mit"
+  },
+  {
+    "objectID": "Sitzung_1.html#organisatorisches",
+    "href": "Sitzung_1.html#organisatorisches",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Organisatorisches",
+    "text": "Organisatorisches\n\n\nWir verwenden in diesem Kurs kein Illias\nE-Mail-Liste\nSemesterplan, Folien und Arbeitsblätter auf einer öffentlichen Webseite:\n\nIhre Namen & Daten werden auf der Seite nie erwähnt"
+  },
+  {
+    "objectID": "Sitzung_1.html#lektüre",
+    "href": "Sitzung_1.html#lektüre",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Lektüre",
+    "text": "Lektüre\n\nHow to do Linguistics with R (Levshina 2015)\nStatistics for Linguists: An Introduction Using R (Winter 2020)\n\nbeide Bücher sind als Ebook über die Uni-Bib abrufbar"
+  },
+  {
+    "objectID": "Sitzung_1.html#leistungsnachweise",
+    "href": "Sitzung_1.html#leistungsnachweise",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Leistungsnachweise",
+    "text": "Leistungsnachweise\n1) wöchentliche Hausaufgaben\n\nalleine oder zu zweit\nspätestens bis 24:00 nach der Sitzung verfügbar\nAbgabe: Dienstag vor der jeweiligen Sitzung bis 24:00\n8/10 sind für die aktive Teilnahme obligatorisch\nVorstellen/Besprechen der eigenen Lösung: zweimal während dem Semester (zufällig)\nindividuelles Feedback auf Anfrage"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-ich-von-euch-erwarte",
+    "href": "Sitzung_1.html#was-ich-von-euch-erwarte",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von euch erwarte",
+    "text": "Was ich von euch erwarte\nAllgemein\n\nrespektvollen Umgang, es ist mir wichtig, dass sich alle wohl fühlen\nUnterschiede und Diversität werden als Gewinn und nicht als Nachteil betrachtet\nFragen sind wertvoll (d.h. es gibt keine dummen Fragen)\nRückmeldungen, Ideen und Anregungen eurerseits sind erwünscht"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-ich-von-euch-erwarte-1",
+    "href": "Sitzung_1.html#was-ich-von-euch-erwarte-1",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von euch erwarte",
+    "text": "Was ich von euch erwarte\nFormeln zu lernen?\n\\[\nf(t) = \\frac{\\Gamma (\\frac{\\nu + 1}{2})}{\\sqrt{\\nu}\\Gamma(\\frac{\\nu}{2})}(1+\\frac{t^2}{\\nu})^{-(\\nu + 1 )/2}\n\\]"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "href": "Sitzung_1.html#was-ich-von-ihnen-erwarte",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nStatistik und R fallen nicht allen gleich leicht und das ist in Ordnung !!!\n\nnicht entmutigen lassen und fragen, üben, fragen, üben!\n\n→ Hausaufgaben machen\n\nDie einzelnen Sitzungen bauen stark aufeinander auf. D.h. Nacharbeiten von verpassten Sitzungen ist notwendig.\nEbenso: Falls ihr eine Sitzung verpasst, informiert euch bei euren Kommiliton:innen, nicht alle Informationen können auf den Folien gefunden werden"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "href": "Sitzung_1.html#was-ich-von-ihnen-erwarte-1",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nLust und Motivation zum Lernen (und möglicherweise Frustrationstoleranz)"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "href": "Sitzung_1.html#was-ich-von-ihnen-erwarte-2",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was ich von Ihnen erwarte",
+    "text": "Was ich von Ihnen erwarte\nLust und Motivation zum Lernen (und möglicherweise Frustrationstoleranz)\n→ keine Verwendung von Generativen KI Chatbots (e.g. ChatGPT)"
+  },
+  {
+    "objectID": "Sitzung_1.html#generative-ki-chatbots",
+    "href": "Sitzung_1.html#generative-ki-chatbots",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Generative KI Chatbots",
+    "text": "Generative KI Chatbots\nLernen\n\n\nGrundschulkinder lernen zuerst ohne Rechner, um später nachvollziehen zu können, was ein Rechner macht\nwichtiger Unterschied zum Rechner: GenKI chatbots sind probabilistisch und nicht deterministisch"
+  },
+  {
+    "objectID": "Sitzung_1.html#was-erwartet-ihr",
+    "href": "Sitzung_1.html#was-erwartet-ihr",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Was erwartet ihr?",
+    "text": "Was erwartet ihr?\nGibt es weitere Punkte eurerseits?"
+  },
+  {
+    "objectID": "Sitzung_1.html#quantitative-linguistik",
+    "href": "Sitzung_1.html#quantitative-linguistik",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Quantitative Linguistik",
+    "text": "Quantitative Linguistik\n\nWieso untersuchen wir linguistische Phänomene quantitativ?\nWas ist der Unterschied zwischen Theorie und Empirie?\nWas für unterschiedliche quantiative Daten gibt es?"
+  },
+  {
+    "objectID": "Sitzung_1.html#statistik",
+    "href": "Sitzung_1.html#statistik",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Statistik",
+    "text": "Statistik\n\nnumerisches Erfassen von einem (linguistischen) Phänonem -&gt; Modell\nVorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben\nHypothesen testen"
+  },
+  {
+    "objectID": "Notizen.html",
+    "href": "Notizen.html",
+    "title": "Notizen",
+    "section": "",
+    "text": "R: learning by doing"
+  },
+  {
+    "objectID": "Notizen.html#einführung",
+    "href": "Notizen.html#einführung",
+    "title": "Notizen",
+    "section": "Einführung:",
+    "text": "Einführung:\n\nBenutzung von KI\nWieso Quantitative Linguistik?\nWieso Statistik?\nErwartungen\nKursübersicht: Seminarplan und Leistungsnachweise\nAM1: Hausarbeit = Pflicht"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 2: Übersicht zu R",
+    "text": "Sitzung 2: Übersicht zu R\n\nProjektmanagement\nbase R\ntidyverse\nnumeric, integer, double\nlogical\ncharacter\n\nhttps://www.oer.psy.lmu.de/R_Tutorial/Teil1.html#arbeiten-mit-daten https://soilr.github.io/doku/objekte-und-funktionen.html"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 3: Übersicht zu R",
+    "text": "Sitzung 3: Übersicht zu R"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "",
+    "text": "Kursbeschreibung\nKursleiterin: Eva Scheel(-Huber)\nEmail-Adresse: eva.scheel-huber(at)uni-koeln(dot)de\nDie Quantitative Linguistik beschäftigt sich mit einer Vielzahl von Fragen, die für die Entwicklung und das Testen von linguistischen Theorien notwendig sind. Anhand quantitativer Methoden können wir zum Beispiel untersuchen, welche sprachlichen Eigenschaften unter der Berücksichtigung von phylogenetischen und arealen Faktoren global bevorzugt sind. Ebenso geben uns empirische Methoden einen Einblick in den Sprachgebrauch und erlauben uns zu erforschen, wann und wie gewisse Sprachstrukturen verwendet werden.\nDer Schwerpunkt dieses Seminars liegt auf statistischen Methoden, die wesentlich für das Testen von Hypothesen und die Beschreibung und Analyse von Daten sind. Wir benutzen R und behandeln die Aufbereitung und Management von Daten, deskriptive Statistik, inferentielle Statistik sowie unterschiedliche Lineare Modelle.\nDas Seminar dient als Einführung und somit sind keine Vorkenntnisse erforderlich. Auch Studierende, die einen gewissen Respekt vor Mathematik und Programmieren haben, werden ermutigt teilzunehmen. Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertraut zu machen, mitbringen. Da jede Woche auf der vorherigen aufbaut, ist die wöchentliche Teilnahme und die Bearbeitung der Hausaufgaben entscheidend. Ebenso brauchen Studierende einen Laptop (ein Tablet ist nicht geeignet).\n\n\nSemesterplan\n\n\n\nSitzung\nDatum\nThema\nLektüre\nAufgaben\n\n\n\n\n1\n14.10.2026\nEinführung\n\n-\n\n\n2\n21.10.2026\nÜbersicht zu R\nKapitel 1 in Winter (2020); “CleanItUp” by RLadies Sydney; Abschnitte 1-3 in Douglas et al. (2026)\nAB 0\n\n\n3\n28.10.2026\nKEINE SITZUNG\n\n\n\n\n4\n04.11.2026\nDeskriptive Statistik I\n\nAB 1\n\n\n5\n11.11.2026\nDeskriptive Statistik II (ONLINE)\n\nAB 2\n\n\n6\n18.11.2026\nLineare Regression\n\nAB 3\n\n\n7\n25.11.2026\nMultiple Lineare Regression, Projektarbeit\n\nAB 4\n\n\n8\n02.12.2026\nLogistische Regression\n\nAB 5\n\n\n9\n09.12.2026\nLogistische Regression\n\nAB 6\n\n\n10\n16.12.2026\nGemischtes Modell\n\nAB 7\n\n\n11\n13.01.2027\nGemischtes Modell\n\nAB 8\n\n\n12\n20.01.2027\nInferentielle Statistik\n\nAB 9\n\n\n13\n27.01.2027\nInferentielle Statistik\n\nAB 10\n\n\n14\n03.02.2027\nOutlook\n\n\n\n\n\nIm Verlauf des Semesters werden sich die Inhalte der einzelnen Sitzungen möglicherweise noch ändern.\nFolien im PDF-Format und die Arbeitsblätter sind hier zugänglich.\n\n\nLektüre\n\nHow to do Linguistics with R (Levshina 2015)\nStatistics for Linguists: An Introduction Using R (Winter 2020)\nhttps://intro2r.com/ (Douglas et al. 2026)\n\n\n\n\n\n\n\n\n\nReferenzen\n\nDouglas, Alex, Deon Roos, Francesca Mancini, Ana Couto, and David Lusseau. 2026. An Introduction to r. Unpublished online resources. https://intro2r.com/.\n\n\nLevshina, Natalia. 2015. How to Do Linguistics with r. John Benjamins Publishing Company.\n\n\nWinter, Bodo. 2020. Statistics for Linguists: An Introduction Using r. New York; London: Routledge."
+  }
+]
