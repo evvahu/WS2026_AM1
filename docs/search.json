@@ -4,42 +4,56 @@
     "href": "Sitzung_2.html#übersicht",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Übersicht",
-    "text": "Übersicht\nHeute: einzige Sitzung in der wir uns ausschließlich mit R befassen. Danach learning-by-doing :-)!"
+    "text": "Übersicht\nHeute: einzige Sitzung in der wir uns ausschließlich mit R befassen. Danach “Learning by Doing”!\n\nkurze Übersicht zu R\nDaten importieren und bearbeiten (mit tidyverse)"
   },
   {
-    "objectID": "Sitzung_2.html#einleitung",
-    "href": "Sitzung_2.html#einleitung",
+    "objectID": "Sitzung_2.html#übersicht-1",
+    "href": "Sitzung_2.html#übersicht-1",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
-    "section": "Einleitung",
-    "text": "Einleitung\nKonnten alle R, RStudio und Tidyverse runterladen?"
+    "section": "Übersicht",
+    "text": "Übersicht\nHeute: einzige Sitzung in der wir uns ausschließlich mit R befassen. Danach “Learning by Doing”!\n\nkurze Übersicht zu R\nDaten importieren und bearbeiten (mit tidyverse)\n\nKonnten alle R, RStudio und Tidyverse runterladen?"
   },
   {
     "objectID": "Sitzung_2.html#grundlagen",
     "href": "Sitzung_2.html#grundlagen",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Grundlagen",
-    "text": "Grundlagen\nR als Taschenrechner\n\n2 + 8\n\n[1] 10\n\n2 - 8\n\n[1] -6\n\n\n\n2 * 8\n\n[1] 16\n\n2 / 8\n\n[1] 0.25"
+    "text": "Grundlagen\nBefehle ausführen\nR als Taschenrechner\n\n2 + 8\n\n[1] 10\n\n2 - 8\n\n[1] -6\n\n\n\n2 * 8\n\n[1] 16\n\n2 / 8\n\n[1] 0.25\n\n\n\nlog(2)\n\n[1] 0.6931472"
   },
   {
     "objectID": "Sitzung_2.html#reproduzierbares-arbeiten",
     "href": "Sitzung_2.html#reproduzierbares-arbeiten",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Reproduzierbares Arbeiten",
-    "text": "Reproduzierbares Arbeiten\nSkripte\nWir benutzen Skripte um das, was wir programmieren, zu speichern, weiter zu verwenden und zu entwickeln und um unseren Code reproduzierbar zu machen.\nSkripte können wir ganz einfach in RStudio erstellen:\n\nMit # bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklären (nicht nur für andere sondern auch für unser zukünftiges Selbst)"
+    "text": "Reproduzierbares Arbeiten\nSkripte\n\n\n\nWir benutzen Skripte um das, was wir programmieren, zu speichern, weiter zu verwenden und zu entwickeln und um unseren Code reproduzierbar zu machen.\nSkripte können wir ganz einfach in RStudio erstellen\n\n\n\n\nMit # bauen wir Kommentare in unsere Skripte ein, um unseren Code zu erklären (nicht nur für andere sondern auch für uns in Zukunft)"
   },
   {
-    "objectID": "Sitzung_2.html#daten-und-datenmanipulation",
-    "href": "Sitzung_2.html#daten-und-datenmanipulation",
+    "objectID": "Sitzung_2.html#probieren-wir-das-mal-aus",
+    "href": "Sitzung_2.html#probieren-wir-das-mal-aus",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
-    "section": "Daten und Datenmanipulation",
-    "text": "Daten und Datenmanipulation\n\nDatensatz und Skript runterladen (!TODO! ADD QR CODE)\nProjekt erstellen\nSkript öffnen"
+    "section": "Probieren wir das mal aus…",
+    "text": "Probieren wir das mal aus…\n\n\n\nDatensatz und Skript runterladen\nProjekt erstellen\nSkript öffnen"
   },
   {
-    "objectID": "Sitzung_2.html#letzte-bemerkungen",
-    "href": "Sitzung_2.html#letzte-bemerkungen",
+    "objectID": "Sitzung_2.html#datenverarbeitung",
+    "href": "Sitzung_2.html#datenverarbeitung",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
-    "section": "Letzte Bemerkungen",
-    "text": "Letzte Bemerkungen\n\nin R gibt es unzählige Wege, um ans Ziel zu kommen\n\nuse what you know, if you don’t know something, learn"
+    "section": "Datenverarbeitung",
+    "text": "Datenverarbeitung\nWir gehen nun durch die folgenden Schritten durch:\n\nDaten importieren\nDaten untersuchen\nDaten ändern und verarbeiten\nDaten speichern"
+  },
+  {
+    "objectID": "Sitzung_2.html#hilfe",
+    "href": "Sitzung_2.html#hilfe",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Hilfe!",
+    "text": "Hilfe!\n\nStackOverflow\nCheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben. Z.B. Data Transformation with dplyr\nVignettes: vignette(\"dplyr\"): ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library\n?read.csv() oder help(read.csv)"
+  },
+  {
+    "objectID": "Sitzung_2.html#nächste-sitzung",
+    "href": "Sitzung_2.html#nächste-sitzung",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Nächste Sitzung",
+    "text": "Nächste Sitzung\n\nam 28.10: keine Sitzung (Fakultätstag)\nbis zum 3.11 24:00: Einreichen Aufgabenblatt 1 per Email an mich\n4.11: Deskriptive Statistik I"
   },
   {
     "objectID": "Sitzung_1.html#übersicht",
