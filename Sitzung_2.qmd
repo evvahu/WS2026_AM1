@@ -327,8 +327,8 @@ summary(nettle_data)
 Anzahl Zeilen und Spalten
 ```{r}
 #| echo: true 
-nrow(nettle_data) # base R
-ncol(nettle_data) # base R
+nrow(nettle_data)
+ncol(nettle_data)
 
 ```
 
@@ -384,7 +384,7 @@ die (meiner Meinung nach) wichtigsten Funktionen in `tidyverse`:
 - `select()`
 - `filter()`
 - `mutate()`
-- `summarise()`
+- (`summarise()`)
 ::: 
 ::: {.column}
 Und Pipe-Operator `|>` (oder `%>%`): 
