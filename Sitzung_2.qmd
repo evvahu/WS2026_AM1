@@ -11,7 +11,7 @@ format:
     theme: slides_theme.scss
     error: true
 editor: source
-# bibliography: references.bib
+bibliography: references.bib
 ---
 
 
@@ -165,7 +165,7 @@ Wir können unsere Variable ausgeben, um zu schauen was sie beinhaltet:
 koelsches_grundgesetz_2
 ```
 
-Aber das folgende Kommando spuckt einen Fehler aus, da Variabelnamen Groß-/Kleinschreibung-unterscheidend ("case-sensitive") sind.
+Aber das folgende Kommando spuckt einen Fehler aus, da Variablennamen Groß-/Kleinschreibung-unterscheidend ("case-sensitive") sind.
 
 ```{r}
 #| echo: true 
@@ -270,7 +270,7 @@ Wir gehen nun durch die folgenden Schritten durch:
 
 1. Daten importieren
 2. Daten untersuchen
-3. Daten ändern und verarbeiten
+3. Daten ändern, reiningen und vorverarbeiten
 4. Daten speichern
 
 ---------------
@@ -296,6 +296,11 @@ nettle_data <- read.csv(file = "datasets/nettle_1999_climate.csv", sep=",")
 nettle_data <- read.table("datasets/nettle_1999_climate.csv", sep=",", header=TRUE, quote='')
 ```
 
+Datensätze werden in sogenannten <span class='important'>Data Frames</span> in R gespeichert (Alternativen sind z.B. `tibbles` oder `matrix`).
+```{r}
+#| echo: true 
+class(nettle_data)
+```
 
 -----
 
@@ -335,16 +340,17 @@ Die ersten oder letzten X (hier 3) Zeilen
 
 ```{r}
 #| echo: true 
-head(nettle_data, 3) # base R
-tail(nettle_data, 3) # base R
+head(nettle_data, 3) 
+tail(nettle_data, 3) 
 ```
 
 Spaltennamen
 
 ```{r}
 #| echo: true 
-colnames(nettle_data) # base R
+colnames(nettle_data) 
 ```
+
 ----------
 
 ### 3. Verarbeiten und ändern
@@ -352,14 +358,20 @@ colnames(nettle_data) # base R
 `tidyverse`: Sammlung von neun Libraries 
 
 ```{r}
-#| echo: true 
-
-library(tidyverse)
-
+library(tidyverse) 
 ```
 
-Wir werden vor allem `dplyr`, `tidyr` und `ggplot2` verwenden.
+![](images/tidyverse.png)
 
+Wir werden vor allem `dplyr`, `tidyr` und `ggplot2` verwenden.
+Alle Libraries in `tidyverse` können auch einzeln geladen werden. Z.B. `dplyr`:
+
+```{r}
+#| echo: true 
+library(dplyr) 
+```
+
+------------------
 
 ### 3. Verarbeiten und ändern
 
@@ -491,6 +503,7 @@ nettle_data |>
 
 #### `mutate()`
 
+
 Mehr Beispiele zu mutate mit `ifelse()` 
 ```{r}
 #| echo: true 
@@ -538,6 +551,11 @@ write.table(nettle_data_cleaned, 'datasets/nettle_1999_climate_preprocessed.csv'
             sep='\t', row.names=F, quote=F)
 ```
 
+Der Dateiname...:
+
+- ...soll möglichst selbsterklärend sein
+- ...keine Leerzeichen enthalten
+
 -------------
 
 ### Im Vergleich *Base R*
@@ -554,9 +572,10 @@ write.table(nettle_data_cleaned, 'datasets/nettle_1999_climate_preprocessed.csv'
 ## Hilfe!
 
 - [StackOverflow](https://stackoverflow.com/questions/tagged/r)
-- Cheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben. Z.B. [Data Transformation with dplyr](https://raw.githubusercontent.com/RStudio/cheatsheets/master/data-transformation.pdf)
-- Vignettes: `vignette("dplyr")`: ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library
+- Cheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben (z.B. [Data Transformation with dplyr](https://raw.githubusercontent.com/RStudio/cheatsheets/master/data-transformation.pdf))
+- Vignettes (z.B. `vignette("dplyr")`): ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library
 - `?read.csv()` oder `help(read.csv)`
+- [Online-Lehrbuch: R for Data Science](https://r4ds.had.co.nz/index.html) [@hadley]
 
 
 ## Nächste Sitzung
@@ -564,3 +583,7 @@ write.table(nettle_data_cleaned, 'datasets/nettle_1999_climate_preprocessed.csv'
 - am 28.10: keine Sitzung (Fakultätstag)
 - bis zum 3.11 24:00: Einreichen Aufgabenblatt 1 per Email an [mich](eva.scheel-huber@uni-koeln.de)
 - 4.11: Deskriptive Statistik I
+
+
+## Quellen
+

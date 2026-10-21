@@ -50,6 +50,7 @@ Folien im PDF-Format und die Arbeitsblätter sind [hier](https://uni-koeln.scieb
 
 - How to do Linguistics with R [@levshinaintro]
 - Statistics for Linguists: An Introduction Using R [@winterbodo]
+- [R for Data Science 2nd edition](https://r4ds.hadley.nz/)[@hadley]]
 - https://intro2r.com/ [@douglasr]
 
 

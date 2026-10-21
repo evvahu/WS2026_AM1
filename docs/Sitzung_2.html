@@ -97,8 +97,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-d38a53469c5321d86f3b374a38dff7ce.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-182677af69b3ef0402132e980ba0d545.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -373,7 +392,7 @@ Eva Scheel
 <pre><code>[1] "Et kütt wie et kütt"</code></pre>
 </div>
 </div>
-<p>Aber das folgende Kommando spuckt einen Fehler aus, da Variabelnamen Groß-/Kleinschreibung-unterscheidend (“case-sensitive”) sind.</p>
+<p>Aber das folgende Kommando spuckt einen Fehler aus, da Variablennamen Groß-/Kleinschreibung-unterscheidend (“case-sensitive”) sind.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>koelsches_Grundgesetz_2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -476,13 +495,13 @@ Using the first match ...</code></pre>
 <ol type="1">
 <li>Daten importieren</li>
 <li>Daten untersuchen</li>
-<li>Daten ändern und verarbeiten</li>
+<li>Daten ändern, reiningen und vorverarbeiten</li>
 <li>Daten speichern</li>
 </ol>
 </section>
 <section class="slide level2">
 
-<p>Für die Sitzung 1 verwenden wir den Datensatz von <span class="citation" data-cites="nettle1999">@nettle1999</span></p>
+<p>Für die Sitzung 1 verwenden wir den Datensatz von <span class="citation" data-cites="nettle1999">Nettle (<a href="#/quellen" role="doc-biblioref" onclick="">1999</a>)</span></p>
 <ul>
 <li><em>Country</em>: Land</li>
 <li><em>Population</em>: Bevölkerung</li>
@@ -500,6 +519,13 @@ Using the first match ...</code></pre>
 <span id="cb38-2"><a></a>nettle_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"datasets/nettle_1999_climate.csv"</span>, <span class="at">sep=</span><span class="st">","</span>)</span>
 <span id="cb38-3"><a></a>nettle_data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"datasets/nettle_1999_climate.csv"</span>, <span class="at">sep=</span><span class="st">","</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">quote=</span><span class="st">''</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Datensätze werden in sogenannten <span class="important">Data Frames</span> in R gespeichert (Alternativen sind z.B. <code>tibbles</code> oder <code>matrix</code>).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">class</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "data.frame"</code></pre>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
@@ -507,7 +533,7 @@ Using the first match ...</code></pre>
 <h4 id="wurden-die-daten-richtig-importiert">Wurden die Daten richtig importiert?</h4>
 <p>Überprüfen mit <code>str()</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">str</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">str</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   74 obs. of  5 variables:
  $ Country   : chr  "Algeria" "Angola" "Australia" "Bangladesh" ...
@@ -519,7 +545,7 @@ Using the first match ...</code></pre>
 </div>
 <p>oder mit <code>summary()</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">summary</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a><span class="fu">summary</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      Country     Population         Area            MGS        
  Length   :74   Min.   :2.010   Min.   :4.090   Min.   : 0.000  
@@ -543,11 +569,11 @@ Using the first match ...</code></pre>
 <h3 id="daten-untersuchen-1">2. Daten untersuchen</h3>
 <p>Anzahl Zeilen und Spalten</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a><span class="fu">nrow</span>(nettle_data) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a><span class="fu">nrow</span>(nettle_data) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 74</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a><span class="fu">ncol</span>(nettle_data) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">ncol</span>(nettle_data) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
@@ -558,14 +584,14 @@ Using the first match ...</code></pre>
 <h3 id="daten-untersuchen-2">2. Daten untersuchen</h3>
 <p>Die ersten oder letzten X (hier 3) Zeilen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">head</span>(nettle_data, <span class="dv">3</span>) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">head</span>(nettle_data, <span class="dv">3</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    Country Population Area  MGS Langs
 1   Algeria       4.41 6.38 6.60    18
 2    Angola       4.01 6.10 6.22    42
 3 Australia       4.24 6.89 6.00   234</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">tail</span>(nettle_data, <span class="dv">3</span>) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a><span class="fu">tail</span>(nettle_data, <span class="dv">3</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    Country Population Area  MGS Langs
 72    Zaire       4.56 6.37 9.44   219
@@ -575,7 +601,7 @@ Using the first match ...</code></pre>
 </div>
 <p>Spaltennamen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a><span class="fu">colnames</span>(nettle_data) <span class="co"># base R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a><span class="fu">colnames</span>(nettle_data) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Country"    "Population" "Area"       "MGS"        "Langs"     </code></pre>
 </div>
@@ -585,10 +611,14 @@ Using the first match ...</code></pre>
 
 <h3 id="verarbeiten-und-ändern">3. Verarbeiten und ändern</h3>
 <p><code>tidyverse</code>: Sammlung von neun Libraries</p>
+
+<img data-src="images/tidyverse.png" class="r-stretch"><p>Wir werden vor allem <code>dplyr</code>, <code>tidyr</code> und <code>ggplot2</code> verwenden. Alle Libraries in <code>tidyverse</code> können auch einzeln geladen werden. Z.B. <code>dplyr</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a></a><span class="fu">library</span>(dplyr) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Wir werden vor allem <code>dplyr</code>, <code>tidyr</code> und <code>ggplot2</code> verwenden.</p>
+</section>
+<section class="slide level2">
+
 <h3 id="verarbeiten-und-ändern-1">3. Verarbeiten und ändern</h3>
 <div class="columns">
 <div class="column">
@@ -607,11 +637,11 @@ Using the first match ...</code></pre>
 </ul>
 <p>Beispiel</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a><span class="fu">nrow</span>(nettle_data) <span class="co"># ohne Pipe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a><span class="fu">nrow</span>(nettle_data) <span class="co"># ohne Pipe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 74</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a>nettle_data <span class="sc">|&gt;</span> <span class="fu">nrow</span>() <span class="co"># mit Pipe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a>nettle_data <span class="sc">|&gt;</span> <span class="fu">nrow</span>() <span class="co"># mit Pipe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 74</code></pre>
 </div>
@@ -623,10 +653,10 @@ Using the first match ...</code></pre>
 <h4 id="select"><code>select()</code></h4>
 <p>Um Spalten (<span class="important">columns</span>) auszuwählen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a>nettle_data_important <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb58-2"><a></a>  <span class="fu">select</span>(Country, Langs)</span>
-<span id="cb58-3"><a></a></span>
-<span id="cb58-4"><a></a><span class="fu">head</span>(nettle_data_important, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a>nettle_data_important <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb60-2"><a></a>  <span class="fu">select</span>(Country, Langs)</span>
+<span id="cb60-3"><a></a></span>
+<span id="cb60-4"><a></a><span class="fu">head</span>(nettle_data_important, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Langs
 1    Algeria    18
@@ -635,16 +665,16 @@ Using the first match ...</code></pre>
 4 Bangladesh    37
 5      Benin    52</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a><span class="fu">colnames</span>(nettle_data_important)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a><span class="fu">colnames</span>(nettle_data_important)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Country" "Langs"  </code></pre>
 </div>
 </div>
 <p>Oder zu wegzulassen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a>nettle_data <span class="sc">|&gt;</span> </span>
-<span id="cb62-2"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>Country) <span class="sc">|&gt;</span> </span>
-<span id="cb62-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a>nettle_data <span class="sc">|&gt;</span> </span>
+<span id="cb64-2"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>Country) <span class="sc">|&gt;</span> </span>
+<span id="cb64-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Population Area  MGS Langs
 1       4.41 6.38 6.60    18
@@ -660,25 +690,25 @@ Using the first match ...</code></pre>
 <h4 id="filter"><code>filter()</code></h4>
 <p>Um Zeilen auszuwählen, die einer gewissen Bedingung entsprechen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a>nettle_data_large_countries <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb64-2"><a></a>  <span class="fu">filter</span>(Population <span class="sc">&gt;</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a></a>nettle_data_large_countries <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb66-2"><a></a>  <span class="fu">filter</span>(Population <span class="sc">&gt;</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a></a><span class="fu">nrow</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a></a><span class="fu">nrow</span>(nettle_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 74</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a></a><span class="fu">nrow</span>(nettle_data_large_countries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a></a><span class="fu">nrow</span>(nettle_data_large_countries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 36</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a></a><span class="fu">min</span>(nettle_data<span class="sc">$</span>Population)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a></a><span class="fu">min</span>(nettle_data<span class="sc">$</span>Population)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.01</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a></a><span class="fu">min</span>(nettle_data_large_countries<span class="sc">$</span>Population)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a></a><span class="fu">min</span>(nettle_data_large_countries<span class="sc">$</span>Population)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.01</code></pre>
 </div>
@@ -689,9 +719,9 @@ Using the first match ...</code></pre>
 <h4 id="filter-1"><code>filter()</code></h4>
 <p>oder um Zeilen auszuwählen, die einer gewissen Bedingung <strong>nicht</strong> entsprechen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb73-2"><a></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_starts</span>(Country, <span class="st">'A'</span>))<span class="sc">|&gt;</span></span>
-<span id="cb73-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb75-2"><a></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_starts</span>(Country, <span class="st">'A'</span>))<span class="sc">|&gt;</span></span>
+<span id="cb75-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Population Area  MGS Langs
 1 Bangladesh       5.07 5.16 7.40    37
@@ -707,9 +737,9 @@ Using the first match ...</code></pre>
 <h4 id="mutate"><code>mutate()</code></h4>
 <p>Um Spalten hinzuzufügen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb75-2"><a></a>  <span class="fu">mutate</span>(<span class="at">large_country =</span> Population <span class="sc">&gt;</span> <span class="dv">4</span>)<span class="sc">|&gt;</span></span>
-<span id="cb75-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb77-2"><a></a>  <span class="fu">mutate</span>(<span class="at">large_country =</span> Population <span class="sc">&gt;</span> <span class="dv">4</span>)<span class="sc">|&gt;</span></span>
+<span id="cb77-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Population Area  MGS Langs large_country
 1    Algeria       4.41 6.38 6.60    18          TRUE
@@ -721,9 +751,9 @@ Using the first match ...</code></pre>
 </div>
 <p>oder zu ändern</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb77-2"><a></a>  <span class="fu">mutate</span>(<span class="at">Country =</span> <span class="fu">toupper</span>(Country)) <span class="sc">|&gt;</span></span>
-<span id="cb77-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb79-2"><a></a>  <span class="fu">mutate</span>(<span class="at">Country =</span> <span class="fu">toupper</span>(Country)) <span class="sc">|&gt;</span></span>
+<span id="cb79-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Population Area  MGS Langs
 1    ALGERIA       4.41 6.38 6.60    18
@@ -739,9 +769,9 @@ Using the first match ...</code></pre>
 <h4 id="mutate-1"><code>mutate()</code></h4>
 <p>Mehr Beispiele zu mutate mit <code>ifelse()</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb79-2"><a></a>  <span class="fu">mutate</span>(<span class="at">population_size_binary =</span> <span class="fu">ifelse</span>(Population <span class="sc">&gt;</span> <span class="dv">4</span>, <span class="st">'large'</span>, <span class="st">'small'</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb79-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb81-2"><a></a>  <span class="fu">mutate</span>(<span class="at">population_size_binary =</span> <span class="fu">ifelse</span>(Population <span class="sc">&gt;</span> <span class="dv">4</span>, <span class="st">'large'</span>, <span class="st">'small'</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb81-3"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Population Area  MGS Langs population_size_binary
 1    Algeria       4.41 6.38 6.60    18                  large
@@ -753,11 +783,11 @@ Using the first match ...</code></pre>
 </div>
 <p>und <code>case_when</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb81-2"><a></a>  <span class="fu">mutate</span>(<span class="at">language_diversity =</span> <span class="fu">case_when</span>(Langs <span class="sc">&lt;=</span> <span class="dv">60</span> <span class="sc">~</span> <span class="st">'small'</span>,</span>
-<span id="cb81-3"><a></a>                                        Langs <span class="sc">&gt;</span> <span class="dv">60</span> <span class="sc">&amp;</span> Langs <span class="sc">&lt;</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'medium'</span>,</span>
-<span id="cb81-4"><a></a>                                        Langs <span class="sc">&gt;=</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'large'</span>))<span class="sc">|&gt;</span></span>
-<span id="cb81-5"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a></a>nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb83-2"><a></a>  <span class="fu">mutate</span>(<span class="at">language_diversity =</span> <span class="fu">case_when</span>(Langs <span class="sc">&lt;=</span> <span class="dv">60</span> <span class="sc">~</span> <span class="st">'small'</span>,</span>
+<span id="cb83-3"><a></a>                                        Langs <span class="sc">&gt;</span> <span class="dv">60</span> <span class="sc">&amp;</span> Langs <span class="sc">&lt;</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'medium'</span>,</span>
+<span id="cb83-4"><a></a>                                        Langs <span class="sc">&gt;=</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'large'</span>))<span class="sc">|&gt;</span></span>
+<span id="cb83-5"><a></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Country Population Area  MGS Langs language_diversity
 1    Algeria       4.41 6.38 6.60    18              small
@@ -773,18 +803,23 @@ Using the first match ...</code></pre>
 <h4 id="speichern">3. Speichern</h4>
 <p>Unseren neuen Datensatz mit der zusätzlichen Variabel <em>language diversity</em> wollen wir nun speichern</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a></a>nettle_data_cleaned <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
-<span id="cb83-2"><a></a>  <span class="fu">mutate</span>(<span class="at">language_diversity =</span> <span class="fu">case_when</span>(Langs <span class="sc">&lt;=</span> <span class="dv">60</span> <span class="sc">~</span> <span class="st">'small'</span>,</span>
-<span id="cb83-3"><a></a>                                        Langs <span class="sc">&gt;</span> <span class="dv">60</span> <span class="sc">&amp;</span> Langs <span class="sc">&lt;</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'medium'</span>,</span>
-<span id="cb83-4"><a></a>                                        Langs <span class="sc">&gt;=</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'large'</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb83-5"><a></a>  <span class="fu">filter</span>(Area <span class="sc">&gt;</span> <span class="fl">5.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a></a>nettle_data_cleaned <span class="ot">&lt;-</span> nettle_data <span class="sc">|&gt;</span></span>
+<span id="cb85-2"><a></a>  <span class="fu">mutate</span>(<span class="at">language_diversity =</span> <span class="fu">case_when</span>(Langs <span class="sc">&lt;=</span> <span class="dv">60</span> <span class="sc">~</span> <span class="st">'small'</span>,</span>
+<span id="cb85-3"><a></a>                                        Langs <span class="sc">&gt;</span> <span class="dv">60</span> <span class="sc">&amp;</span> Langs <span class="sc">&lt;</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'medium'</span>,</span>
+<span id="cb85-4"><a></a>                                        Langs <span class="sc">&gt;=</span> <span class="dv">150</span> <span class="sc">~</span> <span class="st">'large'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb85-5"><a></a>  <span class="fu">filter</span>(Area <span class="sc">&gt;</span> <span class="fl">5.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Es gibt wieder mehrere Befehle. Hier zwei Beispiele:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a></a><span class="fu">write.csv</span>(nettle_data_cleaned, <span class="st">'datasets/nettle_1999_climate_preprocessed.csv'</span>)</span>
-<span id="cb84-2"><a></a><span class="fu">write.table</span>(nettle_data_cleaned, <span class="st">'datasets/nettle_1999_climate_preprocessed.csv'</span>, </span>
-<span id="cb84-3"><a></a>            <span class="at">sep=</span><span class="st">'</span><span class="sc">\t</span><span class="st">'</span>, <span class="at">row.names=</span>F, <span class="at">quote=</span>F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb86"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a></a><span class="fu">write.csv</span>(nettle_data_cleaned, <span class="st">'datasets/nettle_1999_climate_preprocessed.csv'</span>)</span>
+<span id="cb86-2"><a></a><span class="fu">write.table</span>(nettle_data_cleaned, <span class="st">'datasets/nettle_1999_climate_preprocessed.csv'</span>, </span>
+<span id="cb86-3"><a></a>            <span class="at">sep=</span><span class="st">'</span><span class="sc">\t</span><span class="st">'</span>, <span class="at">row.names=</span>F, <span class="at">quote=</span>F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Der Dateiname…:</p>
+<ul>
+<li>…soll möglichst selbsterklärend sein</li>
+<li>…keine Leerzeichen enthalten</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -821,9 +856,10 @@ Using the first match ...</code></pre>
 <h2>Hilfe!</h2>
 <ul>
 <li><a href="https://stackoverflow.com/questions/tagged/r">StackOverflow</a></li>
-<li>Cheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben. Z.B. <a href="https://raw.githubusercontent.com/RStudio/cheatsheets/master/data-transformation.pdf">Data Transformation with dplyr</a></li>
-<li>Vignettes: <code>vignette("dplyr")</code>: ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library</li>
+<li>Cheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben (z.B. <a href="https://raw.githubusercontent.com/RStudio/cheatsheets/master/data-transformation.pdf">Data Transformation with dplyr</a>)</li>
+<li>Vignettes (z.B. <code>vignette("dplyr")</code>): ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library</li>
 <li><code>?read.csv()</code> oder <code>help(read.csv)</code></li>
+<li><a href="https://r4ds.had.co.nz/index.html">Online-Lehrbuch: R for Data Science</a> <span class="citation" data-cites="hadley">(<a href="#/quellen" role="doc-biblioref" onclick="">Wickham et al. 2023</a>)</span></li>
 </ul>
 </section>
 <section id="nächste-sitzung" class="slide level2">
@@ -833,8 +869,19 @@ Using the first match ...</code></pre>
 <li>bis zum 3.11 24:00: Einreichen Aufgabenblatt 1 per Email an <a href="eva.scheel-huber@uni-koeln.de">mich</a></li>
 <li>4.11: Deskriptive Statistik I</li>
 </ul>
+</section>
+<section id="quellen" class="slide level2 smaller scrollable">
+<h2>Quellen</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-nettle1999" class="csl-entry" role="listitem">
+Nettle, Daniel. 1999. <em>Linguistic Diversity</em>. Oxford: Oxford University Press.
+</div>
+<div id="ref-hadley" class="csl-entry" role="listitem">
+Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science (2e): Import, Tidy, Transform, Visualize and Model Data</em>. O’Reilly.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

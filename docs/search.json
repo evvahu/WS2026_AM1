@@ -39,14 +39,14 @@
     "href": "Sitzung_2.html#datenverarbeitung",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Datenverarbeitung",
-    "text": "Datenverarbeitung\nWir gehen nun durch die folgenden Schritten durch:\n\nDaten importieren\nDaten untersuchen\nDaten ändern und verarbeiten\nDaten speichern"
+    "text": "Datenverarbeitung\nWir gehen nun durch die folgenden Schritten durch:\n\nDaten importieren\nDaten untersuchen\nDaten ändern, reiningen und vorverarbeiten\nDaten speichern"
   },
   {
     "objectID": "Sitzung_2.html#hilfe",
     "href": "Sitzung_2.html#hilfe",
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Hilfe!",
-    "text": "Hilfe!\n\nStackOverflow\nCheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben. Z.B. Data Transformation with dplyr\nVignettes: vignette(\"dplyr\"): ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library\n?read.csv() oder help(read.csv)"
+    "text": "Hilfe!\n\nStackOverflow\nCheatsheets: PDFs, die eine Übersicht und Erklärungen sowie Beispiele zu bestimmten Funktionen geben (z.B. Data Transformation with dplyr)\nVignettes (z.B. vignette(\"dplyr\")): ausführliche Erklärungen zu Libraries, normalerweise verfasst durch den Autor der Library\n?read.csv() oder help(read.csv)\nOnline-Lehrbuch: R for Data Science (Wickham et al. 2023)"
   },
   {
     "objectID": "Sitzung_2.html#nächste-sitzung",
@@ -54,6 +54,48 @@
     "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Nächste Sitzung",
     "text": "Nächste Sitzung\n\nam 28.10: keine Sitzung (Fakultätstag)\nbis zum 3.11 24:00: Einreichen Aufgabenblatt 1 per Email an mich\n4.11: Deskriptive Statistik I"
+  },
+  {
+    "objectID": "Sitzung_2.html#quellen",
+    "href": "Sitzung_2.html#quellen",
+    "title": "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "Quellen",
+    "text": "Quellen\n\n\n\n\nNettle, Daniel. 1999. Linguistic Diversity. Oxford: Oxford University Press.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science (2e): Import, Tidy, Transform, Visualize and Model Data. O’Reilly."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
+    "section": "",
+    "text": "Kursbeschreibung\nKursleiterin: Eva Scheel(-Huber)\nEmail-Adresse: eva.scheel-huber(at)uni-koeln(dot)de\nDie Quantitative Linguistik beschäftigt sich mit einer Vielzahl von Fragen, die für die Entwicklung und das Testen von linguistischen Theorien notwendig sind. Anhand quantitativer Methoden können wir zum Beispiel untersuchen, welche sprachlichen Eigenschaften unter der Berücksichtigung von phylogenetischen und arealen Faktoren global bevorzugt sind. Ebenso geben uns empirische Methoden einen Einblick in den Sprachgebrauch und erlauben uns zu erforschen, wann und wie gewisse Sprachstrukturen verwendet werden.\nDer Schwerpunkt dieses Seminars liegt auf statistischen Methoden, die wesentlich für das Testen von Hypothesen und die Beschreibung und Analyse von Daten sind. Wir benutzen R und behandeln die Aufbereitung und Management von Daten, deskriptive Statistik, inferentielle Statistik sowie unterschiedliche Lineare Modelle.\nDas Seminar dient als Einführung und somit sind keine Vorkenntnisse erforderlich. Auch Studierende, die einen gewissen Respekt vor Mathematik und Programmieren haben, werden ermutigt teilzunehmen. Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertraut zu machen, mitbringen. Da jede Woche auf der vorherigen aufbaut, ist die wöchentliche Teilnahme und die Bearbeitung der Hausaufgaben entscheidend. Ebenso brauchen Studierende einen Laptop (ein Tablet ist nicht geeignet).\n\n\nSemesterplan\n\n\n\nSitzung\nDatum\nThema\nLektüre\nAufgaben\n\n\n\n\n1\n14.10.2026\nEinführung\n\n-\n\n\n2\n21.10.2026\nÜbersicht zu R\nKapitel 1 in Winter (2020); “CleanItUp” by RLadies Sydney; Abschnitte 1-3 in Douglas et al. (2026)\nAB 0\n\n\n3\n28.10.2026\nKEINE SITZUNG\n\n\n\n\n4\n04.11.2026\nDeskriptive Statistik I\n\nAB 1\n\n\n5\n11.11.2026\nDeskriptive Statistik II (ONLINE)\n\nAB 2\n\n\n6\n18.11.2026\nLineare Regression\n\nAB 3\n\n\n7\n25.11.2026\nMultiple Lineare Regression, Projektarbeit\n\nAB 4\n\n\n8\n02.12.2026\nLogistische Regression\n\nAB 5\n\n\n9\n09.12.2026\nLogistische Regression\n\nAB 6\n\n\n10\n16.12.2026\nGemischtes Modell\n\nAB 7\n\n\n11\n13.01.2027\nGemischtes Modell\n\nAB 8\n\n\n12\n20.01.2027\nInferentielle Statistik\n\nAB 9\n\n\n13\n27.01.2027\nInferentielle Statistik\n\nAB 10\n\n\n14\n03.02.2027\nAusblick\n\n\n\n\n\nIm Verlauf des Semesters werden sich die Inhalte der einzelnen Sitzungen möglicherweise noch ändern.\nFolien im PDF-Format und die Arbeitsblätter sind hier zugänglich.\n\n\nLektüre\n\nHow to do Linguistics with R (Levshina 2015)\nStatistics for Linguists: An Introduction Using R (Winter 2020)\nR for Data Science 2nd edition(Wickham et al. 2023)]\nhttps://intro2r.com/ (Douglas et al. 2026)\n\n\n\n\n\n\n\n\n\nReferenzen\n\nDouglas, Alex, Deon Roos, Francesca Mancini, Ana Couto, and David Lusseau. 2026. An Introduction to r. Unpublished online resources. https://intro2r.com/.\n\n\nLevshina, Natalia. 2015. How to Do Linguistics with r. John Benjamins Publishing Company.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science (2e): Import, Tidy, Transform, Visualize and Model Data. O’Reilly.\n\n\nWinter, Bodo. 2020. Statistics for Linguists: An Introduction Using r. New York; London: Routledge."
+  },
+  {
+    "objectID": "Notizen.html",
+    "href": "Notizen.html",
+    "title": "Notizen",
+    "section": "",
+    "text": "R: learning by doing"
+  },
+  {
+    "objectID": "Notizen.html#einführung",
+    "href": "Notizen.html#einführung",
+    "title": "Notizen",
+    "section": "Einführung:",
+    "text": "Einführung:\n\nBenutzung von KI\nWieso Quantitative Linguistik?\nWieso Statistik?\nErwartungen\nKursübersicht: Seminarplan und Leistungsnachweise\nAM1: Hausarbeit = Pflicht"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-2-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 2: Übersicht zu R",
+    "text": "Sitzung 2: Übersicht zu R\n\nProjektmanagement\nbase R\ntidyverse\nnumeric, integer, double\nlogical\ncharacter\n\nhttps://www.oer.psy.lmu.de/R_Tutorial/Teil1.html#arbeiten-mit-daten https://soilr.github.io/doku/objekte-und-funktionen.html"
+  },
+  {
+    "objectID": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "href": "Notizen.html#sitzung-3-übersicht-zu-r",
+    "title": "Notizen",
+    "section": "Sitzung 3: Übersicht zu R",
+    "text": "Sitzung 3: Übersicht zu R"
   },
   {
     "objectID": "Sitzung_1.html#übersicht",
@@ -159,40 +201,5 @@
     "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
     "section": "Statistik",
     "text": "Statistik\n\nnumerisches Erfassen von einem (linguistischen) Phänonem -&gt; Modell\nVorhersagen treffen über mögliche Ereignisse, die wir noch nicht beobachtet haben\nHypothesen testen"
-  },
-  {
-    "objectID": "Notizen.html",
-    "href": "Notizen.html",
-    "title": "Notizen",
-    "section": "",
-    "text": "R: learning by doing"
-  },
-  {
-    "objectID": "Notizen.html#einführung",
-    "href": "Notizen.html#einführung",
-    "title": "Notizen",
-    "section": "Einführung:",
-    "text": "Einführung:\n\nBenutzung von KI\nWieso Quantitative Linguistik?\nWieso Statistik?\nErwartungen\nKursübersicht: Seminarplan und Leistungsnachweise\nAM1: Hausarbeit = Pflicht"
-  },
-  {
-    "objectID": "Notizen.html#sitzung-2-übersicht-zu-r",
-    "href": "Notizen.html#sitzung-2-übersicht-zu-r",
-    "title": "Notizen",
-    "section": "Sitzung 2: Übersicht zu R",
-    "text": "Sitzung 2: Übersicht zu R\n\nProjektmanagement\nbase R\ntidyverse\nnumeric, integer, double\nlogical\ncharacter\n\nhttps://www.oer.psy.lmu.de/R_Tutorial/Teil1.html#arbeiten-mit-daten https://soilr.github.io/doku/objekte-und-funktionen.html"
-  },
-  {
-    "objectID": "Notizen.html#sitzung-3-übersicht-zu-r",
-    "href": "Notizen.html#sitzung-3-übersicht-zu-r",
-    "title": "Notizen",
-    "section": "Sitzung 3: Übersicht zu R",
-    "text": "Sitzung 3: Übersicht zu R"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "WS26/27 AM1/SM1: Quantitative Linguistik: Eine Einführung in die Statistik",
-    "section": "",
-    "text": "Kursbeschreibung\nKursleiterin: Eva Scheel(-Huber)\nEmail-Adresse: eva.scheel-huber(at)uni-koeln(dot)de\nDie Quantitative Linguistik beschäftigt sich mit einer Vielzahl von Fragen, die für die Entwicklung und das Testen von linguistischen Theorien notwendig sind. Anhand quantitativer Methoden können wir zum Beispiel untersuchen, welche sprachlichen Eigenschaften unter der Berücksichtigung von phylogenetischen und arealen Faktoren global bevorzugt sind. Ebenso geben uns empirische Methoden einen Einblick in den Sprachgebrauch und erlauben uns zu erforschen, wann und wie gewisse Sprachstrukturen verwendet werden.\nDer Schwerpunkt dieses Seminars liegt auf statistischen Methoden, die wesentlich für das Testen von Hypothesen und die Beschreibung und Analyse von Daten sind. Wir benutzen R und behandeln die Aufbereitung und Management von Daten, deskriptive Statistik, inferentielle Statistik sowie unterschiedliche Lineare Modelle.\nDas Seminar dient als Einführung und somit sind keine Vorkenntnisse erforderlich. Auch Studierende, die einen gewissen Respekt vor Mathematik und Programmieren haben, werden ermutigt teilzunehmen. Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertraut zu machen, mitbringen. Da jede Woche auf der vorherigen aufbaut, ist die wöchentliche Teilnahme und die Bearbeitung der Hausaufgaben entscheidend. Ebenso brauchen Studierende einen Laptop (ein Tablet ist nicht geeignet).\n\n\nSemesterplan\n\n\n\nSitzung\nDatum\nThema\nLektüre\nAufgaben\n\n\n\n\n1\n14.10.2026\nEinführung\n\n-\n\n\n2\n21.10.2026\nÜbersicht zu R\nKapitel 1 in Winter (2020); “CleanItUp” by RLadies Sydney; Abschnitte 1-3 in Douglas et al. (2026)\nAB 0\n\n\n3\n28.10.2026\nKEINE SITZUNG\n\n\n\n\n4\n04.11.2026\nDeskriptive Statistik I\n\nAB 1\n\n\n5\n11.11.2026\nDeskriptive Statistik II (ONLINE)\n\nAB 2\n\n\n6\n18.11.2026\nLineare Regression\n\nAB 3\n\n\n7\n25.11.2026\nMultiple Lineare Regression, Projektarbeit\n\nAB 4\n\n\n8\n02.12.2026\nLogistische Regression\n\nAB 5\n\n\n9\n09.12.2026\nLogistische Regression\n\nAB 6\n\n\n10\n16.12.2026\nGemischtes Modell\n\nAB 7\n\n\n11\n13.01.2027\nGemischtes Modell\n\nAB 8\n\n\n12\n20.01.2027\nInferentielle Statistik\n\nAB 9\n\n\n13\n27.01.2027\nInferentielle Statistik\n\nAB 10\n\n\n14\n03.02.2027\nAusblick\n\n\n\n\n\nIm Verlauf des Semesters werden sich die Inhalte der einzelnen Sitzungen möglicherweise noch ändern.\nFolien im PDF-Format und die Arbeitsblätter sind hier zugänglich.\n\n\nLektüre\n\nHow to do Linguistics with R (Levshina 2015)\nStatistics for Linguists: An Introduction Using R (Winter 2020)\nhttps://intro2r.com/ (Douglas et al. 2026)\n\n\n\n\n\n\n\n\n\nReferenzen\n\nDouglas, Alex, Deon Roos, Francesca Mancini, Ana Couto, and David Lusseau. 2026. An Introduction to r. Unpublished online resources. https://intro2r.com/.\n\n\nLevshina, Natalia. 2015. How to Do Linguistics with r. John Benjamins Publishing Company.\n\n\nWinter, Bodo. 2020. Statistics for Linguists: An Introduction Using r. New York; London: Routledge."
   }
 ]

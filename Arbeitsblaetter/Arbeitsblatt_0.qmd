@@ -1,6 +1,6 @@
 ---
 title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
-subtitle: "Arbeitsblatt 1"
+subtitle: "Arbeitsblatt 0"
 author: "Eva Scheel"
 format:
   pdf:
