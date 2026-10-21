@@ -14,21 +14,19 @@ bibliography: ../references.bib
 # Informationen
 
 - **Abgabe**: 3.11.2026 um 24:00 per email an eva.scheel-huber\@uni-koeln.de
-- **Abgabeformat**: .R-Skript
-- **benötigte Daten**: SUBTLEX-UK_selection.csv, auf Sciebo verfügbar
+- **Abgabeformat**: R-Skript
+- **benötigte Daten**: SUBTLEX-UK_selection.csv, auf [Sciebo]() verfügbar
 
 # Datensatz
 
 In diesem Arbeitsblatt verwenden wir *Subtlex-UK* [@subtlexUK], welches englische Wörter und deren Häufigkeiten in britischen Fernsehsendungen enthält. Der Ausschnitt, mit dem ihr hier arbeiten wird, beschränkt sich auf die folgenden Variabeln:
 
-- Das Wort
+- Wort
 - Worthäufigkeit
-- Das Lemma und die Wortkategorie (*part-of-speech (POS)*) dessen 
-- Und ein Maß für *Contextual Diversity (CD)*: Prozentsatz von Filmen, die das Wort enhalten
+- Lemma und die Wortkategorie (*part-of-speech (POS)*) dessen 
+- ein Maß für *Contextual Diversity (CD)*: Prozentsatz von Filmen, die das Wort enhalten
 
-Für mehr Informationen zu dem Datensatz und für welche linguistische Fragenstellung dieser verwendet werden kann, lies den Artikel von @subtlexUK. 
-
-Der Datensatz ist frei verfügbar und kann [hier](https://shiny.psychology.nottingham.ac.uk/lpzwjv/SUBTLEX-UK/) runtergeladen werden.
+Für mehr Informationen zu dem Datensatz und für welche linguistische Fragenstellung dieser verwendet werden kann, schau dir den Artikel von @subtlexUK an. 
 
 
 # Aufgaben
@@ -52,32 +50,32 @@ data_new <- data |>
     mutate(new_column = 1:nrow(data))
 ```
 
-Benutze allgemein gerne Kommentare, um dein Code zu dokumentieren und besser verständlich zu machen.
+Benutze gerne allgemein Kommentare, um dein Code zu dokumentieren und besser verständlich zu machen.
 
-Wie in dem Seminar, werdet ihr die folgenden vier Schritte durchgehen: 1) Daten einlesen 2) Daten einlesen 3)  Daten vorverarbeiten & "reinigen" und 4) vorverarbeitete Daten speichern.
-Für manche Fragen/Teilaufgaben brauchst du Funktionen, die wir im Seminar nicht besprochen haben. Benutze dafür die Informationsquellen, die im Kurs erwähnt worden sind. 
+In diesem Aufgabenblatt wirst du die folgenden vier Schritte durchgehen: Daten einlesen, Daten untersuchen, Daten vorverarbeiten & "reinigen" und zuletzt die vorverarbeitete Daten speichern.
+Für manche Fragen/Teilaufgaben brauchst du Funktionen, die wir im Seminar noch nicht besprochen haben. Benutze die Informationsquellen, die im Kurs erwähnt wurden, um rauszufinden, wie man gewisse Schritte umsetzen kann.
 
 
 1. **Daten einlesen**: Lese die *Subtlex-UK*-Daten als Data Frame in R ein. 
 
 2. **Daten untersuchen**  
-    2.1.Wie viele Zeilen und wie viele Spalten hat der Datensatz?  
+    2.1.Wie viele Zeilen und wie viele Spalten hat der Data Frame?  
     2.2 Wie heißen die Spaltennamen?  
-    2.3 Gibt es leere Felder, sogenanne *NA*s? 
+    2.3 Gibt es leere Felder, sogenannte *NA*s? 
 
-3. **Daten vorverarbeiten**  
+3.  **Daten vorverarbeiten**  
     3.1 Für linguistische Studien (z.B. psycholinguistische Experimente wie Worterkennungsstudien) verwenden wir Worthäufigkeit oftmals auf der logarithmischen Skala. Füge also eine neue Spalte ein, die die Worthäufigkeit auf der logarithmischen Skala beinhaltet.  
-    3.2 Nun erstellst du einen neuen Data Frame, welcher nur Wörter beinhaltet die mindestens zwei und höchstens zehn Charaktere lang sind.  
-    3.3 Ändere den neuen Datensatz so, dass er alle Spalten bis auf *Contextual Diversity* beinhaltet.  
-    3.4 Wie viele Zeilen hat der neue Data Frame?
+    3.2 Erstelle einen neuen Data Frame, welcher 1) nur Wörter beinhaltet, die mindestens zwei und höchstens zehn Charaktere lang sind und 2) keine Wörter beinhaltet, von denen die Wortkategorie (*pos*) "unclassified" ist.  
+    3.3 Ändere den neuen Data Frame so, dass er alle Spalten bis auf *Contextual Diversity* beinhaltet.  
+    3.4 Wie viele Zeilen und Spalten hat der neue Data Frame?
 
-4. **Daten speichern**  
-    4.1 Speichere den neuen Data Frame in einer Datei. Wähle einen passenden Dateinamen aus. 
+4. **Daten untersuchen mit `summarise()`**
+    - Nun verwenden wir die Funktion `summarise()` von `dplyr` (aus der `tidyverse`-Sammlung), die wir in der letzten Sitzung noch nicht angetroffen haben. 
+    - Mit `summarise()` können wir unsere Daten basierend auf gewissen Gruppen zusammenfassen. Die Gruppen beziehen sich dabei immer auf einzelne Spalten. Mit `data |> summarise(mean_per_pos = mean(FreqCount), .by=DomPoS)`^[Der folgende Code erzielt das gleiche Ergebnis: `data |> group_by(DomPoS) |> summarise(mean_per_pos = mean(FreqCount))`] berechnet man z.B. die Durchschnittshäufigkeit (d.h. den *mean*) für jede Wortkategorie. Die Gruppe wird also in dem `.by`-Argument festgelegt. Die Funktion, die die Art der Zusammenfassung bestimmt, ist `mean()`.   
+    - Probier es nun selber aus und benutz `summarise()`, um die durchschnittliche Wortlänge für jede Wortkategorie auszurechnen. 
 
-
-SUMMARISE?
-
-
+5. **Daten speichern**  
+    5.1 Speichere den neuen Data Frame in einer Datei. Wähle einen passenden Dateinamen aus. 
 
 # Quellen
 
