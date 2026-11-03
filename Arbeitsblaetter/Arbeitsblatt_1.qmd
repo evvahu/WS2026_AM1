@@ -13,7 +13,7 @@ bibliography: ../references.bib
 
 # Informationen
 
-- **Abgabe**: 3.11.2026 um 24:00 per email an eva.scheel-huber\@uni-koeln.de
+- **Abgabe**: bis spätestens am 3.11.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
 - **Abgabeformat**: R-Skript
 - **benötigte Daten**: SUBTLEX-UK_selection.csv, auf [Sciebo]() verfügbar
 
@@ -26,13 +26,12 @@ In diesem Arbeitsblatt verwenden wir *Subtlex-UK* [@subtlexUK], welches englisch
 - Lemma und die Wortkategorie (*part-of-speech (POS)*) dessen 
 - ein Maß für *Contextual Diversity (CD)*: Prozentsatz von Filmen, die das Wort enhalten
 
-Für mehr Informationen zu dem Datensatz und für welche linguistische Fragenstellung dieser verwendet werden kann, schau dir den Artikel von @subtlexUK an. 
+Für mehr Informationen zu dem Datensatz und für welche linguistische Fragestellungen dieser verwendet werden kann, schau dir den Artikel von @subtlexUK an. 
 
 
-# Aufgaben
+# Vorbereitung
 
-
-Lade den Datensatz runter, erstelle ein neues RProjekt und öffne ein neues R-Skript. In dem R-Skript wirst du die Aufgaben ausführen und die Fragen beantworten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
+Lade den Datensatz runter, erstelle ein neues RProjekt und öffne ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
 
 Beispiel (erfunden):
 
@@ -50,7 +49,9 @@ data_new <- data |>
     mutate(new_column = 1:nrow(data))
 ```
 
-Benutze gerne allgemein Kommentare, um dein Code zu dokumentieren und besser verständlich zu machen.
+Benutze gerne allgemein Kommentare, um deinen Code zu dokumentieren und besser verständlich zu machen.
+
+# Aufgaben
 
 In diesem Aufgabenblatt wirst du die folgenden vier Schritte durchgehen: Daten einlesen, Daten untersuchen, Daten vorverarbeiten & "reinigen" und zuletzt die vorverarbeitete Daten speichern.
 Für manche Fragen/Teilaufgaben brauchst du Funktionen, die wir im Seminar noch nicht besprochen haben. Benutze die Informationsquellen, die im Kurs erwähnt wurden, um rauszufinden, wie man gewisse Schritte umsetzen kann.
@@ -72,7 +73,7 @@ Für manche Fragen/Teilaufgaben brauchst du Funktionen, die wir im Seminar noch 
 4. **Daten untersuchen mit `summarise()`**
     - Nun verwenden wir die Funktion `summarise()` von `dplyr` (aus der `tidyverse`-Sammlung), die wir in der letzten Sitzung noch nicht angetroffen haben. 
     - Mit `summarise()` können wir unsere Daten basierend auf gewissen Gruppen zusammenfassen. Die Gruppen beziehen sich dabei immer auf einzelne Spalten. Mit `data |> summarise(mean_per_pos = mean(FreqCount), .by=DomPoS)`^[Der folgende Code erzielt das gleiche Ergebnis: `data |> group_by(DomPoS) |> summarise(mean_per_pos = mean(FreqCount))`] berechnet man z.B. die Durchschnittshäufigkeit (d.h. den *mean*) für jede Wortkategorie. Die Gruppe wird also in dem `.by`-Argument festgelegt. Die Funktion, die die Art der Zusammenfassung bestimmt, ist `mean()`.   
-    - Probier es nun selber aus und benutz `summarise()`, um die durchschnittliche Wortlänge für jede Wortkategorie auszurechnen. 
+    - Probiere es nun selber aus und verwende `summarise()`, um die durchschnittliche Wortlänge für jede Wortkategorie zu berechnen. 
 
 5. **Daten speichern**  
     5.1 Speichere den neuen Data Frame in einer Datei. Wähle einen passenden Dateinamen aus. 

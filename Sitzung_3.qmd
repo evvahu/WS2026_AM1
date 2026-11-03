@@ -1,0 +1,358 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Sitzung 3: Deskriptive Statistik I"
+date: "04. November 2026"
+author: "Eva Scheel"
+institute: eva.scheel-huber@uni-koeln.de
+date-format: "DD. MM. YYYY"
+format:
+  revealjs: 
+    slide-number: true
+    theme: slides_theme.scss
+    error: true
+editor: source
+bibliography: references.bib
+---
+
+## Übersicht
+
+1. Aufgabenblatt 1
+2. Deskriptive Statistik I
+
+Schwerpunkt heute: Maße der zentralen Tendenz (Mittelwerte) und Maße von Streuung
+Schwerpunkt nächstes Mal: Visualisierung
+
+
+## Deskriptive Statistik
+
+Beschreiben einer <span class="important">Stichprobe</span>
+
+:::: {.columns}
+
+::: {.column}
+
+#### Wieso?
+
+::: incremental
+- Muster erkennen
+- einen Eindruck von den Daten bekommen
+- Daten darstellen und kommunizieren
+- möglicherweise auch Fehler oder Auffälligkeiten finden
+:::
+
+:::
+
+::: {.column}
+#### Wie?
+
+::: incremental
+- Charakteristika von Verteilungen
+- Visualisierung
+:::
+:::
+::::
+
+## Deskriptive und Inferentielle Statistik
+
+Deskriptive Statistik: Beschreiben einer <span class="important">Stichprobe</span>
+Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine <span class="important">Population</span> zu machen
+
+
+
+## Deskriptive und Inferentielle Statistik
+
+Deskriptive Statistik: Beschreiben einer <span class="important">Stichprobe</span>
+Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine <span class="important">Population</span> zu machen
+
+
+[In Wirklichkeit ist die Grenze aber unscharf...]{.absolute bottom=200}
+
+
+## Deskriptive Statistik
+
+- Wahrscheinlichkeitsverteilungen und Charakteristika deren:
+    - verschiedene Arten von Häufigkeiten
+    - Maße der zentralen Tendenz (= Lagemaße)
+- Streuungsmaße (= Dispersionsmaße)
+
+----------------
+
+### Maße der zentralen Tendenz
+
+
+#### Beispiel: Größen von Schüler\*innen in einer Grundschule
+
+::::{.columns}
+:::{.column}
+```{r}
+heights <- data.frame('groesse_cm' = round(rnorm(100, 140, 10),1))
+
+heights
+```
+
+:::
+:::{.column}
+
+```{r}
+paste("Anzahl Schüler*innen", nrow(heights), sep='')
+paste("Höchstwert: ", min(heights), sep='')
+paste("Tiefstwert: ", max(heights), sep='')
+
+```
+
+
+
+:::
+::::
+
+-------------------
+
+
+### Maße der zentralen Tendenz
+
+
+#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+
+
+**Durchschnitt (arithmetische Mittel, Mittelwert)**
+```{r}
+#| echo: true 
+
+mean(heights$groesse_cm)
+
+
+```
+
+
+--------------
+
+### Maße der zentralen Tendenz
+
+#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+
+
+**Durchschnitt (arithmetische Mittel, Mittelwert)**
+```{r}
+#| echo: false
+library(ggplot2)
+heights |>
+    ggplot(mapping = aes(x=groesse_cm)) + 
+    geom_histogram(binwidth=3, alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    labs(x = "Grösse in cm", y="Anzahl Schüler*innen") + 
+    geom_vline(xintercept = mean(heights$groesse_cm), linetype = "longdash", colour="#6e0670",linewidth=1 ) + 
+    guides(alpha="none")
+```
+
+
+--------------
+
+### Maße der zentralen Tendenz
+
+#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+
+
+**Median**
+
+```{r}
+#| echo: true 
+sorted_heights <- sort(heights$groesse_cm)
+sorted_heights[13]
+```
+
+
+```{r}
+#| echo: true 
+median(heights$groesse_cm)
+```
+
+
+```{r}
+#| echo: false
+library(ggplot2)
+heights |>
+    ggplot(mapping = aes(x=groesse_cm)) + 
+    geom_histogram(binwidth=3, alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    labs(x = "Grösse in cm", y="Anzahl Schüler*innen") + 
+    geom_vline(xintercept = mean(heights$groesse_cm), linetype = "longdash", colour="#6e0670",linewidth=1 ) + 
+    geom_vline(xintercept = median(heights$groesse_cm), linetype = "longdash", colour="#e08308",linewidth=1 ) + 
+    guides(alpha="none")
+```
+
+
+### Maße der zentralen Tendenz
+
+Welcher Vorteil hat der Median im Vergleich zu dem Arithmetischen Mittel?
+
+--------------
+
+### Maße der zentralen Tendenz
+
+#### Beispiel: Einkommen
+
+
+QUELLEEEE
+```{r}
+
+einkommen_de <- read.csv('/Users/evascheel/Downloads/62361-0030_de.txt', sep='\t') |>
+    filter(nchar(Kennzeichen) > 9) %>%
+    tidyr::pivot_longer(!c('Stichmonat', 'Kennzeichen', 'Berufsfeld'), names_to = 'geschlecht', values_to = 'mittelw_monat') %>%
+    filter(!is.na(mittelw_monat))
+
+einkommen_de |>
+    ggplot(mapping= aes(x=mittelw_monat)) + 
+geom_histogram(binwidth=100, alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    geom_vline(xintercept = mean(einkommen_de$mittelw_monat), linetype = "longdash", colour="#6e0670",linewidth=1 ) + 
+    geom_vline(xintercept = median(einkommen_de$mittelw_monat), linetype = "longdash", colour="#e08308",linewidth=1 ) + 
+    labs(x = "Mittelwert Bruttoeinkommen pro Monat (in Euro)", y="Anzahl Personen") 
+```
+
+--------------
+
+### Maße der zentralen Tendenz
+
+#### Beispiel: Einkommen
+
+```{r}
+
+einkommen_de <- read.csv('/Users/evascheel/Downloads/62361-0030_de.txt', sep='\t') |>
+    filter(nchar(Kennzeichen) > 9) %>%
+    tidyr::pivot_longer(!c('Stichmonat', 'Kennzeichen', 'Berufsfeld'), names_to = 'geschlecht', values_to = 'mittelw_monat')
+
+einkommen_de |>
+    ggplot(mapping= aes(x=mittelw_monat)) + 
+geom_histogram(binwidth=100, alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    labs(x = "Mittelwert Bruttoeinkommen pro Monat (in Euro)", y="N Personen") 
+
+```
+
+
+
+```{r}
+#heights |>
+#    ggplot(mapping = aes(x=groesse_cm)) +
+#    geom_histogram(aes(x=groesse_cm, y = after_stat(density), alpha=0.9), binwidth = 2) +
+# geom_density(colour = "purple",
+#               fill = "purple",
+#               alpha = 0.2,
+#               linewidth = 0.8) +
+#    theme_bw() +
+#    guides(alpha="none")
+
+```
+
+----------------
+
+
+### Kategorische Variablen
+
+```{r}
+faecher <- c("Mathematik", "Französisch", "Sport", "Englisch", "Deutsch", "Biologie", "Chemie", "Physik", "Musik")
+hobbies <- c("Kanufahren", "Hula_Hoop", "Seilspringen", "Posaune", "Backgammon", "Modelleisenbahn")
+person <- seq(1:150)
+alter <- round(rnorm(150, mean = 15, sd = 2),0)
+haarlaenge <- c("kurz", "mittel", "lang")
+lieblingsfaecher <- data.frame(fach = sample(faecher, 150, replace=T), 
+                    alter = alter,
+                    haarlaenge = sample(haarlaenge, 150, replace=T),
+                    hobby = sample(hobbies, 150, replace=T))
+
+lieblingsfaecher |>
+    ggplot(mapping=aes(x=fach)) +
+    geom_bar(alpha=0.8, fill="#0a7961") +
+    labs(x='Schulfach', y='Anzahl Schüler*innen') + 
+        theme_bw() +
+    theme(axis.text.x = element_text(angle=70, hjust=1)) + 
+    guides(alpha="none") +
+    facet_wrap(~haarlaenge)
+
+table(lieblingsfaecher$fach)
+table(lieblingsfaecher$hobby)
+```
+
+
+
+[Erfundener Datensatz]{.absolute bottom=200}
+
+
+
+## Verteilungen
+
+Normalverteilung (oder Gauß-Verteilung)
+```{r}
+#| echo: false
+x <- seq(-4, 4, 0.01)
+plot(x, dnorm(x,mean=0,sd=1), type='l', lty = 1, lwd = 2)
+
+```
+
+
+
+:::: notes
+Was fällt euch auf?
+- numerische Daten
+- symmetrisch
+- nicht flach, also mehr Masse in der Mitte
+::::
+
+-------------------------
+
+### Empirisch beobachtete Verteilung
+
+
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+
+plot_list <-  list()
+i <- 1
+for (n in c(20,100,500,1000, 5000, 10000)) {
+    heights <- data.frame('height' = rnorm(n, 165, 10))
+    current_title <- paste("sample size = ", n, sep='')
+    p <- heights |>
+        ggplot(mapping = aes(x = height)) + 
+        geom_histogram(aes(x=height),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+                    labs(title = current_title) +
+        theme(plot.title = element_text(color = '#810a38da'))
+    plot_list[[i]] <- p
+    i <- i+1
+}
+
+wrap_plots(plot_list, ncols=3)
+```
+
+
+
+
+## Streuungsmaße (Dispersion)
+
+- zeige unterschiedliche Verteilungen: was fällt Studierenden auf?
+
+
+### Standardabweichung
+
+
+### Quantile
+
+
+
+## Theoretische Verteilung vs. empirisch beobachtete Verteilung
+
+```{r}
+
+
+
+```
+
+
+### Lernziele
+
+- 
