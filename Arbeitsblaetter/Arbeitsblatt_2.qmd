@@ -1,0 +1,40 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Arbeitsblatt 2: Deskriptive Statistik I"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+
+# Informationen
+
+- **Abgabe**: bis spätestens am 10.11.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
+- **Abgabeformat**: R-Skript, Dateiname: [NACHNAME]_AB2.R
+- **benötigte Daten**: studierenden_groesse.ods, auf [Sciebo](https://uni-koeln.sciebo.de/s/LR7AFH8zmRsFzaj) verfügbar
+
+# Datensatz
+
+In diesem Arbeitsblatt verwenden wir unseren eigenen Datensatz und untersuchen, wie Körpergrößen, Geburtsmonate und Haarlänge in einer kleinen Stichprobe von Linguistikstudierenden an der UzK verteilt sind.
+
+# Vorbereitung
+
+Lade den Datensatz runter, erstelle ein neues RProjekt (oder verwende das vom AB1) und erstelle ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
+
+
+1. **Daten einlesen**: Lese den Datensatz ein. ([!]{style="color: #e51010ea; "} die Datei ist als "OpenDocument Spreadsheet" (ODS) gespeichert. Wie kannst du sie einlesen?)
+2. Überprüfe die Daten (siehe Sitzung 2/AB1: Gibt es NAs? Wie viele Datenpunkte sind vorhanden?)
+3. **Maße der Zentralen Tendenz**:  
+    3.1 Was ist das arithmetische Mittel und was ist der Median der Köpergröße? Welches Maß ist angebrachter?  
+    3.2 Welches Maß benutzt du für die Variablen *Haarlänge* und *Geburtsmonat*? 
+4. **Streuungsmaße**:  
+    4.1 Standardabweichung: Berechne die Standardabweichung wie in der Sitzung (Folie: 26) Schritt für Schritt. Überprüfe dann das Resultat mit der R-Funktion `sd()`  
+    4.2 Interquartilsabstand (IQR): Berechne den IQR manuell. Benutze `quantile()` oder `summary()` um die Quartile zu berechnen. Wie kannst du anhand der Quartile den IQR berechnen? Überprüfe anschließend das Resultat mit der R-Funktion `IQR()`
+
+
+
+
+

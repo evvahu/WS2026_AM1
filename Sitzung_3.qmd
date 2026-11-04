@@ -72,9 +72,8 @@ Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine 
 ## Deskriptive Statistik
 
 - Wahrscheinlichkeitsverteilungen und Charakteristika deren:
-    - verschiedene Arten von Häufigkeiten
     - Maße der zentralen Tendenz (= Lagemaße)
-- Streuungsmaße (= Dispersionsmaße)
+    - Streuungsmaße (= Dispersionsmaße)
 
 ----------------
 
@@ -439,7 +438,7 @@ heights |>
     ggplot(mapping = aes(x=groesse_cm)) + 
     geom_density(alpha=0.7, fill="#0a7961") +
     theme_bw() +
-    labs(x = "Grösse in cm", y="Anzahl Schüler:innen") + 
+    labs(x = "Grösse in cm", y="Wahrscheinlichkeit") + 
     guides(alpha="none") + 
     xlim(110, 190)
 
@@ -451,7 +450,7 @@ heights |>
 Sind die Daten normal verteilt? 
 
 :::incremental
-- Sie sollten ja, die Daten sind von einer Normalverteilung generiert. 
+- Sie sollten ja, denn die Daten wurden aus einer Normalverteilung erzeugt. 
 :::
 -------------------------
 
@@ -749,6 +748,8 @@ distance  |>
         geom_vline(xintercept = quartiles[3], linetype = "longdash", colour="#4f2547",linewidth=1)
 
 
+IQR(distance$distanz)
+
 ```
 
 :::
@@ -783,12 +784,12 @@ distance |>
 - AB2
 - mehr über die Normalverteilung und Wahrscheinlichkeitsverteilungen
 - Ausreißer, Normalisierungsmaße
-- Visualisierungen?
+- Visualisierungen
 
 
 ## Lernziele
 
-- mit zentralen Maßen der Tendenz (arithmetisches Mittel, Median, Modus) vertraut sein, wissen wie sie sich in unterschiedlichen Verteilungen verhalten und für welche Daten, welches Maß angebracht ist.
-- mit Streuungsmaßen (insbesondere Standardabweichung und Interquartilsabstand) vertraut sein, interpretieren und berechnen zu können.
+- mit zentralen Maßen der Tendenz (arithmetisches Mittel, Median, Modus) vertraut sein, wissen wie sie sich in unterschiedlichen Verteilungen verhalten und für welche Daten welches Maß angebracht ist.
+- mit Streuungsmaßen (insbesondere Standardabweichung und Interquartilsabstand) vertraut sein, sie interpretieren und berechnen zu können.
 - den Unterschied zwischen theoretischen und empirisch beobachteten Verteilungen zu kennen 
 
