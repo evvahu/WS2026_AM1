@@ -95,7 +95,7 @@ heights
 :::{.column}
 
 ```{r}
-paste("Anzahl Schüler:innen", nrow(heights), sep='')
+paste("Anzahl Schüler:innen: ", nrow(heights), sep='')
 paste("Höchstwert: ", min(heights), sep='')
 paste("Tiefstwert: ", max(heights), sep='')
 
