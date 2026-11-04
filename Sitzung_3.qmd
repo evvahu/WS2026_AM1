@@ -788,3 +788,7 @@ distance |>
 
 ## Lernziele
 
+- mit zentralen Maßen der Tendenz (arithmetisches Mittel, Median, Modus) vertraut sein, wissen wie sie sich in unterschiedlichen Verteilungen verhalten und für welche Daten, welches Maß angebracht ist.
+- mit Streuungsmaßen (insbesondere Standardabweichung und Interquartilsabstand) vertraut sein, interpretieren und berechnen zu können.
+- den Unterschied zwischen theoretischen und empirisch beobachteten Verteilungen zu kennen 
+
