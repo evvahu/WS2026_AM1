@@ -779,6 +779,7 @@ distance |>
 
 ## Nächstes Mal
 
+- Online! Zoom-link folgt
 - AB2
 - mehr über die Normalverteilung und Wahrscheinlichkeitsverteilungen
 - Ausreißer, Normalisierungsmaße
