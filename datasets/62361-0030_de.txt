@@ -1,0 +1,1482 @@
+Stichmonat	Kennzeichen	Berufsfeld	männlich	weiblich
+04/2025	KB10-11	Land-, Tier- und Forstwirtschaftsberufe	2949	2808
+04/2025	KB10-111	  Landwirtschaft	2880	2801
+04/2025	KB10-11101	    Landwirtschaft (oS) - Helfer	2773	2667
+04/2025	KB10-11102	    Landwirtschaft (oS) - Fachkraft	2798	2600
+04/2025	KB10-11103	    Landwirtschaft (oS) - Spezialist	4630	4347
+04/2025	KB10-11104	    Landwirtschaft (oS) - Experte	6281	4521
+04/2025	KB10-11113	    Landtechnik - Spezialist	3469	3417
+04/2025	KB10-11114	    Landtechnik - Experte	7229	NA
+04/2025	KB10-11123	    Landwirtschaftliche Sachverständige - Spezialist	NA	NA
+04/2025	KB10-11124	    Landwirtschaftliche Sachverständige - Experte	7580	NA
+04/2025	KB10-11132	    Landwirtsch.-techn. Laboratorium - Fachkraft	3958	3620
+04/2025	KB10-11133	    Landwirtsch.-techn. Laboratorium - Spezialist	NA	NA
+04/2025	KB10-11182	    Landwirtschaft (ssT) - Fachkraft	2959	2480
+04/2025	KB10-11183	    Landwirtschaft (ssT) - Spezialist	NA	3438
+04/2025	KB10-11184	    Landwirtschaft (ssT) - Experte	NA	4924
+04/2025	KB10-11193	    Aufsicht - Landwirtschaft	3324	3736
+04/2025	KB10-11194	    Führung - Landwirtschaft	NA	NA
+04/2025	KB10-112	  Tierwirtschaft	3075	2782
+04/2025	KB10-11211	    Nutztierhaltung - Helfer	2625	2380
+04/2025	KB10-11212	    Nutztierhaltung - Fachkraft	2984	2799
+04/2025	KB10-11213	    Nutztierhaltung - Spezialist	4154	3645
+04/2025	KB10-11214	    Nutztierhaltung - Experte	4348	3538
+04/2025	KB10-11222	    Geflügelhaltung - Fachkraft	2680	2854
+04/2025	KB10-11223	    Geflügelhaltung - Spezialist	NA	NA
+04/2025	KB10-11232	    Imkerei - Fachkraft	3029	NA
+04/2025	KB10-11233	    Imkerei - Spezialist	NA	NA
+04/2025	KB10-11282	    Tierwirtschaft (ssT) - Fachkraft	NA	NA
+04/2025	KB10-11283	    Tierwirtschaft (ssT) - Spezialist	NA	NA
+04/2025	KB10-11293	    Aufsicht - Tierwirtschaft	NA	NA
+04/2025	KB10-11294	    Führung - Tierwirtschaft	NA	NA
+04/2025	KB10-113	  Pferdewirtschaft	2228	2550
+04/2025	KB10-11302	    Pferdewirtschaft (oS) - Fachkraft	2228	2550
+04/2025	KB10-11312	    Pferdewirtschaft - Pferdezucht - Fachkraft	NA	NA
+04/2025	KB10-11322	    Pferdewirtschaft - Reiten - Fachkraft	2800	2926
+04/2025	KB10-11333	    Hufbeschlagschmiede - Spezialist	NA	NA
+04/2025	KB10-11342	    Kutscher - Fachkraft	2574	NA
+04/2025	KB10-11393	    Aufsicht - Pferdewirtschaft	NA	NA
+04/2025	KB10-11394	    Führung - Pferdewirtschaft	NA	NA
+04/2025	KB10-114	  Fischwirtschaft	2959	2390
+04/2025	KB10-11401	    Fischwirtschaft (oS) - Helfer	2308	NA
+04/2025	KB10-11402	    Fischwirtschaft (oS) - Fachkraft	2489	NA
+04/2025	KB10-11412	    Fischzucht - Fachkraft	2750	NA
+04/2025	KB10-11422	    Fischerei - Fachkraft	4167	NA
+04/2025	KB10-11423	    Fischerei - Spezialist	NA	NA
+04/2025	KB10-11424	    Fischerei - Experte	NA	NA
+04/2025	KB10-11493	    Aufsicht - Fischwirtschaft	3700	NA
+04/2025	KB10-11494	    Führung - Fischwirtschaft	NA	NA
+04/2025	KB10-115	  Tierpflege	3045	2974
+04/2025	KB10-11501	    Tierpflege (oS) - Helfer	2968	2773
+04/2025	KB10-11502	    Tierpflege (oS) - Fachkraft	3080	3248
+04/2025	KB10-11512	    Nutztierpflege - Fachkraft	2799	2620
+04/2025	KB10-11522	    Haus-, Zootierpflege - Fachkraft	2835	2791
+04/2025	KB10-11582	    Tierpflege (ssT) - Fachkraft	3680	3621
+04/2025	KB10-11593	    Aufsicht - Tierpflege	NA	NA
+04/2025	KB10-11594	    Führung - Tierpflege	NA	NA
+04/2025	KB10-116	  Weinbau	3432	2750
+04/2025	KB10-11602	    Weinbau - Fachkraft	3432	2750
+04/2025	KB10-11603	    Weinbau - Spezialist	4200	NA
+04/2025	KB10-11604	    Weinbau - Experte	5566	NA
+04/2025	KB10-11693	    Aufsicht - Weinbau	NA	NA
+04/2025	KB10-11694	    Führung - Weinbau	NA	NA
+04/2025	KB10-117	  Forst- und Jagdwirtschaft, Landschaftspflege	3566	4333
+04/2025	KB10-11711	    Forstwirtschaft - Helfer	3032	3046
+04/2025	KB10-11712	    Forstwirtschaft - Fachkraft	3656	3694
+04/2025	KB10-11713	    Forstwirtschaft - Spezialist	5112	4885
+04/2025	KB10-11714	    Forstwirtschaft - Experte	5350	4910
+04/2025	KB10-11722	    Natur-, Landschaftspflege - Fachkraft	3505	NA
+04/2025	KB10-11723	    Natur-, Landschaftspflege - Spezialist	3036	4437
+04/2025	KB10-11724	    Natur-, Landschaftspflege - Experte	5678	4964
+04/2025	KB10-11732	    Jagdwirtschaft, Wildhege - Fachkraft	3783	NA
+04/2025	KB10-11742	    Sammeln von Naturprodukten - Fachkraft	NA	NA
+04/2025	KB10-11793	    Aufsicht - Forst, Jagd, Landschaftspflege	4293	NA
+04/2025	KB10-11794	    Führung - Forst, Jagd, Landschaftspflege	5683	5200
+04/2025	KB10-12	Gartenbauberufe und Floristik	3150	2784
+04/2025	KB10-121	  Gartenbau	3149	2871
+04/2025	KB10-12101	    Gartenbau (oS) - Helfer	2778	2771
+04/2025	KB10-12102	    Berufe im Gartenbau (oS) - Fachkraft	3469	2815
+04/2025	KB10-12103	    Berufe im Gartenbau (oS) - Spezialist	4655	3808
+04/2025	KB10-12104	    Berufe im Gartenbau (oS) - Experte	5224	4269
+04/2025	KB10-12112	    Berufe im Obst-, Gemüsebau - Fachkraft	2896	2801
+04/2025	KB10-12113	    Berufe im Obst-, Gemüsebau - Spezialist	NA	NA
+04/2025	KB10-12122	    Baumschule, Stauden, Zierpflanzen - Fachkraft	3154	3047
+04/2025	KB10-12123	    Baumschule, Stauden, Zierpflanzen - Spezialist	4000	NA
+04/2025	KB10-12132	    Friedhofsgärtnerei - Fachkraft	2768	3508
+04/2025	KB10-12133	    Friedhofsgärtnerei - Spezialist	NA	NA
+04/2025	KB10-12142	    Garten-, Landschafts-, Sportplatzbau - Fachkraft	3241	2805
+04/2025	KB10-12143	    Garten-, Landschafts-, Sportplatzbau - Spezialist	3140	NA
+04/2025	KB10-12144	    Garten-, Landschafts-, Sportplatzbau - Experte	4429	3545
+04/2025	KB10-12193	    Aufsicht - Gartenbau	4314	4224
+04/2025	KB10-12194	    Führung - Gartenbau	NA	NA
+04/2025	KB10-122	  Floristik	3219	2559
+04/2025	KB10-12202	    Floristik - Fachkraft	3219	2491
+04/2025	KB10-12203	    Floristik - Spezialist	NA	NA
+04/2025	KB10-12293	    Aufsicht - Floristik	NA	NA
+04/2025	KB10-12294	    Führung - Floristik	NA	NA
+04/2025	KB10-21	Rohstoffgewinn, Glas-, Keramikverarbeitung	3749	2952
+04/2025	KB10-211	  Berg-, Tagebau und Sprengtechnik	4939	NA
+04/2025	KB10-21111	    Berg- und Tagebau - Helfer	NA	2581
+04/2025	KB10-21112	    Berg- und Tagebau - Fachkraft	4627	4702
+04/2025	KB10-21113	    Berg- und Tagebau - Spezialist	5932	5418
+04/2025	KB10-21114	    Berg- und Tagebau - Experte	7312	6197
+04/2025	KB10-21122	    Sprengtechnik - Fachkraft	4205	NA
+04/2025	KB10-21123	    Sprengtechnik - Spezialist	3367	3137
+04/2025	KB10-21124	    Sprengtechnik - Experte	NA	NA
+04/2025	KB10-21193	    Aufsicht - Berg-, Tagebau, Sprengtechnik	6303	NA
+04/2025	KB10-21194	    Führung - Berg-, Tagebau, Sprengtechnik	7049	4600
+04/2025	KB10-212	  Naturstein-, Mineral-, Baustoffherstellung	3610	3168
+04/2025	KB10-21201	    Naturstein, Baustoffherstellung (oS) - Helfer	3413	3080
+04/2025	KB10-21212	    Naturstein-, Mineralaufbereitung - Fachkraft	3602	2992
+04/2025	KB10-21213	    Naturstein-, Mineralaufbereitung - Spezialist	NA	NA
+04/2025	KB10-21222	    Baustoffherstellung - Fachkraft	3840	3488
+04/2025	KB10-21223	    Baustoffherstellung - Spezialist	5217	NA
+04/2025	KB10-21232	    Steinmetztechnik - Fachkraft	3485	3436
+04/2025	KB10-21233	    Steinmetztechnik - Spezialist	4240	NA
+04/2025	KB10-21293	    Aufsicht - Naturstein, Mineral, Baustoffherst.	3850	NA
+04/2025	KB10-213	  Industrielle Glasherstellung und -verarbeitung	3497	2959
+04/2025	KB10-21311	    Glasherstellung - Helfer	2890	2642
+04/2025	KB10-21312	    Glasherstellung - Fachkraft	3974	3403
+04/2025	KB10-21313	    Glasherstellung - Spezialist	4550	5715
+04/2025	KB10-21322	    Glasapparatebau - Fachkraft	3641	3120
+04/2025	KB10-21323	    Glasapparatebau - Spezialist	NA	NA
+04/2025	KB10-21332	    Industrielle Glasbläserei - Fachkraft	3820	NA
+04/2025	KB10-21342	    Glasveredelung - Fachkraft	3283	3042
+04/2025	KB10-21352	    Glasapparatejustierung - Fachkraft	NA	NA
+04/2025	KB10-21362	    Feinoptik - Fachkraft	4354	3752
+04/2025	KB10-21363	    Feinoptik - Spezialist	4182	NA
+04/2025	KB10-21393	    Aufsicht - Industrielle Glasherst., -verarbeitung	5390	NA
+04/2025	KB10-214	  Industrielle Keramikherstellung und -verarbeitung	3708	2770
+04/2025	KB10-21411	    Industriekeramik (Verfahren) - Helfer	3415	2700
+04/2025	KB10-21412	    Industriekeramik (Verfahren) - Fachkraft	3647	2916
+04/2025	KB10-21413	    Industriekeramik (Verfahren) - Spezialist	4593	NA
+04/2025	KB10-21422	    Industriekeramik (Modelltechnik) - Fachkraft	3429	2963
+04/2025	KB10-21423	    Industriekeramik (Modelltechnik) - Spezialist	5870	NA
+04/2025	KB10-21493	    Aufsicht - Industrielle Keramikherstellung	4950	NA
+04/2025	KB10-22	Kunststoff- und Holzherstellung, -verarbeitung	3362	2767
+04/2025	KB10-221	  Kunststoff-, Kautschukherstellung u. -verarbeitung	3435	2739
+04/2025	KB10-22101	    Kunststoff-, Kautschukherst. (oS) - Helfer	3094	2681
+04/2025	KB10-22102	    Kunststoff-, Kautschukherst. (oS) - Fachkraft	3723	2859
+04/2025	KB10-22103	    Kunststoff-, Kautschukherst. (oS) - Spezialist	4763	4072
+04/2025	KB10-22104	    Kunststoff-, Kautschukherst. (oS) - Experte	7090	6199
+04/2025	KB10-22112	    Reifen-, Vulkanisationstechnik - Fachkraft	3008	2958
+04/2025	KB10-22182	    Kunststoff-, Kautschukverarb. (ssT) - Fachkraft	4048	3223
+04/2025	KB10-22183	    Kunststoff-, Kautschukverarb. (ssT) - Spezialist	4364	NA
+04/2025	KB10-22184	    Kunststoff-, Kautschukverarb. (ssT) - Experte	6544	NA
+04/2025	KB10-22193	    Aufsicht - Kunststoff-, Kautschukherst., -verarb.	5352	NA
+04/2025	KB10-222	  Farb- und Lacktechnik	3628	3159
+04/2025	KB10-22201	    Farb-, Lacktechnik (oS) - Helfer	3350	2726
+04/2025	KB10-22202	    Farb-, Lacktechnik (oS) - Fachkraft	3736	3518
+04/2025	KB10-22203	    Farb-, Lacktechnik (oS) - Spezialist	4911	5018
+04/2025	KB10-22204	    Farb-, Lacktechnik (oS) - Experte	6484	NA
+04/2025	KB10-22212	    Fahrzeuglackierung - Fachkraft	3463	2800
+04/2025	KB10-22222	    Lacklaboratorium - Fachkraft	4678	4269
+04/2025	KB10-22293	    Aufsicht - Farb-, Lacktechnik	4499	NA
+04/2025	KB10-223	  Holzbe- und -verarbeitung	3280	2795
+04/2025	KB10-22301	    Holzbe-, -verarbeitung (oS) - Helfer	2991	2650
+04/2025	KB10-22302	    Holzbe-, -verarbeitung (oS) - Fachkraft	3378	2256
+04/2025	KB10-22303	    Holzbe-, -verarbeitung (oS) - Spezialist	4716	3800
+04/2025	KB10-22304	    Holzbe-, -verarbeitung (oS) - Experte	6091	4540
+04/2025	KB10-22312	    Holztrocknung, -konservierung - Fachkraft	3200	NA
+04/2025	KB10-22322	    Produktion Holzwerkstoffe, -bauteile - Fachkraft	3147	2904
+04/2025	KB10-22332	    Produktion Fertigprodukte aus Holz - Fachkraft	3168	3222
+04/2025	KB10-22333	    Produktion Fertigprodukte aus Holz - Spezialist	NA	NA
+04/2025	KB10-22342	    Holz-, Möbel-, Innenausbau - Fachkraft	3281	2800
+04/2025	KB10-22343	    Holz-, Möbel-, Innenausbau - Spezialist	4213	3800
+04/2025	KB10-22352	    Flechtwerk, Bürste, Pinselmacher - Fachkraft	3079	2438
+04/2025	KB10-22382	    Holzbe-, -verarbeitung (ssT) - Fachkraft	3465	NA
+04/2025	KB10-22393	    Aufsicht - Holzbe-, -verarbeitung	4082	4036
+04/2025	KB10-22394	    Führung - Holzbe-, -verarbeitung	5554	NA
+04/2025	KB10-23	Papier-, Druckberufe, technische Mediengestaltung	3836	3184
+04/2025	KB10-231	  Papier- und Verpackungstechnik	3917	2776
+04/2025	KB10-23101	    Papier-, Verpackungstechnik (oS) - Helfer	3360	2612
+04/2025	KB10-23112	    Papierherstellung - Fachkraft	4404	3453
+04/2025	KB10-23113	    Papierherstellung - Spezialist	4573	NA
+04/2025	KB10-23114	    Papierherstellung - Experte	6569	NA
+04/2025	KB10-23122	    Papierverarb., Verpackungstechnik - Fachkraft	3762	2878
+04/2025	KB10-23123	    Papierverarb., Verpackungstechnik - Spezialist	5105	4126
+04/2025	KB10-23124	    Papierverarb., Verpackungstechnik - Experte	6187	4960
+04/2025	KB10-23193	    Aufsicht - Papier-, Verpackungstechnik	6351	3840
+04/2025	KB10-232	  Technische Mediengestaltung	4000	3500
+04/2025	KB10-23212	    Digital-, Printmediengestaltung - Fachkraft	3403	3155
+04/2025	KB10-23213	    Digital-, Printmediengestaltung - Spezialist	3513	3034
+04/2025	KB10-23222	    Grafik-, Kommunikations-, Fotodesign - Fachkraft	4000	3100
+04/2025	KB10-23223	    Grafik-, Kommunikations-, Fotodesign - Spezialist	4000	3809
+04/2025	KB10-23224	    Grafik-, Kommunikations-, Fotodesign - Experte	4299	3600
+04/2025	KB10-23282	    Technische Mediengestaltung (ssT) - Fachkraft	4258	3101
+04/2025	KB10-23293	    Aufsicht - Technische Mediengestaltung	5200	NA
+04/2025	KB10-23294	    Führung - Technische Mediengestaltung	5443	4000
+04/2025	KB10-233	  Fototechnik und Fotografie	3465	3090
+04/2025	KB10-23312	    Fototechnik - Fachkraft	3353	2903
+04/2025	KB10-23313	    Fototechnik - Spezialist	NA	4375
+04/2025	KB10-23314	    Fototechnik - Experte	NA	NA
+04/2025	KB10-23322	    Fotografie - Fachkraft	3500	3290
+04/2025	KB10-23323	    Fotografie - Spezialist	NA	NA
+04/2025	KB10-23393	    Aufsicht - Fototechnik und Fotografie	NA	NA
+04/2025	KB10-234	  Drucktechnik und -weiterverarbeitung, Buchbinderei	3600	2630
+04/2025	KB10-23411	    Drucktechnik - Helfer	3148	2473
+04/2025	KB10-23412	    Drucktechnik - Fachkraft	3878	2612
+04/2025	KB10-23413	    Drucktechnik - Spezialist	6385	NA
+04/2025	KB10-23414	    Drucktechnik - Experte	5952	4323
+04/2025	KB10-23422	    Buchbinderei, Druckweiterverarbeitung - Fachkraft	3259	2622
+04/2025	KB10-23423	    Buchbinderei, Druckweiterverarbeitung - Spezialist	4367	3941
+04/2025	KB10-23493	    Aufsicht - Drucktechnik, Buchbinderei	NA	NA
+04/2025	KB10-24	Metallerzeugung und -bearbeitung, Metallbauberufe	3782	2979
+04/2025	KB10-241	  Metallerzeugung	4126	2750
+04/2025	KB10-24101	    Metallerzeugung (oS) - Helfer	3300	2929
+04/2025	KB10-24112	    Hüttentechnik - Fachkraft	4514	3979
+04/2025	KB10-24113	    Hüttentechnik - Spezialist	6087	NA
+04/2025	KB10-24114	    Hüttentechnik - Experte	7883	7799
+04/2025	KB10-24122	    Metallumformung - Fachkraft	4181	2528
+04/2025	KB10-24123	    Metallumformung - Spezialist	NA	NA
+04/2025	KB10-24124	    Metallumformung - Experte	6635	6217
+04/2025	KB10-24132	    Industrielle Gießerei - Fachkraft	3851	3076
+04/2025	KB10-24133	    Industrielle Gießerei - Spezialist	5844	NA
+04/2025	KB10-24134	    Industrielle Gießerei - Experte	7325	NA
+04/2025	KB10-24142	    Handwerkliche Metall-, Glockengießerei - Fachkraft	3561	3256
+04/2025	KB10-24193	    Aufsicht - Metallerzeugung	6319	NA
+04/2025	KB10-242	  Metallbearbeitung	3743	2904
+04/2025	KB10-24201	    Metallbearbeitung (oS) - Helfer	3249	2789
+04/2025	KB10-24202	    Metallbearbeitung (oS) - Fachkraft	3998	3347
+04/2025	KB10-24203	    Metallbearbeitung (oS) - Spezialist	4821	3898
+04/2025	KB10-24212	    Spanlose Metallbearbeitung - Fachkraft	3732	2524
+04/2025	KB10-24222	    Schleifende Metallbearbeitung - Fachkraft	3787	3011
+04/2025	KB10-24232	    Spanende Metallbearbeitung - Fachkraft	3926	3437
+04/2025	KB10-24233	    Spanende Metallbearbeitung - Spezialist	4350	3277
+04/2025	KB10-24243	    Metallbearbeitung Laserstrahl - Spezialist	3596	3220
+04/2025	KB10-24244	    Metallbearbeitung Laserstrahl - Experte	5450	NA
+04/2025	KB10-24293	    Aufsicht - Metallbearbeitung	5651	5275
+04/2025	KB10-243	  Metalloberflächenbehandlung	3613	3097
+04/2025	KB10-24301	    Metalloberflächenbehandlung (oS) - Helfer	3245	2891
+04/2025	KB10-24302	    Metalloberflächenbehandlung (oS) - Fachkraft	3763	3229
+04/2025	KB10-24303	    Metalloberflächenbehandlung (oS) - Spezialist	5979	4369
+04/2025	KB10-24304	    Metalloberflächenbehandlung (oS) - Experte	5458	NA
+04/2025	KB10-24382	    Metalloberflächenbehandlung (ssT) - Fachkraft	3805	NA
+04/2025	KB10-24393	    Aufsicht - Metalloberflächenbehandlung	6106	NA
+04/2025	KB10-244	  Metallbau und Schweißtechnik	3654	3404
+04/2025	KB10-24411	    Metallbau - Helfer	3605	3965
+04/2025	KB10-24412	    Metallbau - Fachkraft	3588	3404
+04/2025	KB10-24413	    Metallbau - Spezialist	4781	4250
+04/2025	KB10-24414	    Metallbau - Experte	5800	4950
+04/2025	KB10-24422	    Schweiß-, Verbindungstechnik - Fachkraft	3662	3013
+04/2025	KB10-24423	    Schweiß-, Verbindungstechnik - Spezialist	4602	5545
+04/2025	KB10-24424	    Schweiß-, Verbindungstechnik - Experte	6114	6824
+04/2025	KB10-24432	    Industrietaucher u.a. Taucherberufe - Fachkraft	NA	NA
+04/2025	KB10-24493	    Aufsicht - Metallbau und Schweißtechnik	4910	NA
+04/2025	KB10-245	  Feinwerk- und Werkzeugtechnik	4106	3369
+04/2025	KB10-24511	    Feinwerktechnik - Helfer	3275	2889
+04/2025	KB10-24512	    Feinwerktechnik - Fachkraft	4063	3503
+04/2025	KB10-24513	    Feinwerktechnik - Spezialist	NA	3678
+04/2025	KB10-24514	    Feinwerktechnik - Experte	6633	5175
+04/2025	KB10-24522	    Werkzeugtechnik - Fachkraft	4076	3783
+04/2025	KB10-24523	    Werkzeugtechnik - Spezialist	4772	3672
+04/2025	KB10-24524	    Werkzeugtechnik - Experte	5929	NA
+04/2025	KB10-24532	    Uhrmacherhandwerk - Fachkraft	3600	3509
+04/2025	KB10-24533	    Uhrmacherhandwerk - Spezialist	NA	NA
+04/2025	KB10-24593	    Aufsicht - Feinwerk- und Werkzeugtechnik	5433	4145
+04/2025	KB10-25	Maschinen- und Fahrzeugtechnikberufe	4152	3485
+04/2025	KB10-251	  Maschinenbau- und Betriebstechnik	4267	3401
+04/2025	KB10-25101	    Maschinenbau-, Betriebstechnik (oS) - Helfer	3500	3032
+04/2025	KB10-25102	    Maschinenbau-, Betriebstechnik (oS) - Fachkraft	4210	3934
+04/2025	KB10-25103	    Maschinenbau-, Betriebstechnik (oS) - Spezialist	5303	4777
+04/2025	KB10-25104	    Maschinenbau-, Betriebstechnik (oS) - Experte	6668	5823
+04/2025	KB10-25112	    Maschinen-, Gerätezusammensetzer - Fachkraft	3723	3100
+04/2025	KB10-25122	    Maschinen-, Anlagenführer - Fachkraft	3999	3376
+04/2025	KB10-25131	    Techn.Servicekräfte Wartung,Instandh. - Helfer	4257	3367
+04/2025	KB10-25132	    Techn.Servicekräfte Wartung,Instandh. - Fachkraft	4581	4000
+04/2025	KB10-25133	    Techn.Servicekräfte Wartung,Instandh. - Spezialist	5043	4828
+04/2025	KB10-25134	    Techn.Servicekräfte Wartung,Instandh. - Experte	6587	5829
+04/2025	KB10-25182	    Maschinenbau-, Betriebstechnik (ssT) - Fachkraft	4509	4606
+04/2025	KB10-25183	    Maschinenbau-, Betriebstechnik (ssT) - Spezialist	4576	NA
+04/2025	KB10-25184	    Maschinenbau-, Betriebstechnik (ssT) - Experte	6550	5562
+04/2025	KB10-25193	    Aufsicht - Maschinenbau-, Betriebstechnik	5812	NA
+04/2025	KB10-25194	    Führung - Maschinenbau-, Betriebstechnik	6437	3900
+04/2025	KB10-252	  Fahrzeug-, Luft-, Raumfahrt- und Schiffbautechnik	3820	3900
+04/2025	KB10-25201	    Fahrzeugtechnik (oS) - Helfer	3139	3553
+04/2025	KB10-25212	    Kraftfahrzeugtechnik - Fachkraft	3545	3300
+04/2025	KB10-25213	    Kraftfahrzeugtechnik - Spezialist	4431	NA
+04/2025	KB10-25214	    Kraftfahrzeugtechnik - Experte	7109	6824
+04/2025	KB10-25222	    Land-, Baumaschinentechnik - Fachkraft	3584	3378
+04/2025	KB10-25223	    Land-, Baumaschinentechnik - Spezialist	3635	NA
+04/2025	KB10-25224	    Land-, Baumaschinentechnik - Experte	5940	NA
+04/2025	KB10-25232	    Luft- und Raumfahrttechnik - Fachkraft	5466	5410
+04/2025	KB10-25233	    Luft- und Raumfahrttechnik - Spezialist	6527	6404
+04/2025	KB10-25234	    Luft- und Raumfahrttechnik - Experte	7287	6776
+04/2025	KB10-25242	    Schiffbautechnik - Fachkraft	4927	NA
+04/2025	KB10-25243	    Schiffbautechnik - Spezialist	4934	4888
+04/2025	KB10-25244	    Schiffbautechnik - Experte	6710	5875
+04/2025	KB10-25252	    Zweiradtechnik - Fachkraft	2800	2700
+04/2025	KB10-25253	    Zweiradtechnik - Spezialist	2931	NA
+04/2025	KB10-25254	    Zweiradtechnik - Experte	NA	NA
+04/2025	KB10-25293	    Aufsicht - Fahrzeug-,Luft-,Raumf.-,Schiffbautechn.	4386	3659
+04/2025	KB10-25294	    Führung - Fahrzeug-,Luft-,Raumf.-,Schiffbautechnik	10515	10461
+04/2025	KB10-26	Mechatronik-, Energie- und Elektroberufe	4264	3449
+04/2025	KB10-261	  Mechatronik und Automatisierungstechnik	4300	3323
+04/2025	KB10-26102	    Mechatronik, Automatisierung (oS) - Fachkraft	4683	NA
+04/2025	KB10-26112	    Mechatronik - Fachkraft	3892	3100
+04/2025	KB10-26113	    Mechatronik - Spezialist	4545	3879
+04/2025	KB10-26114	    Mechatronik - Experte	5830	5373
+04/2025	KB10-26122	    Automatisierungstechnik - Fachkraft	4214	3792
+04/2025	KB10-26123	    Automatisierungstechnik - Spezialist	5250	5019
+04/2025	KB10-26124	    Automatisierungstechnik - Experte	6276	5595
+04/2025	KB10-26193	    Aufsicht - Mechatronik, Automatisierungstechnik	4645	NA
+04/2025	KB10-262	  Energietechnik	4026	4048
+04/2025	KB10-26212	    Bauelektrik - Fachkraft	3688	3207
+04/2025	KB10-26213	    Bauelektrik - Spezialist	4193	4005
+04/2025	KB10-26222	    Elektromaschinentechnik - Fachkraft	4017	2828
+04/2025	KB10-26223	    Elektromaschinentechnik - Spezialist	4371	5015
+04/2025	KB10-26232	    Energie-, Kraftwerkstechnik - Fachkraft	5736	5284
+04/2025	KB10-26233	    Energie-, Kraftwerkstechnik - Spezialist	5525	4428
+04/2025	KB10-26234	    Energie-, Kraftwerkstechnik - Experte	6545	5430
+04/2025	KB10-26242	    Regenerative Energietechnik - Fachkraft	NA	4238
+04/2025	KB10-26243	    Regenerative Energietechnik - Spezialist	4091	4847
+04/2025	KB10-26244	    Regenerative Energietechnik - Experte	6367	5415
+04/2025	KB10-26252	    Elektrische Betriebstechnik - Fachkraft	4377	4243
+04/2025	KB10-26253	    Elektrische Betriebstechnik - Spezialist	5568	4618
+04/2025	KB10-26262	    Leitungsinstallation, -wartung - Fachkraft	3657	3947
+04/2025	KB10-26263	    Leitungsinstallation, -wartung - Spezialist	4839	NA
+04/2025	KB10-26264	    Leitungsinstallation, -wartung - Experte	NA	NA
+04/2025	KB10-26293	    Aufsicht - Energietechnik	5592	4016
+04/2025	KB10-263	  Elektrotechnik	4621	3365
+04/2025	KB10-26301	    Elektrotechnik (oS) - Helfer	3150	2777
+04/2025	KB10-26302	    Elektrotechnik (oS) - Fachkraft	4069	3303
+04/2025	KB10-26303	    Elektrotechnik (oS) - Spezialist	5331	4971
+04/2025	KB10-26304	    Elektrotechnik (oS) - Experte	6721	6224
+04/2025	KB10-26312	    Informations-, Telekommunikationst. - Fachkraft	4395	4380
+04/2025	KB10-26313	    Informations-, Telekommunikationst. - Spezialist	5890	5533
+04/2025	KB10-26314	    Informations-, Telekommunikationst. - Experte	6997	6191
+04/2025	KB10-26322	    Mikrosystemtechnik - Fachkraft	4093	3519
+04/2025	KB10-26323	    Mikrosystemtechnik - Spezialist	5321	4015
+04/2025	KB10-26324	    Mikrosystemtechnik - Experte	6050	5699
+04/2025	KB10-26332	    Luftverk.-,Schiffs-,Fahrzeugelektron. - Fachkraft	4309	4448
+04/2025	KB10-26333	    Luftverk.-,Schiffs-,Fahrzeugelektron. - Spezialist	4600	NA
+04/2025	KB10-26334	    Luftverk.-,Schiffs-,Fahrzeugelektron. - Experte	6789	6240
+04/2025	KB10-26382	    Elektrotechnik (ssT) - Fachkraft	4375	4443
+04/2025	KB10-26383	    Elektrotechnik (ssT) - Spezialist	5401	4980
+04/2025	KB10-26384	    Elektrotechnik (ssT) - Experte	6397	5820
+04/2025	KB10-26393	    Aufsicht - Elektrotechnik	5381	5015
+04/2025	KB10-27	Techn. Entwickl.-, Konstr.-, Produktionssteuerung	5733	4482
+04/2025	KB10-271	  Technische Forschung und Entwicklung	6786	5800
+04/2025	KB10-27103	    Techn. Forschung, Entwicklung (oS) - Spezialist	5973	5255
+04/2025	KB10-27104	    Techn. Forschung, Entwicklung (oS) - Experte	6842	5807
+04/2025	KB10-27182	    Techn. Forschung, Entwicklung (ssT) - Fachkraft	5317	5831
+04/2025	KB10-27183	    Techn. Forschung, Entwicklung (ssT) - Spezialist	6800	7586
+04/2025	KB10-27184	    Techn. Forschung, Entwicklung (ssT) - Experte	7348	6890
+04/2025	KB10-27194	    Führung - Technische Forschung und Entwicklung	9840	9180
+04/2025	KB10-272	  Technisches Zeichnen, Konstruktion und Modellbau	4788	3708
+04/2025	KB10-27212	    Technische Zeichner - Fachkraft	3885	3595
+04/2025	KB10-27223	    Konstruktion und Gerätebau - Spezialist	5255	4513
+04/2025	KB10-27224	    Konstruktion und Gerätebau - Experte	6276	5671
+04/2025	KB10-27232	    Modellbau - Fachkraft	3800	2947
+04/2025	KB10-27282	    Techn.Zeichnen,Konstr.,Modellbau(ssT) - Fachkraft	3797	4149
+04/2025	KB10-27283	    Techn.Zeichnen,Konstr.,Modellbau(ssT) - Spezialist	4982	3183
+04/2025	KB10-27284	    Techn.Zeichnen,Konstr.,Modellbau(ssT) - Experte	7637	5384
+04/2025	KB10-27293	    Aufsicht - Techn.Zeichnen, Konstruktion, Modellbau	6130	4967
+04/2025	KB10-27294	    Führung - Techn.Zeichnen, Konstruktion, Modellbau	7875	7593
+04/2025	KB10-273	  Technische Produktionsplanung und -steuerung	5470	4455
+04/2025	KB10-27302	    Techn. Produktionsplanung, -steuerung - Fachkraft	4971	4129
+04/2025	KB10-27303	    Techn. Produktionsplanung, -steuerung - Spezialist	5325	4645
+04/2025	KB10-27304	    Techn. Produktionsplanung, -steuerung - Experte	6800	5919
+04/2025	KB10-27312	    Technische Qualitätssicherung - Fachkraft	4394	3499
+04/2025	KB10-27313	    Technische Qualitätssicherung - Spezialist	5150	4671
+04/2025	KB10-27314	    Technische Qualitätssicherung - Experte	6694	6011
+04/2025	KB10-27393	    Aufsicht - Techn. Produktionsplanung, -steuerung	5395	4156
+04/2025	KB10-27394	    Führung - Techn. Produktionsplanung, -steuerung	6749	5505
+04/2025	KB10-28	Textil- und Lederberufe	3157	2758
+04/2025	KB10-281	  Textiltechnik und -produktion	3161	2715
+04/2025	KB10-28101	    Textiltechnik (oS) - Helfer	2918	2577
+04/2025	KB10-28102	    Textiltechnik (oS) - Fachkraft	3180	2774
+04/2025	KB10-28103	    Textiltechnik (oS) - Spezialist	5244	4636
+04/2025	KB10-28104	    Textiltechnik (oS) - Experte	5971	NA
+04/2025	KB10-28112	    Textilgestaltung - Fachkraft	2645	2638
+04/2025	KB10-28113	    Textilgestaltung - Spezialist	NA	NA
+04/2025	KB10-28114	    Textilgestaltung - Experte	6110	5807
+04/2025	KB10-28122	    Textilherstellung - Fachkraft	3297	2863
+04/2025	KB10-28123	    Textilherstellung - Spezialist	4367	2791
+04/2025	KB10-28132	    Garn- und Seilherstellung - Fachkraft	3407	2739
+04/2025	KB10-28133	    Garn- und Seilherstellung - Spezialist	NA	NA
+04/2025	KB10-28142	    Textilveredlung - Fachkraft	3072	2483
+04/2025	KB10-28143	    Textilveredlung - Spezialist	4316	NA
+04/2025	KB10-28193	    Aufsicht - Textiltechnik, -produktion	4371	NA
+04/2025	KB10-28194	    Führung - Textiltechnik, -produktion	NA	NA
+04/2025	KB10-282	  Textilverarbeitung	3242	2774
+04/2025	KB10-28212	    Modedesign - Fachkraft	6495	4425
+04/2025	KB10-28213	    Modedesign - Spezialist	4366	3936
+04/2025	KB10-28214	    Modedesign - Experte	NA	4279
+04/2025	KB10-28221	    Bekleidungsherstellung - Helfer	2556	2600
+04/2025	KB10-28222	    Bekleidungsherstellung - Fachkraft	3000	2665
+04/2025	KB10-28223	    Bekleidungsherstellung - Spezialist	5417	4313
+04/2025	KB10-28224	    Bekleidungsherstellung - Experte	NA	NA
+04/2025	KB10-28232	    Technische Konfektionäre, Segelmacher - Fachkraft	2911	2668
+04/2025	KB10-28242	    Polsterei, Fahrzeuginnenausstattung - Fachkraft	3066	2530
+04/2025	KB10-28293	    Aufsicht - Textilverarbeitung	4898	3750
+04/2025	KB10-28294	    Führung - Textilverarbeitung	NA	NA
+04/2025	KB10-283	  Leder-, Pelzherstellung und -verarbeitung	3045	2784
+04/2025	KB10-28301	    Leder-, Pelzherstellung, -verarb. (oS) - Helfer	2841	2600
+04/2025	KB10-28312	    Lederherstellung - Fachkraft	3814	2731
+04/2025	KB10-28313	    Lederherstellung - Spezialist	6926	NA
+04/2025	KB10-28314	    Lederherstellung - Experte	NA	NA
+04/2025	KB10-28322	    Sattlerei, Herst. von Lederutensilien - Fachkraft	2754	2491
+04/2025	KB10-28332	    Schuhherstellung - Fachkraft	3002	2870
+04/2025	KB10-28333	    Schuhherstellung - Spezialist	5300	4332
+04/2025	KB10-28342	    Pelzbe- und -verarbeitung - Fachkraft	NA	NA
+04/2025	KB10-28343	    Pelzbe- und -verarbeitung - Spezialist	NA	NA
+04/2025	KB10-28393	    Aufsicht - Leder-, Pelzherstellung, -verarbeitung	3808	4500
+04/2025	KB10-28394	    Führung - Leder-, Pelzherstellung, -verarbeitung	NA	NA
+04/2025	KB10-29	Lebensmittelherstellung und -verarbeitung	3222	2844
+04/2025	KB10-291	  Getränkeherstellung	4215	3784
+04/2025	KB10-29102	    Getränkeherstellung (oS) - Fachkraft	4096	3741
+04/2025	KB10-29103	    Getränkeherstellung (oS) - Spezialist	3776	NA
+04/2025	KB10-29104	    Getränkeherstellung (oS) - Experte	5733	NA
+04/2025	KB10-29112	    Brauer, Mälzer - Fachkraft	4407	4417
+04/2025	KB10-29113	    Brauer, Mälzer - Spezialist	5613	NA
+04/2025	KB10-29114	    Brauer, Mälzer - Experte	NA	NA
+04/2025	KB10-29122	    Weinküfer - Fachkraft	3706	2800
+04/2025	KB10-29123	    Weinküfer - Spezialist	NA	NA
+04/2025	KB10-29132	    Brenner, Destillateure - Fachkraft	3642	NA
+04/2025	KB10-29133	    Brenner, Destillateure - Spezialist	NA	NA
+04/2025	KB10-29134	    Brenner, Destillateure - Experte	NA	NA
+04/2025	KB10-29142	    Fruchtsafttechnik - Fachkraft	4023	3674
+04/2025	KB10-29143	    Fruchtsafttechnik - Spezialist	4641	NA
+04/2025	KB10-29152	    Nahrungsmittel-, Getränkekoster - Fachkraft	NA	NA
+04/2025	KB10-29193	    Aufsicht - Getränkeherstellung	4928	NA
+04/2025	KB10-29194	    Führung - Getränkeherstellung	7510	NA
+04/2025	KB10-292	  Lebensmittel- und Genussmittelherstellung	3394	2905
+04/2025	KB10-29201	    Lebensmittelherstellung (oS) - Helfer	3130	2787
+04/2025	KB10-29202	    Lebensmittelherstellung (oS) - Fachkraft	3733	3090
+04/2025	KB10-29203	    Lebensmittelherstellung (oS) - Spezialist	4499	3665
+04/2025	KB10-29204	    Lebensmittelherstellung (oS) - Experte	5563	5571
+04/2025	KB10-29212	    Mühlenprodukt-, Futtermittelherst. - Fachkraft	3959	4271
+04/2025	KB10-29213	    Mühlenprodukt-, Futtermittelherst. - Spezialist	NA	NA
+04/2025	KB10-29222	    Back-, Konditoreiwarenherst. - Fachkraft	3327	2854
+04/2025	KB10-29223	    Back-, Konditoreiwarenherst. - Spezialist	4278	NA
+04/2025	KB10-29232	    Fleischverarbeitung - Fachkraft	3230	2886
+04/2025	KB10-29233	    Fleischverarbeitung - Spezialist	3959	3648
+04/2025	KB10-29242	    Fischverarbeitung - Fachkraft	2936	2640
+04/2025	KB10-29243	    Fischverarbeitung - Spezialist	NA	NA
+04/2025	KB10-29252	    Milchproduktherstellung - Fachkraft	4708	4018
+04/2025	KB10-29253	    Milchproduktherstellung - Spezialist	4844	4305
+04/2025	KB10-29262	    Süßwarenherstellung - Fachkraft	3774	3180
+04/2025	KB10-29263	    Süßwarenherstellung - Spezialist	4331	3750
+04/2025	KB10-29272	    Tabakwarenherstellung - Fachkraft	4679	3290
+04/2025	KB10-29273	    Tabakwarenherstellung - Spezialist	7508	NA
+04/2025	KB10-29282	    Lebensmittelherstellung (ssT) - Fachkraft	3912	2829
+04/2025	KB10-29283	    Lebensmittelherstellung (ssT) - Spezialist	4827	4125
+04/2025	KB10-29284	    Lebensmittelherstellung (ssT) - Experte	NA	NA
+04/2025	KB10-29293	    Aufsicht - Lebens-, Genussmittelherstellung	4106	3730
+04/2025	KB10-29294	    Führung - Lebens-, Genussmittelherstellung	NA	NA
+04/2025	KB10-293	  Speisenzubereitung	3002	2777
+04/2025	KB10-29301	    Köche (oS) - Helfer	2671	2635
+04/2025	KB10-29302	    Köche (oS) - Fachkraft	3080	2929
+04/2025	KB10-29312	    Vor-, Kalt-, Süßspeisenköche - Fachkraft	NA	3067
+04/2025	KB10-29322	    Grill-, Braten-, Fischköche - Fachkraft	NA	NA
+04/2025	KB10-29382	    Köche (ssT) - Fachkraft	3000	3010
+04/2025	KB10-29393	    Aufsicht - Speisenzubereitung	4038	3560
+04/2025	KB10-29394	    Führung - Speisenzubereitung	4194	3914
+04/2025	KB10-31	Bauplanungs-, Architektur- und Vermessungsberufe	5300	4388
+04/2025	KB10-311	  Bauplanung und -überwachung, Architektur	5406	4441
+04/2025	KB10-31102	    Bauplanung, -überwachung (oS) - Fachkraft	5267	3992
+04/2025	KB10-31103	    Bauplanung, -überwachung (oS) - Spezialist	5800	4513
+04/2025	KB10-31104	    Bauplanung, -überwachung (oS) - Experte	5877	5128
+04/2025	KB10-31114	    Architektur - Experte	NA	4022
+04/2025	KB10-31124	    Stadt- und Raumplanung - Experte	6610	5771
+04/2025	KB10-31132	    Bauplanung Verkehrswege, -anlagen - Fachkraft	3794	3782
+04/2025	KB10-31133	    Bauplanung Verkehrswege, -anlagen - Spezialist	5304	4796
+04/2025	KB10-31134	    Bauplanung Verkehrswege, -anlagen - Experte	6604	6446
+04/2025	KB10-31142	    Wasserwirtschaft - Fachkraft	4400	4261
+04/2025	KB10-31143	    Wasserwirtschaft - Spezialist	4766	5063
+04/2025	KB10-31144	    Wasserwirtschaft - Experte	NA	5327
+04/2025	KB10-31152	    Bauwerkserhaltung, -erneuerung - Fachkraft	3664	NA
+04/2025	KB10-31153	    Bauwerkserhaltung, -erneuerung - Spezialist	5140	5434
+04/2025	KB10-31154	    Bauwerkserhaltung, -erneuerung - Experte	4134	5141
+04/2025	KB10-31163	    Bausachverständige, -kontrolleure - Spezialist	5311	4934
+04/2025	KB10-31164	    Bausachverständige, -kontrolleure - Experte	4976	5233
+04/2025	KB10-31173	    Bauabrechnung, -kalkulation - Spezialist	5732	4939
+04/2025	KB10-31174	    Bauabrechnung, -kalkulation - Experte	6638	6195
+04/2025	KB10-31193	    Aufsicht - Bauplanung, -überwachung, Architektur	5946	4545
+04/2025	KB10-31194	    Führung - Bauplanung, -überwachung, Architektur	5937	5572
+04/2025	KB10-312	  Vermessung und Kartografie	4359	3790
+04/2025	KB10-31212	    Vermessungstechnik - Fachkraft	3990	NA
+04/2025	KB10-31213	    Vermessungstechnik - Spezialist	4340	3100
+04/2025	KB10-31214	    Vermessungstechnik - Experte	4735	4786
+04/2025	KB10-31222	    Kartografie - Fachkraft	3762	3772
+04/2025	KB10-31223	    Kartografie - Spezialist	5037	4647
+04/2025	KB10-31224	    Kartografie - Experte	6771	6378
+04/2025	KB10-32	Hoch- und Tiefbauberufe	3769	4058
+04/2025	KB10-321	  Hochbau	3637	3933
+04/2025	KB10-32101	    Hochbau (oS) - Helfer	3101	2854
+04/2025	KB10-32102	    Hochbau (oS) - Fachkraft	3719	5285
+04/2025	KB10-32103	    Hochbau (oS) - Spezialist	6250	4590
+04/2025	KB10-32104	    Hochbau (oS) - Experte	6248	4550
+04/2025	KB10-32112	    Beton- und Stahlbetonbau - Fachkraft	3896	4713
+04/2025	KB10-32113	    Beton- und Stahlbetonbau - Spezialist	4454	3570
+04/2025	KB10-32122	    Maurerhandwerk - Fachkraft	3994	3770
+04/2025	KB10-32123	    Maurerhandwerk - Spezialist	4640	NA
+04/2025	KB10-32132	    Schornsteinbau - Fachkraft	NA	NA
+04/2025	KB10-32142	    Dachdeckerei - Fachkraft	3393	NA
+04/2025	KB10-32152	    Fassadenbau - Fachkraft	4368	NA
+04/2025	KB10-32162	    Gerüstbau - Fachkraft	3633	NA
+04/2025	KB10-32172	    Bauwerksabbruch - Fachkraft	3703	NA
+04/2025	KB10-32193	    Aufsicht - Hochbau	5131	NA
+04/2025	KB10-322	  Tiefbau	4047	4296
+04/2025	KB10-32201	    Tiefbau (oS) - Helfer	3542	2546
+04/2025	KB10-32202	    Tiefbau (oS) - Fachkraft	3968	NA
+04/2025	KB10-32203	    Tiefbau (oS) - Spezialist	5643	4645
+04/2025	KB10-32204	    Tiefbau (oS) - Experte	6317	5425
+04/2025	KB10-32212	    Pflasterer, Steinsetzer - Fachkraft	3268	NA
+04/2025	KB10-32222	    Straßen- und Asphaltbau - Fachkraft	4071	NA
+04/2025	KB10-32223	    Straßen- und Asphaltbau - Spezialist	6141	NA
+04/2025	KB10-32224	    Straßen- und Asphaltbau - Experte	6511	5572
+04/2025	KB10-32232	    Gleisbau - Fachkraft	4844	4910
+04/2025	KB10-32233	    Gleisbau - Spezialist	6744	4724
+04/2025	KB10-32242	    Brunnenbau - Fachkraft	4077	NA
+04/2025	KB10-32243	    Brunnenbau - Spezialist	NA	NA
+04/2025	KB10-32252	    Kanal- und Tunnelbau - Fachkraft	3918	NA
+04/2025	KB10-32253	    Kanal- und Tunnelbau - Spezialist	4264	NA
+04/2025	KB10-32262	    Kultur- und Wasserbau - Fachkraft	3915	3767
+04/2025	KB10-32263	    Kultur- und Wasserbau - Spezialist	5184	5151
+04/2025	KB10-32264	    Kultur- und Wasserbau - Experte	6755	5835
+04/2025	KB10-32293	    Aufsicht - Tiefbau	5941	5948
+04/2025	KB10-33	(Innen-)Ausbauberufe	3348	3056
+04/2025	KB10-331	  Bodenverlegung	3408	NA
+04/2025	KB10-33101	    Bodenverlegung (oS) - Helfer	3174	NA
+04/2025	KB10-33102	    Bodenverlegung (oS) - Fachkraft	3114	NA
+04/2025	KB10-33112	    Fliesen-, Platten-, Mosaikverlegung - Fachkraft	3541	NA
+04/2025	KB10-33122	    Estrich-, Terrazzoverlegung - Fachkraft	3343	NA
+04/2025	KB10-33132	    Parkettverlegung - Fachkraft	3452	NA
+04/2025	KB10-33133	    Parkettverlegung - Spezialist	NA	NA
+04/2025	KB10-33193	    Aufsicht - Bodenverlegung	NA	NA
+04/2025	KB10-332	  Maler, Stuckateur, Bauwerksabdicht., Bautenschutz	3256	3101
+04/2025	KB10-33211	    Maler-, Lackiererarbeiten - Helfer	2755	2361
+04/2025	KB10-33212	    Maler-, Lackiererarbeiten - Fachkraft	3256	3238
+04/2025	KB10-33213	    Maler-, Lackiererarbeiten - Spezialist	3332	NA
+04/2025	KB10-33222	    Stuckateurarbeiten - Fachkraft	3660	NA
+04/2025	KB10-33223	    Stuckateurarbeiten - Spezialist	NA	NA
+04/2025	KB10-33232	    Bauwerksabdichtung - Fachkraft	4040	NA
+04/2025	KB10-33233	    Bauwerksabdichtung - Spezialist	NA	NA
+04/2025	KB10-33242	    Holz- und Bautenschutz - Fachkraft	3380	NA
+04/2025	KB10-33243	    Holz- und Bautenschutz - Spezialist	NA	NA
+04/2025	KB10-33293	    Aufsicht - Maler, Stuck., Bauwerksabd., Bautensch.	4296	NA
+04/2025	KB10-333	  Aus-,Trockenbau,Isolierung,Zimmerei,Glaserei,Roll.	3433	2941
+04/2025	KB10-33301	    Aus- und Trockenbau (oS) - Helfer	2772	NA
+04/2025	KB10-33302	    Aus- und Trockenbau (oS) - Fachkraft	3176	3052
+04/2025	KB10-33303	    Aus- und Trockenbau (oS) - Spezialist	4200	NA
+04/2025	KB10-33312	    Isolierung - Fachkraft	3841	3345
+04/2025	KB10-33322	    Zimmerei - Fachkraft	3900	3265
+04/2025	KB10-33323	    Zimmerei - Spezialist	5050	NA
+04/2025	KB10-33332	    Bautischlerei - Fachkraft	3224	2685
+04/2025	KB10-33342	    Glaserei - Fachkraft	3533	3400
+04/2025	KB10-33352	    Rollladen- und Jalousiebau - Fachkraft	2948	2640
+04/2025	KB10-33393	    Aufsicht - Aus-, Trockenbau, Isol., Zimm., Glas.	4664	NA
+04/2025	KB10-34	Gebäude- und versorgungstechnische Berufe	3711	3750
+04/2025	KB10-341	  Gebäudetechnik	3400	3750
+04/2025	KB10-34102	    Gebäudetechnik (oS) - Fachkraft	3258	3448
+04/2025	KB10-34103	    Gebäudetechnik (oS) - Spezialist	3978	4250
+04/2025	KB10-34104	    Gebäudetechnik (oS) - Experte	6835	5684
+04/2025	KB10-34112	    Platz-, Gerätewarte - Fachkraft	3237	3410
+04/2025	KB10-34193	    Aufsicht - Gebäudetechnik	5000	4359
+04/2025	KB10-342	  Klempnerei, Sanitär-, Heizungs- und Klimatechnik	3862	3427
+04/2025	KB10-34201	    Klempnerei (oS) - Helfer	3202	2633
+04/2025	KB10-34202	    Klempnerei (oS) - Fachkraft	3553	3000
+04/2025	KB10-34203	    Klempnerei (oS) - Spezialist	4679	NA
+04/2025	KB10-34212	    Sanitär-, Heizungs-, Klimatechnik - Fachkraft	3797	3324
+04/2025	KB10-34213	    Sanitär-, Heizungs-, Klimatechnik - Spezialist	4386	4201
+04/2025	KB10-34214	    Sanitär-, Heizungs-, Klimatechnik - Experte	6635	4258
+04/2025	KB10-34222	    Ofen- und Luftheizungsbau - Fachkraft	3907	NA
+04/2025	KB10-34232	    Kältetechnik - Fachkraft	3992	3210
+04/2025	KB10-34233	    Kältetechnik - Spezialist	4959	NA
+04/2025	KB10-34234	    Kältetechnik - Experte	4500	NA
+04/2025	KB10-34293	    Aufsicht - Klemp.,Sanitär-,Heizungs-,Klimatechnik	4795	NA
+04/2025	KB10-343	  Ver- und Entsorgung	3963	3870
+04/2025	KB10-34301	    Ver- und Entsorgung (oS) - Helfer	3424	3452
+04/2025	KB10-34302	    Ver- und Entsorgung (oS) - Fachkraft	4236	4643
+04/2025	KB10-34303	    Ver- und Entsorgung (oS) - Spezialist	5161	4774
+04/2025	KB10-34304	    Ver- und Entsorgung (oS) - Experte	6853	NA
+04/2025	KB10-34312	    Wasserversorgung, Abwassertechnik - Fachkraft	4078	3931
+04/2025	KB10-34313	    Wasserversorgung, Abwassertechnik - Spezialist	5144	NA
+04/2025	KB10-34314	    Wasserversorgung, Abwassertechnik - Experte	5455	NA
+04/2025	KB10-34322	    Rohrleitungsbau - Fachkraft	4139	NA
+04/2025	KB10-34323	    Rohrleitungsbau - Spezialist	5786	NA
+04/2025	KB10-34324	    Rohrleitungsbau - Experte	6300	NA
+04/2025	KB10-34332	    Abfallwirtschaft - Fachkraft	3398	3286
+04/2025	KB10-34333	    Abfallwirtschaft - Spezialist	4857	4893
+04/2025	KB10-34334	    Abfallwirtschaft - Experte	7244	6368
+04/2025	KB10-34342	    Anlagen-, Behälter-, Apparatebau - Fachkraft	4042	NA
+04/2025	KB10-34343	    Anlagen-, Behälter-, Apparatebau - Spezialist	5086	NA
+04/2025	KB10-34344	    Anlagen-, Behälter-, Apparatebau - Experte	6863	5850
+04/2025	KB10-34393	    Aufsicht - Ver- und Entsorgung	5581	3378
+04/2025	KB10-41	Mathematik-, Biologie-, Chemie- und Physikberufe	4976	4190
+04/2025	KB10-411	  Mathematik und Statistik	6309	5823
+04/2025	KB10-41103	    Mathematik (oS) - Spezialist	5398	5644
+04/2025	KB10-41104	    Mathematik (oS) - Experte	6109	5949
+04/2025	KB10-41114	    Statistik - Experte	6395	5835
+04/2025	KB10-41184	    Mathematik (ssT) - Experte	6574	5577
+04/2025	KB10-41194	    Führung - Mathematik und Statistik	6250	8444
+04/2025	KB10-412	  Biologie	5360	4453
+04/2025	KB10-41203	    Biologie (oS) - Spezialist	5393	3739
+04/2025	KB10-41204	    Biologie (oS) - Experte	6405	5508
+04/2025	KB10-41212	    Biologisch-techn. Laboratorium - Fachkraft	4005	4005
+04/2025	KB10-41213	    Biologisch-techn. Laboratorium - Spezialist	4913	3700
+04/2025	KB10-41214	    Biologisch-techn. Laboratorium - Experte	6395	5221
+04/2025	KB10-41222	    Biologische Präparation - Fachkraft	3926	3472
+04/2025	KB10-41234	    Biologie (Ökologie) - Experte	5150	5221
+04/2025	KB10-41244	    Biologie (Botanik) - Experte	3423	NA
+04/2025	KB10-41254	    Biologie (Zoologie) - Experte	4870	4967
+04/2025	KB10-41264	    Biologie (Mikrobiologie) - Experte	6580	5393
+04/2025	KB10-41274	    Biologie (Humanbiologie) - Experte	6406	5999
+04/2025	KB10-41283	    Biologie (ssT) - Spezialist	5993	4684
+04/2025	KB10-41284	    Biologie (ssT) - Experte	NA	5155
+04/2025	KB10-41293	    Aufsicht - Biologie	NA	NA
+04/2025	KB10-41294	    Führung - Biologie	7470	6080
+04/2025	KB10-413	  Chemie	4880	4031
+04/2025	KB10-41303	    Chemie (oS) - Spezialist	6126	5887
+04/2025	KB10-41304	    Chemie (oS) - Experte	7459	6354
+04/2025	KB10-41311	    Chemie- und Pharmatechnik - Helfer	3708	3031
+04/2025	KB10-41312	    Chemie- und Pharmatechnik - Fachkraft	5019	4498
+04/2025	KB10-41313	    Chemie- und Pharmatechnik - Spezialist	6483	5504
+04/2025	KB10-41314	    Chemie- und Pharmatechnik - Experte	7424	4979
+04/2025	KB10-41322	    Chemisch-techn. Laboratorium - Fachkraft	4557	4070
+04/2025	KB10-41323	    Chemisch-techn. Laboratorium - Spezialist	5650	5132
+04/2025	KB10-41324	    Chemisch-techn. Laboratorium - Experte	6373	5519
+04/2025	KB10-41333	    Steuerer chem. Verfahrensanlagen - Spezialist	3999	3274
+04/2025	KB10-41343	    Steuerer Erdöl-, Erdgasraffin.anlagen - Spezialist	7145	6312
+04/2025	KB10-41383	    Chemie (ssT) - Spezialist	5793	4900
+04/2025	KB10-41384	    Chemie (ssT) - Experte	6278	5037
+04/2025	KB10-41393	    Aufsicht - Chemie	6957	6000
+04/2025	KB10-41394	    Führung - Chemie	8695	7661
+04/2025	KB10-414	  Physik	4992	4251
+04/2025	KB10-41403	    Physik (oS) - Spezialist	4528	5239
+04/2025	KB10-41404	    Physik (oS) - Experte	6663	5779
+04/2025	KB10-41412	    Physikalisch-techn. Laboratorium - Fachkraft	4659	4081
+04/2025	KB10-41413	    Physikalisch-techn. Laboratorium - Spezialist	6234	5766
+04/2025	KB10-41414	    Physikalisch-techn. Laboratorium - Experte	NA	5000
+04/2025	KB10-41422	    Werkstofftechnik - Fachkraft	4244	3844
+04/2025	KB10-41423	    Werkstofftechnik - Spezialist	5704	5613
+04/2025	KB10-41424	    Werkstofftechnik - Experte	6384	5982
+04/2025	KB10-41432	    Baustoffprüfung - Fachkraft	3500	3293
+04/2025	KB10-41433	    Baustoffprüfung - Spezialist	5954	NA
+04/2025	KB10-41434	    Baustoffprüfung - Experte	6228	NA
+04/2025	KB10-41482	    Physik (ssT) - Fachkraft	4340	NA
+04/2025	KB10-41483	    Physik (ssT) - Spezialist	4200	3810
+04/2025	KB10-41484	    Physik (ssT) - Experte	NA	5574
+04/2025	KB10-41493	    Aufsicht - Physik	6534	NA
+04/2025	KB10-41494	    Führung - Physik	5787	5536
+04/2025	KB10-42	Geologie-, Geografie- und Umweltschutzberufe	4485	4709
+04/2025	KB10-421	  Geologie, Geografie und Meteorologie	5450	4629
+04/2025	KB10-42112	    Geotechnik - Fachkraft	3950	2950
+04/2025	KB10-42113	    Geotechnik - Spezialist	4262	5090
+04/2025	KB10-42114	    Geotechnik - Experte	NA	NA
+04/2025	KB10-42124	    Geologie - Experte	5714	4703
+04/2025	KB10-42134	    Geografie - Experte	7539	4653
+04/2025	KB10-42142	    Meteorologie - Fachkraft	3986	3989
+04/2025	KB10-42143	    Meteorologie - Spezialist	4803	4707
+04/2025	KB10-42144	    Meteorologie - Experte	6451	5993
+04/2025	KB10-422	  Umweltschutztechnik	4101	4817
+04/2025	KB10-42202	    Umweltschutztechnik (oS) - Fachkraft	4554	3966
+04/2025	KB10-42203	    Umweltschutztechnik (oS) - Spezialist	5339	4762
+04/2025	KB10-42204	    Umweltschutztechnik (oS) - Experte	5752	5245
+04/2025	KB10-42212	    Schornsteinfeger - Fachkraft	3900	NA
+04/2025	KB10-42283	    Umweltschutztechnik (ssT) - Spezialist	NA	6501
+04/2025	KB10-42293	    Aufsicht - Umweltschutztechnik	4301	NA
+04/2025	KB10-423	  Umweltmanagement und -beratung	5297	4710
+04/2025	KB10-42312	    Umweltschutzverwaltung, -beratung - Fachkraft	NA	3905
+04/2025	KB10-42313	    Umweltschutzverwaltung, -beratung - Spezialist	5158	4662
+04/2025	KB10-42314	    Umweltschutzverwaltung, -beratung - Experte	6303	5435
+04/2025	KB10-42323	    Gewässer-,Immissionssch.-,Abfallbeauf. -Spezialist	5073	NA
+04/2025	KB10-42324	    Gewässer-,Immissionssch.-,Abfallbeauf. -Experte	5297	5169
+04/2025	KB10-42333	    Strahlenschutzbeauftragte - Spezialist	5220	4641
+04/2025	KB10-42334	    Strahlenschutzbeauftragte - Experte	5310	5846
+04/2025	KB10-42394	    Führung - Umweltmanagement und -beratung	8626	8925
+04/2025	KB10-43	Informatik- und andere IKT-Berufe	5851	5413
+04/2025	KB10-431	  Informatik	5651	5616
+04/2025	KB10-43102	    Informatik (oS) - Fachkraft	4840	5299
+04/2025	KB10-43103	    Informatik (oS) - Spezialist	6955	6430
+04/2025	KB10-43104	    Informatik (oS) - Experte	6516	6067
+04/2025	KB10-43112	    Wirtschaftsinformatik - Fachkraft	4921	4240
+04/2025	KB10-43113	    Wirtschaftsinformatik - Spezialist	5537	4835
+04/2025	KB10-43114	    Wirtschaftsinformatik - Experte	6184	4573
+04/2025	KB10-43122	    Technische Informatik - Fachkraft	4935	4037
+04/2025	KB10-43123	    Technische Informatik - Spezialist	4173	5902
+04/2025	KB10-43124	    Technische Informatik - Experte	6578	4976
+04/2025	KB10-43134	    Bio-, Medizininformatik - Experte	6377	5720
+04/2025	KB10-43144	    Geoinformatik - Experte	4967	4986
+04/2025	KB10-43152	    Medieninformatik - Fachkraft	4534	4135
+04/2025	KB10-43153	    Medieninformatik - Spezialist	5082	4206
+04/2025	KB10-43154	    Medieninformatik - Experte	4833	4792
+04/2025	KB10-43194	    Führung - Informatik	10000	8932
+04/2025	KB10-432	  IT-Systemanalyse, -Anwendungsberatung, -Vertrieb	6072	5370
+04/2025	KB10-43214	    IT-Systemanalyse - Experte	6602	6007
+04/2025	KB10-43223	    IT-Anwendungsberatung - Spezialist	5716	5131
+04/2025	KB10-43224	    IT-Anwendungsberatung - Experte	6100	5388
+04/2025	KB10-43232	    IT-Vertrieb - Fachkraft	4273	4502
+04/2025	KB10-43233	    IT-Vertrieb - Spezialist	6950	5697
+04/2025	KB10-43294	    Führung - IT-Systemanalyse, -Anwendung, -Vertrieb	8834	6656
+04/2025	KB10-433	  IT-Netzwerktechnik, -Koord., -Admin., -Organis.	5782	5341
+04/2025	KB10-43312	    IT-Netzwerktechnik - Fachkraft	4400	5089
+04/2025	KB10-43313	    IT-Netzwerktechnik - Spezialist	5731	5023
+04/2025	KB10-43314	    IT-Netzwerktechnik - Experte	5467	4464
+04/2025	KB10-43323	    IT-Koordination - Spezialist	5671	5133
+04/2025	KB10-43333	    IT-Organisation - Spezialist	6027	5540
+04/2025	KB10-43343	    IT-Systemadministation - Spezialist	5199	5000
+04/2025	KB10-43353	    Datenbankentwicklung, -administration - Spezialist	6085	5100
+04/2025	KB10-43363	    Webadministration - Spezialist	5812	5245
+04/2025	KB10-43383	    IT-Netzwerk,Koord.,Admin.,Org. (ssT) - Spezialist	6203	5833
+04/2025	KB10-43384	    IT-Netzwerk,Koord.,Admin.,Org. (ssT) - Experte	6104	NA
+04/2025	KB10-43394	    Führung - IT-Netzwerk,-Koord.,-Admin.,-Org.	7746	6719
+04/2025	KB10-434	  Softwareentwicklung und Programmierung	5900	5333
+04/2025	KB10-43412	    Softwareentwicklung - Fachkraft	4226	4145
+04/2025	KB10-43413	    Softwareentwicklung - Spezialist	6003	5807
+04/2025	KB10-43414	    Softwareentwicklung - Experte	6095	5326
+04/2025	KB10-43423	    Programmierung - Spezialist	5069	5325
+04/2025	KB10-43494	    Führung - Softwareentwicklung, Programmierung	8622	7711
+04/2025	KB10-51	Verkehrs-, Logistikberufe (außer Fahrzeugführung)	3268	3000
+04/2025	KB10-511	  Techn. Betrieb Eisenbahn-, Luft-, Schiffsverkehr	4475	4115
+04/2025	KB10-51112	    Technischer Eisenbahnbetrieb - Fachkraft	3916	NA
+04/2025	KB10-51113	    Technischer Eisenbahnbetrieb - Spezialist	4145	4555
+04/2025	KB10-51122	    Technischer Luftverkehrsbetrieb - Fachkraft	4157	4061
+04/2025	KB10-51123	    Technischer Luftverkehrsbetrieb - Spezialist	6191	3722
+04/2025	KB10-51132	    Technischer Schiffsverkehrsbetrieb - Fachkraft	4008	3556
+04/2025	KB10-51133	    Technischer Schiffsverkehrsbetrieb - Spezialist	6037	NA
+04/2025	KB10-51134	    Technischer Schiffsverkehrsbetrieb - Experte	7615	6055
+04/2025	KB10-51182	    Techn.Bet.Eisenb.,Luft.,Schiffsv.(ssT)- Fachkraft	8101	NA
+04/2025	KB10-51183	    Techn.Bet.Eisenb.,Luft.,Schiffsv.(ssT)- Spezialist	NA	NA
+04/2025	KB10-51193	    Aufsicht - Techn. Betr. Eisenbahn-,Luft-,Schiffsv.	5556	NA
+04/2025	KB10-512	  Überwachung und Wartung der Verkehrsinfrastruktur	4082	3770
+04/2025	KB10-51212	    Straßen-, Tunnelwärter - Fachkraft	4153	3656
+04/2025	KB10-51222	    Wartung Eisenbahninfrastruktur - Fachkraft	3622	3481
+04/2025	KB10-51223	    Wartung Eisenbahninfrastruktur - Spezialist	5292	NA
+04/2025	KB10-51224	    Wartung Eisenbahninfrastruktur - Experte	6208	4524
+04/2025	KB10-51233	    Flugsicherungstechnik - Spezialist	9595	8497
+04/2025	KB10-51234	    Flugsicherungstechnik - Experte	NA	NA
+04/2025	KB10-51242	    Wasserstraßen-, Brückenwärter - Fachkraft	4112	NA
+04/2025	KB10-51243	    Wasserstraßen-, Brückenwärter - Spezialist	NA	NA
+04/2025	KB10-51293	    Aufsicht - Überwach.,Wartung Verkehrsinfrastruktur	6101	4931
+04/2025	KB10-513	  Lagerwirtschaft, Post u. Zustellung, Güterumschlag	3126	2859
+04/2025	KB10-51311	    Lagerwirtschaft - Helfer	3012	2716
+04/2025	KB10-51312	    Lagerwirtschaft - Fachkraft	3268	3042
+04/2025	KB10-51321	    Post- und Zustelldienste - Helfer	2915	2987
+04/2025	KB10-51322	    Post- und Zustelldienste - Fachkraft	3044	3044
+04/2025	KB10-51332	    Güter- und Warenumschlag - Fachkraft	3788	3160
+04/2025	KB10-51393	    Aufsicht - Lagerwirt.,Post,Zustellung,Güterumsch.	4175	3841
+04/2025	KB10-51394	    Führung - Lagerwirt.,Post,Zustellung,Güterumsch.	4712	4689
+04/2025	KB10-514	  Servicekräfte im Personenverkehr	3533	3521
+04/2025	KB10-51401	    Servicekräfte Personenverkehr (oS) - Helfer	3374	3181
+04/2025	KB10-51412	    Servicefachk. Straßen-,Schienenverkehr - Fachkraft	3586	3546
+04/2025	KB10-51422	    Servicefachkräfte Luftverkehr - Fachkraft	2958	3459
+04/2025	KB10-51432	    Servicefachkräfte Schiffsverkehr - Fachkraft	4185	2902
+04/2025	KB10-51493	    Aufsicht - Personenverkehr (Servicebereich)	4363	4353
+04/2025	KB10-515	  Überwachung und Steuerung des Verkehrsbetriebs	4294	4284
+04/2025	KB10-51503	    Überwachung Verkehrsbetrieb (oS) - Spezialist	4694	4649
+04/2025	KB10-51504	    Überwachung Verkehrsbetrieb (oS) - Experte	5591	5061
+04/2025	KB10-51511	    Überwachung Straßenverkehrsbetrieb - Helfer	NA	NA
+04/2025	KB10-51512	    Überwachung Straßenverkehrsbetrieb - Fachkraft	4520	3994
+04/2025	KB10-51513	    Überwachung Straßenverkehrsbetrieb - Spezialist	4797	NA
+04/2025	KB10-51522	    Überwachung Eisenbahnverkehrsbetrieb - Fachkraft	3934	3921
+04/2025	KB10-51523	    Überwachung Eisenbahnverkehrsbetrieb - Spezialist	5074	NA
+04/2025	KB10-51532	    Überwachung Luftverkehrsbetrieb - Fachkraft	4085	5014
+04/2025	KB10-51533	    Überwachung Luftverkehrsbetrieb - Spezialist	13503	7814
+04/2025	KB10-51534	    Überwachung Luftverkehrsbetrieb - Experte	7544	6440
+04/2025	KB10-51543	    Überwachung Schiffsverkehrsbetrieb - Spezialist	3749	2918
+04/2025	KB10-51583	    Überwachung Verkehrsbetrieb (ssT) - Spezialist	5507	NA
+04/2025	KB10-51593	    Aufsicht - Überwachung Verkehrsbetrieb	4221	4125
+04/2025	KB10-51594	    Führung - Überwachung Verkehrsbetrieb	6399	NA
+04/2025	KB10-516	  Kaufleute - Verkehr und Logistik	4180	3800
+04/2025	KB10-51613	    Verkehrskaufleute - Spezialist	5351	4805
+04/2025	KB10-51614	    Verkehrskaufleute - Experte	6755	4842
+04/2025	KB10-51622	    Speditions-, Logistikkaufleute - Fachkraft	4038	3588
+04/2025	KB10-51623	    Speditions-, Logistikkaufleute - Spezialist	4332	4003
+04/2025	KB10-51624	    Speditions-, Logistikkaufleute - Experte	3750	3953
+04/2025	KB10-51632	    Straßen-, Schienenverkehrskaufleute - Fachkraft	4134	3588
+04/2025	KB10-51633	    Straßen-, Schienenverkehrskaufleute - Spezialist	4345	4077
+04/2025	KB10-51642	    Luftverkehrskaufleute - Fachkraft	4792	4131
+04/2025	KB10-51643	    Luftverkehrskaufleute - Spezialist	4288	4155
+04/2025	KB10-51652	    Schifffahrtskaufleute - Fachkraft	5400	4527
+04/2025	KB10-51653	    Schifffahrtskaufleute - Spezialist	8000	4742
+04/2025	KB10-51662	    Kurier-,Express-,Postdienstl.kaufl. - Fachkraft	4104	4043
+04/2025	KB10-51663	    Kurier-,Express-,Postdienstl.kaufl. - Spezialist	7248	6543
+04/2025	KB10-51694	    Führung - Verkehr, Logistik (kaufm. Bereich)	6031	5883
+04/2025	KB10-52	Führer von Fahrzeug- und Transportgeräten	3314	3092
+04/2025	KB10-521	  Fahrzeugführung im Straßenverkehr	3237	3038
+04/2025	KB10-52112	    Berufskraftfahrer (Personentr./Pkw) - Fachkraft	2520	2520
+04/2025	KB10-52122	    Berufskraftfahrer (Güterverkehr/Lkw) - Fachkraft	3263	3187
+04/2025	KB10-52132	    Bus-, Straßenbahnfahrer - Fachkraft	3610	3325
+04/2025	KB10-52182	    Fahrzeugführer Straßenverkehr (ssT) - Fachkraft	2794	2600
+04/2025	KB10-522	  Fahrzeugführung im Eisenbahnverkehr	4337	4090
+04/2025	KB10-52202	    Triebfahrzeugführer Eisenbahn (oS) - Fachkraft	4337	4090
+04/2025	KB10-523	  Fahrzeugführung im Flugverkehr	11640	7990
+04/2025	KB10-52313	    Piloten, Verkehrsflugzeugführer - Spezialist	11966	8824
+04/2025	KB10-52314	    Piloten, Verkehrsflugzeugführer - Experte	10182	7269
+04/2025	KB10-52383	    Fahrzeugführer Flugverkehr (ssT) - Spezialist	6633	NA
+04/2025	KB10-52384	    Fahrzeugführer Flugverkehr (ssT) - Experte	27960	NA
+04/2025	KB10-524	  Fahrzeugführung im Schiffsverkehr	4878	3989
+04/2025	KB10-52413	    Nautische Schiffsoffiziere, Kapitäne - Spezialist	6264	6221
+04/2025	KB10-52414	    Nautische Schiffsoffiziere, Kapitäne - Experte	6933	NA
+04/2025	KB10-52422	    Schiffsführer Binnensch.-, Hafenverk. - Fachkraft	3800	3832
+04/2025	KB10-52423	    Schiffsführer Binnensch.-, Hafenverk. - Spezialist	4253	3989
+04/2025	KB10-525	  Bau- und Transportgeräteführung	3600	2994
+04/2025	KB10-52512	    Führer land-, forstw. Maschinen - Fachkraft	3080	2728
+04/2025	KB10-52522	    Führer Erdbewegungs-, verw. Maschinen - Fachkraft	4090	3853
+04/2025	KB10-52531	    Kranführer, Bediener Hebeeinrichtungen - Helfer	3207	2973
+04/2025	KB10-52532	    Kranführer, Bediener Hebeeinrichtungen - Fachkraft	4164	3384
+04/2025	KB10-52593	    Aufsicht - Bau-, Transportgeräteführung	4948	NA
+04/2025	KB10-53	Schutz-, Sicherheits- und Überwachungsberufe	4422	3894
+04/2025	KB10-531	  Objekt-, Personen-, Brandschutz, Arbeitssicherheit	4046	3375
+04/2025	KB10-53111	    Objekt-, Werte-, Personenschutz - Helfer	3347	2831
+04/2025	KB10-53112	    Objekt-, Werte-, Personenschutz - Fachkraft	3711	3527
+04/2025	KB10-53122	    Arbeitssicherheit, Sicherheitstechnik - Fachkraft	5777	4632
+04/2025	KB10-53123	    Arbeitssicherheit, Sicherheitstechnik - Spezialist	5000	4623
+04/2025	KB10-53124	    Arbeitssicherheit, Sicherheitstechnik - Experte	5559	5727
+04/2025	KB10-53132	    Brandschutz - Fachkraft	4152	3873
+04/2025	KB10-53133	    Brandschutz - Spezialist	4976	4786
+04/2025	KB10-53134	    Brandschutz - Experte	7108	6401
+04/2025	KB10-53142	    Badeaufsicht - Fachkraft	3548	3559
+04/2025	KB10-53152	    Detektive - Fachkraft	3406	2923
+04/2025	KB10-53162	    Inkassobeauftragte - Fachkraft	4521	3914
+04/2025	KB10-53182	    Objekt-, Personen-, Brandschutz (ssT) - Fachkraft	5881	4576
+04/2025	KB10-53183	    Objekt-, Personen-, Brandschutz (ssT) - Spezialist	4038	4608
+04/2025	KB10-53184	    Objekt-, Personen-, Brandschutz (ssT) - Experte	6135	6066
+04/2025	KB10-53193	    Aufsicht - Objekt-, Brandschutz, Arbeitssicherheit	5381	3982
+04/2025	KB10-53194	    Führung - Objekt-, Brandschutz, Arbeitssicherheit	6397	5144
+04/2025	KB10-532	  Polizeivollzugs-,Kriminaldienst,Gerichts-,Justizv.	4789	4068
+04/2025	KB10-53212	    Polizeivollzugsdienst - Fachkraft	3674	3658
+04/2025	KB10-53213	    Polizeivollzugsdienst - Spezialist	5097	4434
+04/2025	KB10-53214	    Polizeivollzugsdienst - Experte	6837	6614
+04/2025	KB10-53222	    Kriminaldienst - Fachkraft	NA	NA
+04/2025	KB10-53223	    Kriminaldienst - Spezialist	NA	NA
+04/2025	KB10-53224	    Kriminaldienst - Experte	NA	NA
+04/2025	KB10-53232	    Gerichtsvollzug - Fachkraft	NA	NA
+04/2025	KB10-53233	    Gerichtsvollzug - Spezialist	NA	NA
+04/2025	KB10-53241	    Justizvollzugsdienst - Helfer	2975	NA
+04/2025	KB10-53242	    Justizvollzugsdienst - Fachkraft	4123	3861
+04/2025	KB10-53243	    Justizvollzugsdienst - Spezialist	4907	4694
+04/2025	KB10-53244	    Justizvollzugsdienst - Experte	6950	6259
+04/2025	KB10-533	  Gewerbe- und Gesundheitsaufsicht, Desinfektion	4222	3900
+04/2025	KB10-53312	    Gewerbeaufsicht - Fachkraft	3756	3709
+04/2025	KB10-53313	    Gewerbeaufsicht - Spezialist	4990	4710
+04/2025	KB10-53314	    Gewerbeaufsicht - Experte	6755	6556
+04/2025	KB10-53322	    Gesundheitsaufsicht, Hygieneüberwach. - Fachkraft	4788	4752
+04/2025	KB10-53323	    Gesundheitsaufsicht, Hygieneüberwach. - Spezialist	5278	4747
+04/2025	KB10-53332	    Lebensmittelkontrolle - Fachkraft	4135	3772
+04/2025	KB10-53333	    Lebensmittelkontrolle - Spezialist	4763	4573
+04/2025	KB10-53342	    Desinfektion, Schädlingsbekämpfung - Fachkraft	3679	3412
+04/2025	KB10-53393	    Aufsicht - Gewerbe-, Gesundheitsaufsicht	NA	NA
+04/2025	KB10-53394	    Führung - Gewerbe-, Gesundheitsaufsicht	NA	NA
+04/2025	KB10-54	Reinigungsberufe	2951	2612
+04/2025	KB10-541	  Reinigung	2951	2612
+04/2025	KB10-54101	    Reinigung (oS) - Helfer	2763	2597
+04/2025	KB10-54112	    Gebäudereinigung - Fachkraft	3038	2670
+04/2025	KB10-54113	    Gebäudereinigung - Spezialist	NA	2939
+04/2025	KB10-54122	    Glas-, Fensterreinigung - Fachkraft	NA	3121
+04/2025	KB10-54132	    Textilreinigung - Fachkraft	2724	2454
+04/2025	KB10-54142	    Maschinen-, Anlagenreinigung - Fachkraft	3529	2761
+04/2025	KB10-54152	    Fahrzeugreinigung - Fachkraft	3079	2730
+04/2025	KB10-54182	    Reinigung (ssT) - Fachkraft	NA	2755
+04/2025	KB10-54193	    Aufsicht - Reinigung	4299	3682
+04/2025	KB10-61	Einkaufs-, Vertriebs- und Handelsberufe	5590	4203
+04/2025	KB10-611	  Einkauf und Vertrieb	5906	4415
+04/2025	KB10-61112	    Einkauf - Fachkraft	4498	3981
+04/2025	KB10-61113	    Einkauf - Spezialist	5625	4605
+04/2025	KB10-61122	    Vertrieb (außer IKT) - Fachkraft	4911	3967
+04/2025	KB10-61123	    Vertrieb (außer IKT) - Spezialist	5778	4788
+04/2025	KB10-61124	    Vertrieb (außer IKT) - Experte	7047	5315
+04/2025	KB10-61132	    Handelsmakler, Auktionatoren - Fachkraft	4418	4098
+04/2025	KB10-61133	    Handelsmakler, Auktionatoren - Spezialist	NA	NA
+04/2025	KB10-61142	    Kaufleute Automatenservice - Fachkraft	2500	2650
+04/2025	KB10-61152	    Geld- und Pfandverleih - Fachkraft	NA	NA
+04/2025	KB10-61162	    Verleih (außer Geld und Pfand) - Fachkraft	3300	3171
+04/2025	KB10-61194	    Führung - Einkauf und Vertrieb	7775	6460
+04/2025	KB10-612	  Handel	4118	3648
+04/2025	KB10-61203	    Kaufleute im Handel (oS) - Spezialist	6363	4788
+04/2025	KB10-61204	    Kaufleute im Handel (oS) - Experte	NA	7417
+04/2025	KB10-61212	    Kaufleute Groß-, Außenhandel - Fachkraft	3874	3504
+04/2025	KB10-61213	    Kaufleute Groß-, Außenhandel - Spezialist	7292	5563
+04/2025	KB10-61214	    Kaufleute Groß-, Außenhandel - Experte	7057	6085
+04/2025	KB10-61282	    Kaufleute im Handel (ssT) - Fachkraft	4635	3600
+04/2025	KB10-61283	    Kaufleute im Handel (ssT) - Spezialist	5100	4070
+04/2025	KB10-61284	    Kaufleute im Handel (ssT) - Experte	8831	6172
+04/2025	KB10-61294	    Führung - Handel	5809	5367
+04/2025	KB10-613	  Immobilienwirtschaft und Facility-Management	4692	3900
+04/2025	KB10-61312	    Immobilienvermarktung, -verwaltung - Fachkraft	4160	3833
+04/2025	KB10-61313	    Immobilienvermarktung, -verwaltung - Spezialist	4986	3900
+04/2025	KB10-61314	    Immobilienvermarktung, -verwaltung - Experte	7425	5597
+04/2025	KB10-61323	    Facility-Management - Spezialist	4837	NA
+04/2025	KB10-61394	    Führung - Immobilienwirtschaft, Facility-Managem.	6508	NA
+04/2025	KB10-62	Verkaufsberufe	3500	2825
+04/2025	KB10-621	  Verkauf (ohne Produktspezialisierung)	3556	2882
+04/2025	KB10-62101	    Verkauf (ohne Produktspezialisierung) - Helfer	2811	2559
+04/2025	KB10-62102	    Verkauf (ohne Produktspezialisierung) - Fachkraft	3221	2742
+04/2025	KB10-62103	    Verkauf (ohne Produktspezialisierung) - Spezialist	4239	4172
+04/2025	KB10-62112	    Kassierer, Kartenverkäufer - Fachkraft	2784	2973
+04/2025	KB10-62122	    Verkaufsstand-, Marktverkäufer - Fachkraft	3461	2751
+04/2025	KB10-62182	    Verkauf (ohne Produktspezial.) (ssT) - Fachkraft	4712	3826
+04/2025	KB10-62183	    Verkauf (ohne Produktspezial.) (ssT) - Spezialist	4167	3391
+04/2025	KB10-62193	    Aufsicht - Verkauf	4648	3795
+04/2025	KB10-62194	    Führung - Verkauf	5427	3727
+04/2025	KB10-622	  Verkauf von Bekleidung, Elektronik, Kfz, Hartwaren	3615	2900
+04/2025	KB10-62212	    Verkauf Bekleidung, Lederwaren, Sport - Fachkraft	2650	2703
+04/2025	KB10-62222	    Verkauf Schmuck, Uhren - Fachkraft	NA	2600
+04/2025	KB10-62232	    Verkauf Büro-, Geschenk-, Spielwaren - Fachkraft	3000	1880
+04/2025	KB10-62242	    Verkauf Elektro-, Haushaltswaren - Fachkraft	3295	2860
+04/2025	KB10-62252	    Verkauf Möbel, Einrichtungsgegenstände - Fachkraft	3440	3234
+04/2025	KB10-62262	    Verkauf Garten-,Heimwerker-,Tierbedarf - Fachkraft	3122	3076
+04/2025	KB10-62272	    Verkauf Kfz, Zweiräder, Zubehör - Fachkraft	4452	3230
+04/2025	KB10-62282	    Verkauf (ssT) - Fachkraft	NA	2470
+04/2025	KB10-623	  Verkauf von Lebensmitteln	2858	2655
+04/2025	KB10-62301	    Verkauf Lebensmittel (oS) - Helfer	2700	2667
+04/2025	KB10-62302	    Verkauf Lebensmittel (oS) - Fachkraft	2987	3000
+04/2025	KB10-62312	    Verkauf Back-, Konditoreiwaren - Fachkraft	2755	2555
+04/2025	KB10-62322	    Verkauf Fleischwaren - Fachkraft	3126	2686
+04/2025	KB10-62382	    Verkauf Lebensmittel (ssT) - Fachkraft	3000	2618
+04/2025	KB10-624	  Verkauf v. drogerie- u.apoth. Waren, Medizinbedarf	3035	3107
+04/2025	KB10-62412	    Verkauf drogerie-, apotheken. Waren - Fachkraft	2891	3200
+04/2025	KB10-62422	    Verkauf Sanitäts-, Medizinbedarf - Fachkraft	3800	2789
+04/2025	KB10-625	  Buch-, Kunst-, Antiquitäten- und Musikfachhandel	NA	NA
+04/2025	KB10-62512	    Buchhandel - Fachkraft	3251	NA
+04/2025	KB10-62513	    Buchhandel - Spezialist	NA	NA
+04/2025	KB10-62514	    Buchhandel - Experte	NA	NA
+04/2025	KB10-62522	    Kunst-, Antiquitätenhandel - Fachkraft	NA	NA
+04/2025	KB10-62532	    Musikfachhandel - Fachkraft	NA	NA
+04/2025	KB10-63	Tourismus-, Hotel- und Gaststättenberufe	2954	2880
+04/2025	KB10-631	  Tourismus und Sport	3460	3351
+04/2025	KB10-63112	    Tourismuskaufleute - Fachkraft	3300	3275
+04/2025	KB10-63113	    Tourismuskaufleute - Spezialist	5100	4570
+04/2025	KB10-63114	    Tourismuskaufleute - Experte	NA	4600
+04/2025	KB10-63122	    Sport-,Fitnesskaufleute,Sportmanager - Fachkraft	3000	2675
+04/2025	KB10-63123	    Sport-,Fitnesskaufleute,Sportmanager - Spezialist	4394	NA
+04/2025	KB10-63124	    Sport-,Fitnesskaufleute,Sportmanager - Experte	3650	NA
+04/2025	KB10-63132	    Animateure und Gästebetreuer - Fachkraft	3355	3096
+04/2025	KB10-63142	    Reiseleiter, Fremdenführer - Fachkraft	2800	3700
+04/2025	KB10-63143	    Reiseleiter, Fremdenführer - Spezialist	3640	3675
+04/2025	KB10-63194	    Führung - Tourismus und Sport	3850	3740
+04/2025	KB10-632	  Hotellerie	3042	2939
+04/2025	KB10-63212	    Hotelkaufleute - Fachkraft	NA	3300
+04/2025	KB10-63213	    Hotelkaufleute - Spezialist	NA	NA
+04/2025	KB10-63221	    Hotelservice - Helfer	2619	2750
+04/2025	KB10-63222	    Hotelservice - Fachkraft	3066	3017
+04/2025	KB10-63293	    Aufsicht - Hotellerie	2990	3205
+04/2025	KB10-63294	    Führung - Hotellerie	NA	4041
+04/2025	KB10-633	  Gastronomie	2850	2732
+04/2025	KB10-63301	    Gastronomieservice (oS) - Helfer	2699	2636
+04/2025	KB10-63302	    Gastronomieservice (oS) - Fachkraft	2856	2798
+04/2025	KB10-63303	    Gastronomieservice (oS) - Spezialist	2973	2662
+04/2025	KB10-63312	    Systemgastronomie - Fachkraft	3015	2984
+04/2025	KB10-63313	    Systemgastronomie - Spezialist	4331	5141
+04/2025	KB10-63322	    Barkeeper - Fachkraft	2750	2892
+04/2025	KB10-63382	    Gastronomie (ssT) - Fachkraft	3710	3244
+04/2025	KB10-63383	    Gastronomie (ssT) - Spezialist	3537	3537
+04/2025	KB10-63393	    Aufsicht - Gastronomie	3577	3343
+04/2025	KB10-63394	    Führung - Gastronomie	4265	3744
+04/2025	KB10-634	  Veranstaltungsservice und -management	3767	3623
+04/2025	KB10-63401	    Veranstaltungsservice, -management - Helfer	3036	3300
+04/2025	KB10-63402	    Veranstaltungsservice, -management - Fachkraft	3500	3386
+04/2025	KB10-63403	    Veranstaltungsservice, -management - Spezialist	4275	4069
+04/2025	KB10-63404	    Veranstaltungsservice, -management - Experte	4847	4333
+04/2025	KB10-71	Berufe in Unternehmensführung und -organisation	6084	4107
+04/2025	KB10-711	  Geschäftsführung und Vorstand	8956	7088
+04/2025	KB10-71104	    Geschäftsführer und Vorstände - Experte	8956	7088
+04/2025	KB10-712	  Angehörige gesetzg. Körperschaften, Interessenorg.	6250	6170
+04/2025	KB10-71214	    Angehörige gesetzgebender Körperschaften - Experte	NA	NA
+04/2025	KB10-71224	    Leitende Bedienstete von Interessenorg. - Experte	6715	7206
+04/2025	KB10-71234	    Betriebsinterne Wahlämter - Experte	5911	5193
+04/2025	KB10-713	  Unternehmensorganisation und -strategie	6259	4549
+04/2025	KB10-71302	    Kaufmänn.,techn. Betriebswirt. (oS) - Fachkraft	4865	3974
+04/2025	KB10-71303	    Kaufmänn.,techn. Betriebswirt. (oS) - Spezialist	5906	5034
+04/2025	KB10-71304	    Kaufmänn.,techn. Betriebswirt. (oS) - Experte	8416	6415
+04/2025	KB10-71314	    Unternehmensorganisation, -planung - Experte	6121	5335
+04/2025	KB10-71324	    Unternehmensberatung - Experte	7272	5852
+04/2025	KB10-71333	    Wirtschaftsförderung - Spezialist	NA	NA
+04/2025	KB10-71382	    Unternehmensorg., -strategie (ssT) - Fachkraft	NA	NA
+04/2025	KB10-71383	    Unternehmensorg., -strategie (ssT) - Spezialist	7688	5903
+04/2025	KB10-71384	    Unternehmensorg., -strategie (ssT) - Experte	7006	5853
+04/2025	KB10-71393	    Aufsicht - Unternehmensorg., -strategie	6514	5317
+04/2025	KB10-71394	    Führung - Unternehmensorg., -strategie	8549	6996
+04/2025	KB10-714	  Büro und Sekretariat	4474	3671
+04/2025	KB10-71401	    Büro-, Sekretariatskräfte (oS) - Helfer	3429	2940
+04/2025	KB10-71402	    Büro-, Sekretariatskräfte (oS) - Fachkraft	4409	3623
+04/2025	KB10-71403	    Büro-, Sekretariatskräfte (oS) - Spezialist	5423	4615
+04/2025	KB10-71412	    Fremdsprachensekr., -korrespondenten - Fachkraft	3251	4100
+04/2025	KB10-71413	    Fremdsprachensekr., -korrespondenten - Spezialist	NA	3828
+04/2025	KB10-71423	    Dolmetscher, Übersetzer - Spezialist	3570	4186
+04/2025	KB10-71424	    Dolmetscher, Übersetzer - Experte	4015	3597
+04/2025	KB10-71432	    Steno-, Phonotypisten - Fachkraft	4177	3733
+04/2025	KB10-71433	    Steno-, Phonotypisten - Spezialist	NA	NA
+04/2025	KB10-71442	    Kodierer, Korrekturleser - Fachkraft	4989	4300
+04/2025	KB10-71452	    Auskunft, Kundeninformation - Fachkraft	4253	3408
+04/2025	KB10-71493	    Aufsicht - Büro und Sekretariat	4450	4500
+04/2025	KB10-715	  Personalwesen und -dienstleistung	5354	4873
+04/2025	KB10-71512	    Personalentwicklung, -sachbearbeitung - Fachkraft	4847	4441
+04/2025	KB10-71513	    Personalentwicklung, -sachbearbeitung - Spezialist	5809	4962
+04/2025	KB10-71514	    Personalentwicklung, -sachbearbeitung - Experte	6000	5727
+04/2025	KB10-71522	    Personaldienstleistung - Fachkraft	4095	4000
+04/2025	KB10-71523	    Personaldienstleistung - Spezialist	4098	4182
+04/2025	KB10-71524	    Personaldienstleistung - Experte	6020	5269
+04/2025	KB10-71594	    Führung - Personalwesen, -dienstleistung	9317	7041
+04/2025	KB10-72	Finanzdienstl. Rechnungswesen, Steuerberatung	5795	4514
+04/2025	KB10-721	  Versicherungs- und Finanzdienstleistungen	5775	4760
+04/2025	KB10-72112	    Bankkaufleute - Fachkraft	5628	4570
+04/2025	KB10-72113	    Bankkaufleute - Spezialist	6015	5379
+04/2025	KB10-72122	    Anlageberater, Finanzdienstleist. - Fachkraft	5492	4489
+04/2025	KB10-72123	    Anlageberater, Finanzdienstleist. - Spezialist	NA	4900
+04/2025	KB10-72124	    Anlageberater, Finanzdienstleist. - Experte	7364	6135
+04/2025	KB10-72132	    Versicherungskaufleute - Fachkraft	5175	4495
+04/2025	KB10-72133	    Versicherungskaufleute - Spezialist	5563	4895
+04/2025	KB10-72134	    Versicherungskaufleute - Experte	6797	6127
+04/2025	KB10-72144	    Finanzanalysten - Experte	6834	5949
+04/2025	KB10-72182	    Versicherungs-, Finanzdienstl. (ssT) - Fachkraft	5072	4695
+04/2025	KB10-72183	    Versicherungs-, Finanzdienstl. (ssT) - Spezialist	6660	3927
+04/2025	KB10-72184	    Versicherungs-, Finanzdienstl. (ssT) - Experte	8184	7585
+04/2025	KB10-72194	    Führung - Versicherungs-, Finanzdienstleistungen	8190	NA
+04/2025	KB10-722	  Rechnungswesen, Controlling und Revision	6026	4458
+04/2025	KB10-72212	    Buchhaltung - Fachkraft	4169	3961
+04/2025	KB10-72213	    Buchhaltung - Spezialist	4938	4120
+04/2025	KB10-72214	    Buchhaltung - Experte	8250	5646
+04/2025	KB10-72223	    Kostenrechnung, Kalkulation - Spezialist	5286	4423
+04/2025	KB10-72224	    Kostenrechnung, Kalkulation - Experte	6618	6840
+04/2025	KB10-72233	    Controlling - Spezialist	5947	5121
+04/2025	KB10-72234	    Controlling - Experte	6500	5734
+04/2025	KB10-72243	    Wirtschaftsprüfung - Spezialist	4738	4564
+04/2025	KB10-72244	    Wirtschaftsprüfung - Experte	7482	6079
+04/2025	KB10-72294	    Führung - Rechnungswesen, Controlling, Revision	9025	7000
+04/2025	KB10-723	  Steuerberatung	4857	3992
+04/2025	KB10-72302	    Steuerberatung - Fachkraft	3917	3616
+04/2025	KB10-72303	    Steuerberatung - Spezialist	4725	4594
+04/2025	KB10-72304	    Steuerberatung - Experte	8333	7432
+04/2025	KB10-73	Berufe in Recht und Verwaltung	5068	4647
+04/2025	KB10-731	  Rechtsberatung, -sprechung und -ordnung	7952	4700
+04/2025	KB10-73104	    Rechtsberatung, -sprechung (oS) - Experte	8256	6580
+04/2025	KB10-73112	    Assistenz Rechtsanwalt., Notariat - Fachkraft	4407	3419
+04/2025	KB10-73113	    Assistenz Rechtsanwalt., Notariat - Spezialist	NA	NA
+04/2025	KB10-73124	    Notare - Experte	NA	NA
+04/2025	KB10-73134	    Rechtsanwälte - Experte	8125	7333
+04/2025	KB10-73144	    Staatsanwälte - Experte	8064	7656
+04/2025	KB10-73154	    Richter - Experte	8347	7811
+04/2025	KB10-73162	    Verfassungsschutz - Fachkraft	NA	NA
+04/2025	KB10-73163	    Verfassungsschutz - Spezialist	5187	5259
+04/2025	KB10-73164	    Verfassungsschutz - Experte	6993	6700
+04/2025	KB10-73183	    Rechtsberatung,-sprechung,-ordn.(ssT) - Spezialist	7002	5704
+04/2025	KB10-73184	    Rechtsberatung,-sprechung,-ordn.(ssT) - Experte	7290	6388
+04/2025	KB10-73194	    Führung - Rechtsberatung, -sprechung, -ordnung	12856	10420
+04/2025	KB10-732	  Verwaltung	4985	4649
+04/2025	KB10-73201	    Öffentliche Verwaltung (oS) - Helfer	3311	3256
+04/2025	KB10-73202	    Öffentliche Verwaltung (oS) - Fachkraft	3794	3855
+04/2025	KB10-73203	    Öffentliche Verwaltung (oS) - Spezialist	5151	4923
+04/2025	KB10-73204	    Öffentliche Verwaltung (oS) - Experte	6587	6375
+04/2025	KB10-73212	    Sozialverwaltung, -versicherung - Fachkraft	3938	3970
+04/2025	KB10-73213	    Sozialverwaltung, -versicherung - Spezialist	5373	5135
+04/2025	KB10-73214	    Sozialverwaltung, -versicherung - Experte	7155	6974
+04/2025	KB10-73222	    Verwaltung Sozial-, Gesundheitswesen - Fachkraft	4029	3632
+04/2025	KB10-73223	    Verwaltung Sozial-, Gesundheitswesen - Spezialist	NA	4242
+04/2025	KB10-73224	    Verwaltung Sozial-, Gesundheitswesen - Experte	6544	NA
+04/2025	KB10-73231	    Steuerverwaltung - Helfer	3246	3299
+04/2025	KB10-73232	    Steuerverwaltung - Fachkraft	3673	3518
+04/2025	KB10-73233	    Steuerverwaltung - Spezialist	4942	4497
+04/2025	KB10-73234	    Steuerverwaltung - Experte	6654	6525
+04/2025	KB10-73241	    Zolldienst - Helfer	NA	NA
+04/2025	KB10-73242	    Zolldienst - Fachkraft	4985	5095
+04/2025	KB10-73243	    Zolldienst - Spezialist	NA	NA
+04/2025	KB10-73244	    Zolldienst - Experte	NA	NA
+04/2025	KB10-73252	    Justizverwaltung - Fachkraft	3839	3762
+04/2025	KB10-73253	    Justizverwaltung - Spezialist	4771	4555
+04/2025	KB10-73254	    Justizverwaltung - Experte	6971	6502
+04/2025	KB10-73282	    Öffentliche Verwaltung (ssT) - Fachkraft	3971	3765
+04/2025	KB10-73283	    Öffentliche Verwaltung (ssT) - Spezialist	5009	4612
+04/2025	KB10-73284	    Öffentliche Verwaltung (ssT) - Experte	6968	6610
+04/2025	KB10-73293	    Aufsicht - Verwaltung	7840	4917
+04/2025	KB10-73294	    Führung - Verwaltung	9650	8848
+04/2025	KB10-733	  Medien-, Dokumentations- und Informationsdienste	4660	4230
+04/2025	KB10-73312	    Archivwesen - Fachkraft	3895	3607
+04/2025	KB10-73313	    Archivwesen - Spezialist	NA	NA
+04/2025	KB10-73314	    Archivwesen - Experte	4734	4653
+04/2025	KB10-73322	    Bibliothekswesen - Fachkraft	3715	3715
+04/2025	KB10-73323	    Bibliothekswesen - Spezialist	5583	4749
+04/2025	KB10-73324	    Bibliothekswesen - Experte	5185	4880
+04/2025	KB10-73332	    Dokumentations-, Informationsdienst - Fachkraft	4737	4121
+04/2025	KB10-73333	    Dokumentations-, Informationsdienst - Spezialist	4550	3885
+04/2025	KB10-73334	    Dokumentations-, Informationsdienst - Experte	4972	4831
+04/2025	KB10-73342	    Medizinische Dokumentation - Fachkraft	4885	4367
+04/2025	KB10-73394	    Führung - Medien-, Dokument.-, Informationsdienst	6500	5307
+04/2025	KB10-81	Medizinische Gesundheitsberufe	5145	3982
+04/2025	KB10-811	  Arzt- und Praxishilfe	3364	3160
+04/2025	KB10-81102	    Medizinische Fachangestellte (oS) - Fachkraft	3270	3270
+04/2025	KB10-81103	    Medizinische Fachangestellte (oS) - Spezialist	NA	3434
+04/2025	KB10-81112	    Zahnmedizinische Fachangestellte - Fachkraft	3125	2977
+04/2025	KB10-81113	    Zahnmedizinische Fachangestellte - Spezialist	4200	3341
+04/2025	KB10-81132	    Orthoptisten - Fachkraft	4820	4061
+04/2025	KB10-81142	    Tiermedizinische Fachangestellte - Fachkraft	2740	2762
+04/2025	KB10-81143	    Tiermedizinische Fachangestellte - Spezialist	3997	3185
+04/2025	KB10-81182	    Medizinische Fachangestellte (ssT) - Fachkraft	3388	3300
+04/2025	KB10-81183	    Medizinische Fachangestellte (ssT) - Spezialist	3688	3541
+04/2025	KB10-812	  Medizinisches Laboratorium	4886	4210
+04/2025	KB10-81212	    Med.-tech. Berufe Laboratorium - Fachkraft	4091	4052
+04/2025	KB10-81213	    Med.-tech. Berufe Laboratorium - Spezialist	5332	4145
+04/2025	KB10-81214	    Med.-tech. Berufe Laboratorium - Experte	13529	7503
+04/2025	KB10-81222	    Med.-tech. Berufe Funktionsdiagnostik - Fachkraft	4517	3973
+04/2025	KB10-81223	    Med.-tech. Berufe Funktionsdiagnostik - Spezialist	6575	4631
+04/2025	KB10-81224	    Med.-tech. Berufe Funktionsdiagnostik - Experte	5819	NA
+04/2025	KB10-81232	    Med.-tech. Berufe Radiologie - Fachkraft	4571	4372
+04/2025	KB10-81233	    Med.-tech. Berufe Radiologie - Spezialist	4887	3290
+04/2025	KB10-81234	    Med.-tech. Berufe Radiologie - Experte	11915	9897
+04/2025	KB10-81242	    Med.-tech. Berufe Veterinärmedizin - Fachkraft	3837	3700
+04/2025	KB10-81243	    Med.-tech. Berufe Veterinärmedizin - Spezialist	NA	NA
+04/2025	KB10-81294	    Führung - Medizinisches Laboratorium	NA	5404
+04/2025	KB10-813	  Gesundheits-,Krankenpflege,Rettungsd.,Geburtshilfe	4444	4319
+04/2025	KB10-81301	    Gesundheits-, Krankenpflege (oS) - Helfer	3535	3443
+04/2025	KB10-81302	    Gesundheits-, Krankenpflege (oS) - Fachkraft	4580	4373
+04/2025	KB10-81313	    Fachkrankenpflege - Spezialist	5225	4709
+04/2025	KB10-81323	    Fachkinderkrankenpflege - Spezialist	5458	4952
+04/2025	KB10-81332	    Operationstechnische Assistenz - Fachkraft	4805	4641
+04/2025	KB10-81333	    Operationstechnische Assistenz - Spezialist	5802	4959
+04/2025	KB10-81341	    Rettungsdienst - Helfer	3083	3231
+04/2025	KB10-81342	    Rettungsdienst - Fachkraft	4278	3943
+04/2025	KB10-81343	    Rettungsdienst - Spezialist	4972	4520
+04/2025	KB10-81352	    Geburtshilfe, Entbindungspflege - Fachkraft	NA	4331
+04/2025	KB10-81353	    Geburtshilfe, Entbindungspflege - Spezialist	NA	4534
+04/2025	KB10-81382	    Gesundheits-, Krankenpflege (ssT) - Fachkraft	4701	4544
+04/2025	KB10-81383	    Gesundheits-, Krankenpflege (ssT) - Spezialist	4738	NA
+04/2025	KB10-81393	    Aufsicht - Krankenpflege, Rettungsd., Geburtshilfe	5674	5406
+04/2025	KB10-81394	    Führung - Krankenpflege, Rettungsd., Geburtshilfe	5640	5300
+04/2025	KB10-814	  Human- und Zahnmedizin	9641	7644
+04/2025	KB10-81404	    Ärzte (oS) - Experte	8221	7189
+04/2025	KB10-81414	    Fachärzte Kinder-, Jugendmedizin - Experte	9380	7961
+04/2025	KB10-81424	    Fachärzte Innere Medizin - Experte	10000	8733
+04/2025	KB10-81434	    Fachärzte Chirurgie - Experte	10040	9039
+04/2025	KB10-81444	    Fachärzte Sinnes-, Geschlechtsorgane - Experte	10500	8360
+04/2025	KB10-81454	    Fachärzte Anästhesiologie - Experte	10158	8721
+04/2025	KB10-81464	    Fachärzte Psychiatrie, Psychotherapie - Experte	9432	8149
+04/2025	KB10-81474	    Zahnärzte, Kieferorthopäden - Experte	5500	6150
+04/2025	KB10-81484	    Ärzte (ssT) - Experte	8956	8265
+04/2025	KB10-81494	    Führung - Human- und Zahnmedizin	14818	12945
+04/2025	KB10-815	  Tiermedizin und Tierheilkunde	6600	4800
+04/2025	KB10-81504	    Tierärzte (oS) - Experte	6600	4831
+04/2025	KB10-81514	    Tierärzte für Groß-, Nutztiere - Experte	NA	4700
+04/2025	KB10-81524	    Tierärzte für Haus-, Heimtiere - Experte	NA	4663
+04/2025	KB10-81532	    Tierheilpraktiker - Fachkraft	NA	NA
+04/2025	KB10-81584	    Tiermedizin, Tierheilkunde (ssT) - Experte	NA	NA
+04/2025	KB10-81594	    Führung - Tiermedizin und Tierheilkunde	NA	NA
+04/2025	KB10-816	  Psychologie und nicht ärztliche Psychotherapie	5770	5068
+04/2025	KB10-81614	    Nicht klinische Psychologie - Experte	5041	4588
+04/2025	KB10-81623	    Klinische Psychologie - Spezialist	NA	NA
+04/2025	KB10-81624	    Klinische Psychologie - Experte	5869	5078
+04/2025	KB10-81634	    Nicht ärztliche Psychotherapie - Experte	5523	5221
+04/2025	KB10-817	  Nicht ärztliche Therapie und Heilkunde	3641	3508
+04/2025	KB10-81712	    Physiotherapie - Fachkraft	3455	3395
+04/2025	KB10-81713	    Physiotherapie - Spezialist	3555	3469
+04/2025	KB10-81714	    Physiotherapie - Experte	3700	3398
+04/2025	KB10-81722	    Ergotherapie - Fachkraft	4112	3575
+04/2025	KB10-81723	    Ergotherapie - Spezialist	3951	3649
+04/2025	KB10-81724	    Ergotherapie - Experte	3710	3327
+04/2025	KB10-81733	    Sprachtherapie - Spezialist	3800	3834
+04/2025	KB10-81734	    Sprachtherapie - Experte	NA	4307
+04/2025	KB10-81743	    Musik- und Kunsttherapie - Spezialist	4359	NA
+04/2025	KB10-81744	    Musik- und Kunsttherapie - Experte	NA	NA
+04/2025	KB10-81752	    Heilkunde und Homöopathie - Fachkraft	NA	4527
+04/2025	KB10-81753	    Heilkunde und Homöopathie - Spezialist	3549	3500
+04/2025	KB10-81762	    Diät- und Ernährungstherapie - Fachkraft	3932	3683
+04/2025	KB10-81763	    Diät- und Ernährungstherapie - Spezialist	NA	4061
+04/2025	KB10-81764	    Diät- und Ernährungstherapie - Experte	NA	NA
+04/2025	KB10-81772	    Podologen - Fachkraft	NA	NA
+04/2025	KB10-81782	    Nichtärztl. Therapie, Heilkunde (ssT) - Fachkraft	3315	3400
+04/2025	KB10-81783	    Nichtärztl. Therapie, Heilkunde (ssT) - Spezialist	3573	3798
+04/2025	KB10-81784	    Nichtärztl. Therapie, Heilkunde (ssT) - Experte	NA	NA
+04/2025	KB10-81794	    Führung - Nichtärztliche Therapie, Heilkunde	5142	5050
+04/2025	KB10-818	  Pharmazie	6410	4524
+04/2025	KB10-81804	    Apotheker, Pharmazeuten - Experte	NA	5129
+04/2025	KB10-81814	    Fachärzte in der Pharmakologie - Experte	8710	6856
+04/2025	KB10-81822	    Pharmazeutisch-technische Assistenz - Fachkraft	3230	3304
+04/2025	KB10-81883	    Pharmazie (ssT) - Spezialist	7381	6951
+04/2025	KB10-81884	    Pharmazie (ssT) - Experte	7606	6525
+04/2025	KB10-81894	    Führung - Pharmazie	10645	7853
+04/2025	KB10-82	Nichtmed. Gesundheit, Körperpfl., Medizintechnik	3910	3650
+04/2025	KB10-821	  Altenpflege	4097	3958
+04/2025	KB10-82101	    Altenpflege (oS) - Helfer	3287	3299
+04/2025	KB10-82102	    Altenpflege (oS) - Fachkraft	4505	4359
+04/2025	KB10-82103	    Altenpflege (oS) - Spezialist	NA	4405
+04/2025	KB10-82182	    Altenpflege (ssT) - Fachkraft	4572	4289
+04/2025	KB10-82183	    Altenpflege (ssT) - Spezialist	4699	4673
+04/2025	KB10-82194	    Führung - Altenpflege	6881	6093
+04/2025	KB10-822	  Ernährungs- und Gesundheitsberatung, Wellness	4315	4353
+04/2025	KB10-82212	    Gesundheitsberatung - Fachkraft	3955	3500
+04/2025	KB10-82213	    Gesundheitsberatung - Spezialist	4268	4897
+04/2025	KB10-82214	    Gesundheitsberatung - Experte	4652	4527
+04/2025	KB10-82222	    Wellness - Fachkraft	3114	3384
+04/2025	KB10-82223	    Wellness - Spezialist	3170	2870
+04/2025	KB10-82232	    Ernährungsberatung - Fachkraft	NA	3600
+04/2025	KB10-82233	    Ernährungsberatung - Spezialist	NA	3300
+04/2025	KB10-82243	    Qualitätsbeauftragte Gesundheitswesen - Spezialist	4601	4535
+04/2025	KB10-82283	    Ernährungs-, Gesundheitsberat. (ssT) - Spezialist	NA	4431
+04/2025	KB10-82284	    Ernährungs-, Gesundheitsberat. (ssT) - Experte	5451	4468
+04/2025	KB10-823	  Körperpflege	2500	2395
+04/2025	KB10-82311	    Friseurgewerbe - Helfer	NA	NA
+04/2025	KB10-82312	    Friseurgewerbe - Fachkraft	2500	2288
+04/2025	KB10-82322	    Kosmetik - Fachkraft	2380	NA
+04/2025	KB10-82332	    Tätowierer, Piercer - Fachkraft	NA	NA
+04/2025	KB10-82342	    Maskenbildnerei - Fachkraft	4228	3650
+04/2025	KB10-82343	    Maskenbildnerei - Spezialist	NA	NA
+04/2025	KB10-82393	    Aufsicht - Körperpflege	3440	2945
+04/2025	KB10-824	  Bestattungswesen	3250	3050
+04/2025	KB10-82401	    Bestattungswesen - Helfer	3171	2430
+04/2025	KB10-82402	    Bestattungswesen - Fachkraft	3500	3108
+04/2025	KB10-82403	    Bestattungswesen - Spezialist	3250	3105
+04/2025	KB10-82493	    Aufsicht - Bestattungswesen	NA	NA
+04/2025	KB10-82494	    Führung - Bestattungswesen	NA	NA
+04/2025	KB10-825	  Medizin-, Orthopädie- und Rehatechnik	4000	3375
+04/2025	KB10-82502	    Medizintechnik (oS) - Fachkraft	4168	3835
+04/2025	KB10-82503	    Medizintechnik (oS) - Spezialist	4919	4474
+04/2025	KB10-82504	    Medizintechnik (oS) - Experte	6000	5604
+04/2025	KB10-82512	    Orthopädie- und Rehatechnik - Fachkraft	3000	2939
+04/2025	KB10-82513	    Orthopädie- und Rehatechnik - Spezialist	3177	3000
+04/2025	KB10-82514	    Orthopädie- und Rehatechnik - Experte	NA	NA
+04/2025	KB10-82522	    Augenoptik - Fachkraft	NA	NA
+04/2025	KB10-82523	    Augenoptik - Spezialist	NA	4033
+04/2025	KB10-82524	    Augenoptik - Experte	6885	4684
+04/2025	KB10-82532	    Hörgeräteakustik - Fachkraft	NA	3100
+04/2025	KB10-82533	    Hörgeräteakustik - Spezialist	NA	NA
+04/2025	KB10-82534	    Hörgeräteakustik - Experte	5269	NA
+04/2025	KB10-82542	    Zahntechnik - Fachkraft	3875	3040
+04/2025	KB10-82593	    Aufsicht - Medizin-, Orthopädie- und Rehatechnik	4913	4000
+04/2025	KB10-82594	    Führung - Medizin-, Orthopädie- und Rehatechnik	NA	6500
+04/2025	KB10-83	Erziehung, soziale u. hauswirt. Berufe, Theologie	4347	3976
+04/2025	KB10-831	  Erziehung, Sozialarbeit, Heilerziehungspflege	4349	4035
+04/2025	KB10-83111	    Kinderbetreuung und -erziehung - Helfer	3453	3318
+04/2025	KB10-83112	    Kinderbetreuung und -erziehung - Fachkraft	3983	3886
+04/2025	KB10-83113	    Kinderbetreuung und -erziehung - Spezialist	4108	3971
+04/2025	KB10-83122	    Sozialarbeit, Sozialpädagogik - Fachkraft	3374	3375
+04/2025	KB10-83123	    Sozialarbeit, Sozialpädagogik - Spezialist	4658	4348
+04/2025	KB10-83124	    Sozialarbeit, Sozialpädagogik - Experte	4803	4519
+04/2025	KB10-83131	    Heilerziehungspflege, Sonderpädagogik - Helfer	3542	3370
+04/2025	KB10-83132	    Heilerziehungspflege, Sonderpädagogik - Fachkraft	4657	4369
+04/2025	KB10-83133	    Heilerziehungspflege, Sonderpädagogik - Spezialist	4448	4290
+04/2025	KB10-83134	    Heilerziehungspflege, Sonderpädagogik - Experte	4611	4488
+04/2025	KB10-83141	    Haus- und Familienpflege - Helfer	3462	3228
+04/2025	KB10-83142	    Haus- und Familienpflege - Fachkraft	3454	3315
+04/2025	KB10-83143	    Haus- und Familienpflege - Spezialist	NA	3600
+04/2025	KB10-83154	    Sozial-, Erziehungs-, Suchtberatung - Experte	4521	4249
+04/2025	KB10-83193	    Aufsicht - Erziehung, Sozialarbeit, Heilerzieh.	5179	5224
+04/2025	KB10-83194	    Führung - Erziehung, Sozialarbeit, Heilerzieh.	6022	5657
+04/2025	KB10-832	  Hauswirtschaft und Verbraucherberatung	3110	2932
+04/2025	KB10-83211	    Hauswirtschaft - Helfer	3082	2880
+04/2025	KB10-83212	    Hauswirtschaft - Fachkraft	2909	2793
+04/2025	KB10-83213	    Hauswirtschaft - Spezialist	4072	3704
+04/2025	KB10-83223	    Verbraucherberatung - Spezialist	5688	4432
+04/2025	KB10-83293	    Aufsicht - Hauswirtschaft, Verbraucherberatung	4510	3906
+04/2025	KB10-833	  Theologie und Gemeindearbeit	5490	5833
+04/2025	KB10-83314	    Theologie - Experte	5970	6516
+04/2025	KB10-83322	    Gemeindearbeit - Fachkraft	NA	5047
+04/2025	KB10-83323	    Gemeindearbeit - Spezialist	6128	5826
+04/2025	KB10-83332	    Angeh. geistl. Orden u. Mutterhäuser - Fachkraft	3515	NA
+04/2025	KB10-83333	    Angeh. geistl. Orden u. Mutterhäuser - Spezialist	NA	12319
+04/2025	KB10-83382	    Theologie, Gemeindearbeit (ssT) - Fachkraft	4015	3570
+04/2025	KB10-83383	    Theologie, Gemeindearbeit (ssT) - Spezialist	NA	NA
+04/2025	KB10-83384	    Theologie, Gemeindearbeit (ssT) - Experte	4500	3791
+04/2025	KB10-83394	    Führung - Theologie und Gemeindearbeit	8033	NA
+04/2025	KB10-84	Lehrende und ausbildende Berufe	5416	5223
+04/2025	KB10-841	  Lehrtätigkeit an allgemeinbildenden Schulen	5547	5136
+04/2025	KB10-84114	    Lehrkräfte in der Primarstufe - Experte	4749	4910
+04/2025	KB10-84124	    Lehrkräfte in der Sekundarstufe - Experte	5628	5293
+04/2025	KB10-84134	    Lehrkräfte an Förderschulen - Experte	5274	5046
+04/2025	KB10-84144	    Lehrerausbildung - Experte	5462	NA
+04/2025	KB10-84183	    Lehrkräfte allgem.bild. Schule (ssT) - Spezialist	3922	3833
+04/2025	KB10-84184	    Lehrkräfte allgem.bild. Schule (ssT) - Experte	5290	5327
+04/2025	KB10-84194	    Führung - Allgemeinbildende Schulen	7294	6758
+04/2025	KB10-842	  Lehrtät. berufsbild.Fächer,betr.Ausb.,Betriebspäd.	4763	4813
+04/2025	KB10-84213	    Lehrkräfte berufsbildende Fächer - Spezialist	5172	5051
+04/2025	KB10-84214	    Lehrkräfte berufsbildende Fächer - Experte	5140	5112
+04/2025	KB10-84223	    Betriebl. Ausbild., Betriebspädagogik - Spezialist	4556	4235
+04/2025	KB10-84224	    Betriebl. Ausbild., Betriebspädagogik - Experte	4875	4695
+04/2025	KB10-84294	    Führung - Berufsschulen,betr.Ausbild.,Betriebspäd.	6081	7056
+04/2025	KB10-843	  Lehr- und Forschungstätigkeit an Hochschulen	6381	5766
+04/2025	KB10-84304	    Hochschullehre und -forschung - Experte	6367	5762
+04/2025	KB10-84394	    Führung - Hochschullehre und -forschung	9372	11380
+04/2025	KB10-844	  Lehrtätigkeit an außerschul. Bildungseinrichtungen	4874	4103
+04/2025	KB10-84404	    Erwachsenenbildung (oS) - Experte	4348	4049
+04/2025	KB10-84412	    Musikpädagogik - Fachkraft	NA	3871
+04/2025	KB10-84413	    Musikpädagogik - Spezialist	NA	NA
+04/2025	KB10-84414	    Musikpädagogik - Experte	4038	4652
+04/2025	KB10-84424	    Religionspädagogik - Experte	6040	4710
+04/2025	KB10-84434	    Kunst-, Theaterpädagogik - Experte	3925	3625
+04/2025	KB10-84444	    IT-Anwendungstraining - Experte	5522	4937
+04/2025	KB10-84454	    (Fremd-)Sprachenlehrer - Experte	3858	3942
+04/2025	KB10-84483	    Lehrkräfte außerschul.Bild.einr.(ssT) - Spezialist	5545	3546
+04/2025	KB10-84484	    Lehrkräfte außerschul.Bild.einr.(ssT) - Experte	5663	5063
+04/2025	KB10-84494	    Führung - Außerschulische Bildungseinrichtungen	5151	5875
+04/2025	KB10-845	  Fahr-, Sportunterricht an außerschul.Bildungseinr.	3800	3610
+04/2025	KB10-84503	    Sportlehrer (oS) - Spezialist	3721	3750
+04/2025	KB10-84504	    Sportlehrer (oS) - Experte	4226	3850
+04/2025	KB10-84513	    Fahrlehrer - Spezialist	3976	4376
+04/2025	KB10-84523	    Fluglehrer - Spezialist	24339	NA
+04/2025	KB10-84533	    Tanzlehrer - Spezialist	2733	NA
+04/2025	KB10-84543	    Trainer - Ballsportarten - Spezialist	NA	NA
+04/2025	KB10-84553	    Trainer - Fitness, Gymnastik - Spezialist	2800	2950
+04/2025	KB10-84583	    Sportlehrer (ssT) - Spezialist	3750	3318
+04/2025	KB10-91	Geistes-, Gesellschafts-, Wirtschaftswissensch.	5344	4126
+04/2025	KB10-911	  Sprach- und Literaturwissenschaften	6354	5169
+04/2025	KB10-91104	    Sprach-, Literaturwissenschaften (oS) - Experte	6369	5221
+04/2025	KB10-91114	    Germanistik - Experte	NA	NA
+04/2025	KB10-91124	    Anglistik, Amerikanistik - Experte	NA	NA
+04/2025	KB10-91134	    Romanistik - Experte	NA	NA
+04/2025	KB10-91144	    Slawistik, verwandte Bereiche - Experte	NA	NA
+04/2025	KB10-91154	    Arabistik, Orientalistik - Experte	NA	NA
+04/2025	KB10-91164	    Sprach-, Literaturwiss. asiat. Raum - Experte	NA	NA
+04/2025	KB10-91174	    Altphilologie - Experte	NA	NA
+04/2025	KB10-91184	    Sprach-, Literaturwissenschaften (ssT) - Experte	5423	4635
+04/2025	KB10-912	  Geisteswissenschaften	5297	5009
+04/2025	KB10-91214	    Philosophie, Religion, Ethik - Experte	6859	NA
+04/2025	KB10-91224	    Geschichtswissenschaften - Experte	3300	5221
+04/2025	KB10-91233	    Archäologie - Spezialist	3335	3186
+04/2025	KB10-91234	    Archäologie - Experte	4472	4166
+04/2025	KB10-91244	    Medien-, Theaterwissenschaft - Experte	5968	5704
+04/2025	KB10-91254	    Regionalwissenschaft - Experte	5834	6255
+04/2025	KB10-91264	    Anthropologie, Ethnologie - Experte	NA	4624
+04/2025	KB10-913	  Gesellschaftswissenschaften	4937	4022
+04/2025	KB10-91314	    Politologie - Experte	5743	5838
+04/2025	KB10-91324	    Soziologie - Experte	5276	4384
+04/2025	KB10-91334	    Erziehungswissenschaft - Experte	3770	3732
+04/2025	KB10-91341	    Markt-, Meinungsforschung - Helfer	4752	3641
+04/2025	KB10-91342	    Markt-, Meinungsforschung - Fachkraft	4773	4672
+04/2025	KB10-91343	    Markt-, Meinungsforschung - Spezialist	6421	5930
+04/2025	KB10-91344	    Markt-, Meinungsforschung - Experte	6500	5540
+04/2025	KB10-91354	    Demografie - Experte	NA	NA
+04/2025	KB10-91384	    Gesellschaftswissenschaften (ssT) - Experte	NA	3931
+04/2025	KB10-914	  Wirtschaftswissenschaften	7684	5714
+04/2025	KB10-91404	    Wirtschaftswissenschaften (oS) - Experte	7878	5809
+04/2025	KB10-91484	    Wirtschaftswissenschaften (ssT) - Experte	5634	4858
+04/2025	KB10-92	Werbung, Marketing, kaufm., redakt. Medienberufe	5461	4346
+04/2025	KB10-921	  Werbung und Marketing	5555	4273
+04/2025	KB10-92112	    Werbung und Marketing - Fachkraft	4887	4130
+04/2025	KB10-92113	    Werbung und Marketing - Spezialist	6076	4700
+04/2025	KB10-92114	    Werbung und Marketing - Experte	6988	5683
+04/2025	KB10-92122	    Dialogmarketing - Fachkraft	2884	2770
+04/2025	KB10-92123	    Dialogmarketing - Spezialist	4254	3800
+04/2025	KB10-92133	    Kundenmanagement - Spezialist	6296	4712
+04/2025	KB10-92193	    Aufsicht - Werbung und Marketing	3740	3514
+04/2025	KB10-92194	    Führung - Werbung und Marketing	7900	7171
+04/2025	KB10-922	  Öffentlichkeitsarbeit	5926	5350
+04/2025	KB10-92203	    Öffentlichkeitsarbeit - Spezialist	5595	5133
+04/2025	KB10-92204	    Öffentlichkeitsarbeit - Experte	7375	6660
+04/2025	KB10-92294	    Führung - Öffentlichkeitsarbeit	7384	7032
+04/2025	KB10-923	  Verlags- und Medienwirtschaft	4956	3865
+04/2025	KB10-92302	    Verlags-, Medienkaufleute (oS) - Fachkraft	4058	3567
+04/2025	KB10-92303	    Verlags-, Medienkaufleute (oS) - Spezialist	5081	4633
+04/2025	KB10-92304	    Verlags-, Medienkaufleute (oS) - Experte	6608	4077
+04/2025	KB10-92382	    Verlags-, Medienkaufleute (ssT) - Fachkraft	4783	4165
+04/2025	KB10-92383	    Verlags-, Medienkaufleute (ssT) - Spezialist	NA	3325
+04/2025	KB10-92384	    Verlags-, Medienkaufleute (ssT) - Experte	NA	NA
+04/2025	KB10-92394	    Führung - Verlags- und Medienwirtschaft	9303	NA
+04/2025	KB10-924	  Redaktion und Journalismus	5102	4415
+04/2025	KB10-92412	    Redakteure, Journalisten - Fachkraft	3830	3775
+04/2025	KB10-92413	    Redakteure, Journalisten - Spezialist	5029	4383
+04/2025	KB10-92414	    Redakteure, Journalisten - Experte	5752	5124
+04/2025	KB10-92424	    Lektoren - Experte	5000	4155
+04/2025	KB10-92434	    Autoren, Schriftsteller - Experte	5329	5081
+04/2025	KB10-92494	    Führung - Redaktion und Journalismus	8045	6789
+04/2025	KB10-93	Produktdesign, Kunsthandwerk, Musikinstrumentenbau	3671	3435
+04/2025	KB10-931	  Produkt- und Industriedesign	6235	4951
+04/2025	KB10-93102	    Produkt-, Industriedesign - Fachkraft	6272	4325
+04/2025	KB10-93103	    Produkt-, Industriedesign - Spezialist	6215	5898
+04/2025	KB10-93104	    Produkt-, Industriedesign - Experte	6171	5087
+04/2025	KB10-932	  Innenarchitektur, vis. Marketing, Raumausstattung	3644	3435
+04/2025	KB10-93212	    Innenarchitektur - Fachkraft	4404	4200
+04/2025	KB10-93213	    Innenarchitektur - Spezialist	4077	4184
+04/2025	KB10-93214	    Innenarchitektur - Experte	4716	4200
+04/2025	KB10-93222	    Visuelles Marketing - Fachkraft	3093	3122
+04/2025	KB10-93223	    Visuelles Marketing - Spezialist	4318	3900
+04/2025	KB10-93232	    Raumausstattung - Fachkraft	3505	2838
+04/2025	KB10-93233	    Raumausstattung - Spezialist	NA	NA
+04/2025	KB10-93293	    Aufsicht - Innenarchitektur, Raumausstattung	5609	3435
+04/2025	KB10-933	  Kunsthandwerk und bildende Kunst	3450	3311
+04/2025	KB10-93302	    Kunsthandwerk, bildende Kunst (oS) - Fachkraft	NA	NA
+04/2025	KB10-93303	    Kunsthandwerk, bildende Kunst (oS) - Spezialist	5430	3596
+04/2025	KB10-93304	    Kunsthandwerk, bildende Kunst (oS) - Experte	6791	4766
+04/2025	KB10-93312	    Bildhauerei - Fachkraft	3040	3693
+04/2025	KB10-93313	    Bildhauerei - Spezialist	NA	NA
+04/2025	KB10-93323	    Kunstmaler, Zeichner - Spezialist	3392	4079
+04/2025	KB10-93332	    Drechslerei, Spielzeugherstellung - Fachkraft	2759	NA
+04/2025	KB10-93333	    Drechslerei, Spielzeugherstellung - Spezialist	NA	NA
+04/2025	KB10-93342	    Vergolderhandwerk - Fachkraft	NA	NA
+04/2025	KB10-93343	    Vergolderhandwerk - Spezialist	NA	NA
+04/2025	KB10-93352	    Wachszieherei - Fachkraft	3707	3561
+04/2025	KB10-93382	    Kunsthandwerk, bildende Kunst (ssT) - Fachkraft	NA	NA
+04/2025	KB10-93383	    Kunsthandwerk, bildende Kunst (ssT) - Spezialist	NA	4481
+04/2025	KB10-93393	    Aufsicht - Kunsthandwerk, bildende Kunst	3450	3405
+04/2025	KB10-934	  Kunsthandwerkliche Keramik- und Glasgestaltung	3234	2552
+04/2025	KB10-93412	    Kunsthandwerkliche Keramikgestaltung - Fachkraft	3354	2631
+04/2025	KB10-93413	    Kunsthandwerkliche Keramikgestaltung - Spezialist	3091	2550
+04/2025	KB10-93422	    Kunsthandw. Glas-,Keram-,Porz.malerei - Fachkraft	NA	NA
+04/2025	KB10-93432	    Kunsthandwerkliche Glasbläserei - Fachkraft	NA	NA
+04/2025	KB10-93433	    Kunsthandwerkliche Glasbläserei - Spezialist	NA	NA
+04/2025	KB10-93493	    Aufsicht - Kunsthandwerkl. Keramik-,Glasgestaltung	NA	NA
+04/2025	KB10-935	  Kunsthandwerkliche Metallgestaltung	3285	3040
+04/2025	KB10-93512	    Kunsthandwerkliche Metallgestaltung - Fachkraft	4917	NA
+04/2025	KB10-93513	    Kunsthandwerkliche Metallgestaltung - Spezialist	NA	NA
+04/2025	KB10-93522	    Kunsth. Schmuckherst.,Edelsteinbearb. - Fachkraft	3200	3900
+04/2025	KB10-93523	    Kunsth. Schmuckherst.,Edelsteinbearb. - Spezialist	NA	NA
+04/2025	KB10-93524	    Kunsth. Schmuckherst.,Edelsteinbearb. - Experte	NA	NA
+04/2025	KB10-93532	    Gravur - Fachkraft	3689	NA
+04/2025	KB10-93533	    Gravur - Spezialist	NA	NA
+04/2025	KB10-93542	    Schilder-, Lichtreklameherstellung - Fachkraft	3325	3000
+04/2025	KB10-93593	    Aufsicht - Kunsthandwerkliche Metallgestaltung	NA	NA
+04/2025	KB10-936	  Musikinstrumentenbau	2800	2899
+04/2025	KB10-93602	    Musikinstrumentenbau (oS) - Fachkraft	2766	3034
+04/2025	KB10-93603	    Musikinstrumentenbau (oS) - Spezialist	NA	NA
+04/2025	KB10-93604	    Musikinstrumentenbau (oS) - Experte	NA	NA
+04/2025	KB10-93612	    Streich-, Zupfinstrumentenbau - Fachkraft	2750	NA
+04/2025	KB10-93613	    Streich-, Zupfinstrumentenbau - Spezialist	NA	NA
+04/2025	KB10-93622	    Holzblasinstrumentenbau - Fachkraft	2823	2303
+04/2025	KB10-93623	    Holzblasinstrumentenbau - Spezialist	NA	NA
+04/2025	KB10-93632	    Metallblasinstrumentenbau - Fachkraft	NA	3004
+04/2025	KB10-93633	    Metallblasinstrumentenbau - Spezialist	NA	NA
+04/2025	KB10-93642	    Klavier- und Cembalobau - Fachkraft	NA	2333
+04/2025	KB10-93643	    Klavier- und Cembalobau - Spezialist	NA	NA
+04/2025	KB10-93652	    Orgel- und Harmoniumbau - Fachkraft	3467	NA
+04/2025	KB10-93653	    Orgel- und Harmoniumbau - Spezialist	NA	NA
+04/2025	KB10-93682	    Musikinstrumentenbau (ssT) - Fachkraft	NA	NA
+04/2025	KB10-93683	    Musikinstrumentenbau (ssT) - Spezialist	NA	NA
+04/2025	KB10-93693	    Aufsicht - Musikinstrumentenbau	3419	NA
+04/2025	KB10-94	Darstellende und unterhaltende Berufe	4455	4193
+04/2025	KB10-941	  Musik-, Gesangs- und Dirigententätigkeiten	5975	5282
+04/2025	KB10-94114	    Musiker - Experte	6337	5820
+04/2025	KB10-94124	    Sänger - Experte	4542	4524
+04/2025	KB10-94134	    Dirigenten - Experte	5968	5939
+04/2025	KB10-94144	    Komponisten - Experte	NA	NA
+04/2025	KB10-94183	    Musik-,Gesangs-,Dirigententätig.(ssT) - Spezialist	5115	NA
+04/2025	KB10-94184	    Musik-,Gesangs-,Dirigententätig.(ssT) - Experte	3759	3680
+04/2025	KB10-942	  Schauspiel, Tanz und Bewegungskunst	5307	3770
+04/2025	KB10-94214	    Schauspieler - Experte	3864	3592
+04/2025	KB10-94224	    Tänzer, Choreografen - Experte	4227	4186
+04/2025	KB10-94232	    Mannequins, Dressmen, sonstige Models - Fachkraft	NA	NA
+04/2025	KB10-94243	    Athleten, Berufssportler - Spezialist	14521	3100
+04/2025	KB10-94252	    Personenbezogene Dienstleistungen - Fachkraft	NA	NA
+04/2025	KB10-94283	    Schauspiel,Tanz,Bewegungskunst (ssT) - Spezialist	3953	3808
+04/2025	KB10-943	  Moderation und Unterhaltung	4754	NA
+04/2025	KB10-94303	    Moderation, Unterhaltung (oS) - Spezialist	6192	5065
+04/2025	KB10-94313	    Komiker, Kabarettisten - Spezialist	NA	NA
+04/2025	KB10-94323	    Zauberer, Illusionisten - Spezialist	11215	NA
+04/2025	KB10-94334	    Hörfunk-, Fernsehmoderatoren - Experte	5562	NA
+04/2025	KB10-94342	    Glücks- und Wettspiel - Fachkraft	4435	3945
+04/2025	KB10-94382	    Moderation, Unterhaltung (ssT) - Fachkraft	NA	NA
+04/2025	KB10-94383	    Moderation, Unterhaltung (ssT) - Spezialist	3009	3110
+04/2025	KB10-944	  Theater-, Film- und Fernsehproduktion	4708	4115
+04/2025	KB10-94402	    Theater-, Film-, Fernsehprod. (oS) - Fachkraft	4708	3900
+04/2025	KB10-94403	    Theater-, Film-, Fernsehprod. (oS) - Spezialist	NA	4422
+04/2025	KB10-94404	    Theater-, Film-, Fernsehprod. (oS) - Experte	4309	4449
+04/2025	KB10-94413	    Regie - Spezialist	3548	3354
+04/2025	KB10-94414	    Regie - Experte	5482	NA
+04/2025	KB10-94482	    Theater-, Film-, Fernsehprod. (ssT) - Fachkraft	4952	3693
+04/2025	KB10-94483	    Theater-, Film-, Fernsehprod. (ssT) - Spezialist	4500	4698
+04/2025	KB10-94484	    Theater-, Film-, Fernsehprod. (ssT) - Experte	5929	5984
+04/2025	KB10-94493	    Aufsicht - Theater-, Film-, Fernsehproduktion	6000	4568
+04/2025	KB10-94494	    Führung - Theater-, Film-, Fernsehproduktion	4900	4833
+04/2025	KB10-945	  Veranstaltungs-, Kamera- und Tontechnik	4000	3641
+04/2025	KB10-94512	    Veranstaltungs-, Bühnentechnik - Fachkraft	3740	3351
+04/2025	KB10-94513	    Veranstaltungs-, Bühnentechnik - Spezialist	3920	3947
+04/2025	KB10-94514	    Veranstaltungs-, Bühnentechnik - Experte	5141	NA
+04/2025	KB10-94522	    Kameratechnik - Fachkraft	2966	NA
+04/2025	KB10-94523	    Kameratechnik - Spezialist	4723	5520
+04/2025	KB10-94532	    Bild- und Tontechnik - Fachkraft	3400	3363
+04/2025	KB10-94533	    Bild- und Tontechnik - Spezialist	4859	4586
+04/2025	KB10-94534	    Bild- und Tontechnik - Experte	6005	5610
+04/2025	KB10-94582	    Veranstaltungs-,Kamera-,Tontechnik(ssT)- Fachkraft	4375	NA
+04/2025	KB10-94593	    Aufsicht - Veranstaltungs-, Kamera-, Tontechnik	4977	3607
+04/2025	KB10-946	  Bühnen- und Kostümbildnerei, Requisite	4142	3851
+04/2025	KB10-94612	    Bühnen- und Kostümbildnerei - Fachkraft	4000	3509
+04/2025	KB10-94613	    Bühnen- und Kostümbildnerei - Spezialist	4275	4446
+04/2025	KB10-94614	    Bühnen- und Kostümbildnerei - Experte	NA	4427
+04/2025	KB10-94622	    Requisite - Fachkraft	4180	3932
+04/2025	KB10-94623	    Requisite - Spezialist	4147	3813
+04/2025	KB10-94693	    Aufsicht - Bühnen- und Kostümbildnerei, Requisite	5283	3719
+04/2025	KB10-947	  Museumstechnik und -management	4390	4052
+04/2025	KB10-94704	    Museum (oS) - Experte	4178	NA
+04/2025	KB10-94712	    Museums-, Ausstellungstechnik - Fachkraft	3920	4401
+04/2025	KB10-94713	    Museums-, Ausstellungstechnik - Spezialist	4030	4524
+04/2025	KB10-94714	    Museums-, Ausstellungstechnik - Experte	5000	5714
+04/2025	KB10-94724	    Kunstsachverständige - Experte	3640	NA
+04/2025	KB10-94794	    Führung - Museum	NA	4580
+04/2025	KB10-01	Angehörige der regulären Streitkräfte	3757	3504
+04/2025	KB10-011	  Offiziere	6042	5607
+04/2025	KB10-01104	    Offiziere	6042	5607
+04/2025	KB10-012	  Unteroffiziere mit Portepee	4306	3935
+04/2025	KB10-01203	    Unteroffiziere mit Portepee	4306	3935
+04/2025	KB10-013	  Unteroffiziere ohne Portepee	3465	3334
+04/2025	KB10-01302	    Unteroffiziere ohne Portepee	3465	3334
+04/2025	KB10-014	  Angehörige d. regul. Streitkräfte in sonst. Rängen	3008	2947
+04/2025	KB10-01402	    Angehörige reguläre Streitkräfte in sonst. Rängen	3008	2947

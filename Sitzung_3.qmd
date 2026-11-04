@@ -20,7 +20,6 @@ bibliography: references.bib
 2. Deskriptive Statistik I
 
 Schwerpunkt heute: Maße der zentralen Tendenz (Mittelwerte) und Maße von Streuung
-Schwerpunkt nächstes Mal: Visualisierung
 
 
 ## Deskriptive Statistik
@@ -47,7 +46,7 @@ Beschreiben einer <span class="important">Stichprobe</span>
 
 ::: incremental
 - Charakteristika von Verteilungen
-- Visualisierung
+- Visualisierungen
 :::
 :::
 ::::
@@ -55,6 +54,7 @@ Beschreiben einer <span class="important">Stichprobe</span>
 ## Deskriptive und Inferentielle Statistik
 
 Deskriptive Statistik: Beschreiben einer <span class="important">Stichprobe</span>
+
 Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine <span class="important">Population</span> zu machen
 
 
@@ -62,6 +62,7 @@ Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine 
 ## Deskriptive und Inferentielle Statistik
 
 Deskriptive Statistik: Beschreiben einer <span class="important">Stichprobe</span>
+
 Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine <span class="important">Population</span> zu machen
 
 
@@ -80,7 +81,7 @@ Inferentielle Statistik: Erlaubt es anhand einer Stichprobe Aussagen über eine 
 ### Maße der zentralen Tendenz
 
 
-#### Beispiel: Größen von Schüler\*innen in einer Grundschule
+#### Beispiel: Größen von Schüler:innen in einer Grundschule
 
 ::::{.columns}
 :::{.column}
@@ -94,7 +95,7 @@ heights
 :::{.column}
 
 ```{r}
-paste("Anzahl Schüler*innen", nrow(heights), sep='')
+paste("Anzahl Schüler:innen", nrow(heights), sep='')
 paste("Höchstwert: ", min(heights), sep='')
 paste("Tiefstwert: ", max(heights), sep='')
 
@@ -111,10 +112,10 @@ paste("Tiefstwert: ", max(heights), sep='')
 ### Maße der zentralen Tendenz
 
 
-#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+#### Beispiel: Größen von Schüler:innen in einer 3. Klasse
 
 
-**Durchschnitt (arithmetische Mittel, Mittelwert)**
+**Durchschnitt (arithmetisches Mittel, Mittelwert)**
 ```{r}
 #| echo: true 
 
@@ -123,15 +124,22 @@ mean(heights$groesse_cm)
 
 ```
 
+```{r}
+m <- mean(heights$groesse_cm)
+
+```
+
+Bezeichnung: $M=`m`$ oder  $\bar{x}$
+
 
 --------------
 
 ### Maße der zentralen Tendenz
 
-#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+#### Beispiel: Größen von Schüler:innen in einer 3. Klasse
 
 
-**Durchschnitt (arithmetische Mittel, Mittelwert)**
+**Durchschnitt (arithmetisches Mittel, Mittelwert)**
 ```{r}
 #| echo: false
 library(ggplot2)
@@ -139,7 +147,7 @@ heights |>
     ggplot(mapping = aes(x=groesse_cm)) + 
     geom_histogram(binwidth=3, alpha=0.7, fill="#0a7961") +
     theme_bw() +
-    labs(x = "Grösse in cm", y="Anzahl Schüler*innen") + 
+    labs(x = "Grösse in cm", y="Anzahl Schüler:innen") + 
     geom_vline(xintercept = mean(heights$groesse_cm), linetype = "longdash", colour="#6e0670",linewidth=1 ) + 
     guides(alpha="none")
 ```
@@ -149,15 +157,18 @@ heights |>
 
 ### Maße der zentralen Tendenz
 
-#### Beispiel: Größen von Schüler\*innen in einer 3. Klasse
+#### Beispiel: Größen von Schüler:innen in einer 3. Klasse
 
 
 **Median**
 
+- "mittlere Punkt" der Daten: 50% der Daten sind unter dem Median, 50% über dem Median
+
 ```{r}
 #| echo: true 
 sorted_heights <- sort(heights$groesse_cm)
-sorted_heights[13]
+length(sorted_heights) 
+sorted_heights
 ```
 
 
@@ -174,16 +185,18 @@ heights |>
     ggplot(mapping = aes(x=groesse_cm)) + 
     geom_histogram(binwidth=3, alpha=0.7, fill="#0a7961") +
     theme_bw() +
-    labs(x = "Grösse in cm", y="Anzahl Schüler*innen") + 
+    labs(x = "Grösse in cm", y="Anzahl Schüler:innen") + 
     geom_vline(xintercept = mean(heights$groesse_cm), linetype = "longdash", colour="#6e0670",linewidth=1 ) + 
     geom_vline(xintercept = median(heights$groesse_cm), linetype = "longdash", colour="#e08308",linewidth=1 ) + 
     guides(alpha="none")
 ```
 
 
+----------------
+
 ### Maße der zentralen Tendenz
 
-Welcher Vorteil hat der Median im Vergleich zu dem Arithmetischen Mittel?
+Welcher Vorteil hat der Median im Vergleich zu dem arithmetischen Mittel?
 
 --------------
 
@@ -192,10 +205,12 @@ Welcher Vorteil hat der Median im Vergleich zu dem Arithmetischen Mittel?
 #### Beispiel: Einkommen
 
 
-QUELLEEEE
-```{r}
+Bruttomonatsverdienste in Deutschland
 
-einkommen_de <- read.csv('/Users/evascheel/Downloads/62361-0030_de.txt', sep='\t') |>
+
+```{r}
+library(tidyverse)
+einkommen_de <- read.csv('datasets/62361-0030_de.txt', sep='\t') |>
     filter(nchar(Kennzeichen) > 9) %>%
     tidyr::pivot_longer(!c('Stichmonat', 'Kennzeichen', 'Berufsfeld'), names_to = 'geschlecht', values_to = 'mittelw_monat') %>%
     filter(!is.na(mittelw_monat))
@@ -209,57 +224,80 @@ geom_histogram(binwidth=100, alpha=0.7, fill="#0a7961") +
     labs(x = "Mittelwert Bruttoeinkommen pro Monat (in Euro)", y="Anzahl Personen") 
 ```
 
---------------
-
-### Maße der zentralen Tendenz
-
-#### Beispiel: Einkommen
-
-```{r}
-
-einkommen_de <- read.csv('/Users/evascheel/Downloads/62361-0030_de.txt', sep='\t') |>
-    filter(nchar(Kennzeichen) > 9) %>%
-    tidyr::pivot_longer(!c('Stichmonat', 'Kennzeichen', 'Berufsfeld'), names_to = 'geschlecht', values_to = 'mittelw_monat')
-
-einkommen_de |>
-    ggplot(mapping= aes(x=mittelw_monat)) + 
-geom_histogram(binwidth=100, alpha=0.7, fill="#0a7961") +
-    theme_bw() +
-    labs(x = "Mittelwert Bruttoeinkommen pro Monat (in Euro)", y="N Personen") 
-
-```
+[April 2025, 62361-0030, vom Statistischen Bundesamt (abrufbar [hier](https://genesis.destatis.de/datenbank/online/statistic/62361/table/62361-0030))]{.absolute bottom=0 style="font-size: 70%; color: #6f5c7dea; "}
 
 
-
-```{r}
-#heights |>
-#    ggplot(mapping = aes(x=groesse_cm)) +
-#    geom_histogram(aes(x=groesse_cm, y = after_stat(density), alpha=0.9), binwidth = 2) +
-# geom_density(colour = "purple",
-#               fill = "purple",
-#               alpha = 0.2,
-#               linewidth = 0.8) +
-#    theme_bw() +
-#    guides(alpha="none")
-
-```
 
 ----------------
 
 
 ### Kategorische Variablen
 
+
+#### Lieblingsfächer und Hobbys von Schüler:innen\*
+
+
 ```{r}
+n_schueler <- 150
 faecher <- c("Mathematik", "Französisch", "Sport", "Englisch", "Deutsch", "Biologie", "Chemie", "Physik", "Musik")
 hobbies <- c("Kanufahren", "Hula_Hoop", "Seilspringen", "Posaune", "Backgammon", "Modelleisenbahn")
-person <- seq(1:150)
-alter <- round(rnorm(150, mean = 15, sd = 2),0)
+person <- seq(1:n_schueler)
+alter <- round(rnorm(n_schueler, mean = 15, sd = 2),0)
 haarlaenge <- c("kurz", "mittel", "lang")
-lieblingsfaecher <- data.frame(fach = sample(faecher, 150, replace=T), 
+lieblingsfaecher <- data.frame(fach = sample(faecher, n_schueler, replace=T), 
                     alter = alter,
-                    haarlaenge = sample(haarlaenge, 150, replace=T),
-                    hobby = sample(hobbies, 150, replace=T))
+                    haarlaenge = factor(sample(haarlaenge, n_schueler, replace=T), levels= c('kurz', 'mittel', 'lang')),
+                    hobby = sample(hobbies, n_schueler, replace=T))
+```
 
+Anzahl Schüler:innen pro Lieblingsfach:
+```{r}
+table(lieblingsfaecher$fach)
+```
+
+
+Anzahl Schüler:innen pro Hobby:
+```{r}
+table(lieblingsfaecher$hobby)
+```
+
+
+
+[\*Erfundener Datensatz!]{.absolute bottom=10 style="font-size: 70%; color: #6f5c7dea; "}
+
+-------------------------
+
+### Kategorische Variablen
+#### Lieblingsfächer von Schüler:innen
+```{r}
+lieblingsfaecher |>
+    ggplot(mapping=aes(x=fach)) +
+    geom_bar(alpha=0.8, fill="#0a7961") +
+    labs(x='Schulfach', y='Anzahl Schüler*innen') + 
+        theme_bw() +
+    theme(axis.text.x = element_text(angle=70, hjust=1)) + 
+    guides(alpha="none")
+
+```
+
+
+----------------------
+
+### Kategorische Variablen
+#### Lieblingsfächer von Schüler:innen
+
+Kombination von Lieblingsfach und Hobby ([Kreuztabelle]{.important}, [Kontingenztabelle]{.important})
+```{r}
+table(lieblingsfaecher$hobby, lieblingsfaecher$fach)
+
+```
+
+
+-------------------------
+
+### Kategorische Variablen
+#### Lieblingsfächer von Schüler:innen
+```{r}
 lieblingsfaecher |>
     ggplot(mapping=aes(x=fach)) +
     geom_bar(alpha=0.8, fill="#0a7961") +
@@ -269,42 +307,160 @@ lieblingsfaecher |>
     guides(alpha="none") +
     facet_wrap(~haarlaenge)
 
-table(lieblingsfaecher$fach)
-table(lieblingsfaecher$hobby)
+```
+
+[Es gibt auch noch ganz viele andere Visualisierungsmöglichkeiten (z.B. Mosaikplot).]{style="font-size: 80%;"}
+
+
+
+-------------------------
+
+### Kategorische Variablen
+#### Maß der Zentralen Tendenz
+
+Können wir das arithmetische Mittel oder den Median von kategorischen Variablen berechnen?
+
+
+
+
+-------------------------
+
+
+### Kategorische Variablen
+#### Maß der Zentralen Tendenz: [Modus]{.important}
+
+Der Wert, der in einer Stichprobe am häufigsten vorkommt.
+
+```{r}
+library(tidyverse)
+lieblingsfach <- lieblingsfaecher |>
+    count(fach) |>
+    arrange(desc(n)) |>
+    head(1)
+
+lieblingsfaecher |>
+    ggplot(mapping=aes(x=fach, fill=(fach ==lieblingsfach$fach))) +
+    geom_bar(alpha=0.8) +
+    labs(x='Schulfach', y='Anzahl Schüler*innen') + 
+    theme_bw() +
+    scale_fill_manual(values = c("TRUE" = "#0a7961"), guide = "none") + 
+    theme(axis.text.x = element_text(angle=70, hjust=1)) + 
+    guides(alpha="none")
+
 ```
 
 
+-------------------------
 
-[Erfundener Datensatz]{.absolute bottom=200}
 
+### Kategorische Variablen
+#### Maß der Zentralen Tendenz: [Modus]{.important}
 
+Der Wert, der in einer Stichprobe am häufigsten vorkommt.
+
+```{r}
+lieblingsfach <- lieblingsfaecher |>
+    count(fach) |>
+    arrange((desc(n))) |>
+    head(1)
+
+lieblingsfaecher |>
+    ggplot(mapping=aes(x=fach, fill=(fach ==lieblingsfach$fach))) +
+    geom_bar(alpha=0.8) +
+    labs(x='Schulfach', y='Anzahl Schüler*innen') + 
+    theme_bw() +
+    scale_fill_manual(values = c("TRUE" = "#0a7961"), guide = "none") + 
+    theme(axis.text.x = element_text(angle=70, hjust=1)) + 
+    guides(alpha="none")
+
+```
+
+Können wir auch den Modus von numerischen Variablen berechnen?
+
+--------------------
 
 ## Verteilungen
 
-Normalverteilung (oder Gauß-Verteilung)
+
+::::{.columns}
+
+:::{.column}
+
+1. empirisch beobachtete Verteilung: beschreibt unsere Stichprobe
+2. theoretische Verteilung (normalerweise Wahrscheinlichkeitsverteilungen): theoretische Verteilung von der eine Stichprobe generiert wurde ([mehr nächstes Mal]{style="color: #5a4769ea; "})
+3. Wahrscheinlichkeitsverteilung: Funktion, welche Ereignissen ihre Wahrscheinlichkeiten zuordnet
+
+
+:::
+
+:::{.column}
+z.B. Normalverteilung (oder Gauß-Verteilung)
 ```{r}
 #| echo: false
-x <- seq(-4, 4, 0.01)
-plot(x, dnorm(x,mean=0,sd=1), type='l', lty = 1, lwd = 2)
+ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+  stat_function(fun = dnorm) + 
+  theme_bw() + 
+  labs(x=element_text(), y=element_text())
+```
+
+:::
+::::
+---------------
+
+### Empirisch beobachtete Verteilung
+
+#### Beispiel: Größen von Schüler:innen in einer 3. Klasse
+
+::::{.columns}
+
+:::{.column}
+
+##### Häufigkeitsverteilung
+```{r}
+#| echo: false
+heights |>
+    ggplot(mapping = aes(x=groesse_cm)) + 
+    geom_histogram(alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    labs(x = "Grösse in cm", y="Anzahl Schüler:innen") + 
+    guides(alpha="none") + 
+    xlim(110, 190)
 
 ```
 
 
+:::
 
-:::: notes
-Was fällt euch auf?
-- numerische Daten
-- symmetrisch
-- nicht flach, also mehr Masse in der Mitte
+:::{.column}
+##### Wahrscheinlichkeitsverteilung ([Verteilungsdichte]{.important})
+```{r}
+#| echo: false
+heights |>
+    ggplot(mapping = aes(x=groesse_cm)) + 
+    geom_density(alpha=0.7, fill="#0a7961") +
+    theme_bw() +
+    labs(x = "Grösse in cm", y="Anzahl Schüler:innen") + 
+    guides(alpha="none") + 
+    xlim(110, 190)
+
+```
+
+:::
 ::::
 
+Sind die Daten normal verteilt? 
+
+:::incremental
+- Sie sollten ja, die Daten sind von einer Normalverteilung generiert. 
+:::
 -------------------------
 
 ### Empirisch beobachtete Verteilung
 
-
+#### Beispiel: Größen von Schüler:innen in einer 3. Klasse
 
 ```{r}
+#| echo: false
 library(dplyr)
 library(ggplot2)
 library(patchwork)
@@ -313,7 +469,7 @@ plot_list <-  list()
 i <- 1
 for (n in c(20,100,500,1000, 5000, 10000)) {
     heights <- data.frame('height' = rnorm(n, 165, 10))
-    current_title <- paste("sample size = ", n, sep='')
+    current_title <- paste("Stichprobengröße = ", n, sep='')
     p <- heights |>
         ggplot(mapping = aes(x = height)) + 
         geom_histogram(aes(x=height),
@@ -321,7 +477,8 @@ for (n in c(20,100,500,1000, 5000, 10000)) {
                  alpha = 0.4) +
                     theme_bw() + 
                     labs(title = current_title) +
-        theme(plot.title = element_text(color = '#810a38da'))
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Größe')
     plot_list[[i]] <- p
     i <- i+1
 }
@@ -329,30 +486,304 @@ for (n in c(20,100,500,1000, 5000, 10000)) {
 wrap_plots(plot_list, ncols=3)
 ```
 
+Je größer unsere Stichprobe, desto mehr nähert sich die beobachtete Verteilung der unterliegenden Verteilung an, die die Daten *generiert* hat. 
 
+
+
+
+-----------------------------------
+
+### Empirisch beobachtete Verteilung
+
+#### Beispiel: Größen von Schüler:innen in einer Klasse
+
+##### Wahrscheinlichkeitsverteilung (Stichprobengröße=10000)
+```{r}
+#| echo: false
+heights <- data.frame('height' = rnorm(10000, 165, 10))
+heights |>
+        ggplot(mapping = aes(x = height)) + 
+        geom_density(aes(x=height),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+                    labs(title = current_title) +
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Größe', y='Wahrscheinlichkeit')
+
+
+```
+
+- Normalerweise sind unsere Stichproben kleiner
+- Deshalb nehmen wir an, dass unsere Daten von einer Verteilung generiert worden sind, die einer theoretischen Verteilung entsprechen (z.B. Normalverteilung).
+- Wichtig für statistische Modelle später im Kurs
 
 
 ## Streuungsmaße (Dispersion)
 
-- zeige unterschiedliche Verteilungen: was fällt Studierenden auf?
+```{r}
+#| echo: false
+library(dplyr)
+library(ggplot2)
+library(patchwork)
 
 
-### Standardabweichung
+heights1 <- data.frame('height' = rnorm(100, 140, 30))
+heights2 <- data.frame('height' = rnorm(100, 165, 60))
+heights3 <- data.frame('height' = rnorm(100, 180, 4))
 
+p1 <- heights1 |>
+        ggplot(mapping = aes(x = height)) + 
+        geom_histogram(aes(x=height),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+                    labs(title = current_title) +
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Größe', title = 'M = 140, SD = 30') + 
+        xlim(min=0, max=200)
 
-### Quantile
+p2 <- heights2 |>
+        ggplot(mapping = aes(x = height)) + 
+        geom_histogram(aes(x=height),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+                    labs(title = current_title) +
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Größe', title='M = 165, SD = 60') + 
+        xlim(min=0, max=200)
 
+p3 <- heights3 |>
+        ggplot(mapping = aes(x = height)) + 
+        geom_histogram(aes(x=height),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+                    labs(title = current_title) +
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Größe', title = 'M = 180, SD = 4')  + 
+        xlim(min=0, max=200)
 
+wrap_plots(list(p1, p2, p3), ncols=3)
 
-## Theoretische Verteilung vs. empirisch beobachtete Verteilung
+```
+
+Wie unterscheiden sich diese Verteilungen?
+
+:::incremental
+- unterschiedliche Mittelwerte
+- unterschiedliche Streuung
+:::
+
+----------------
+
+### Streuungsmaße, Varianz, Dispersion
+
+[Standardabweichung]{.important}
+
+::::{.columns}
+
+:::{.column}
+Zeigt uns: 
+
+- "die durchschnittliche Abweichung von dem Mittelwert"
+- wie homogen unsere Stichprobe ist
+
+:::
+
+:::{.column}
+$$
+SD = \sqrt{\frac{\sum (x-\bar{x})^2}{n-1}}
+$$
+[$x$ ist ein einzelner Datenpunkt, $\bar{x}$
+ist der Mittelwert, $n$ ist die Stichprobengröße]{style="font-size: 70%; color: #5a4769ea; "}
+
+[Was bedeutet diese Formel?]{.absolute bottom=200}
+:::
+
+::::
+
+-------------------------
+
+### Streuungsmaße, Varianz, Dispersion
+
+Berechnung der [Standardabweichung]{.important}
+
+[$$
+SD = \sqrt{\frac{\sum (x-\bar{x})^2}{n-1}}
+$$]{.absolute top=-30 right=30 width="450" height="250"}
+
+Beispiel: Körpergrößen von acht Personen: 175, 156, 165, 160, 180, 164, 170, 177
+
 
 ```{r}
+#| echo: false
+heights <- c(175, 156, 165, 160, 180, 164, 170, 177)
+avg <- sum(heights) / 8
+sum <- 0
+for(h in heights){
+    sum <- sum + (h - avg)^2
+}
+
+```
+
+:::incremental
+1. Berechnen des Mittelwertes:  $$ \bar{x} = \frac{175 + 156 + 165 + 160 + 180 + 164 + 170+ 177}{8} = \frac{1347}{8} = 168.375 $$
+
+2. Berechnen der quadratischen Abweichung vom Mittelwert für jeden Datenpunkt $x$, z.B. für $x_{1}$: $(175-168.375)^2 = 43.891$
+
+3. Summieren der Werte aus 2.: $\sum (x-\bar{x})^2 = 509.875$
+
+4. $\frac{\sum (x-\bar{x})^2}{n-1} = \frac{509.875}{7} = 72.839$ ([Varianz]{.important})
+
+5. $SD = \sqrt{72.839} = 8.534594$ ([Standardabweichung]{.important})
+:::
+
+-------------------------
+
+### Streuungsmaße, Varianz, Dispersion
+
+Berechnung der Varianz und Standardabweichung mit R. 
+
+```{r}
+#| echo: true
+
+heights <- c(175, 156, 165, 160, 180, 164, 170, 177)
+mean(heights) # Mittelwert
+var(heights) # Varianz
+sd(heights) # Standardabweichung
 
 
 
 ```
 
+-----------------
 
-### Lernziele
 
-- 
+### Normalverteilung
+
+Die Normalverteilung (als "theoretische Verteilung") ist definiert durch den Erwartungswert $\mu$ ("mu") und die Standardabweichung $\sigma$. ("sigma")
+
+```{r}
+#| echo: false
+data <- data.frame(x1 = rnorm(100000, 0, 2), x2 = rnorm(100000, 2, 0.7), x3 = rnorm(100000, 0, 2))
+
+data |>
+    ggplot() + 
+    geom_density(aes(x=x1), colour='#088a9ec9', fill =  '#088a9e40') + 
+    geom_density(aes(x=x2), colour='#9e0841c9', fill = '#9e084223') +
+    labs(x = expression(sigma), y='Wahrscheinlichkeitsdichte') + 
+    theme_bw() + 
+    guides(color='none', fill='none') + 
+    annotate("text",
+        x = 0,
+        y = 0.029,
+        label = paste(expression(mu), '=0, ', expression(sigma), "=2", sep=''),
+        colour = "black") + 
+    annotate('text', 
+        x = 2.5,
+        y = 0.59,
+        label = paste(expression(mu), '=2, ', expression(sigma), "=0.7", sep=''),
+        colour = "black")
+
+```
+
+--------------------
+
+### Normalverteilung
+
+- $\mu$ und $\sigma$ sind [Parameter]{.important} (in diesem Kontext: ~Eigenschaften einer Verteilung)
+- Wir benutzen Stichproben um diese Parameter zu schätzen 
+    - mit $\bar{x}$ schätzen wir den Erwartungswert $\mu$ und mit $SD$ die Standardabweichung $\sigma$.
+- Mit statistischen Methoden können wir die Unsicherheit dieser Annäherungswerten quantifizieren. 
+
+
+
+[mehr nächstes Mal]{.absolute bottom=200 style="color: #5a4769ea; "}
+
+-----------------------------------
+
+### Boxplots und Interquartilsabstand
+
+- ein weiterer Weg die zentralen Tendenzen und Streuung der Daten zu illustrieren 
+- wie breit das Intervall ist, in dem die mittleren 50% der Datenpunkte aus der Stichprobe liegen
+- basierend auf den **empirischen** Daten
+
+-------------------------
+
+### Interquartilsabstand
+
+::: {style="font-size: 80%;"}
+Median: 50% der Datenpunkte liegen links vom Median, 50% rechts 
+:::
+
+::::{.columns}
+:::{.column}
+:::incremental
+::: {style="font-size: 80%;"}
+- Für den Interquartilsabstand teilen wir die Daten weiter auf:
+    - Erstes Quartil (Q1): unterste 25%
+    - Zweites Quartil (Q2): 25-50%
+    - Drittes Quartil (Q3): 50-75%
+    - Viertes Quartil (Q4): oberste 25%
+- Interquartilsabstand: Bereich zwischen dem zweiten und dem dritten Quartil -> mittleren 50% der Daten
+:::
+:::
+:::
+:::{.column}
+```{r}
+#| echo: false
+distance <- data.frame('distanz' = c(rnorm(100, 165, 20), rnorm(10, 50, 20)))
+quartiles <- quantile(distance$distanz, c(0.25, 0.5, 0.75))
+distance  |>
+        ggplot(mapping = aes(x = distanz)) + 
+        geom_density(aes(x=distanz),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Distanz', y='Wahrscheinlichkeit') + 
+        geom_vline(xintercept = median(distance$distanz), linetype = "longdash", colour="#e08308",linewidth=1 ) + 
+        geom_vline(xintercept = quartiles[1], linetype = "longdash", colour="#4f2547",linewidth=1 ) + 
+        geom_vline(xintercept = quartiles[3], linetype = "longdash", colour="#4f2547",linewidth=1)
+
+
+```
+
+:::
+::::
+
+-------------------------
+
+
+### Boxplot: Visualisierung des Interquartilsabstand
+
+::: {style="font-size: 80%;"}
+- Box: Interquartilsabstand
+- dicke Linie: Median
+- "Whiskers": ungefähr untere 25% und obere 25% der Daten
+- Punkte: Ausreißer ("outliers"), extreme Datenpunkte
+:::
+```{r}
+distance |>
+        ggplot(mapping = aes(y=distanz)) + geom_boxplot() + 
+        theme_bw() + 
+        labs(y='Distanz', x=element_blank())  
+
+
+```
+
+
+[("Whiskers": Maximum von dem Q3 + 1.5\*IQR und Minimum von dem Q1 + 1.5\*1QR)]{.absolute bottom=10 style="color: #5a4769ea; font-size: 70%; "}
+
+## Nächstes Mal
+
+- AB2
+- mehr über die Normalverteilung und Wahrscheinlichkeitsverteilungen
+- Ausreißer, Normalisierungsmaße
+- Visualisierungen?
+
+
+## Lernziele
+
