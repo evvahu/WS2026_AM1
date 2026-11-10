@@ -38,7 +38,7 @@ Beispiel (erfunden):
 ```{r}
 #| echo: false
 #| warning: false
-data <- read.csv('../datasets/nettle_1999_climate.csv')
+data <- read.csv('datasets/nettle_1999_climate.csv')
 library(tidyverse)
 ```
 

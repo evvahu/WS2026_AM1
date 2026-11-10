@@ -1,0 +1,356 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Sitzung 4: Deskriptive Statistik II"
+date: "11. November 2026"
+author: "Eva Scheel"
+institute: eva.scheel-huber@uni-koeln.de
+date-format: "DD. MM. YYYY"
+format:
+  revealjs: 
+    slide-number: true
+    theme: slides_theme.scss
+    error: true
+editor: source
+bibliography: references.bib
+---
+
+## Übersicht
+
+1. Rückblick und Aufgabenblatt 1
+2. Deskriptive Statistik II
+
+## Rückblick: Deskriptive Statistik I
+
+- mit zentralen Maßen der Tendenz (arithmetisches Mittel, Median, Modus) vertraut sein, wissen wie sie sich in unterschiedlichen Verteilungen verhalten und für welche Daten welches Maß angebracht ist.
+- mit Streuungsmaßen (insbesondere Standardabweichung und Interquartilsabstand) vertraut sein, sie interpretieren und berechnen zu können.
+- den Unterschied zwischen theoretischen und empirisch beobachteten Verteilungen zu kennen 
+
+--------------
+
+### Zentrale Maße der Tendenz
+
+Wo ist der Mittelwert (arithmetische Mittel) und wo der Median? 
+Können wir den Modus berechnen?
+
+```{r}
+library(tidyverse)
+library(patchwork)
+
+noten_daten <- data.frame('note' = rcat(100, c(0.05, 0.2, 0.3, 0.25, 0.15, 0.05)))
+noten_daten2 <- data.frame('note' = rcat(100, c(0.05, 0.15, 0.3, 0.3, 0.15, 0.05)))
+mode <- noten_daten2 |> count(note) |> arrange(desc(n))
+noten_daten2 <- noten_daten2 |> mutate(mode = ifelse(note == mode[1,1], "TRUE", "FALSE"))
+
+n2 <-  noten_daten2 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen') + 
+        xlim(min=0.5, max=6.5) 
+
+n2
+```
+
+--------------
+
+### Zentrale Maße der Tendenz
+
+Wo ist der Mittelwert (arithmetische Mittel) und wo der Median? 
+Können wir den Modus berechnen?
+
+```{r}
+library(hesim)
+library(tidyverse)
+library(patchwork)
+
+
+n2 + geom_histogram(aes(x=note, fill=mode)) + 
+    geom_vline(xintercept = median(noten_daten2$note), linetype = "longdash", colour="#e08308",linewidth=1) + 
+geom_vline(xintercept = mean(noten_daten2$note), linetype = "longdash", colour="#0862e0",linewidth=1) +
+scale_fill_manual(values = c("TRUE" = "#0a7961"), guide = "none")
+
+
+```
+
+[arithmetisches Mittel]{style="font-size: 70%; color: #0862e0; "}, []{style="font-size: 70%; color: #e08308; ", [Modus]{style="font-size: 70%; color: #0a7961; "}
+
+--------------
+
+### Streuungsmaße
+
+Was ist der Unterschied zwischen diesen beiden Häufigkeitsverteilungen?
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(truncnorm)
+
+noten1 <- data.frame('note' = round(rtruncnorm(n=100, a=1, b=6, mean=3, sd=1),0))
+noten2 <- data.frame('note' = round(rtruncnorm(n=100, a=1, b=6, mean=3, sd=4),0))
+
+noten1 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen', y='Häufigkeit') + 
+        xlim(min=0.5, max=6.5) 
+
+noten2 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen', y='Häufigkeit') + 
+        xlim(min=0.5, max=6.5) 
+
+```
+
+-------------
+
+### Streuungsmaße
+
+Was ist der Unterschied zwischen diesen beiden Häufigkeitsverteilungen?
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(truncnorm)
+
+noten1 <- data.frame('note_raw' =rtruncnorm(n=100, a=1, b=6, mean=3, sd=1)) |> mutate('note' = round(note_raw,0))
+noten2 <- data.frame('note_raw' = rtruncnorm(n=100, a=1, b=6, mean=3, sd=4)) |> mutate('note' = round(note_raw,0))
+
+noten1 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=1', y='Häufigkeit') + 
+        xlim(min=0.5, max=6.5) 
+
+noten2 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=4', y='Häufigkeit') + 
+        xlim(min=0.5, max=6.5) 
+
+```
+
+
+-------------------------
+
+### Verteilungen
+
+```{r}
+n1.f <- noten1 |>
+        ggplot(mapping = aes(x = note)) + 
+        geom_histogram(aes(x=note),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=1', y='Häufigkeit') + 
+        xlim(min=0.5, max=6.5) 
+
+n1.p <- noten1 |>
+        ggplot(mapping = aes(x = note_raw)) + 
+        geom_density(aes(x=note_raw),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=1', y='Häufigkeit') + 
+        xlim(min=0, max=6) 
+
+
+patchwork::wrap_plots(list(n1.f, n1.p))
+
+```
+
+-------------------------
+
+### Verteilungen
+
+```{r}
+n1.f <- n1.f + 
+    geom_vline(xintercept = mean(noten1$note), linetype = "longdash", colour="#0862e0",linewidth=1) + 
+    geom_vline(xintercept = (mean(noten1$note_raw) - sd(noten1$note_raw)), linetype = "longdash", colour="#b508e0",linewidth=1) + 
+    geom_vline(xintercept = (mean(noten1$note_raw) + sd(noten1$note_raw)), linetype = "longdash", colour="#b508e0",linewidth=1) 
+
+
+n1.p <- n1.p +
+    geom_vline(xintercept = (mean(noten1$note_raw) - sd(noten1$note_raw)), linetype = "longdash", colour="#b508e0",linewidth=1) + 
+    geom_vline(xintercept = (mean(noten1$note_raw) + sd(noten1$note_raw)), linetype = "longdash", colour="#b508e0",linewidth=1) + 
+    geom_vline(xintercept = mean(noten1$note_raw), linetype = "longdash", colour="#0862e0",linewidth=1)
+
+
+
+patchwork::wrap_plots(list(n1.f, n1.p))
+
+```
+
+-------------------------
+
+### Theoretische Normalverteilung
+
+
+```{r}
+
+data <- data.frame(x1 = rnorm(1000000, 3, 1))
+
+data |>
+        ggplot(mapping = aes(x = x1)) + 
+        geom_density(aes(x=x1),
+        fill = "#26351c",
+                 alpha = 0.4) +
+                    theme_bw() + 
+        theme(plot.title = element_text(color = '#810a38da')) + 
+        ggtitle("\U00B5 = 3; \u03C3 = 1") +
+        labs(x=element_blank(), y=element_blank())
+
+```
+
+
+
+## Aufgabenblatt 2
+
+
+
+
+## Heutige Sitzung
+
+- Eigenschaften der Normalverteilung
+- andere Verteilungen
+- Ausreißer, Normalisierungsmaße
+- Visualisierungen
+
+## Normalverteilung
+
+### Wie testet man, ob eine Verteilung normalverteilt ist?
+
+- viele statistische Methoden erfordern, dass die Daten normalverteilt sind
+- Wie testen wir das?
+
+
+### Wie testet man, ob eine Verteilung normalverteilt ist?
+
+1. Vergleich mit der Normalverteilung
+
+```{r}
+library(ggplot2)
+ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+stat_function(fun = dnorm(x, mean=0, sd=1))
+
+```
+
+
+-------------
+
+### Wie testet man, ob eine Verteilung normalverteilt ist?
+
+2. Q-Q Plots
+
+
+-------------
+
+### Wie testet man, ob eine Verteilung normalverteilt ist?
+
+3. Shapiro-Wilk-Test (siehe S. 56 in @levshinaintro)
+
+-------------
+
+### Wie testet man, ob eine Verteilung normalverteilt ist?
+
+verschiedene verteilungen mit unterschiedlichen Skews 
+
+- uniform
+- normal
+- rightskew (zeig mean und median)
+- leftskew (zeig mean und median)
+
+
+### (Konfidenz-)intervalle
+
+#### 68–95–99.7-Regel
+
+negative infinity up to specified value
+```{r}
+
+pnorm(0, mean=0, sd = 1)
+
+```
+
+[theoretische Verteilung]{}
+
+
+-------------
+
+#### Konfidenzintervalle
+
+95% Konfidenzintervalle
+
+
+
+Was es **nicht** bedeutet
+Siehe 
+
+#### Empirische
+
+
+
+
+
+
+
+
+## Weitere Verteilungen
+
+
+- Normalverteilungen gelten nur für kontinuierliche Daten, die normalverteilt sind
+- Grenzfall: z.B. Umfragewerte auf einer Likert-Skala 
+    - [Ich sprich fließend Kölsch: trifft zu (1), trifft eher zu (2), teils-teils (3), trifft eher nicht zu (4), trifft nicht zu (5)]{style="font-size: 70%; color: #401e4ab0; size = 80%; "}
+
+
+Was für andere Datentypen gibt es?
+
+-----------------------------
+
+### Weitere Verteilungen
+
+- Kategorische Variablen 
+    - binäre: Bernoulliverteilung (Spezialfall von der Binomialverteilung)
+    - mehrere Ebenen: Multinomialverteilung
+- Zählvariablen:
+    - Poissonverteilung
+- kontinuierliche Daten, die nicht normal verteilt sind
+- ...
+
+-----------------------------
+
+### Weitere Verteilungen
+
+- Kategorische Variablen 
+    - binäre: [Bernoulliverteilung]{.important} (Spezialfall von der [Binomialverteilung]{.important})
+    - mehrere Ebenen: Multinomialverteilung
+
+z.B. ....
+
+
+
+
+
+## Ausreisser und Normalisierungswerte
+

@@ -29,10 +29,11 @@ Lade den Datensatz runter, erstelle ein neues RProjekt (oder verwende das vom AB
 2. Überprüfe die Daten (siehe Sitzung 2/AB1: Gibt es NAs? Wie viele Datenpunkte sind vorhanden?)
 3. **Maße der Zentralen Tendenz**:  
     3.1 Was ist das arithmetische Mittel und was ist der Median der Köpergröße? Welches Maß ist angebrachter?  
-    3.2 Welches Maß benutzt du für die Variablen *Haarlänge* und *Geburtsmonat*? 
+    3.2 Welches Maß benutzt du für die Variablen *Haarlänge* und *Geburtsmonat*?  
+    3.3 Erstelle eine Kontingenztabelle der beiden kategorischen Variablen. Gibt es Muster? 
 4. **Streuungsmaße**:  
-    4.1 Standardabweichung: Berechne die Standardabweichung wie in der Sitzung (Folie: 26) Schritt für Schritt. Überprüfe dann das Resultat mit der R-Funktion `sd()`  
-    4.2 Interquartilsabstand (IQR): Berechne den IQR manuell. Benutze `quantile()` oder `summary()` um die Quartile zu berechnen. Wie kannst du anhand der Quartile den IQR berechnen? Überprüfe anschließend das Resultat mit der R-Funktion `IQR()`
+    4.1 Standardabweichung: Berechne die Standardabweichung der Körpergrößen wie in der Sitzung (Folie: 26) Schritt für Schritt. Überprüfe dann das Resultat mit der R-Funktion `sd()`  
+    4.2 Interquartilsabstand (IQR): Berechne den IQR der Körpergrößen manuell. Benutze `quantile()` oder `summary()` um die Quartile zu berechnen. Wie kannst du anhand der Quartile den IQR berechnen? Überprüfe anschließend das Resultat mit der R-Funktion `IQR()`
 
 
 
