@@ -450,12 +450,14 @@ word_frequency |>
 
 [von *The English Lexicon Project* [@balota2007english]]{.absolute bottom=00 style="color: #5a4769ea; "}
 
+--------------
 
 ### Wie überprüft man, ob eine Stichprobe normalverteilt ist?
 
 #### Vergleich mit der Normalverteilung
 
 Nun mit den logarithmierten Reaktionszeiten 
+
 ```{r}
 library(ggplot2)
 
