@@ -461,7 +461,6 @@ Nun mit den logarithmierten Reaktionszeiten
 ```{r}
 library(ggplot2)
 
-word_frequency <- read.csv('datasets/ELP_length_frequency.csv', sep=',')
 
 word_frequency |>
     ggplot(aes(x=log_RT)) +

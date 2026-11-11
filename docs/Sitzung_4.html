@@ -261,7 +261,7 @@ Eva Scheel
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">mean</span>(noten_daten<span class="sc">$</span>note)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 3.295</code></pre>
+<pre><code>[1] 3.32</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">median</span>(noten_daten<span class="sc">$</span>note)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -270,12 +270,12 @@ Eva Scheel
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>noten_daten <span class="sc">|&gt;</span> <span class="fu">count</span>(note) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  note   n
-1    3 312
-2    4 299
-3    5 149
-4    2 143
-5    1  90
-6    6   7</code></pre>
+1    4 310
+2    3 291
+3    5 153
+4    2 136
+5    1  98
+6    6  12</code></pre>
 </div>
 </div>
 </div><div class="column">
@@ -470,16 +470,8 @@ Eva Scheel
 <h3 id="wie-überprüft-man-ob-eine-stichprobe-normalverteilt-ist-2">Wie überprüft man, ob eine Stichprobe normalverteilt ist?</h3>
 <h4 id="vergleich-mit-der-normalverteilung-1">Vergleich mit der Normalverteilung</h4>
 <p>Nun mit den logarithmierten Reaktionszeiten</p>
-<div class="cell">
-<div class="cell-output cell-output-error">
-<pre><code>Error in `geom_density()`:
-! Problem while computing aesthetics.
-ℹ Error occurred in the 1st layer.
-Caused by error:
-! object 'log_RT' not found</code></pre>
-</div>
-</div>
-<p><span class="absolute" style="color: #5a4769ea; bottom: 0px; ">von <em>The English Lexicon Project</em> <span class="citation" data-cites="balota2007english">(<a href="#/references" role="doc-biblioref" onclick="">Balota et al. 2007</a>)</span></span></p>
+
+<img data-src="Sitzung_4_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"><p><span class="absolute" style="color: #5a4769ea; bottom: 0px; ">von <em>The English Lexicon Project</em> <span class="citation" data-cites="balota2007english">(<a href="#/references" role="doc-biblioref" onclick="">Balota et al. 2007</a>)</span></span></p>
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
@@ -509,12 +501,12 @@ Caused by error:
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `geom_point()`:
-! Problem while computing aesthetics.
-ℹ Error occurred in the 1st layer.
-Caused by error:
-! object 'log_RT' not found</code></pre>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Sitzung_4_files/figure-revealjs/unnamed-chunk-15-2.png" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 <pre><code>
@@ -713,19 +705,19 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <pre><code>[1] 1</code></pre>
 </div>
 </div><div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="co"># Fläche zwischen 2 und -2</span></span>
-<span id="cb11-2"><a></a><span class="fu">pnorm</span>(<span class="dv">2</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># Fläche zwischen 2 und -2</span></span>
+<span id="cb9-2"><a></a><span class="fu">pnorm</span>(<span class="dv">2</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.9544997</code></pre>
 </div>
 </div><div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># Fläche größer als 2</span></span>
-<span id="cb13-2"><a></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="co"># Fläche größer als 2</span></span>
+<span id="cb11-2"><a></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.02275013</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co">#oder:</span></span>
-<span id="cb15-2"><a></a><span class="fu">pnorm</span>(<span class="dv">2</span>, <span class="at">lower.tail=</span>F) <span class="co"># rechts statt links von 2 (upper.tail)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co">#oder:</span></span>
+<span id="cb13-2"><a></a><span class="fu">pnorm</span>(<span class="dv">2</span>, <span class="at">lower.tail=</span>F) <span class="co"># rechts statt links von 2 (upper.tail)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.02275013</code></pre>
 </div>
@@ -735,8 +727,8 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li>Wert <code>q</code> der inversen Verteilungsfunktion (=Quantilfunktion) angesichts einer bestimmten Wahrscheinlichkeit <code>p</code></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="co"># Wert der eine Wahrscheinlichkeit von 0.3 hat</span></span>
-<span id="cb17-2"><a></a><span class="fu">qnorm</span>(<span class="fl">0.3</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="co"># Wert der eine Wahrscheinlichkeit von 0.3 hat</span></span>
+<span id="cb15-2"><a></a><span class="fu">qnorm</span>(<span class="fl">0.3</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -0.5244005</code></pre>
 </div>
@@ -748,7 +740,7 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li>Wert <code>q</code> der inversen Verteilungsfunktion (=Quantilfunktion) angesichts einer bestimmten Wahrscheinlichkeit <code>p</code></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">qnorm</span>(<span class="fl">0.5</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">qnorm</span>(<span class="fl">0.5</span>, <span class="at">mean=</span><span class="dv">0</span>, <span class="at">sd=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0</code></pre>
 </div>
@@ -756,11 +748,11 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <hr><h4 id="wahrscheinlichkeiten-berechnen-in-r-2">Wahrscheinlichkeiten berechnen in R</h4>
 <p>68-95-99.7-Regel und der <strong>Konfidenzintervall</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">qnorm</span>(<span class="fl">0.025</span>) <span class="co"># linke Grenze</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">qnorm</span>(<span class="fl">0.025</span>) <span class="co"># linke Grenze</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -1.959964</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">qnorm</span>(<span class="dv">1</span><span class="fl">-0.025</span>) <span class="co"># rechte Grenz</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">qnorm</span>(<span class="dv">1</span><span class="fl">-0.025</span>) <span class="co"># rechte Grenz</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.959964</code></pre>
 </div>
@@ -846,7 +838,7 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li>Daten und Mapping</li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -860,8 +852,8 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li>Layers, welche <em>Geometry</em>, hier ein Histogramm</li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
-<span id="cb26-2"><a></a>    <span class="fu">geom_histogram</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
+<span id="cb24-2"><a></a>    <span class="fu">geom_histogram</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -877,8 +869,8 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li>Alternativ: Dichtegrafik mit <code>geom_density()</code></li>
 </ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
-<span id="cb27-2"><a></a>    <span class="fu">geom_density</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> word_frequency, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
+<span id="cb25-2"><a></a>    <span class="fu">geom_density</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -894,9 +886,9 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <li><code>mapping</code> müssen wir nicht explizit erwähnen</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>word_frequency <span class="sc">|&gt;</span></span>
-<span id="cb28-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
-<span id="cb28-3"><a></a>    <span class="fu">geom_density</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>word_frequency <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Log10Freq)) <span class="sc">+</span> </span>
+<span id="cb26-3"><a></a>    <span class="fu">geom_density</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -909,9 +901,9 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <h3 id="ggplot2-5"><code>ggplot2</code></h3>
 <p>Kategorische Variablen? Z.B. mit einem Säulendiagramm</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
-<span id="cb29-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
-<span id="cb29-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
+<span id="cb27-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
+<span id="cb27-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -924,10 +916,10 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 <h3 id="ggplot2-6"><code>ggplot2</code></h3>
 <p>Ändern der X- und Y-Achsen-Bezeichnungen</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
-<span id="cb30-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
-<span id="cb30-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
-<span id="cb30-4"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
+<span id="cb28-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
+<span id="cb28-4"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -947,11 +939,11 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 </ul>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>plot_nettle <span class="ot">&lt;-</span> data_nettle <span class="sc">|&gt;</span></span>
-<span id="cb31-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
-<span id="cb31-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
-<span id="cb31-4"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>) <span class="sc">+</span> </span>
-<span id="cb31-5"><a></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">75</span>, <span class="at">vjust =</span> <span class="fl">0.6</span>, <span class="at">hjust=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>plot_nettle <span class="ot">&lt;-</span> data_nettle <span class="sc">|&gt;</span></span>
+<span id="cb29-2"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs)) <span class="sc">+</span> </span>
+<span id="cb29-3"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
+<span id="cb29-4"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>) <span class="sc">+</span> </span>
+<span id="cb29-5"><a></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">75</span>, <span class="at">vjust =</span> <span class="fl">0.6</span>, <span class="at">hjust=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column">
 <div class="cell">
@@ -981,12 +973,12 @@ pnorm(Inf, mean=0, sd=1) - pnorm(-Inf, mean=0, sd=1)</code></pre>
 </ul>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
-<span id="cb32-2"><a></a>    <span class="fu">mutate</span>(<span class="at">population_binary =</span> <span class="fu">ifelse</span>(Population <span class="sc">&gt;</span> <span class="fu">mean</span>(Population), <span class="st">'large'</span>, <span class="st">'small'</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb32-3"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs, <span class="at">fill=</span>population_binary)) <span class="sc">+</span> </span>
-<span id="cb32-4"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
-<span id="cb32-5"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>) <span class="sc">+</span> </span>
-<span id="cb32-6"><a></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">75</span>, <span class="at">vjust =</span> <span class="fl">0.6</span>, <span class="at">hjust=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>data_nettle <span class="sc">|&gt;</span></span>
+<span id="cb30-2"><a></a>    <span class="fu">mutate</span>(<span class="at">population_binary =</span> <span class="fu">ifelse</span>(Population <span class="sc">&gt;</span> <span class="fu">mean</span>(Population), <span class="st">'large'</span>, <span class="st">'small'</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb30-3"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Country, <span class="at">y=</span>Langs, <span class="at">fill=</span>population_binary)) <span class="sc">+</span> </span>
+<span id="cb30-4"><a></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>) <span class="sc">+</span></span>
+<span id="cb30-5"><a></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Land'</span>, <span class="at">y=</span><span class="st">'Anzahl Sprachen'</span>) <span class="sc">+</span> </span>
+<span id="cb30-6"><a></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">75</span>, <span class="at">vjust =</span> <span class="fl">0.6</span>, <span class="at">hjust=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
