@@ -527,7 +527,7 @@ ggplot() +
 :::
 ::::
 
-[Schau z.B. dieses [YouTube-Video](https://www.youtube.com/watch?v=okjYjClSjOg) für eine Erklärung, wie Q-Q-Diagramme genau erstellt werden.]{.absolute bottom=50 style="color: #5a4769ea; font-size: 80%; "}
+[Schau z.B. dieses [YouTube-Video](https://www.youtube.com/watch?v=okjYjClSjOg) für eine Erklärung, wie Q-Q-Diagramme genau erstellt werden.]{.absolute bottom=5 style="color: #5a4769ea; font-size: 80%; "}
 
 -------------
 
