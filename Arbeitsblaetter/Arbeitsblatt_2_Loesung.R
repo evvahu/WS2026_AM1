@@ -35,10 +35,26 @@ table(data_students$haarlaenge, data_students$geburtsmonat)
 
 x_bar <- mean(data_students$groesse_cm)
 n <- length(data_students$groesse_cm)
-sum_diff <- sum(sapply(data_students$groesse_cm, function(x) (x-x_bar)^2))/(n-1)
-sqrt(sum_diff)
+sum_diff1 <- sum(sapply(data_students$groesse_cm, function(x) (x-x_bar)^2))/(n-1)
+# alternativ:
+sum_diff2 <- sum(((data_students$groesse_cm - x_bar)^2)) / (n-1)
+# alternativ
+sum3 <- 0
+for (i in 1:length(data_students$groesse_cm)){
+  sum3 <- sum3 + ((data_students$groesse_cm[i] - x_bar)^2)
+}
+sum_diff3 <- sum3 / (n-1)
+
+
+sum_diff1 == sum_diff2 
+sum_diff1 == sum_diff3
+
+sqrt(sum_diff1)
 
 sd(data_students$groesse_cm)
+
+
+hoehe <- data_students$groesse_cm
 
 
 # Alternative mit dplyr-Syntax

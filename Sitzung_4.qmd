@@ -47,7 +47,7 @@ n2 <-  noten_daten |>
         colour = '#088a9ec9',
                  alpha = 0.4) +
                     theme_bw() + 
-        scale_x_continuous("Standardabweichung", breaks = c(1, 2, 3, 4, 5, 6)) + 
+        scale_x_continuous("Note", breaks = c(1, 2, 3, 4, 5, 6)) + 
         theme(plot.title = element_text(color = '#810a38da')) + 
         labs(x='Note', title='Noten von 100 Schüler:innen') 
 
@@ -137,12 +137,7 @@ noten2 |>
 Was ist der Unterschied zwischen diesen beiden Häufigkeitsverteilungen?
 
 ```{r}
-library(tidyverse)
-library(patchwork)
-library(truncnorm)
 
-noten1 <- data.frame('note_raw' =rtruncnorm(n=100, a=1, b=6, mean=3, sd=1)) |> mutate('note' = round(note_raw,0))
-noten2 <- data.frame('note_raw' = rtruncnorm(n=100, a=1, b=6, mean=3, sd=4)) |> mutate('note' = round(note_raw,0))
 
 wrap_plots(
 noten1 |>
@@ -268,7 +263,7 @@ data |>
 
 ----------------------
 
-## Normalisierungswerte
+## Normalisierungsmaße
 
 - In manchen Situationen werden Werte normalisiert. Z.B...
     - ... wenn unsere Daten nicht normalverteilt sind
@@ -277,27 +272,6 @@ data |>
 - Wir besprechen zwei Wege, Daten zu normalisieren:
     - Logarithmus 
     - z-Wert
-
-
---------
-
-### Logarithmus
-
-- Es ist oftmals am einfachsten mit normalverteilten Daten zu arbeiten.
-- Viele Datensätze sind aber nicht normalverteilt 
-
-z.B. Worthäufigkeiten: 
-
-```{r}
-subtlex <- read.csv('datasets/SUBTLEX-UK_selection.csv', sep=',')
-subtlex |>
-    filter(FreqCount > 50 & FreqCount < 1000) |>
-    ggplot(aes(x=FreqCount)) + 
-    geom_histogram(alpha=0.8, color='#088a9ec9', fill='#088a9ec9') + 
-    theme_bw() + 
-    labs(x='Worthäufigkeit', y='')
-
-```
 
 
 
@@ -414,7 +388,7 @@ Wann werden z-Werte eingesetzt?
 
 :::incremental
 
-- wenn wir wissen wollen, wie weit ein Wert von dem Durchschnitt abweicht (z.B.)
+- wenn wir wissen wollen, wie weit ein Wert von dem Durchschnitt abweicht
 - Vergleich zwischen unterschiedlichen Variablen oder Stichproben/Populationen mit sehr unterschiedlichen Mittelwerten und Standardabweichungen 
 - Überprüfen von "Ausreißern" (=Extremwerten) (z.B. Werte mit SD höher/kleiner als (-)2.5)
 - Bei hohen oder sehr unterschiedlichen Werten erleichtern z-Werte die Parameterberechnung
@@ -457,7 +431,8 @@ word_frequency |>
 ```{r}
 library(ggplot2)
 
-word_frequency <- read.csv('datasets/ELP_length_frequency.csv', sep=',')
+word_frequency <- read.csv('datasets/ELP_length_frequency.csv', sep=',') |>
+    mutate(log_RT = log(RT))
 
 word_frequency |>
     ggplot(aes(x=RT)) +
@@ -471,7 +446,32 @@ word_frequency |>
 ```
 
 
-[Worthäufigkeiten aus @subtlexUK]{.absolute bottom=20 style="color: #5a4769ea; "}
+[von *The English Lexicon Project* [@balota2007english]]{.absolute bottom=00 style="color: #5a4769ea; "}
+
+
+### Wie überprüft man, ob eine Stichprobe normalverteilt ist?
+
+#### Vergleich mit der Normalverteilung
+
+Nun mit den logarithmierten Reaktionszeiten 
+```{r}
+library(ggplot2)
+
+word_frequency <- read.csv('datasets/ELP_length_frequency.csv', sep=',')
+
+word_frequency |>
+    ggplot(aes(x=log_RT)) +
+    geom_density(colour='#088a9ec9', fill =  '#088a9e40', size=1.5) + 
+    theme_bw() + 
+    xlab("log(Reaktionszeit)") + ylab("Wahrscheinlichkeitsdichte") +
+    stat_function(fun = dnorm, 
+                args = list(mean = mean(word_frequency$log_RT), sd = sd(word_frequency$log_RT)),
+                colour = "#9e0841c9",
+                size=1.5)
+```
+
+
+[von *The English Lexicon Project* [@balota2007english]]{.absolute bottom=00 style="color: #5a4769ea; "}
 
 
 -------------
@@ -487,7 +487,7 @@ word_frequency |>
 - theoretische Quantile (X-Achse) werden mit den Werten der Stichprobe (Y-Achse) verglichen
     - bei Überprüfung auf Normalverteilung: theoretische Quantile = Quantile der Normalverteilung
 - Punkte im Plot = Quantile/Datenpunkte, Linie = "visuelle Unterstützung"
-- Wenn zu viele Punkte von der Linie abweichen sind die Daten nicht normalverteilt 
+- Wenn zu viele Punkte von der Linie abweichen, sind die Daten nicht normalverteilt 
     - Abweichungen im unteren und oberen Bereich sind aber relativ üblich (und werden oft ignoriert)
 
 :::
@@ -500,10 +500,25 @@ ggplot() +
   aes(sample = RT) + 
   geom_point(stat='qq') + 
   stat_qq_line() + 
+  ggtitle('Reaktionszeit') + 
   ylab("Stichprobe") + 
   xlab("Theoretische Quantile") + 
   theme_bw() 
 
+
+
+
+word_frequency |> 
+ggplot() + 
+  aes(sample = log_RT) + 
+  geom_point(stat='qq') + 
+  stat_qq_line() + 
+  ggtitle('Log(Reaktionszeit)') + 
+  ylab("Stichprobe") + 
+  xlab("Theoretische Quantile") + 
+  theme_bw() 
+
+```
 ```
 
 :::
@@ -730,10 +745,10 @@ word_frequency |>
 ::: {style="font-size: 80%;"}
 Frage: Was ist die Wahrscheinlichkeit einen gewissen Wert oder kleiner zu erhalten? 
 
-Um dies zu beantworten, können wir die kumultierte Verteilungsfunktion verwenden ("Cumulative Distribution Function" (CDF))
+Um dies zu beantworten, können wir die kumulierte Verteilungsfunktion verwenden ("Cumulative Distribution Function" (CDF))
 
 ::: incremental
-- kumulierte Verteilungsfunktion zeigt die kumulative Wahrscheinlichkeit einen gewissen Wert oder kleiner zu erhalten
+- die kumulierte Verteilungsfunktion zeigt die kumulative Wahrscheinlichkeit einen gewissen Wert oder kleiner zu erhalten
 - enthält die ganze Wahrscheinlichkeitsverteilung einer Variable
 - $F(x) = P(X \leq x)$
 :::
@@ -845,7 +860,8 @@ qnorm(0.3, mean=0, sd=1)
 #### Wahrscheinlichkeiten berechnen in R
 
 `qnorm(p, mean, sd)`:
-    - Wert `q` der inversen Verteilungsfunktion (=Quantilfunktion) angesichts einer bestimmten Wahrscheinlichkeit `p`
+
+- Wert `q` der inversen Verteilungsfunktion (=Quantilfunktion) angesichts einer bestimmten Wahrscheinlichkeit `p`
 
 ```{r}
 #| echo: true 
@@ -864,7 +880,7 @@ qnorm(0.025) # linke Grenze
 qnorm(1-0.025) # rechte Grenz
 ```
 
-[Korrektur: 95\% der Daten landen also nicht zwischen $\mu\pm2(\sigma)$ sondern $\mu\pm1.96(\sigma)$]{.absolute bottom=100}
+[Korrektur: 95\% der Daten landen also nicht zwischen $\mu\pm2(\sigma)$ sondern **$\mu\pm1.96(\sigma)$**]{.absolute bottom=100}
 
 
 --------------
@@ -955,7 +971,7 @@ wrap_plots(
 :::
 
 
-[[ggplot2-Onlinehandbuch](https://ggplot2-book.org/)]{.absolute bottom=100}
+[[ggplot2-Onlinehandbuch](https://ggplot2-book.org/)]{.absolute bottom=50}
 
 
 --------------------------
@@ -969,7 +985,7 @@ wrap_plots(
     - [*Mapping*]{.important}: aesthetisches Mapping mit `aes()`, wie die Variablen visuell dargestellt werden
     - [*Layer*]{.important}: mit einer `geom`-Funktion
 
-[[ggplot2-Onlinehandbuch](https://ggplot2-book.org/)]{.absolute bottom=100}
+[[ggplot2-Onlinehandbuch](https://ggplot2-book.org/)]{.absolute bottom=50}
 
 --------------------------
 
@@ -1021,7 +1037,7 @@ ggplot(data = word_frequency, mapping = aes(x=Log10Freq)) +
 
 ```{r}
 #| echo: true 
-data |>
+word_frequency |>
     ggplot(aes(x=Log10Freq)) + 
     geom_density()
 
@@ -1106,10 +1122,10 @@ plot_nettle
 -------
 
 ### `ggplot2`
-
+::: {style="font-size: 80%;"}
 - Wir können die Daten auch aufgrund von gewissen Variablen einfärben
 - z.B. können wir Länder in zwei Gruppen aufteilen (hohe und niedrige Bevölkerung) und sie entsprechend einfärben
-
+:::
 
 ```{r}
 #| echo: true 
@@ -1129,7 +1145,14 @@ data_nettle |>
 
 - die Möglichkeiten von `ggplot` sind endlos
 - auch hier helfen Online-Tutorials, StackOverflow-Diskussionen und das [ggplot2-Onlinehandbuch](https://ggplot2-book.org/)
-- Im Arbeitsblatt werdet ihr noch anderen Möglichkeiten kennenlernen
+- Im Arbeitsblatt werdet ihr noch andere Möglichkeiten kennenlernen
+
+## Nächstes Mal
+
+- Wieder vor Ort
+- AB3
+- Thema: lineare Modelle
+    - lest Kapitel 4 in @winterbodo
 
 
 ## Referenzen
