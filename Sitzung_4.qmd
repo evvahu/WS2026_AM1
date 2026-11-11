@@ -100,8 +100,10 @@ library(tidyverse)
 library(patchwork)
 library(truncnorm)
 
-noten1 <- data.frame('note' = round(rtruncnorm(n=100, a=1, b=6, mean=3, sd=1),0))
-noten2 <- data.frame('note' = round(rtruncnorm(n=100, a=1, b=6, mean=3, sd=4),0))
+noten1 <- data.frame('note_raw' = rtruncnorm(n=100, a=1, b=6, mean=3, sd=1),0) |>
+    mutate('note' = round(note_raw,0))
+noten2 <- data.frame('note_raw' = rtruncnorm(n=100, a=1, b=6, mean=3, sd=4),0) |>
+    mutate('note' = round(note_raw,0))
 
 wrap_plots(
 noten1 |>
