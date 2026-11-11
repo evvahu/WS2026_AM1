@@ -521,7 +521,7 @@ ggplot() +
   xlab("Theoretische Quantile") + 
   theme_bw() 
 
-```
+
 ```
 
 :::
