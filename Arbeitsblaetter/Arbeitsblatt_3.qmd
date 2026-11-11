@@ -1,0 +1,39 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Arbeitsblatt 3: Deskriptive Statistik II"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+---
+
+
+# Informationen
+
+- **Abgabe**: bis spätestens am 17.11.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
+- **Abgabeformat**: R-Skript, Dateiname: [NACHNAME]_AB3.R
+- **benötigte Daten**: ELP_length_frequency.csv, auf [Sciebo](https://uni-koeln.sciebo.de/s/LR7AFH8zmRsFzaj) verfügbar
+
+
+# Datensatz
+
+In diesem Arbeitsblatt verwenden wir den Datensatz aus dem *English Lexicon Project*, den wir auch schon in der Sitzung gesehen haben. 
+
+
+
+# Vorbereitung
+
+Lade den Datensatz runter, erstelle ein neues RProjekt (oder verwende das von einem früheren AB) und erstelle ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
+
+
+## Teil 1
+
+`qnorm` etc. auf diesen Datensatz anwenden
+
+
+## Teil 2
+
+
+ggplot
