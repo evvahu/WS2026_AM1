@@ -16,7 +16,7 @@ bibliography: references.bib
 
 ## Übersicht
 
-1. Rückblick und Aufgabenblatt 1
+1. Rückblick und Aufgabenblatt 2
 2. Deskriptive Statistik II
 
 ## Rückblick: Deskriptive Statistik I
@@ -194,7 +194,7 @@ n1.p <- noten1 |>
                  alpha = 0.4) +
                     theme_bw() + 
         theme(plot.title = element_text(color = '#810a38da')) + 
-        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=1', y='Häufigkeit') + 
+        labs(x='Note', title='Noten von 100 Schüler:innen, M=3, SD=1', y='Wahrscheinlichkeitsdichte') + 
         xlim(min=0, max=6) 
 
 
@@ -1156,6 +1156,13 @@ data_nettle |>
 - AB3
 - Thema: lineare Modelle
     - lest Kapitel 4 in @winterbodo
+
+## Referenzen
+
+- z-Werte und Logarithmus als Normalisierungsmaße kennen und wissen, in welchen Fällen man sie anwenden kann
+- wissen, wie man eine Stichprobe optisch auf Normalverteilung überprüfen kann
+- Eigenschaften, insbesondere die 68-95-99.7-Regel, einer Wahrscheinlichkeitsverteilung kennen
+- wissen, wie man mit `pnorm` Wahrscheinlichkeiten von gewissen Bereichen in den Daten ausrechnen kann
 
 
 ## Referenzen
