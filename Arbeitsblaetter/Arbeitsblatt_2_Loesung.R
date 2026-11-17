@@ -10,6 +10,7 @@ nrow(data_students)
 
 summary(data_students)
 
+d <- table(data_students$geburtsmonat) |> sort() |> tail(1)
 
 ## Aufgabe 3.1
 
@@ -29,7 +30,7 @@ data_students |>
 
 ## Aufgabe 3.3
 
-table(data_students$haarlaenge, data_students$geburtsmonat)
+xtabs(~data_students$haarlaenge + data_students$geburtsmonat)
 
 ## Aufgabe 4.1
 
@@ -71,4 +72,5 @@ quantiles[2] - quantiles[1]
 
 IQR(data_students$groesse_cm)
 
-
+stichprobe <- data_students
+quantile(stichprobe$groesse_cm,probs=c(0.75))-quantile(stichprobe$groesse_cm,probs=c(0.25))

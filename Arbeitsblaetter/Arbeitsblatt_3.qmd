@@ -7,6 +7,7 @@ format:
     toc: false
     number-sections: true
     colorlinks: true
+bibliography: ../references.bib
 ---
 
 
@@ -14,26 +15,62 @@ format:
 
 - **Abgabe**: bis spätestens am 17.11.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
 - **Abgabeformat**: R-Skript, Dateiname: [NACHNAME]_AB3.R
-- **benötigte Daten**: ELP_length_frequency.csv, auf [Sciebo](https://uni-koeln.sciebo.de/s/LR7AFH8zmRsFzaj) verfügbar
+- **benötigte Daten**: ELP_frequency.csv, auf [Sciebo](https://uni-koeln.sciebo.de/s/LR7AFH8zmRsFzaj) verfügbar
 
 
 # Datensatz
 
 In diesem Arbeitsblatt verwenden wir den Datensatz aus dem *English Lexicon Project*, den wir auch schon in der Sitzung gesehen haben. 
+Dieser Datensatz umfässt die Ergebnisse eines *Lexical Decision Tasks*, wo Studienteilnehmenden existierende und nicht existierende Wörter präsentiert werden. Die Teilnehmenden müssen möglichst schnell entscheiden, ob das Wort existiert oder erfunden ist und ihre Reaktionszeit wird dabei gemessen. 
+In der Datei befinden sich außerdem die Wörter und deren Häufigkeiten (auf der Log-Skala) im SUBTLEX-Korpus [@subtlexUK].
 
-
+Für weitere Angaben, lies den Artikel von @balota2007english. 
 
 # Vorbereitung
 
-Lade den Datensatz runter, erstelle ein neues RProjekt (oder verwende das von einem früheren AB) und erstelle ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
+Lade den Datensatz runter, erstelle ein neues R-Projekt (oder verwende das von einem früheren AB) und erstelle ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
 
 
 ## Teil 1
 
-`qnorm` etc. auf diesen Datensatz anwenden
+**1.1 Z-Werte**   
+
+1.1.1 Berechne den Mittelwert und die Standardabweichung der Reaktionszeit.  
+
+1.1.2 Füge nun eine neue Spalte in den Data Frame ein, die die z-Werte beinhaltet. Benutze dafür den Mittelwert und Standardabweichung, die du in der vorherigen Aufgabe berechnet hast, statt einer eingebauten R-Funktion.   
+
+1.1.3 Erstelle nun einen neuen Data Frame ohne extreme Datenpunkten. Wähle dafür einen gewissen Schwellenwert (z.B. z-Werte $>\pm2.5$).  
+
+**1.2 Wahrscheinlichkeitsberechnungen**     
+
+1.2.1 Berechne mit Hilfe von `pnorm()` die Wahrscheinlichkeit, dass die Reaktionszeit gleich oder kleiner als 1000 ms Sekunden ist. Tipp: Für die `pnorm()`-Funktion brauchst du den Mittlwert und die Standardabweichung, die du in 1.1.1 berechnet hast. 
 
 
-## Teil 2
+1.2.2 Berechne mit Hilfe von `pnorm()` die Wahrscheinlichkeit, dass die Reaktionszeit zwischen 600 und 700 ms liegt.   
+
+1.2.3 Berechne mit Hilfe von `pnorm()` die Wahrscheinlichkeit, dass die Reaktionszeit gleich oder größer als 1100 ms ist.   
 
 
-ggplot
+
+1.2.4 Berechne mit Hilfe von `qnorm()` das Quantil bei einer Wahrscheinlichkeits dichte von 0.5. Wie nennt man diesen Wert auch noch?
+
+1.2.5 Berechne mit Hilfe von `qnorm()` den 95\%-Konfidenzintervall, also der untere und obere Wert (Quantil) des Bereiches, der 95\% der Datenpunkte umfässt. Hast du eine Idee, wie du dein Ergebnis überprüfen könntest (siehe Folie 34 (Sitzung_4.html))?
+
+
+## Teil 2 (FREIWILLIG)
+
+Wenn du deine ggplot-Skills verbessern möchtest, mache auch diesen optionalen Teil des Aufgabenblattes. 
+
+2.1 Erstelle mit Hilfe von `geom_histogram` ein Histogramm der Reaktionszeiten (siehe Folie 42 (Sitzung_4.html)).   
+
+2.2 Erstelle mit Hilfe von `geom_density` eine Dichtegrafik (Wahrscheinlichkeitsdichteverteilung) der Reaktionszeiten (siehe Folie 43 (Sitzung_4.html)).   
+
+2.3 Erstelle ein Säulendiagramm, in dem du die Häufigkeiten jedes Anfangsbuchstaben darstellt. (Tipp: erstelle dafür eine neue Spalte mit dem Anfangsbuchstaben des Wortes in deinem Data Frame) (siehe Folie 46 (Sitzung_4.html)). In `geom_bar()` muss man zusätzlich die Art, wie die Y-Achse berechnet wird, angeben. Wenn du die Häufigkeiten im Voraus berechnest, verwendest du `stat='identity'`, andernfalls `stat='count'` (oder nichts, da 'count' der Default ist.)
+
+
+Mit `theme()` und `labs()` (und anderen Funktionen) kannst du deine Grafiken weiter verändern und hübscher machen! [Hier](https://ggplot2-book.org/) findest du gute Anleitungen, wie du das tun kannst. Oder frag gerne mich (Eva).
+
+Happy Plotting!
+
+## Quellen
+

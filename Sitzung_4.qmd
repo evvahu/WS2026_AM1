@@ -1157,7 +1157,7 @@ data_nettle |>
 - Thema: lineare Modelle
     - lest Kapitel 4 in @winterbodo
 
-## Referenzen
+## Lernziele 
 
 - z-Werte und Logarithmus als Normalisierungsmaße kennen und wissen, in welchen Fällen man sie anwenden kann
 - wissen, wie man eine Stichprobe optisch auf Normalverteilung überprüfen kann

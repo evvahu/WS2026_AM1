@@ -1,0 +1,39 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Arbeitsblatt 4: Lineare Regression"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+bibliography: ../references.bib
+---
+
+
+# Informationen
+
+- **Abgabe**: bis spätestens am 24.11.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
+- **Abgabeformat**: R-Skript, Dateiname: [NACHNAME]_AB4.R
+- **benötigte Daten**: ELP_frequency.csv, auf [Sciebo](https://uni-koeln.sciebo.de/s/LR7AFH8zmRsFzaj) verfügbar
+
+
+# Datensatz
+
+In diesem Arbeitsblatt verwenden wir erneut den Datensatz aus dem *English Lexicon Project* [@balota2007english]. 
+
+# Vorbereitung
+
+Lade den Datensatz runter, erstelle ein neues R-Projekt (oder verwende das von einem früheren AB) und erstelle ein neues R-Skript. In diesem R-Skript wirst du die unten aufgelisteten Aufgaben und Fragen bearbeiten. In Kommentaren (`#`) kannst du im Skript angeben, welche Aufgabe oder Frage du mit dem Code erfüllst oder beantwortest.
+
+## Aufgaben
+
+1. Passe ein lineares Regressionsmodell mit `lm()` mit Reaktionszeit (*RT*) als Antwortvariable und Worthäufigkeit (*log10Freq*) als Prädiktorvariable, wie du es bereits in der Sitzung gesehen hast.
+2. In der Sitzung 4 ("Deskriptive Statistik II") haben wir gesehen, dass die Reaktionszeit nicht ganz normalverteilt ist und dass die Reaktionszeit auf der Log-Skala deutlich normalverteilter ist. Passe also ein zweites Lineares Regressionsmodell mit Reaktionszeit auf der Log-Skala als Antwortvariable und erneut Worthäufigkeit (*log10Freq*) als Prädiktorvariable.
+3. Schaue dir nun die Zusammenfassung der beiden Modelle an (z.B. mit Hilfe von `summary()`).  
+    3.1 Wie unterscheiden sich die Koeffizienten, *Intercept* ($b_{0}$) und *Log10Freq* ($b_{1}$), der beiden Modelle?   
+    3.2 Rechne die Koeffizienten im zweiten Modell zurück in Millisekunden um. Entsprechen sie den Koeffizienten des ersten Modells?   
+    3.3 Welche Modellanpassung (*model fit*) angesichts der $R^2$-Werten ist besser?
+
+
+## Quellen

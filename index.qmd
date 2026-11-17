@@ -32,13 +32,13 @@ Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertr
 | 4 | 04.11.2026 | [Deskriptive Statistik I](Sitzung_3.html)   | Kapitel 3 in @levshinaintro| AB 1|
 | 5 | 11.11.2026 | [Deskriptive Statistik II](Sitzung_4.html) ([ONLINE]{style="color: #cf1029ea;"}) | Kapitel 3 in @levshinaintro |AB 2 |
 | 6 | 18.11.2026 | Lineare Regression | Kapitel 4 in @winterbodo | AB 3 |
-| 7 | 25.11.2026 | Multiple Lineare Regression, Projektarbeit  | | AB 4 |
-| 8 | 02.12.2026 | Logistische Regression | | AB 5 |
-| 9 | 09.12.2026 | Logistische Regression | | AB 6 |
-| 10 | 16.12.2026 | Gemischtes Modell  | | AB 7 |
-| 11 | 13.01.2027 | Gemischtes Modell | | AB 8 |
-| 12 | 20.01.2027 | Inferentielle Statistik | | AB 9 |
-| 13 | 27.01.2027 | Inferentielle Statistik | | AB 10 |
+| 7 | 25.11.2026 | Multiple Lineare Regression und Interaktionen, Projektarbeit  | Kapitel 6 in @winterbodo| AB 4 |
+| 8 | 02.12.2026 | Kodierung Kategorischer Daten  | | AB 5 |
+| 9 | 09.12.2026 | Logistische Regression (und evt. Gemischtes Modell) | | AB 6 |
+| 10 | 16.12.2026 | Projektarbeit und Fragen | | AB 7 |
+| 11 | 13.01.2027 | Inferentielle Statistik | Kapitel 9 in @winterbodo | AB 8 |
+| 12 | 20.01.2027 | Inferentielle Statistik | Kapitel 10 in @winterbodo | AB 9 |
+| 13 | 27.01.2027 | Inferentielle Statistik |Kapitel 11 in @winterbodo  | AB 10 |
 | 14 | 03.02.2027 | Ausblick | | |
 
 Im Verlauf des Semesters werden sich die Inhalte der einzelnen Sitzungen möglicherweise noch ändern.
