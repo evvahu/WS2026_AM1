@@ -64,6 +64,11 @@ Ohne Extremwerte (z.B. behalte nur Werte mit $\text{z_score} < 2.5$ und $\text{z
 rt_filtered <- rts |> 
     filter((z_score < 2.5) & (z_score > -2.5))
 
+# oder:
+
+rt_filtered <- rts |>
+    filter(abs(z_score) < 2.5)
+
 ```
 
 ```{r}
@@ -249,14 +254,14 @@ In diesem Kurs:
 
 - parametrische Modelle
     - Annahme, dass die Daten von einer [Wahrscheinlichkeitsverteilung]{.important} mit bestimmten [Parametern]{.important} erzeugt wurden (z.B. Normalverteilung) 
-- lineare (und logistische) Regression
-- t-Tests (Inferentielle Statistik)
+    - lineare (und logistische) Regression
+    - t-Tests (Inferentielle Statistik)
 
 Nicht in diesem Kurs:
 
-- nicht-parametrische Modelle (z.B. **Random Forests**)
+- nicht-parametrische Modelle (z.B. *Random Forests*)
 - Chi-Quadrat-Test
-- Varianzanalyse (**ANOVA**)
+- Varianzanalyse (*ANOVA*)
 
 -------------------------------
 
@@ -265,7 +270,7 @@ Nicht in diesem Kurs:
 In diesem Kurs
 
 - "frequentistische" Ansätze für die Inferentielle Statistik 
-- *p*-Werte
+    - *p*-Werte
 
 Nicht in diesem Kurs:
 
@@ -275,11 +280,13 @@ Nicht in diesem Kurs:
 ## Regression
 
 
-- Ziel der Regressionsanalyse ist die Beziehung zwischen einer [Antwortvariable]{.important} (*reponse variable*) und einer [Prädiktorvariable]{.important} (*predictor variable*) zu modellieren
+- Ziel der Regressionsanalyse ist die Beziehung zwischen einer [Antwortvariable]{.important} (*response variable*) und einer [Prädiktorvariable]{.important} (*predictor variable*) zu modellieren
 - "regressing *y* on *x*" oder "modeling *y* as a function of *x*" [@winterbodo: 69]
 
 ![[S. 70 @winterbodo]](images/variable_names.png)
 
+
+Was für mögliche Antwort- und Prädiktorvariablen in gewissen linguistischen Fragestellungen kommen euch in den Sinn?
 
 ----------------
 
@@ -316,12 +323,14 @@ ggplot(aes(x=x, y=y)) +
     geom_point(alpha=0) + 
     geom_abline(intercept = 2, slope = 0.5, color = '#9e0841c9', size=1.8, alpha=0.8,stat='identity') + 
     geom_abline(intercept = 2, slope = 0.2, color = '#089e8fc9', size=1.8, alpha=0.8, stat='identity') + 
+    geom_vline(xintercept = 0, linetype = "longdash") +
     theme_bw() 
 p4 <- data.frame(x = 0:5, y=0:5) |>
 ggplot(aes(x=x, y=y)) +
     geom_point(alpha=0) + 
     geom_abline(intercept = 3, slope = 0.2, color = '#9e0841c9', size=1.5) + 
     geom_abline(intercept = 2, slope = 0.2, color = '#089e8fc9', size=1.5) + 
+    geom_vline(xintercept = 0, linetype = "longdash") +
     theme_bw()
 
 wrap_plots(p3, p4)
@@ -333,7 +342,7 @@ wrap_plots(p3, p4)
 Wie unterscheiden sich jeweils die roten und türkisen Linien?
 
 - links: gleicher $y$-Achsenabschnitt (*Intercept*), andere Steigung (*slope*)
-- rechts: anderer $y$-Achsenabschnitt *Intercept*, gleiche Steigung (*slope*)
+- rechts: anderer $y$-Achsenabschnitt (*Intercept*), gleiche Steigung (*slope*)
 ```{r}
 
 wrap_plots(p3, p4)
@@ -345,7 +354,7 @@ wrap_plots(p3, p4)
 
 ## Lineare Regression
 
-durch die beiden Parameter/Koeffizienten:
+Die beiden Parameter/Koeffizienten, die ein Lineares Regressionsmodell definieren:
 
 1. *y*-Achsenabschnitt (*intercept*): der Punkt, an dem die Linie die y-Achse schneidet
 2. Steigung (*slope*) $b_{1}  = \frac{\Delta y}{\Delta x}$
@@ -360,7 +369,7 @@ durch die beiden Parameter/Koeffizienten:
 $y = b_{0} + b_{1} * x$
 :::
 
-[Was bedeuten *y*-Achsenabschnitt und die Steigung?]{.absolute bottom=50}
+[Was bedeuten der *y*-Achsenabschnitt und die Steigung?]{.absolute bottom=50}
 
 ---------------------
 
@@ -518,7 +527,7 @@ Das kennt ihr bereits:
 
 - Die Wahrscheinlichkeitsdichteverteilung rechts ist nichts anderes als $y = b_{0} + e$
 - Unser Mittelwert ist `r round(mean(sample$RT), 2)`, aber daneben befinden sich ganz viele Datenpunkte die von diesem Mittelwert abweichen 
-- ohne $e$ wäre unsere Gleichung $y = b_{0} + e$ also falsch
+- ohne $e$ wäre unsere Gleichung also falsch
 
 :::
 
@@ -621,7 +630,7 @@ sse.null <- sum((fitted(m1.null) - sample$RT)^2)
 - Hier sind 29.4\% durch das Einfügen des Prädiktors Worthäufigkeit der Varianz erfasst, 70,6 \% bleiben unerfasst. 
 - Der  $R^2$ ist des Weiteren ein Maß für die [Effektgröße]{.important} (*effect size*)
 - Die Effektgröße misst wie stark zwei Variablen voneinander abhängen
-- Wir werden noch mehr Effektgrößen im Verlauf des Kurses kennenlernen
+- Wir werden noch weitere Effektgrößen im Verlauf des Kurses kennenlernen
 
 ---------------------
 

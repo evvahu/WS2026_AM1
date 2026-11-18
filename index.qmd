@@ -31,7 +31,7 @@ Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertr
 | 3 | 28.10.2026 | KEINE SITZUNG | | |
 | 4 | 04.11.2026 | [Deskriptive Statistik I](Sitzung_3.html)   | Kapitel 3 in @levshinaintro| AB 1|
 | 5 | 11.11.2026 | [Deskriptive Statistik II](Sitzung_4.html) ([ONLINE]{style="color: #cf1029ea;"}) | Kapitel 3 in @levshinaintro |AB 2 |
-| 6 | 18.11.2026 | Lineare Regression | Kapitel 4 in @winterbodo | AB 3 |
+| 6 | 18.11.2026 | [Lineare Regression](Sitzung_5.html) | Kapitel 4 in @winterbodo | AB 3 |
 | 7 | 25.11.2026 | Multiple Lineare Regression und Interaktionen, Projektarbeit  | Kapitel 6 in @winterbodo| AB 4 |
 | 8 | 02.12.2026 | Kodierung Kategorischer Daten  | | AB 5 |
 | 9 | 09.12.2026 | Logistische Regression (und evt. Gemischtes Modell) | | AB 6 |
