@@ -707,14 +707,15 @@ F-statistic: 10.43 on 1 and 48 DF,  p-value: 0.002235</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>sse <span class="ot">&lt;-</span> <span class="fu">sum</span>((<span class="fu">fitted</span>(m1) <span class="sc">-</span> sample<span class="sc">$</span>RT)<span class="sc">^</span><span class="dv">2</span>)</span>
 <span id="cb24-2"><a></a>sse.null <span class="ot">&lt;-</span> <span class="fu">sum</span>((<span class="fu">fitted</span>(m1.null) <span class="sc">-</span> sample<span class="sc">$</span>RT)<span class="sc">^</span><span class="dv">2</span>)</span>
 <span id="cb24-3"><a></a></span>
-<span id="cb24-4"><a></a><span class="dv">1</span> <span class="sc">-</span> (sse<span class="sc">/</span>sse.null)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb24-4"><a></a>r_squared <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> (sse<span class="sc">/</span>sse.null)</span>
+<span id="cb24-5"><a></a>r_squared</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.1785697</code></pre>
 </div>
 </div>
 <ul>
 <li>Der <span class="math inline">\(R^2\)</span> zeigt wie viel Varianz in den Daten durch das Modell erfasst wird.</li>
-<li>Hier sind 29.4% durch das Einfügen des Prädiktors Worthäufigkeit der Varianz erfasst, 70,6 % bleiben unerfasst.</li>
+<li>Hier sind 18% durch das Einfügen des Prädiktors Worthäufigkeit der Varianz erfasst, 82% bleiben unerfasst.</li>
 <li>Der <span class="math inline">\(R^2\)</span> ist des Weiteren ein Maß für die <span class="important">Effektgröße</span> (<em>effect size</em>)</li>
 <li>Die Effektgröße misst wie stark zwei Variablen voneinander abhängen</li>
 <li>Wir werden noch weitere Effektgrößen im Verlauf des Kurses kennenlernen</li>

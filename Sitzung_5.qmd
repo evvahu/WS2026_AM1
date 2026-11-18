@@ -622,12 +622,13 @@ Nun rechnen wir den $R^2$ aus:
 sse <- sum((fitted(m1) - sample$RT)^2)
 sse.null <- sum((fitted(m1.null) - sample$RT)^2)
 
-1 - (sse/sse.null)
+r_squared <- 1 - (sse/sse.null)
+r_squared
 
 ```
 
 - Der  $R^2$ zeigt wie viel Varianz in den Daten durch das Modell erfasst wird. 
-- Hier sind 29.4\% durch das Einfügen des Prädiktors Worthäufigkeit der Varianz erfasst, 70,6 \% bleiben unerfasst. 
+- Hier sind `r round(r_squared, 2)*100`\% durch das Einfügen des Prädiktors Worthäufigkeit der Varianz erfasst, `r 100 - round(r_squared, 2)*100`\% bleiben unerfasst. 
 - Der  $R^2$ ist des Weiteren ein Maß für die [Effektgröße]{.important} (*effect size*)
 - Die Effektgröße misst wie stark zwei Variablen voneinander abhängen
 - Wir werden noch weitere Effektgrößen im Verlauf des Kurses kennenlernen
