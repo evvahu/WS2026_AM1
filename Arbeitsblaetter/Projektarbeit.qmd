@@ -1,0 +1,85 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Projektarbeit"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+bibliography: ../references.bib
+---
+
+# Informationen
+
+## Ziel
+
+Das Teilen von Datensätzen im Rahmen der Publikation eines Artikels ist mittlerweile gängige Praxis in der Wissenschaft und einer der wichtigsten Aspekte von *Open Science*.
+In dieser Projektarbeit werdet ihr lernen mit solchen öffentlich geteilten Daten umzugehen und eigenständig ein Modell anzupassen. 
+Dabei geht es weniger darum, das perfekte Modell zu finden, sondern eher das Gelernte anzuwenden. Z.B. werdet ihr euch überlegen müssen, welche Prädiktorvariablen mit welcher Kodierung sinnvoll sind.
+Ihr dürft, müsst aber nicht, der Analyse des Papers folgen (also die Analyse der Autor\*innen reproduzieren), solange ihr das darin verwendete Modell versteht.
+
+## Abgabe
+
+- Format: R-Skript und zusätzlicher Bericht (Stichpunkte reichen) mit Begründung für das gewählte Modell und die Resultate (inkl. Interpretation)
+- Termin: 26.1.2026
+
+## Planung
+
+- In der letzten Sitzung vor Weihnachten (16.12.2026) könnt ihr an der Arbeit arbeiten und Fragen stellen. 
+- Einige Aufgabenblätter dienen der weiteren Vorbereitung der Projektarbeit
+
+
+# Datensätze 
+
+Ihr dürft entweder einen der drei vorgeschlagenen Datensätze verwenden oder einen eigenen Datensatz wählen. 
+
+## Word choice is coupled with grammar: The case of kinship 
+
+
+**Antwortvariable**: Verwendung von einem *Kinterm* oder nicht (binäre, kategoriale Variable)
+**Prädiktorvariablen**:
+
+-  *kintax*: We scored languages as having 0–5 categories of kintax based on whether these categories exist in the language or not: 1) obligatory possession of kinship terms, 2) special combinatorics for kinship terms, 3) in-group/out-group distinctions for kinship terms, 4) kin-based pronouns, and 5) kinship dyads. 
+-  
+- *discourse*
+- *topicality*
+
+**Zufallsvariablen**
+
+- 
+-
+- 
+
+Artikel:
+Datensatz:
+
+## Does young children's interest in categories influence their familiar word–object recognition?
+
+
+**Antwortvariable**:
+**Prädiktorvariablen**:
+
+- 
+-
+- 
+
+Artikel:
+Datensatz:
+
+
+## Processing Chinese relative clauses in context 
+
+**Antwortvariable**:
+**Prädiktorvariablen**:
+
+- 
+-
+- 
+
+Artikel:
+Datensatz:
+
+
+## Ein Datensatz eurer Wahl
+

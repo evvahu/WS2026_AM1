@@ -1,0 +1,147 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Sitzung 6: Multiple Lineare Regression und Interaktionen"
+date: "18. November 2026"
+author: "Eva Scheel"
+institute: eva.scheel-huber@uni-koeln.de
+date-format: "DD. MM. YYYY"
+format:
+  revealjs: 
+    slide-number: true
+    theme: slides_theme.scss
+    error: true
+editor: source
+bibliography: references.bib
+---
+
+
+## Übersicht
+
+1. Rückblick und Aufgabenblatt 4
+2. Multiple Lineare Regression und kategorische Prädiktorvariablen
+3. Projektarbeit
+
+## Rückblick
+```{r}
+library(tidyverse)
+library(broom)
+```
+
+## Multiple lineare Regression
+
+von einer zu mehreren Prädiktorvariablen
+
+$y = b_{0} + b_{1}x + b_{2}x + ...+ e$
+
+```{r}
+library(rgl)
+
+https://www.geeksforgeeks.org/r-language/how-to-plot-3d-scatter-diagram-using-ggplot-in-r/
+
+
+und zwei Linien (short vs. long)
+```
+
+------------
+
+### Multiple lineare Regression
+
+Reaktionszeit: Worthäufigkeit und Wortlänge?
+
+```{r}
+#| echo: false
+rts <- read.csv('datasets/ELP_length_frequency.csv', sep=',') |>
+    mutate(log_rt = log(RT, base=10))
+```
+
+
+::::{.columns}
+:::{.column}
+$y = b_{0} + b_{1}\text{Log10Freq} + e$
+```{r}
+#| echo: true
+m1 <- lm(log_rt ~ 1 + Log10Freq, data=rts)
+summary(m1)
+```
+:::
+:::{.column}
+$y = b_{0} + b_{1}\text{Log10Freq} + b_{2}\text{Wortlänge} + e$
+```{r}
+m2 <- lm(log_rt ~ 1 + Log10Freq + length, data=rts)
+summary(m2)
+glance(m1)$r.squared
+```
+
+:::
+::::
+
+Mit der Prädiktorvariable *Wortlänge* ist der $R^{2}$ von `r round(glance(m1)$r.squared,2)` auf `r round(glance(m2)$r.squared,2)` gestiegen. Wieso?
+
+------------
+
+### Multiple lineare Regression
+
+Was hat sich sonst noch verändert?
+
+::: {.incremental}
+- der *y*-Achsenabschnitt
+    - *y*-Achsenabschnitt zeigt nun den vorhergesagten Wert wenn die *log10Freq* = 0 und die *length* = 0
+- $b_{1}$, der Koeffizient der Worthäufigkeit 
+    - d.h. der Effekt von Worthäufigkeit wurde durch das Einfügen einer weiteren Prädiktorvariable verringert
+    - und war vermutlich durch den Einfluss von Wortlänge "konfundiert"
+:::
+
+------------
+
+
+
+### Multiple lineare Regression
+
+Was zeigen die Koeffizienten?
+
+- Jeder Koeffizient stellt eine "Teilregression" (*partial regression*) dar, der gemessen wird während die anderen Koeffizientden konstant sind 
+- $b_{1}$ zeigt also den Einfluss der Worthäufigkeit, wenn die Wortlänge konstant gehalten wird
+- Das erlaubt uns die Effekte von unterschiedlichen Prädiktoren zu schätzen und auseinanderzuhalten 
+
+
+$y = b_{0} + b_{1}\text{Log10Freq} + b_{2} * \text{Wortlänge} + e$
+
+------------
+
+
+###
+
+Unsere angepassten Koeffizienten auf zwei Dezimalstellen gerundet:
+```{r}
+round(m2$coefficients,2)
+```
+
+$ \text{log RT} = 2,87 + -0,04*\text{Log10Freq} + 0,01\text{Wortlänge} $ 
+
+Beispiel: fiktives Wort *sabi* mit Worthäufigkeit 14 ($log_{10}(14) = `r round(log(14, base=10),2)` und Wortlänge 14
+
+- $ 2.864 = 2,87 + -0,04*1,15 + 0,01 * 4 $ 
+- $ 2.864 = 2,87 + -0.046 + 0.04 $ 
+
+Beispiel: fiktives Wort *pagsasabihan* mit Worthäufigkeit 14 ($log_{10}(14) = `r round(log(14, base=10),2)`
+
+- $ 2.944 = 2,87 + -0,04*1,15 + 0,01 * 12 $ 
+- $ 2.944 = 2,87 + -0.046 + 0.12 $ 
+
+
+die vorhergesagte Reaktionszeit unterscheidet sich um 0.08 \text{log RT} zwischen den beiden fiktiven Wörtern, was `r 10^0.08`ms entspricht. 
+
+
+## Annahmen
+
+1. Residuen sind normalverteilt
+2. Kollinearität 
+
+
+## Adjusted $R^{2}$
+
+
+## Kategorische Prädiktorvariablen
+
+
+
