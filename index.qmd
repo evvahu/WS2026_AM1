@@ -32,8 +32,8 @@ Studierende sollen lediglich eine Bereitschaft, sich mit diesen Thematiken vertr
 | 4 | 04.11.2026 | [Deskriptive Statistik I](Sitzung_3.html)   | Kapitel 3 in @levshinaintro| AB 1|
 | 5 | 11.11.2026 | [Deskriptive Statistik II](Sitzung_4.html) ([ONLINE]{style="color: #cf1029ea;"}) | Kapitel 3 in @levshinaintro |AB 2 |
 | 6 | 18.11.2026 | [Lineare Regression](Sitzung_5.html) | Kapitel 4 in @winterbodo | AB 3 |
-| 7 | 25.11.2026 | [Multiple Lineare Regression und Kodierung kategorialer Daten](Sitzung_6.html), Projektarbeit  | Kapitel 6, (7) in @winterbodo| AB 4 |
-| 8 | 02.12.2026 |  Interaktionen und Logistische Regression, Modulprüfung (Hausarbeit) | Kapitel 8, (12) in @winterbodo| AB 5: Auswählen des Datensatzes für Projektarbeit |
+| 7 | 25.11.2026 | [Multiple Lineare Regression](Sitzung_6.html), Projektarbeit  | Kapitel 6, (7) in @winterbodo| AB 4 |
+| 8 | 02.12.2026 |  Kodierung kategorialer Daten, Interaktionen (und Logistische Regression), Modulprüfung (Hausarbeit) | Kapitel 8, (12) in @winterbodo| AB 5: Auswählen des Datensatzes für Projektarbeit |
 | 9 | 09.12.2026 | Gemischtes Modell | | AB 6 |
 | 10 | 16.12.2026 | Projektarbeit und Fragen | | AB 7 |
 | 11 | 13.01.2027 | Inferentielle Statistik | Kapitel 9 in @winterbodo | AB 8 |
