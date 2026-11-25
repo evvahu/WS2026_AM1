@@ -14,10 +14,10 @@ bibliography: ../references.bib
 
 ## Ziel
 
-Das Teilen von Datensätzen im Rahmen der Publikation eines Artikels ist mittlerweile gängige Praxis in der Wissenschaft und einer der wichtigsten Aspekte von *Open Science*.
+Das Teilen von Datensätzen zusammen mit der Publikation eines Artikels ist mittlerweile gängige Praxis in der Wissenschaft und einer der wichtigsten Aspekte von *Open Science*.
 In dieser Projektarbeit werdet ihr lernen mit solchen öffentlich geteilten Daten umzugehen und eigenständig ein Modell anzupassen. 
-Dabei geht es weniger darum, das perfekte Modell zu finden, sondern eher das Gelernte anzuwenden. Z.B. werdet ihr euch überlegen müssen, welche Prädiktorvariablen mit welcher Kodierung sinnvoll sind.
-Ihr dürft, müsst aber nicht, der Analyse des Papers folgen (also die Analyse der Autor\*innen reproduzieren), solange ihr das darin verwendete Modell versteht.
+Dabei geht es weniger darum, das perfekte Modell zu finden, sondern eher das in diesem Kurs Gelernte anzuwenden. Beispielsweise werdet ihr euch überlegen müssen, welche Prädiktorvariablen mit welcher Kodierung sinnvoll sind.
+Ihr dürft, müsst aber nicht, euch an der Analyse des Artikels orientieren, solange ihr das darin verwendete Modell versteht.
 
 ## Abgabe
 
@@ -26,60 +26,60 @@ Ihr dürft, müsst aber nicht, der Analyse des Papers folgen (also die Analyse d
 
 ## Planung
 
-- In der letzten Sitzung vor Weihnachten (16.12.2026) könnt ihr an der Arbeit arbeiten und Fragen stellen. 
+- In der letzten Sitzung vor Weihnachten (16.12.2026) könnt ihr an eurem Projekt arbeiten und Fragen stellen. 
 - Einige Aufgabenblätter dienen der weiteren Vorbereitung der Projektarbeit
-
+- Gruppen: bis zu drei Personen
 
 # Datensätze 
 
-Ihr dürft entweder einen der drei vorgeschlagenen Datensätze verwenden oder einen eigenen Datensatz wählen. 
+Ihr könnt entweder einen der zwei vorgeschlagenen Datensätze oder einen Datensatz eurer Wahl verwenden. Falls ihr euch für Letzteres entscheidet, ist es wichtig, dass es sich bei der Antwortvariable entweder um eine kontinuierliche, numerische Variable oder um eine binäre, kategoriale handelt. Weitere Datensätze findet ihr auch in @winterbodo und @levshinaintro. 
 
-## Word choice is coupled with grammar: The case of kinship 
+## Word choice is coupled with grammar: The case of kinship [@barth2026]
 
+### Variablen
 
-**Antwortvariable**: Verwendung von einem *Kinterm* oder nicht (binäre, kategoriale Variable)
+**Antwortvariable**: alle lexikalische Nominalphrase mit einem menschlichen Referenten wurden als *kin* or *non-kin* annotiert (binäre, kategoriale Variable)
+
 **Prädiktorvariablen**:
 
--  *kintax*: We scored languages as having 0–5 categories of kintax based on whether these categories exist in the language or not: 1) obligatory possession of kinship terms, 2) special combinatorics for kinship terms, 3) in-group/out-group distinctions for kinship terms, 4) kin-based pronouns, and 5) kinship dyads. 
--  
-- *discourse*
-- *topicality*
+-  Strukturell: *kintax*: "obligatory morphosyntactic encoding that is present when expressing kinship terms" [@barth2026SI]
+    - kodiert ob eine *Kintax*-Kategorie (insgesamt fünf Kategorien) in der Sprache exisiert oder nicht. 
+    - Skala von 0-5
+- Lexikalisch: *sibling term complexity*, Annäherung an die Komplexität des *Kinship*-Systems einer Sprache anhand von Begriffen für Geschwister
+    - Skala von 2-6
+- *topicality*: Szenenkontext, in der der Referent genannt wird. 
+- *discourse*: Diskurskontext, narrativ oder interaktiv (*conversational*)
 
-**Zufallsvariablen**
+Es gibt mehrere mögliche **Zufallsvariablen**
 
-- 
--
-- 
+### Artikel und Daten
 
-Artikel:
-Datensatz:
-
-## Does young children's interest in categories influence their familiar word–object recognition?
-
-
-**Antwortvariable**:
-**Prädiktorvariablen**:
-
-- 
--
-- 
-
-Artikel:
-Datensatz:
+- Link zum [Artikel](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0355784#sec002), mit Link zu den *Supporting Information*
+- Datensatz (HR_export_2025110_melted_coded_excluded.csv) ist verlinkt in den *Supporting Information* aber auch auf Sciebo verfügbar
 
 
-## Processing Chinese relative clauses in context 
-
-**Antwortvariable**:
-**Prädiktorvariablen**:
-
-- 
--
-- 
-
-Artikel:
-Datensatz:
+## Everyday language input and production in 1,001 children from six continents [@bergelson2023]
 
 
-## Ein Datensatz eurer Wahl
+### Variablen
+
+**Antwortvariable**: *child linguistic vocalization rate (CVCr) * oder *adult vocalization count rate (AVCr)* (numerisch, kontinuierliche Variablen)
+
+**Prädiktorvariablen**: 
+
+- Alter 
+- *Socio-Economic Status (SES)*, normalisiert auf fünf *SES*-Levels (*ses.5* im Datensatz)
+- *normative development* (binär)
+- mono- oder bilingual (binär)
+- *overlapping speech* (numerisch, kontinuierliche Variablen)
+- Geschlecht (binär)
+
+Es gibt mehrere mögliche **Zufallsvariablen**
+
+### Artikel und Daten
+
+- Link zum [Artikel](https://www.pnas.org/doi/epdf/10.1073/pnas.2300671120), mit Link zu den Daten und Analyse-Skripten
+- Datensatz (EL1000_for_reproduce_confwithNAs.csv) ist ebenfalls auf Sciebo verfügbar
+
+# References 
 

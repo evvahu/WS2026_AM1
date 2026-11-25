@@ -1,0 +1,31 @@
+---
+title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
+subtitle: "Arbeitsblatt 5: Auswahl des Datensatzes für die Projektarbeit"
+author: "Eva Scheel"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+bibliography: ../references.bib
+---
+
+
+# Informationen
+
+- **Abgabe**: bis spätestens am 1.12.2026, 24:00 per email an eva.scheel-huber\@uni-koeln.de
+- **Abgabeformat**: eine Email
+
+
+
+# Aufgabe
+
+- Schaut euch die verschiedenen Datensätze in "Projektarbeit.pdf" (unter [Arbeitsblätter auf Sciebo](https://uni-koeln.sciebo.de/s/3Hkpqf8WEnnsydd)) und in @winterbodo und @levshinaintro an und entscheidet euch für den, den ihr am interessantesten findet. Alternativ könnt ihr auch selber einen Datensatz auswählen. 
+- Falls ihr selber einen Datensatz auswählt, teilt mir zusätzlich die Antwortvariable mit.
+- Schickt eine Email mit dem Namen des Datensatzes. Wenn ihr mit anderen zusammenarbeitet, reicht eine Email. Fügt die Namen eurer Parter:innen bei. 
+
+
+# Quellen
+
+
+
