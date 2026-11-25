@@ -1,7 +1,7 @@
 ---
 title: "WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik"
-subtitle: "Sitzung 6: Multiple Lineare Regression und Interaktionen"
-date: "18. November 2026"
+subtitle: "Sitzung 6: Multiple Lineare Regression und Kategoriale Variablen"
+date: "25. November 2026"
 author: "Eva Scheel"
 institute: eva.scheel-huber@uni-koeln.de
 date-format: "DD. MM. YYYY"
@@ -19,7 +19,7 @@ bibliography: references.bib
 
 1. Rückblick und Aufgabenblatt 4
 2. Multiple Lineare Regression
-3. kategoriale Prädiktorvariablen
+3. kategoriale Prädiktorvariablen (*verschoben auf Sitzung 7)
 4. Projektarbeit
 
 ## Rückblick
@@ -29,6 +29,7 @@ bibliography: references.bib
 ```{r}
 library(tidyverse)
 library(broom)
+library(patchwork)
 ```
 
 Die beiden Parameter/Koeffizienten, die ein Lineares Regressionsmodell definieren:
@@ -233,7 +234,7 @@ summary(m4)
 
 ```
 
-Gleiche Steigung wie im ersten Modell!
+[Gleiche Steigung wie im ersten Modell!]{style="font-size: 80%; "}
 
 :::
 ::::
@@ -315,7 +316,6 @@ $y = b_{0} + b_{1}\text{Log10Freq} + b_{2}\text{Wortlänge} + e$
 #| echo: true
 m2.freq <- lm(log_rt ~ 1 + Log10Freq + length, data=rts)
 summary(m2.freq)
-glance(m2.freq)$r.squared
 ```
 
 :::
@@ -384,7 +384,7 @@ fiktives Wort *sabi* mit Worthäufigkeit 14 ($log_{10}(14) = `r round(log(14, ba
 - $2.864 = 2,87 + -0,04*1,15 + 0,01 * 4$ 
 - $2.864 = 2,87 + -0.046 + 0.04$ 
 
-fiktives Wort *pagsasabihan* mit Worthäufigkeit 14 ($log_{10}(14) = `r round(log(14, base=10),2)`
+fiktives Wort *pagsasabihan* mit Worthäufigkeit 14 ($log_{10}(14) = `r round(log(14, base=10),2)`$
 
 - $rt = 2,87 + -0,04*1,15 + 0,01 * 12$ 
 - $2.944 = 2,87 + -0.046 + 0.12$ 
@@ -402,7 +402,7 @@ In der Modellzusammenfassung in `R` wird sowohl der $R^{2}$ wie auch der $Adjust
 summary(m2.freq)
 ```
 
-::: {style="font-size: 85%;"}
+::: {style="font-size: 80%;"}
 
 - der *Adjusted $R^{2}$* misst genauso, wie gut die Prädiktorvariablen die Antwortvariable vorhersagt
 - der *Adjusted $R^{2}$* ist aber ein konservativeres Maß als der $R^{2}$ weil er ein *penalizing term* enthält, der die Anzahl an Prädiktorvariablen miteinbezieht
@@ -540,352 +540,6 @@ Unterschiedliche Empfehlungen, ab wann ein *vif* problematisch ist.
 Einige sagen ab 10, andere 3-4 [@winterbodo].
 
 
-## Kategoriale Prädiktorvariablen
-
-Wie können wir kategoriale Prädiktorvariablen im Modell hinzufügen?
-
-&rarr; Mit Zahlen, aber wie?
-
-## Kategoriale Prädiktorvariablen
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-*Self-paced-reading-*Studie von @gibson2005reading über das Verarbeiten von Relativsätzen
-
-zwei Bedingungen:
-
-1. Bezug auf das [Subjekt]{style="color: #e00850; "}: 
-    z.B. "[The reporter]{style="color: #e00850; "} who attacked the senator [admitted the error]{style="color: #656e72d5; "}" 
-2. Bezug auf das [Objekt]{style="color: #106792; "}: 
-    z.B. "[The reporter]{style="color: #106792; "} who the senator attacked [admitted the error]{style="color: #656e72d5; "}"
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-```{r}
-#| echo: false
-data_gibson <- read.csv('datasets/grodnergibson05data.txt', sep=' ')
-
-data_gibson |>
-    mutate(condition = ifelse(condition == 'subjgap', 'Subjekt', 'Objekt')) |>
-    ggplot(aes(x=condition, y=rawRT)) + 
-    geom_violin(draw_quantiles = c(0.025,0.975), colour='#28049fc9', fill =  '#088a9e40') + 
-      stat_summary(fun = "mean",
-               geom = "point",
-               color = "#8c1092") + 
-               theme_bw() +
-    theme(axis.text.x = element_text(size=13), axis.title.x = element_text(size=15),
-    axis.text.y = element_text(size=13), axis.title.y = element_text(size=15)) +
-    labs(x='Bedingung', y= 'Lesezeit')
-```
-
-```{r}
-#| echo: true
-data_gibson |>
-    summarise(mean = mean(rawRT), sd = sd(rawRT), .by='condition')
-```
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-::::{.columns}
-:::{.column width="40%"}
-Als Verteilung:
-
-::: {style="font-size: 80%;"}
-
-Objektrelativsätze: $lz = Normal(471, \sigma)$
-
-Subjektrelativsätze: $lz = Normal(471-102, \sigma)$
-:::
-::: 
-:::{.column width="60%"}
-
-Als lineare Funktion:
-
-::: {style="font-size: 80%;"}
-
-$lz = 471 + \epsilon$
-
-$lz = 471 - 102 + \epsilon$
-
-(Durchschnittslesezeit: ohne $\epsilon$))
-
-:::
-
-Oder anders geschrieben:
-
-::: {style="font-size: 80%;"}
-
-Objektrelativsätze: $lz = 471 \times 1 + (-102 \times 0) + \epsilon$
-
-Subjektrelativsätze: $lz = 471 \times 1 + (-102 \times 1) + \epsilon$
-
-Objektrelativsätze sind als 0 kodiert, Subjektrelativsätze als 1
-
-:::
-
-:::
-::::
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-::::{.columns}
-:::{.column width="40%"}
-Als Verteilung:
-
-::: {style="font-size: 80%;"}
-
-Objektrelativsätze: $lz = Normal(471, \sigma)$
-
-Subjektrelativsätze: $lz = Normal(471-102, \sigma)$
-:::
-::: 
-:::{.column width="60%"}
-
-Als lineare Funktion:
-
-::: {style="font-size: 80%;"}
-
-$lz = 471 + \epsilon$
-
-$lz = 471 - 102 + \epsilon$
-
-(Durchschnittslesezeit: ohne $\epsilon$))
-
-:::
-
-Oder anders geschrieben:
-
-::: {style="font-size: 80%;"}
-
-Objektrelativsätze: $lz = 471 \times 1 + (-102 \times 0) + \epsilon$
-
-Subjektrelativsätze: $lz = 471 \times 1 + (-102 \times 1) + \epsilon$
-
-Objektrelativsätze sind als 0 kodiert, Subjektrelativsätze als 1
-
-:::
-
-:::
-::::
-
-Die allgemeine Formel lautet: $rawRT=\beta_{0}+\beta_{1}condition+\epsilon$
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-
-##### Kodierung in R
-```{r}
-#| echo: true
-contrasts(as.factor(data_gibson$condition))
-```
-
-[**Faktoren** in R: kategorische Datenpunkte mit einem limitierten Set an möglichen Werten (*Levels*).]{style="color: #564376; font-size: 70%; "}
-
-##### Modell in R
-```{r}
-#| echo: true
-
-m1.lz <- lm(rawRT ~ 1 + condition, data = data_gibson)
-m1.lz 
-```
-
-[Was bedeutet der $y$-Achsenabschnitt (*Intercept*), was die Steigung (*conditionsubjgap*)?]{style="font-size: 85%; "}
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-##### Kodierung in R
-```{r}
-#| echo: true
-contrasts(as.factor(data_gibson$condition))
-```
-
-[**Faktoren** in R: kategorische Datenpunkte mit einem limitierten Set an möglichen Werten (*Levels*).]{style="color: #564376; font-size: 70%; "}
-
-##### Modell in R
-```{r}
-#| echo: true
-
-m1.lz <- lm(rawRT ~ 1 + condition, data = data_gibson)
-m1.lz 
-```
-
-[Was bedeutet der $y$-Achsenabschnitt (*Intercept*), was die Steigung (*conditionsubjgap*)?]{style="font-size: 85%; "}
-
-[[Achtung]{.highlight}, in dieser Form ist das Modell noch nicht adäquat. Wieso lernen wir in zwei Wochen (09.12.2026)]{style="font-size: 80%; "}
-
---------------------------
-
-### Beispiel: Verarbeiten von Relativsätzen
-
-Wir können die Kodierung selber festlegen
-
-```{r}
-#| echo: true
-data_gibson$condition <- factor(data_gibson$condition, levels = c('subjgap', 'objgap'))
-contrasts(data_gibson$condition)
-```
-
-
-```{r}
-#| echo: true
-
-m2.lz <- lm(rawRT ~ 1 + condition, data = data_gibson)
-m2.lz
-```
-
-[Was bedeutet der $y$-Achsenabschnitt (*Intercept*), was die Steigung (*conditionobjgap*)?]{style="font-size: 85%; "}
-
-
-
-
-
-## Kategoriale Prädiktorvariablen
-
-- Kodierung von kategorialen Prädiktorvariablen wird *contrast coding* genannt. 
-- theoretisch könnte man irgendwelche Zahlen den unterschiedlichen Werten zuordnen. Um das Modell aber besser interpretieren zu können, gibt es gewisse Standardkodierungen
-
-1. *Treatment coding*
-2. *Sum coding*
-
-
-## Kategoriale Prädiktorvariablen
-
-
-### *Treament coding*
-
-- Referenzlevel = 0 (*Intercept*)
-- die anderen Werte werden damit verglichen
-
-(Was wir oben bereits getan haben)
-
-## Kategoriale Prädiktorvariablen
-
-
-### *Sum coding*
-
-- der Mittelwert (*mean*) ist die Referenz
-- die Werte werden mit dem Mittelwert verglichen
-
-
-
-```{r}
-#| echo: true
-
-contrasts(data_gibson$condition) <- contr.sum(2) # Funktion für sum coding
-contrasts(data_gibson$condition)
-```
-
-```{r}
-#| echo: true
-
-m3.lz <- lm(rawRT ~ 1 + condition, data = data_gibson)
-m3.lz
-```
-
-
----------------------------
-
-### *Sum coding*
-
-[Der *Intercept* ist jetzt der Mitellwert der Mittelwerte ]{style="font-size: 80%;"}
-
-```{r}
-#| echo: true
-
-data_gibson |>
-    summarise(mean = mean(rawRT), .by='condition')
-
-data_gibson |>
-    summarise(mean = mean(rawRT))
-```
-
-
-::: {.absolute bottom=100 style="font-size: 85%;"}
-
-Und das sind unsere linearen Funktionen: 
-
-$lz_{\text{Subjekt}} = 420.22 + (-51.14 \times +1) = 368.08$
-
-$lz_{Objekt} = 420.22 + (-51.14 \times -1) = 471.36$
-
-:::
-
-## Kategoriale Prädiktorvariablen
-
-### Kategoriale Prädiktorvariablen mit mehr als zwei Levels
-
-Datensatz von @winterbodo: Wie werden Adjektive unterschiedlicher Sinne (z.B. Geruch) bewertet (*emotional valence rating*)?
-
-```{r}
-#| echo: false
-
-data_winter <- read.csv('datasets/winter_2016_senses_valence.csv')
-head(data_winter)
-unique(data_winter$DominantModality)
-```
-
-------------------------
-
-### Kategoriale Prädiktorvariablen mit mehr als zwei Levels
-
-```{r}
-#| echo: true
-data_winter$DominantModality <- factor(data_winter$DominantModality)
-contrasts(data_winter$DominantModality)
-```
-
-```{r}
-#| echo: true
-
-m4.val <- lm(Val ~ 1 + DominantModality, data = data_winter)
-tidy(m4.val) |> select(term, estimate)
-```
-
-- Eine Referenz (*Intercept*): *Sight*
-- vier unterschiedliche Steigungen (*Smell*, *Sound*, *Taste*, *Touch*), die jeweils den Unterschied zum *Intercept* zeigen
-
-------------------------
-
-### Kategoriale Prädiktorvariablen mit mehr als zwei Levels
-
-```{r}
-#| echo: false
-tidy(m4.val) |> select(term, estimate)
-```
-
-::: {style="font-size: 85%;"}
-
-Die angepassten Koeffizienten können nun wieder in die Funktion eingefügt werden: 
-
-[$val = 5.58 + (-0.109 \times \text{Smell}) + (-0.174 \times \text{Sound}) + (0.228 \times \text{Taste}) + (-0.0452 \times \text{Touch})$]{style="color: #60486e; "}
-
-:::
-
-
-
-::: {.absolute bottom=300 style="font-size: 85%;"}
-Wie kann man den Prognosewert von *Sound* berechnen?
-:::
-
-
-
-::: {.absolute bottom=100 style="font-size: 85%;"}
-
-Die allgemeine Formel:
-
-$val = \beta_{0} + (\beta_{1}\times \text{condition}_{1}) + ... (\beta_{n}\times \text{condition}_{n}) + \epsilon$ 
-
-:::
 
 ## Projektarbeit
 
