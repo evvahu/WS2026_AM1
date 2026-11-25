@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <meta name="author" content="Eva Scheel">
+  <title>WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-182677af69b3ef0402132e980ba0d545.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+  <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.12.1/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+  <script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="site_libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">WS26/27 AM1: Quantitative Linguistik: Eine Einführung in die Statistik</h1>
+  <p class="subtitle">Sitzung 6: Multiple Lineare Regression und Kategoriale Variablen</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Eva Scheel 
+</div>
+        <p class="quarto-title-affiliation">
+            eva.scheel-huber@uni-koeln.de
+          </p>
+    </div>
+</div>
+
+  <p class="date">25. 11. 2026</p>
+</section>
+<section id="übersicht" class="slide level2">
+<h2>Übersicht</h2>
+<ol type="1">
+<li>Rückblick und Aufgabenblatt 4</li>
+<li>Multiple Lineare Regression</li>
+<li>kategoriale Prädiktorvariablen (*verschoben auf Sitzung 7)</li>
+<li>Projektarbeit</li>
+</ol>
+</section>
+<section id="rückblick" class="slide level2">
+<h2>Rückblick</h2>
+<h3 id="lineare-regression">Lineare Regression</h3>
+<p>Die beiden Parameter/Koeffizienten, die ein Lineares Regressionsmodell definieren:</p>
+<ol type="1">
+<li><em>y</em>-Achsenabschnitt (<em>intercept</em>): der Punkt, an dem die Linie die y-Achse schneidet</li>
+<li>Steigung (<em>slope</em>) <span class="math inline">\(b_{1}  = \frac{\Delta y}{\Delta x}\)</span></li>
+</ol>
+
+<img data-src="Sitzung_6_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>Ausschreiben der allgemeinen Formel:</p>
+<div class="r-stack">
+<p><span class="math inline">\(y = b_{0} + b_{1} * x\)</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="koeffizienten">Koeffizienten</h3>
+<ul>
+<li class="fragment">Was bedeutet <span class="math inline">\(b_{0}\)</span> in dem folgenden Modell: <span class="math inline">\(y = b_{0}\)</span> (dem “leeren Modell”)?</li>
+<li class="fragment">Was bedeutet <span class="math inline">\(b_{0}\)</span> in diesem Modell: <span class="math inline">\(y = b_{0} + b_{1} * x\)</span>?</li>
+<li class="fragment">und was bedeutet <span class="math inline">\(b_{1}\)</span>?</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>b_{0} in 1 = Mittelwert</li>
+<li>ist <span class="math inline">\(b_{0}\)</span> der Mittelwert (der <em>Mean</em>) der Wenn die Worthäufigkeit (Log10Freq) 0 beträgt.
+<ul>
+<li><span class="highlight">!</span> <span class="math inline">\(b_{0}\)</span> ändert sich also wenn eine Prädiktorvariable hinzugefügt wird.</li>
+</ul></li>
+<li>und <span class="math inline">\(b_{1}\)</span> (Steigung) zeigt den zusätzlichen Anstieg pro einer Einheit <em>Log10Freq</em>
+<ul>
+<li>d.h.: pro einer Log10Freq sinkt die Reaktionszeit um .</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<h3 id="residuen">Residuen</h3>
+<ul>
+<li class="fragment">Was sind Residuen?</li>
+<li class="fragment">Funktion wird deshalb durch den Fehlerterm <em>e</em> ergänzt: <span class="math inline">\(y = b_{0} + b_{1} * x + e\)</span></li>
+</ul>
+
+<img data-src="images/residuals.png" class="r-stretch quarto-figure-center"><p class="caption">Residuendarstellung von <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span> (S. 73)</p><aside class="notes">
+<p>Residuen (residuals) quantifizieren wie weit ein Datenpunkt von der Linie, d.h. den angepassten Werten, entfernt ist</p>
+<p>Residuen = beobachtete Daten - angepasste Werte</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<h3 id="r2"><span class="math inline">\(R^{2}\)</span></h3>
+<p>Was zeigt uns der <span class="math inline">\(R^{2}\)</span>?</p>
+<ul>
+<li class="fragment">Summe der Abweichungsquadrate (<em>sum of squared errors (SSE)</em>): <span class="math inline">\(SSE = \sum_{i=1}^{n}(y_{i}-f(x_{i}))^2\)</span></li>
+<li class="fragment">Vergleich mit einem <em>leeren Modell</em> gibt uns das <span class="important">Bestimmtheitsmaß</span> (<span class="math inline">\(R^2\)</span>)
+<ul>
+<li class="fragment"><span class="math inline">\(R^2 = 1 - \frac{SSE_{model}}{SSE_{null}}\)</span></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Der <span class="math inline">\(R^2\)</span> zeigt wie viel Varianz in den Daten durch das Modell erfasst wird.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aufgabenblatt-4" class="slide level2">
+<h2>Aufgabenblatt 4</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>m1<span class="sc">$</span>coefficients <span class="co"># ms-Scale</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)   Log10Freq 
+  906.70366   -86.43489 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>m2<span class="sc">$</span>coefficients <span class="co"># log-Scale</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)   Log10Freq 
+ 2.95862958 -0.04902523 </code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="backtransform-3.2">Backtransform (3.2)</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">tidy</span>(m2<span class="sc">$</span>coefficients) <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>    <span class="fu">mutate</span>(<span class="at">ms =</span> <span class="dv">10</span> <span class="sc">^</span> x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  names             x      ms
+  &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)  2.96   909.   
+2 Log10Freq   -0.0490   0.893</code></pre>
+</div>
+</div>
+<div style="font-size:80%; ">
+<p><em>Intercept</em> des zweiten Modells unterscheidet sich leicht von dem <em>Intercept</em> des ersten Modells.</p>
+<p>Interpretation:</p>
+<ul>
+<li>Intercept: vorhergesagte Reaktionszeit bei einer Worthäufigkeit von 1 (<span class="math inline">\(log_{10}(0) = 1)\)</span>)</li>
+<li>Steigung:
+<ul>
+<li>Modell 1: zeigt den zusätzlichen Anstieg in Reaktionszeit pro einer Einheit <em>Log10Freq</em> (<span class="math inline">\(log_{10}(1) = 10)\)</span>)</li>
+<li>Modell 2: zeigt auch den zusätzlichen Anstieg in log-Reaktionszeit einer Einheit <em>Log10Freq</em> (<span class="math inline">\(log_{10}(1) = 10)\)</span>)
+<ul>
+<li>wenn wir die Steigung potenzieren (<span class="math inline">\(10^(\beta_{1}\)</span>)), ändert sich die ursprüngliche Bedeutung</li>
+<li>Stattdessen: Wie viele Prozente sich die Reaktionszeit verringert wenn eine Worthäufigkeit sich um 10 ändert</li>
+<li>es wird normalerweise empfohlen nur den <em>Intercept</em> umzurechnen</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="vorhersagen-treffen">Vorhersagen treffen</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>b0_m1 <span class="ot">&lt;-</span> m1<span class="sc">$</span>coefficients[[<span class="dv">1</span>]]</span>
+<span id="cb7-2"><a></a>b1_m1 <span class="ot">&lt;-</span> m1<span class="sc">$</span>coefficients[[<span class="dv">2</span>]]</span>
+<span id="cb7-3"><a></a></span>
+<span id="cb7-4"><a></a>b0_m2 <span class="ot">&lt;-</span> m2<span class="sc">$</span>coefficients[[<span class="dv">1</span>]]</span>
+<span id="cb7-5"><a></a>b1_m2 <span class="ot">&lt;-</span> m2<span class="sc">$</span>coefficients[[<span class="dv">2</span>]]</span>
+<span id="cb7-6"><a></a></span>
+<span id="cb7-7"><a></a></span>
+<span id="cb7-8"><a></a>rt <span class="ot">&lt;-</span> b0_m1 <span class="sc">+</span> b1_m1 <span class="sc">*</span> <span class="dv">3</span></span>
+<span id="cb7-9"><a></a>rt_log <span class="ot">&lt;-</span> b0_m2 <span class="sc">+</span> b1_m2 <span class="sc">*</span> <span class="dv">3</span></span>
+<span id="cb7-10"><a></a></span>
+<span id="cb7-11"><a></a>rt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 647.399</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="dv">10</span><span class="sc">^</span>rt_log</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 647.9685</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="andere-transformationen">Andere Transformationen</h3>
+<div class="columns">
+<div class="column">
+<p><strong>Z-Werte</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>word_rts <span class="ot">&lt;-</span> word_rts <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>    <span class="fu">mutate</span>(<span class="at">z_score =</span> (RT <span class="sc">-</span> <span class="fu">mean</span>(word_rts<span class="sc">$</span>RT))<span class="sc">/</span> <span class="fu">sd</span>(word_rts<span class="sc">$</span>RT))</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>m3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(z_score <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> Log10Freq, <span class="at">data =</span> word_rts)</span>
+<span id="cb11-5"><a></a><span class="fu">summary</span>(m3)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = z_score ~ 1 + Log10Freq, data = word_rts)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7430 -0.5278 -0.0984  0.4152  6.1191 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  1.099811   0.008801   125.0   &lt;2e-16 ***
+Log10Freq   -0.694738   0.004844  -143.4   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7852 on 33073 degrees of freedom
+Multiple R-squared:  0.3834,    Adjusted R-squared:  0.3834 
+F-statistic: 2.057e+04 on 1 and 33073 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</div><div class="column">
+<p><strong>Zentrierte Werte</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>word_rts <span class="ot">&lt;-</span> word_rts <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a></a>    <span class="fu">mutate</span>(<span class="at">rt_c =</span> RT <span class="sc">-</span> <span class="fu">mean</span>(word_rts<span class="sc">$</span>RT))</span>
+<span id="cb13-3"><a></a></span>
+<span id="cb13-4"><a></a>m4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(rt_c <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> Log10Freq, <span class="at">data =</span> word_rts)</span>
+<span id="cb13-5"><a></a><span class="fu">summary</span>(m4)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = rt_c ~ 1 + Log10Freq, data = word_rts)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-465.68  -65.67  -12.25   51.66  761.30 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 136.8316     1.0950   125.0   &lt;2e-16 ***
+Log10Freq   -86.4349     0.6027  -143.4   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 97.69 on 33073 degrees of freedom
+Multiple R-squared:  0.3834,    Adjusted R-squared:  0.3834 
+F-statistic: 2.057e+04 on 1 and 33073 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p><span style="font-size: 80%; ">Gleiche Steigung wie im ersten Modell!</span></p>
+</div></div>
+</section>
+<section id="multiple-lineare-regression" class="slide level2">
+<h2>Multiple lineare Regression</h2>
+<p>von einer zu mehreren Prädiktorvariablen</p>
+<p><span class="math inline">\(y = b_{0} + b_{1}x + b_{2}x + ...+ e\)</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-32811d416670937f38ce" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-32811d416670937f38ce">{"x":{"visdat":{"b0a5f0e490c":["function () ","plotlyVisDat"]},"cur_data":"b0a5f0e490c","attrs":{"b0a5f0e490c":{"x":{},"y":{},"z":{},"mode":"markers","marker":{"size":3},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Drei Variablen","scene":{"xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"},"zaxis":{"title":"Z Axis"}},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[-0.53855093485878636,-0.62744379137568185,1.5935617034033225,3.1424547426278222,-0.95518985818593649,0.70578424121638661,0.67633427985845052,-0.619502459026538,0.20620913106628955,0.026029016038293367,-3.0899747135667583,0.034995200472294014,-0.14964802417096368,0.12360758885294787,0.07877030748868924,-1.1442854759726431,-0.45012471909774054,0.46284672723887726,0.68351845419510049,0.49812195100247014,-0.20897000719035627,-0.67660653831286599,0.10459815860085257,0.27969364937640906,-0.18489372933303613,-0.40418793848164952,0.935274372370822,-0.88899710816818156,-0.48698141769988945,0.13990376760353021,-0.96745285421305616,0.83329732655583866,-0.27196588287278739,-1.5492029974253358,-0.15265474742901133,0.41236562816386407,-0.61632008226415547,0.49039477075090637,-1.3678098133373018,-1.5270904177675457,-1.5426265568381832,1.630484551543123,0.22751287926385835,-1.913417616836981,-1.8799449057071853,1.1372284714041956,1.5691765673069524,-1.0876894829310941,0.23158505132345114,0.31584201020717773,-0.16172429142466796,0.055356119953140118,0.19229856945776821,-1.0039663373188485,0.79991245953366419,2.6338238230852653,-0.96023579592500985,0.16762389253761645,0.68547269328992111,0.6650431650077252,0.52635415732871971,0.25604806473398767,-0.44085042827823784,0.45030650140751222,-0.36444820997112948,1.0675678370740083,-0.099605908618134537,1.246358326909901,0.030785107869495936,0.15839816449861152,-1.0673854636447577,-0.70032775635931432,1.9484029072887632,0.89060399763896336,1.043763939509023,0.27843652550467246,0.85295824787811791,-0.47237704642695555,-0.1369178916376019,-0.44218735470871828,-0.40981274218305452,1.4676993366367261,1.5064023324000457,0.0048221762158556234,-0.88098525638498759,-1.0410312829266612,-0.45521870946834397,-0.57133010479757396,-0.26821130814717148,-0.28429953065219388,-0.13899621492473846,-0.532942254201342,0.8249199014890336,-2.1710116187563386,0.64671346160266441,0.01859301381077685,-0.16054198025045596,-0.89699002600999878,1.0231109548587671,-1.503366138028025],"y":[-0.54485918948301448,-0.14065980805113448,0.09608195146465727,0.64615498548263961,-2.1598431000855229,-0.77280326060288229,-0.033345757465087972,-2.2502990746371063,0.62693302159607944,0.11719935676031573,-1.778499087296245,-0.94746482910425356,0.12833957285914194,-1.4963643800816353,-0.28422447110708743,-0.19092858972687476,-0.29487174505408387,-0.03833620556876207,0.21833048121690654,1.595794332683887,2.0212403264125283,0.22643110642349062,-0.94062091335532527,0.013675599148822258,-0.71581553861401892,-0.66113755692399245,0.230062070403731,1.514554225939897,0.73439215258226431,-0.36731101496219881,0.51225482693259872,0.2129350072754301,-0.68831014157840953,-0.15996873561363364,0.3503877384085694,-0.20265497605667859,1.5045442540855727,1.4248765528486496,-1.137379739296996,1.6773164055072725,-0.63887412158044932,-0.17254222728993432,0.1878277675965522,-1.1549007921714969,0.1670206177864719,0.10937490056853875,0.56104522679961666,0.99369993137179013,-1.1264862113919407,-1.451020687858861,-0.53005397981486257,0.13715601967958316,-0.71624689202470893,2.0138320774242722,-1.6383461742111527,-0.4539785782340468,1.3499241514885503,0.76472346262873625,-0.06178364701673239,-1.1140556405681394,-0.071801019921620413,0.15646130177388431,1.6572345765782568,-0.70153489639601163,-0.18781932569175017,-0.43875784174539983,-0.48375566332160425,0.69303716637931123,0.25003216293782221,-0.32897721963489146,0.70805527289509118,-0.046832197515031343,0.13496325441556659,-0.76866201233797993,-0.84897996279273924,-0.13782418004747818,-0.021559735537790371,-0.79351588697462427,0.56537499224321786,-0.10898534517978495,0.37788265513524916,0.3226162593922936,1.2611231260218605,0.426901460975461,1.7652463579784465,-0.1612577720933844,-0.96510689778135084,0.44782215272164633,1.4791248632707314,-0.1170281344888041,1.0741378261706471,0.12239662359454448,-2.4645536330148832,-0.58605950245486438,-0.97200620128239468,-1.3331721395906508,-0.20971732882826841,-0.019820987828570859,0.60382748562822619,-1.3697721173164505],"z":[1.1153605353917972,2.498580311000639,-0.28118169054079761,-0.067537213103673194,-0.87242724653259229,0.94552441151900612,-0.028563557164601079,-0.74858078597899513,0.6242072892525613,-1.0062085313804222e-05,0.020406995163082971,-0.90772849115809784,-1.405424922085929,0.03044557227307786,-1.293278934479613,0.21056061284189262,-1.0108430853375217,0.13821842676185131,0.84694305427188477,-0.60784446521705282,-0.080196186989475629,-0.72740730014191857,0.79231194757140333,-0.14409042942519212,-2.2168483060714848,-0.48829727297279818,-0.51951023051347611,-0.56494742740050907,-1.2330596442194108,0.47491878714851044,0.25739041227073889,-2.7936513223283512,-1.062585323132651,-1.1160647517832654,0.16599346017453437,-0.29678719943343718,-1.2132608322831244,-0.73074240293099724,0.6136241001288999,1.1849490818998651,0.74871962959404847,0.12778038314675808,2.116858475840512,0.65739262049836933,-0.40627852396192871,-1.1865040859787139,0.022248641517600129,1.0422634916143008,0.94614136959583839,-0.19826961142116459,-0.63140010529460233,1.4969195573169343,0.68361328849012426,0.2807581120308299,2.3254557103869602,2.4878575739031636,-0.31477183321273483,-1.1481967232918555,-0.42896847366242558,1.3842228388773368,-0.72277936924230179,-1.1307012210090486,-0.79323961166711154,-1.4633013501002257,-1.3430279286229456,0.64460524047722556,-0.099409172243054164,1.269480843778199,0.59864066291945606,0.11755027219011888,-1.5432880754014526,1.99581875310141,0.42798035087982317,0.13490844851460099,-0.76945529868094165,0.81721760002095722,-0.66488490479358742,0.42650295995566284,2.6307404727839403,0.62640709315544674,1.0205974131729765,-1.2002775173879117,2.4126136753807241,0.49692298975289534,-0.17933869485688184,-0.78673851026257635,0.34935767134232737,-1.3622576727720002,0.68052541041557313,-1.8194735612517392,0.89392898837318568,0.423107543529677,0.37375946438200608,-1.4528780142035347,-0.93491993543385887,-0.53331668992222114,-1.3750048202715588,-0.22931132033295096,-0.42511952196674346,-0.16536299045183761],"mode":"markers","marker":{"color":"rgba(31,119,180,1)","size":3,"line":{"color":"rgba(31,119,180,1)"}},"type":"scatter3d","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>→ mehr als nur einen Steigungskoeffizienten</p>
+</section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-1">Multiple lineare Regression</h3>
+<p>Reaktionszeit: Worthäufigkeit und Wortlänge?</p>
+
+<img data-src="Sitzung_6_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-2">Multiple lineare Regression</h3>
+<p>Reaktionszeit: Worthäufigkeit und Wortlänge?</p>
+<div class="columns">
+<div class="column">
+<p><span class="math inline">\(y = b_{0} + b_{1}\text{Log10Freq} + e\)</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>m1.freq <span class="ot">&lt;-</span> <span class="fu">lm</span>(log_rt <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> Log10Freq, <span class="at">data=</span>rts)</span>
+<span id="cb15-2"><a></a><span class="fu">summary</span>(m1.freq)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log_rt ~ 1 + Log10Freq, data = rts)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.32582 -0.03593 -0.00397  0.03148  0.27107 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.9586296  0.0005816  5087.0   &lt;2e-16 ***
+Log10Freq   -0.0490252  0.0003201  -153.1   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.05189 on 33073 degrees of freedom
+Multiple R-squared:  0.4149,    Adjusted R-squared:  0.4149 
+F-statistic: 2.345e+04 on 1 and 33073 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</div><div class="column">
+<p><span class="math inline">\(y = b_{0} + b_{1}\text{Log10Freq} + b_{2}\text{Wortlänge} + e\)</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>m2.freq <span class="ot">&lt;-</span> <span class="fu">lm</span>(log_rt <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> Log10Freq <span class="sc">+</span> length, <span class="at">data=</span>rts)</span>
+<span id="cb17-2"><a></a><span class="fu">summary</span>(m2.freq)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log_rt ~ 1 + Log10Freq + length, data = rts)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.296134 -0.032751 -0.003248  0.028867  0.252636 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.8738734  0.0011540 2490.41   &lt;2e-16 ***
+Log10Freq   -0.0391656  0.0003149 -124.37   &lt;2e-16 ***
+length       0.0104197  0.0001261   82.66   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.04724 on 33072 degrees of freedom
+Multiple R-squared:  0.5151,    Adjusted R-squared:  0.515 
+F-statistic: 1.756e+04 on 2 and 33072 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</div></div>
+<p>Mit der Prädiktorvariable <em>Wortlänge</em> ist der <span class="math inline">\(R^{2}\)</span> von 0.41 auf 0.52 gestiegen. Wieso?</p>
+</section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-3">Multiple lineare Regression</h3>
+<p>Was hat sich sonst noch verändert?</p>
+<ul>
+<li class="fragment">der <em>y</em>-Achsenabschnitt
+<ul>
+<li class="fragment"><em>y</em>-Achsenabschnitt zeigt nun den vorhergesagten Wert wenn <em>log10Freq</em> = 0 und <em>length</em> = 0</li>
+</ul></li>
+<li class="fragment"><span class="math inline">\(b_{1}\)</span>, der Koeffizient der Worthäufigkeit
+<ul>
+<li class="fragment">d.h. der Effekt von Worthäufigkeit wurde durch das Einfügen einer weiteren Prädiktorvariable verringert</li>
+<li class="fragment">und war vermutlich durch den Einfluss von Wortlänge “konfundiert”</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-4">Multiple lineare Regression</h3>
+<p>Was zeigen die Koeffizienten?</p>
+<ul>
+<li>Jeder Koeffizient stellt eine “Teilregression” (<em>partial regression</em>) dar, der gemessen wird während die anderen Koeffizienten konstant gehalten wird</li>
+<li><span class="math inline">\(b_{1}\)</span> zeigt also den Einfluss der Worthäufigkeit, wenn die Wortlänge konstant gehalten wird</li>
+<li>Das erlaubt uns die Effekte von unterschiedlichen Prädiktoren zu schätzen und auseinanderzuhalten</li>
+</ul>
+<p><span class="math inline">\(y = b_{0} + b_{1}\text{Log10Freq} + b_{2} * \text{Wortlänge} + e\)</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-5">Multiple lineare Regression</h3>
+<p>Unsere angepassten Koeffizienten auf zwei Dezimalstellen gerundet:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)   Log10Freq      length 
+       2.87       -0.04        0.01 </code></pre>
+</div>
+</div>
+<p><span class="math inline">\(\text{log RT} = 2,87 + -0,04* \times \text{Log10Freq} + 0,01 \times \text{Wortlänge}\)</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="multiple-lineare-regression-6">Multiple lineare Regression</h3>
+<p>Unsere angepassten Koeffizienten auf zwei Dezimalstellen gerundet:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)   Log10Freq      length 
+       2.87       -0.04        0.01 </code></pre>
+</div>
+</div>
+<p><span class="math inline">\(\text{log RT} = 2,87 + -0,04* \times \text{Log10Freq} + 0,01 \times \text{Wortlänge}\)</span></p>
+<h4 id="beispiele">Beispiele</h4>
+<div style="font-size: 80%;">
+<p>fiktives Wort <em>sabi</em> mit Worthäufigkeit 14 (<span class="math inline">\(log_{10}(14) = 1.15\)</span>) und Wortlänge 14</p>
+<ul>
+<li><span class="math inline">\(2.864 = 2,87 + -0,04*1,15 + 0,01 * 4\)</span></li>
+<li><span class="math inline">\(2.864 = 2,87 + -0.046 + 0.04\)</span></li>
+</ul>
+<p>fiktives Wort <em>pagsasabihan</em> mit Worthäufigkeit 14 (<span class="math inline">\(log_{10}(14) = 1.15\)</span></p>
+<ul>
+<li><span class="math inline">\(rt = 2,87 + -0,04*1,15 + 0,01 * 12\)</span></li>
+<li><span class="math inline">\(2.944 = 2,87 + -0.046 + 0.12\)</span></li>
+</ul>
+<p>die vorhergesagte Reaktionszeit unterscheidet sich um 0.08 zwischen den beiden fiktiven Wörtern, was 1.2ms entspricht.</p>
+</div>
+</section>
+<section id="adjusted-r2" class="slide level2">
+<h2>Adjusted <span class="math inline">\(R^{2}\)</span></h2>
+<p>In der Modellzusammenfassung in <code>R</code> wird sowohl der <span class="math inline">\(R^{2}\)</span> wie auch der <span class="math inline">\(Adjusted R^{2}\)</span> angegeben</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log_rt ~ 1 + Log10Freq + length, data = rts)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.296134 -0.032751 -0.003248  0.028867  0.252636 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.8738734  0.0011540 2490.41   &lt;2e-16 ***
+Log10Freq   -0.0391656  0.0003149 -124.37   &lt;2e-16 ***
+length       0.0104197  0.0001261   82.66   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.04724 on 33072 degrees of freedom
+Multiple R-squared:  0.5151,    Adjusted R-squared:  0.515 
+F-statistic: 1.756e+04 on 2 and 33072 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<div style="font-size: 80%;">
+<ul>
+<li>der <em>Adjusted <span class="math inline">\(R^{2}\)</span></em> misst genauso, wie gut die Prädiktorvariablen die Antwortvariable vorhersagt</li>
+<li>der <em>Adjusted <span class="math inline">\(R^{2}\)</span></em> ist aber ein konservativeres Maß als der <span class="math inline">\(R^{2}\)</span> weil er ein <em>penalizing term</em> enthält, der die Anzahl an Prädiktorvariablen miteinbezieht</li>
+<li>verhindert <span class="important"><em>Overfitting</em></span></li>
+</ul>
+</div>
+</section>
+<section id="lineare-regression-anforderungen" class="slide level2">
+<h2>Lineare Regression: Anforderungen</h2>
+<ol type="1">
+<li>Normalität und Homoskedastizität der Residuen</li>
+<li>Kollinearität</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h3 id="normalität-und-homoskedastizität-der-residuen">Normalität und Homoskedastizität der Residuen</h3>
+<p>Wir nehmen an, dass die Residuen normalverteilt (<span class="important">Normalität</span>) sind und dass ihre Varianz konstant ist (<span class="important">Homoskedastizität</span>)</p>
+
+<img data-src="images/homosk_norm_winter.png" class="r-stretch quarto-figure-center"><p class="caption">Figure 4.4 in <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span>, p.75</p></section>
+<section class="slide level2">
+
+<h3 id="normalität-und-homoskedastizität-der-residuen-1">Normalität und Homoskedastizität der Residuen</h3>
+<p>In unserem Modell (<em>Reaktionszeit ~ Wortlänge + Worthäufigkeit</em>)</p>
+
+<img data-src="Sitzung_6_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="kollinearität">Kollinearität</h3>
+<ul>
+<li>Wenn zwei oder mehrere Prädiktorvariablen (fast) die gleiche Information enthalten, sprechen wir von <span class="important">Kollinearität</span></li>
+<li>Problem: Modellanpassung ist erschwert, da es schwierig ist rauszufinden, welcher Variable ein Effekt zugeordnet werden soll</li>
+<li>Kollinearität untergräbt so die Modellinterpretation, aber nicht unbedingt die Modellanpassung für das Vorhersagen neuer Daten</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="kollinearität-1">Kollinearität</h3>
+<h4 id="beispiel-aus-winterbodo-p.113">Beispiel aus <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span>, p.113 :</h4>
+<div style="font-size: 85%;">
+<p>Zuerst passen wir ein Modell (<span class="math inline">\(b_{0} = 10\)</span>, <span class="math inline">\(b_{1} = 3\)</span>) mit zufallsgenerierten Daten an:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">50</span>)</span>
+<span id="cb22-2"><a></a>y <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">50</span>)</span>
+<span id="cb22-3"><a></a></span>
+<span id="cb22-4"><a></a><span class="fu">tidy</span>(<span class="fu">lm</span>(y <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> x)) <span class="sc">|&gt;</span> <span class="fu">select</span>(term, estimate)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  term        estimate
+  &lt;chr&gt;          &lt;dbl&gt;
+1 (Intercept)    10.1 
+2 x               2.84</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="kollinearität-2">Kollinearität</h3>
+<h4 id="beispiel-aus-winterbodo-p.113-1">Beispiel aus <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span>, p.113 :</h4>
+<div style="font-size: 85%;">
+<p>Zuerst passen wir ein Modell (<span class="math inline">\(b_{0} = 10\)</span>, <span class="math inline">\(b_{1} = 3\)</span>) mit zufallsgenerierten Daten an:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">50</span>)</span>
+<span id="cb24-2"><a></a>y <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">50</span>)</span>
+<span id="cb24-3"><a></a></span>
+<span id="cb24-4"><a></a><span class="fu">tidy</span>(<span class="fu">lm</span>(y <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> x)) <span class="sc">|&gt;</span> <span class="fu">select</span>(term, estimate)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  term        estimate
+  &lt;chr&gt;          &lt;dbl&gt;
+1 (Intercept)     9.99
+2 x               2.94</code></pre>
+</div>
+</div>
+<p>Nun fügen wir eine weitere Prädiktorvariable mit fast den genau gleichen Werten hinzu:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>x2 <span class="ot">&lt;-</span> x</span>
+<span id="cb26-2"><a></a>x2[<span class="dv">30</span>] <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">1</span></span>
+<span id="cb26-3"><a></a>x2[<span class="dv">50</span>] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb26-4"><a></a></span>
+<span id="cb26-5"><a></a><span class="fu">cor</span>(x, x2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9330487</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">tidy</span>(<span class="fu">lm</span>(y <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> x <span class="sc">+</span> x2)) <span class="sc">|&gt;</span> <span class="fu">select</span>(term, estimate)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  term        estimate
+  &lt;chr&gt;          &lt;dbl&gt;
+1 (Intercept)   10.00 
+2 x              2.57 
+3 x2             0.380</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="kollinearität-3">Kollinearität</h3>
+<h4 id="beispiel-aus-winterbodo-p.113-2">Beispiel aus <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span>, p.113 :</h4>
+<p>In R können wir vom Package <code>car</code> die Funktion <code>vif()</code> benutzen um die <em>variance inflation factors</em> zu berechnen. <em>Variance inflation factors</em> berechnen wie stark eine Prädiktorvariable durch eine andere erfasst werden kann.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">library</span>(car)</span>
+<span id="cb30-2"><a></a></span>
+<span id="cb30-3"><a></a><span class="fu">vif</span>(<span class="fu">lm</span>(y <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> x <span class="sc">+</span> x2))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       x       x2 
+7.726778 7.726778 </code></pre>
+</div>
+</div>
+<p>Unterschiedliche Empfehlungen, ab wann ein <em>vif</em> problematisch ist. Einige sagen ab 10, andere 3-4 <span class="citation" data-cites="winterbodo">(<a href="#/referenzen" role="doc-biblioref" onclick="">Winter 2020</a>)</span>.</p>
+</section>
+<section id="projektarbeit" class="slide level2">
+<h2>Projektarbeit</h2>
+<p>Ziel: Eigenständig das Gelernte an einem “echten” Datensatz umsetzen</p>
+<p>Das heißt:</p>
+<ol type="1">
+<li class="fragment">Daten einlesen</li>
+<li class="fragment">deskriptiver Überblick über die Daten</li>
+<li class="fragment">Modellanpassung</li>
+<li class="fragment">Modellinterpretation</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h3 id="daten">1. Daten</h3>
+<p><strong>Option 1</strong>: Zwei Datensätze, aus publizierten Artikeln:</p>
+<ul>
+<li>Word choice is coupled with grammar: The case of kinship <span class="citation" data-cites="barth2026">(<a href="#/referenzen" role="doc-biblioref" onclick="">Barth et al. 2026</a>)</span> (binär, kategorische Antwortvariable)</li>
+<li>Everyday language input and production in 1,001 children from six continents <span class="citation" data-cites="bergelson2023">(<a href="#/referenzen" role="doc-biblioref" onclick="">Bergelson et al. 2023</a>)</span> (numerisch, kontinuierliche Antwortvariable)</li>
+</ul>
+<p>Mehr Informationen findet ihr im Dokument <a href="Projektarbeit.pdf">Projektarbeit.pdf</a></p>
+<p><strong>Option 2</strong>: Datensatz eurer Wahl</p>
+<p>Antwortvariable sollte kategorisch (binär) oder numerisch sein</p>
+<p><strong>Option 3</strong>: Datensatz aus <span class="citation" data-cites="winterbodo">Winter (<a href="#/referenzen" role="doc-biblioref" onclick="">2020</a>)</span> oder <span class="citation" data-cites="levshinaintro">Levshina (<a href="#/referenzen" role="doc-biblioref" onclick="">2015</a>)</span></p>
+<p>Außer die Datensätze, die wir im Unterricht schon benutzt haben.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="deskriptiver-überblick-über-die-daten">2. deskriptiver Überblick über die Daten</h3>
+<ul>
+<li>Beschreibung der Variablen im Datenset</li>
+<li>deskriptive Übersicht deren</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="modellanpassung">3. Modellanpassung</h3>
+<ul>
+<li>Modell (lineare oder logistische Regression) und die Prädiktorvariablen sowie deren Kodierung (<em>contrast coding</em>) oder Skala (normalisiert oder nicht) wählen</li>
+<li>Modellannahmen prüfen (Normalität, Kollinearität und Homoskedaszität)</li>
+</ul>
+<h3 id="modellinterpretation">4. Modellinterpretation</h3>
+<ul>
+<li>Wie sind die geschätzten Koeffizienten und wie können sie interpretiert werden?</li>
+<li>Welcher Effekt ist am stärksten?</li>
+<li>…</li>
+</ul>
+</section>
+<section id="projektarbeit-1" class="slide level2">
+<h2>Projektarbeit</h2>
+<h3 id="informationen">Informationen</h3>
+<div style="font-size: 85%;">
+<ul>
+<li>alleine oder in Gruppen bis max. 3 Personen</li>
+<li>Abgabe:
+<ul>
+<li>Format: R-Skript und zusätzlicher Bericht (Stichpunkte reichen) mit Begründung für das gewählte Modell und die Resultate (inkl. Interpretation)</li>
+<li>Termin: 26.1.2026</li>
+</ul></li>
+<li>In der letzten Sitzung vor Weihnachten (16.12.2026) könnt ihr an eurem Projekt arbeiten und Fragen stellen.</li>
+<li>Einige Aufgabenblätter dienen der weiteren Vorbereitung der Projektarbeit
+<ul>
+<li>z.B. auf nächste Woche: Datensatz auswählen</li>
+</ul></li>
+</ul>
+</div>
+<p>Fragen?</p>
+</section>
+<section id="nächstes-mal" class="slide level2">
+<h2>Nächstes Mal</h2>
+<ul>
+<li>“Arbeitsblatt 5”</li>
+<li>Interaktionen und Logistische Regression</li>
+<li>Modulprüfung</li>
+</ul>
+</section>
+<section id="lernziele" class="title-slide slide level1 center">
+<h1>Lernziele</h1>
+
+</section>
+
+<section id="referenzen" class="title-slide slide level1 smaller scrollable">
+<h1>Referenzen</h1>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-barth2026" class="csl-entry" role="listitem">
+Barth, Danielle, Nicholas. Evans, Andrea C. Schalley, et al. 2026. <span>“<span class="nocase">Word choice is coupled with grammar: The case of kinship.</span>”</span> <em>PLoS One</em> 21 (9). https://doi.org/<a href="https://doi.org/10.1371/journal.pone.0355784">https://doi.org/10.1371/journal.pone.0355784</a>.
+</div>
+<div id="ref-bergelson2023" class="csl-entry" role="listitem">
+Bergelson, Elika, Melanie Soderstrom, Iris-Corinna Schwarz, et al. 2023. <span>“Everyday Language Input and Production in 1,001 Children from Six Continents.”</span> <em>Proceedings of the National Academy of Sciences</em> 120 (52): e2300671120. <a href="https://doi.org/10.1073/pnas.2300671120">https://doi.org/10.1073/pnas.2300671120</a>.
+</div>
+<div id="ref-levshinaintro" class="csl-entry" role="listitem">
+Levshina, Natalia. 2015. <em>How to Do Linguistics with r</em>. John Benjamins Publishing Company.
+</div>
+<div id="ref-winterbodo" class="csl-entry" role="listitem">
+Winter, Bodo. 2020. <em>Statistics for Linguists: An Introduction Using r</em>. New York; London: Routledge.
+</div>
+</div>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
